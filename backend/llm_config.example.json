@@ -1,0 +1,35 @@
+{
+  "_comment": "Copy this file to llm_config.json and fill in your values.",
+
+  "_openai": {
+    "provider": "openai",
+    "api_key": "sk-...",
+    "base_url": "https://api.openai.com/v1",
+    "model": "gpt-4o-mini"
+  },
+
+  "_anthropic": {
+    "provider": "anthropic",
+    "api_key": "sk-ant-...",
+    "model": "claude-haiku-4-5-20251001"
+  },
+
+  "_ollama": {
+    "provider": "openai",
+    "api_key": "ollama",
+    "base_url": "http://localhost:11434/v1",
+    "model": "llama3.2"
+  },
+
+  "_lmstudio": {
+    "provider": "openai",
+    "api_key": "lm-studio",
+    "base_url": "http://localhost:1234/v1",
+    "model": "local-model"
+  },
+
+  "provider": "openai",
+  "api_key": "",
+  "base_url": "https://api.openai.com/v1",
+  "model": "gpt-4o-mini"
+}
