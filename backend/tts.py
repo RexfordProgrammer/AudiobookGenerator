@@ -57,7 +57,13 @@ def text_to_mp3(
     voice: str = "af_heart",
     speed: float = 1.0,
     progress_callback: Callable[[int], None] | None = None,
+    engine: str = "kokoro",
 ) -> None:
+    if engine == "orpheus":
+        import orpheus_tts
+        orpheus_tts.text_to_mp3(text, output_path, voice=voice, speed=speed, progress_callback=progress_callback)
+        return
+
     pipeline = get_pipeline()
     chunks = _split_chunks(text)
     total = len(chunks)

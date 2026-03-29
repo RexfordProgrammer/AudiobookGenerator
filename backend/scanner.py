@@ -10,39 +10,35 @@ import json
 import re
 from pathlib import Path
 
+from spellchecker import SpellChecker
+
+_spell = SpellChecker()  # loads English dictionary once at import time
+
 PHONETICS_DIR = Path(__file__).parent / "phonetics"
 PHONETICS_DIR.mkdir(exist_ok=True)
 
 LEXICON_FILE = Path(__file__).parent / "lexicon.json"
 
-# Capitalized words that are safe to skip even when mid-sentence
-_SKIP = {
-    "January", "February", "March", "April", "June", "July",
-    "August", "September", "October", "November", "December",
-    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday",
-    "God", "Lord", "King", "Queen", "Prince", "Princess", "Sir", "Lady",
-    "Mr", "Mrs", "Ms", "Dr", "Prof", "Captain", "General", "President",
-    "English", "American", "British", "French", "German", "Spanish", "Italian",
-    "Roman", "Greek", "Latin", "Christian", "Catholic", "Jewish", "Muslim",
-    "North", "South", "East", "West", "Northern", "Southern", "Eastern", "Western",
-    "Chapter", "Part", "Book", "Volume", "Section", "Prologue", "Epilogue",
-    "Yes", "No", "Oh", "Ah", "Well", "Now", "Then", "Here", "There",
-}
+
+_SENTENCE_ENDERS = set('.!?:;')
 
 
-def find_proper_nouns(text: str) -> list[str]:
+def find_proper_nouns(text: str) -> list[tuple[str, int]]:
     """
-    Return sorted list of capitalized words that appear mid-sentence —
-    likely proper nouns (character names, places, invented terms).
+    Return list of (word, count) pairs for all mid-sentence capitalized words
+    (likely names, places, or proper nouns) that TTS may need phonetic guidance on.
+    Sorted by frequency of appearance in the text (most frequent first).
     """
-    tokens = re.findall(r'\S+', text)
-    proper_nouns: set[str] = set()
+    # Use finditer to preserve position info for newline detection
+    token_matches = list(re.finditer(r'\S+', text))
+    counts: dict[str, int] = {}
 
-    for i, token in enumerate(tokens):
+    for i, match in enumerate(token_matches):
         if i == 0:
             continue
 
-        # Strip surrounding punctuation to get the bare word
+        token = match.group()
+        # Strip surrounding punctuation, keep internal apostrophes/hyphens
         word = re.sub(r"^[^a-zA-Z']+|[^a-zA-Z']+$", "", token)
         if not word or len(word) < 3:
             continue
@@ -51,18 +47,30 @@ def find_proper_nouns(text: str) -> list[str]:
         if not (word[0].isupper() and not word.isupper()):
             continue
 
-        if word in _SKIP:
+        # If the word is in the English dictionary, it's a common word, not a proper noun
+        if _spell.known([word.lower()]):
             continue
 
-        # If the previous token ends with a sentence-ending character, this word
-        # starts a new sentence and is therefore not a mid-sentence proper noun.
-        prev = tokens[i - 1].rstrip('"\'')
-        if prev and prev[-1] in ".!?":
+        prev_match = token_matches[i - 1]
+
+        # If there's a newline between tokens, this is a paragraph/line start
+        gap = text[prev_match.end():match.start()]
+        if '\n' in gap:
             continue
 
-        proper_nouns.add(word)
+        # If the previous token ends a sentence, this is sentence-start capitalisation
+        # Also treat em-dashes as clause breaks
+        prev = prev_match.group().rstrip('"\'')
+        if not prev:
+            continue
+        if prev[-1] in _SENTENCE_ENDERS:
+            continue
+        if prev in ('—', '–', '-') or prev.endswith('—') or prev.endswith('–'):
+            continue
 
-    return sorted(proper_nouns)
+        counts[word] = counts.get(word, 0) + 1
+
+    return sorted(counts.items(), key=lambda item: item[1], reverse=True)
 
 
 def apply_phonetics(text: str, phonetics: dict[str, str]) -> str:

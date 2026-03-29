@@ -2,3 +2,5 @@
 /backend/uploads
 /backend/outputs
 /backend/__pycache__
+/venv/
+/backend/llm_config.json

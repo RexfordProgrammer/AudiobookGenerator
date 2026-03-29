@@ -20,6 +20,8 @@ export default function App() {
   const [progress, setProgress] = useState(0)
   const [error, setError] = useState(null)
   const [dragging, setDragging] = useState(false)
+  const [voice, setVoice] = useState('af_heart')
+  const [engine, setEngine] = useState('kokoro')
   const [words, setWords] = useState([])        // [{original, phonetic}]
   const [playingWord, setPlayingWord] = useState(null)
   const pollRef = useRef(null)
@@ -56,7 +58,7 @@ export default function App() {
           // LLM suggestions pre-populated — user can add/edit freely.
           const allWords = data.words ?? []
           const phoneticsMap = data.phonetics ?? {}
-          setWords(allWords.map(w => ({ original: w, phonetic: phoneticsMap[w] ?? '' })))
+          setWords(allWords.map(({ word, count }) => ({ original: word, phonetic: phoneticsMap[word] ?? '', count })))
         }
 
         if (data.status === 'done' || data.status === 'error') {
@@ -77,7 +79,7 @@ export default function App() {
     const form = new FormData()
     form.append('file', file)
     try {
-      const res = await fetch(`${API}/upload?scan=${scan}`, { method: 'POST', body: form })
+      const res = await fetch(`${API}/upload?scan=${scan}&voice=${encodeURIComponent(voice)}&engine=${engine}`, { method: 'POST', body: form })
       const data = await res.json()
       if (!res.ok) throw new Error(data.detail ?? 'Upload failed')
       setJobId(data.job_id)
@@ -104,7 +106,7 @@ export default function App() {
       const res = await fetch(`${API}/preview`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text }),
+        body: JSON.stringify({ text, voice, engine }),
       })
       if (!res.ok) throw new Error('Preview generation failed')
       const blob = await res.blob()
@@ -161,6 +163,8 @@ export default function App() {
     setJobStatus(null)
     setProgress(0)
     setError(null)
+    setVoice('af_heart')
+    setEngine('kokoro')
     setWords([])
     setPlayingWord(null)
   }
@@ -171,7 +175,7 @@ export default function App() {
     <div style={s.page}>
       <div style={{ ...s.card, maxWidth: jobStatus === 'awaiting_review' ? 720 : 480 }}>
         <h1 style={s.title}>Ebook → Audiobook</h1>
-        <p style={s.sub}>Upload an EPUB or TXT and get an MP3 powered by Kokoro TTS</p>
+        <p style={s.sub}>Upload an EPUB or TXT and get an MP3 — powered by Kokoro or Orpheus TTS</p>
 
         {/* ── File picker ── */}
         {!jobStatus && (
@@ -195,14 +199,72 @@ export default function App() {
                 : <p style={s.hint}>Drop your EPUB or TXT here, or <u>browse</u></p>}
             </div>
             {file && (
-              <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
-                <button style={s.btn} onClick={() => handleUpload(true)}>
-                  Scan for Names →
-                </button>
-                <button style={{ ...s.btn, ...s.btnGray }} onClick={() => handleUpload(false)}>
-                  Quick Convert (MP3)
-                </button>
-              </div>
+              <>
+                <div style={s.enginePicker}>
+                  <span style={s.voiceLabel}>Engine:</span>
+                  {[
+                    { value: 'kokoro',  label: 'Kokoro 82M' },
+                    { value: 'orpheus', label: 'Orpheus 3B' },
+                  ].map(({ value, label }) => (
+                    <label key={value} style={s.voiceOption}>
+                      <input
+                        type="radio"
+                        name="engine"
+                        value={value}
+                        checked={engine === value}
+                        onChange={() => {
+                          setEngine(value)
+                          setVoice(value === 'orpheus' ? 'tara' : 'af_heart')
+                        }}
+                      />
+                      {' '}{label}
+                    </label>
+                  ))}
+                </div>
+                <div style={s.voicePicker}>
+                  <span style={s.voiceLabel}>Voice:</span>
+                  {(engine === 'orpheus'
+                    ? [
+                        { value: 'tara', label: 'Tara (F)' },
+                        { value: 'leah', label: 'Leah (F)' },
+                        { value: 'jess', label: 'Jess (F)' },
+                        { value: 'mia',  label: 'Mia (F)' },
+                        { value: 'zoe',  label: 'Zoe (F)' },
+                        { value: 'dan',  label: 'Dan (M)' },
+                        { value: 'leo',  label: 'Leo (M)' },
+                        { value: 'zac',  label: 'Zac (M)' },
+                      ]
+                    : [
+                        { value: 'af_heart',   label: 'Heart (F)' },
+                        { value: 'af_bella',   label: 'Bella (F)' },
+                        { value: 'af_nova',    label: 'Nova (F)' },
+                        { value: 'am_fenrir',  label: 'Fenrir (M)' },
+                        { value: 'am_michael', label: 'Michael (M)' },
+                        { value: 'am_echo',    label: 'Echo (M)' },
+                        { value: 'bm_george',  label: 'George (M·UK)' },
+                      ]
+                  ).map(({ value, label }) => (
+                    <label key={value} style={s.voiceOption}>
+                      <input
+                        type="radio"
+                        name="voice"
+                        value={value}
+                        checked={voice === value}
+                        onChange={() => setVoice(value)}
+                      />
+                      {' '}{label}
+                    </label>
+                  ))}
+                </div>
+                <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
+                  <button style={s.btn} onClick={() => handleUpload(true)}>
+                    Scan for Names →
+                  </button>
+                  <button style={{ ...s.btn, ...s.btnGray }} onClick={() => handleUpload(false)}>
+                    Quick Convert (MP3)
+                  </button>
+                </div>
+              </>
             )}
           </>
         )}
@@ -277,6 +339,7 @@ function ReviewPanel({ words, playingWord, onUpdatePhonetic, onRemoveWord, onPla
           <div style={s.table}>
             <div style={{ ...s.row, ...s.header }}>
               <div style={s.cOrig}>Original word</div>
+              <div style={s.cCount}>#</div>
               <div style={s.cPhon}>Phonetic spelling</div>
               <div style={s.cAct}>Preview / Remove</div>
             </div>
@@ -287,6 +350,9 @@ function ReviewPanel({ words, playingWord, onUpdatePhonetic, onRemoveWord, onPla
                 <div key={w.original + i} style={{ ...s.row, background: i % 2 === 0 ? '#f8fafc' : '#fff' }}>
                   <div style={s.cOrig}>
                     <span style={{ fontWeight: 600 }}>{w.original}</span>
+                  </div>
+                  <div style={s.cCount}>
+                    <span style={s.countBadge}>{w.count ?? '—'}</span>
                   </div>
                   <div style={s.cPhon}>
                     <input
@@ -370,12 +436,22 @@ const s = {
   success:  { color: '#059669', fontWeight: 600, fontSize: 18, marginBottom: 16 },
   errBox:   { marginTop: 20, padding: 16, background: '#fef2f2', borderRadius: 10 },
   errTxt:   { color: '#dc2626', marginBottom: 12 },
+  enginePicker: { display: 'flex', gap: 16, justifyContent: 'center', alignItems: 'center', marginBottom: 10, flexWrap: 'wrap' },
+  voicePicker: { display: 'flex', gap: 16, justifyContent: 'center', alignItems: 'center', marginBottom: 12, flexWrap: 'wrap' },
+  voiceLabel:  { fontWeight: 600, fontSize: 14, color: '#334155' },
+  voiceOption: { fontSize: 14, color: '#475569', cursor: 'pointer' },
 
   // Table
   table:  { border: '1px solid #e2e8f0', borderRadius: 10, overflow: 'hidden', marginTop: 8 },
-  row:    { display: 'grid', gridTemplateColumns: '180px 1fr 110px', alignItems: 'center', padding: '8px 12px', borderBottom: '1px solid #f1f5f9' },
+  row:    { display: 'grid', gridTemplateColumns: '180px 48px 1fr 110px', alignItems: 'center', padding: '8px 12px', borderBottom: '1px solid #f1f5f9' },
   header: { background: '#f8fafc', fontWeight: 600, fontSize: 13, color: '#475569' },
   cOrig:  { fontSize: 14 },
+  cCount: { textAlign: 'center', fontSize: 13 },
+  countBadge: {
+    display: 'inline-block', minWidth: 28, padding: '2px 6px',
+    background: '#f1f5f9', color: '#64748b', borderRadius: 99,
+    fontSize: 12, fontWeight: 600, textAlign: 'center',
+  },
   cPhon:  { padding: '0 8px' },
   cAct:   { textAlign: 'right' },
   input:  {

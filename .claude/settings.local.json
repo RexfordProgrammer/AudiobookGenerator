@@ -1,9 +1,27 @@
 {
   "permissions": {
     "allow": [
-      "Bash(c:/Users/Rexford/Documents/EbookReader/.venv/Scripts/python.exe -c \"import torch; print\\(''CUDA available:'', torch.cuda.is_available\\(\\)\\); print\\(''PyTorch version:'', torch.__version__\\); print\\(''CUDA version PyTorch built with:'', torch.version.cuda\\)\")",
+      "Bash(C:/Users/Rexford/Documents/AudiobookGenerator/.venv/Scripts/python.exe -c \"import torch; print\\(''CUDA available:'', torch.cuda.is_available\\(\\)\\); print\\(''PyTorch version:'', torch.__version__\\); print\\(''CUDA version PyTorch built with:'', torch.version.cuda\\)\")",
       "Bash(nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv,noheader)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(.venv/Scripts/python.exe --version)",
+      "Bash(.venv/Scripts/python.exe -c \"import sys; print\\(sys.executable\\)\")",
+      "Bash(.venv/Scripts/python.exe -c \"import pip\" 2>&1)",
+      "Bash(.venv/Scripts/python.exe -c \"import fastapi; print\\('ok'\\)\" 2>&1)",
+      "Read(//c/Users/Rexford/AppData/Local/Programs/Python/**)",
+      "Bash(py -0)",
+      "Bash(py:*)",
+      "Bash(cp \"C:/Users/Rexford/AppData/Local/Programs/Python/Python310/python.exe\" \".venv/Scripts/python.exe\")",
+      "Bash(cp \"C:/Users/Rexford/AppData/Local/Programs/Python/Python310/pythonw.exe\" \".venv/Scripts/pythonw.exe\")",
+      "Bash(.venv/Scripts/python.exe -c \"import fastapi; print\\(''fastapi ok''\\)\")",
+      "Bash(.venv/Scripts/python.exe -c \"import pydantic; print\\(''pydantic ok''\\)\")",
+      "Bash(cmd //c \".venv\\\\\\\\Scripts\\\\\\\\python.exe --version && .venv\\\\\\\\Scripts\\\\\\\\python.exe -c \\\\\"import fastapi; print\\('fastapi ok'\\)\\\\\"\")",
+      "Bash(powershell.exe -Command \".venv\\\\\\\\Scripts\\\\\\\\python.exe --version; .venv\\\\\\\\Scripts\\\\\\\\python.exe -c \\\\\"import fastapi; print\\('fastapi ok'\\)\\\\\"\")",
+      "Bash(powershell.exe -Command \"& ''.venv\\\\Scripts\\\\python.exe'' ''--version''\")",
+      "Bash(echo \"exit: $?\")",
+      "Bash(powershell.exe -Command \"py -3.10 -m venv --upgrade .venv\")",
+      "Bash(py -3.10 -c \"import venv; venv.main\\([''--upgrade'', ''.venv'', ''--without-pip'']\\)\")",
+      "Bash(pip install:*)"
     ]
   }
 }

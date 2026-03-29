@@ -10,7 +10,7 @@ from pathlib import Path
 import numpy as np
 import soundfile as sf
 from fastapi import FastAPI, File, HTTPException, UploadFile
-from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.cors import CORSMiddleware # type: ignore
 from fastapi.responses import FileResponse, StreamingResponse
 from pydub import AudioSegment
 from pydantic import BaseModel
@@ -76,7 +76,7 @@ def _direct_convert(job_id: str, file_path: str) -> None:
                 log(job_id, f"TTS {pct}% ({time.monotonic() - t_start:.0f}s)")
                 last_pct[0] = pct
 
-        text_to_mp3(text, str(output_path), progress_callback=on_progress)
+        text_to_mp3(text, str(output_path), voice=job["voice"], engine=job.get("engine", "kokoro"), progress_callback=on_progress)
 
         job["status"] = "done"
         job["progress"] = 100
@@ -110,22 +110,28 @@ def _scan(job_id: str, file_path: str) -> None:
         log(job_id, f"Parsed {len(text):,} chars. Finding proper nouns…")
         job["progress"] = 20
 
-        words = find_proper_nouns(text)
-        log(job_id, f"Found {len(words)} candidate proper nouns. Calling LLM…")
+        words_with_counts = find_proper_nouns(text)
+        word_list = [w for w, _ in words_with_counts]
+        log(job_id, f"Found {len(word_list)} candidate proper nouns. Calling LLM…")
         job["progress"] = 40
 
+        # Prime the TTS pipeline now — it will be needed immediately for preview
+        # requests once the user reaches the review screen. Loading (~300 MB) in
+        # a daemon thread lets it overlap with the LLM call below.
+        threading.Thread(target=get_pipeline, daemon=True).start()
+
         phonetics: dict[str, str] = {}
-        if words:
+        if word_list:
             try:
-                phonetics = asyncio.run(get_phonetics_batched(words))
+                phonetics = asyncio.run(get_phonetics_batched(word_list))
                 log(job_id, f"LLM returned {len(phonetics)} phonetic mappings")
             except Exception as e:
                 log(job_id, f"LLM call failed (continuing without phonetics): {e}")
 
-        save_job_phonetics(job_id, words, phonetics)
+        save_job_phonetics(job_id, word_list, phonetics)
 
         job["text"] = text          # held in memory until conversion starts
-        job["words"] = words
+        job["words"] = [{"word": w, "count": n} for w, n in words_with_counts]
         job["phonetics"] = phonetics
         job["status"] = "awaiting_review"
         job["progress"] = 100
@@ -168,7 +174,7 @@ def _convert(job_id: str) -> None:
                 log(job_id, f"TTS {pct}% ({time.monotonic() - t_start:.0f}s)")
                 last_pct[0] = pct
 
-        text_to_mp3(text, str(output_path), progress_callback=on_progress)
+        text_to_mp3(text, str(output_path), voice=job["voice"], engine=job.get("engine", "kokoro"), progress_callback=on_progress)
 
         job["status"] = "done"
         job["progress"] = 100
@@ -184,7 +190,7 @@ def _convert(job_id: str) -> None:
 # ── Endpoints ────────────────────────────────────────────────────────────────
 
 @app.post("/upload")
-async def upload(file: UploadFile = File(...), scan: bool = True):
+async def upload(file: UploadFile = File(...), scan: bool = True, voice: str = "af_heart", engine: str = "kokoro"):
     suffix = Path(file.filename).suffix.lower()
     if suffix not in ALLOWED_EXTENSIONS:
         raise HTTPException(400, "Only .epub and .txt files are supported.")
@@ -201,12 +207,14 @@ async def upload(file: UploadFile = File(...), scan: bool = True):
         "progress": 0,
         "error": None,
         "filename": stem,
+        "voice": voice,
+        "engine": engine,
         "words": [],
         "phonetics": {},
         "text": None,
         "output_path": None,
     }
-    log(job_id, f"Upload received — {file.filename} (scan={scan})")
+    log(job_id, f"Upload received — {file.filename} (scan={scan}, engine={engine})")
 
     if scan:
         threading.Thread(target=_scan, args=(job_id, str(file_path)), daemon=True).start()
@@ -249,6 +257,8 @@ async def approve(job_id: str, body: ApproveBody):
 
 class PreviewBody(BaseModel):
     text: str
+    voice: str = "af_heart"
+    engine: str = "kokoro"
 
 
 @app.post("/preview")
@@ -258,18 +268,25 @@ def preview(body: PreviewBody):
     if not text:
         raise HTTPException(400, "No text provided.")
 
-    pipeline = get_pipeline()
-    audio_arrays = []
-    for _, _, audio in pipeline(text, voice="af_heart", speed=1.0):
-        audio_arrays.append(audio)
+    if body.engine == "orpheus":
+        import orpheus_tts
+        full_audio = orpheus_tts.generate_preview_audio(text, voice=body.voice)
+        sample_rate = orpheus_tts.SAMPLE_RATE
+    else:
+        pipeline = get_pipeline()
+        audio_arrays = []
+        for _, _, audio in pipeline(text, voice=body.voice, speed=1.0):
+            audio_arrays.append(audio)
+        if not audio_arrays:
+            raise HTTPException(500, "TTS produced no output.")
+        full_audio = np.concatenate(audio_arrays)
+        sample_rate = SAMPLE_RATE
 
-    if not audio_arrays:
+    if full_audio.size == 0:
         raise HTTPException(500, "TTS produced no output.")
 
-    full_audio = np.concatenate(audio_arrays)
-
     wav_buf = io.BytesIO()
-    sf.write(wav_buf, full_audio, SAMPLE_RATE, format="WAV")
+    sf.write(wav_buf, full_audio, sample_rate, format="WAV")
     wav_buf.seek(0)
 
     mp3_buf = io.BytesIO()
