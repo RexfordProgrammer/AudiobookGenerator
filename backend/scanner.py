@@ -18,6 +18,7 @@ PHONETICS_DIR = Path(__file__).parent / "phonetics"
 PHONETICS_DIR.mkdir(exist_ok=True)
 
 LEXICON_FILE = Path(__file__).parent / "lexicon.json"
+SCAN_CACHE_FILE = PHONETICS_DIR / "scan_cache.json"
 
 
 _SENTENCE_ENDERS = set('.!?:;')
@@ -89,6 +90,33 @@ def save_job_phonetics(job_id: str, words: list[str], phonetics: dict[str, str])
     """Write per-session tally file: all detected words + LLM phonetic suggestions."""
     with open(PHONETICS_DIR / f"{job_id}.json", "w") as f:
         json.dump({"words": words, "phonetics": phonetics}, f, indent=2)
+
+
+def load_scan_cache(filename: str) -> dict | None:
+    """Return cached scan result for *filename* (the upload stem), or None if not found."""
+    if not SCAN_CACHE_FILE.exists():
+        return None
+    with open(SCAN_CACHE_FILE) as f:
+        cache = json.load(f)
+    return cache.get(filename)
+
+
+def save_scan_cache(
+    filename: str,
+    words_with_counts: list[tuple[str, int]],
+    phonetics: dict[str, str],
+) -> None:
+    """Persist scan result keyed by upload filename stem."""
+    cache: dict = {}
+    if SCAN_CACHE_FILE.exists():
+        with open(SCAN_CACHE_FILE) as f:
+            cache = json.load(f)
+    cache[filename] = {
+        "words_with_counts": [[w, c] for w, c in words_with_counts],
+        "phonetics": phonetics,
+    }
+    with open(SCAN_CACHE_FILE, "w") as f:
+        json.dump(cache, f, indent=2, sort_keys=True)
 
 
 def load_lexicon() -> dict[str, str]:

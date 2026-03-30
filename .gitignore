@@ -1,6 +1,10 @@
+.env
 /frontend/node_modules
 /backend/uploads
 /backend/outputs
 /backend/__pycache__
 /venv/
 /backend/llm_config.json
+/.vs
+/backend/phonetics
+/node_modules

@@ -20,8 +20,10 @@ from parser import extract_text
 from scanner import (
     apply_phonetics,
     find_proper_nouns,
+    load_scan_cache,
     merge_into_lexicon,
     save_job_phonetics,
+    save_scan_cache,
 )
 from tts import SAMPLE_RATE, get_pipeline, text_to_mp3
 
@@ -107,28 +109,41 @@ def _scan(job_id: str, file_path: str) -> None:
         if not text.strip():
             raise ValueError("No readable text found in the uploaded file.")
 
-        log(job_id, f"Parsed {len(text):,} chars. Finding proper nouns…")
-        job["progress"] = 20
+        log(job_id, f"Parsed {len(text):,} chars.")
 
-        words_with_counts = find_proper_nouns(text)
-        word_list = [w for w, _ in words_with_counts]
-        log(job_id, f"Found {len(word_list)} candidate proper nouns. Calling LLM…")
-        job["progress"] = 40
+        filename = job["filename"]
+        cached = load_scan_cache(filename)
+        if cached:
+            log(job_id, f"Cache hit for '{filename}' — skipping noun detection and LLM call")
+            words_with_counts: list[tuple[str, int]] = [tuple(x) for x in cached["words_with_counts"]]  # type: ignore[misc]
+            phonetics: dict[str, str] = cached["phonetics"]
+            job["progress"] = 90
+            threading.Thread(target=get_pipeline, daemon=True).start()
+        else:
+            log(job_id, "Finding proper nouns…")
+            job["progress"] = 20
 
-        # Prime the TTS pipeline now — it will be needed immediately for preview
-        # requests once the user reaches the review screen. Loading (~300 MB) in
-        # a daemon thread lets it overlap with the LLM call below.
-        threading.Thread(target=get_pipeline, daemon=True).start()
+            words_with_counts = find_proper_nouns(text)
+            word_list = [w for w, _ in words_with_counts]
+            log(job_id, f"Found {len(word_list)} candidate proper nouns. Calling LLM…")
+            job["progress"] = 40
 
-        phonetics: dict[str, str] = {}
-        if word_list:
-            try:
-                phonetics = asyncio.run(get_phonetics_batched(word_list))
-                log(job_id, f"LLM returned {len(phonetics)} phonetic mappings")
-            except Exception as e:
-                log(job_id, f"LLM call failed (continuing without phonetics): {e}")
+            # Prime the TTS pipeline now — it will be needed immediately for preview
+            # requests once the user reaches the review screen. Loading (~300 MB) in
+            # a daemon thread lets it overlap with the LLM call below.
+            threading.Thread(target=get_pipeline, daemon=True).start()
 
-        save_job_phonetics(job_id, word_list, phonetics)
+            phonetics = {}
+            if word_list:
+                try:
+                    phonetics = asyncio.run(get_phonetics_batched(word_list))
+                    log(job_id, f"LLM returned {len(phonetics)} phonetic mappings")
+                except Exception as e:
+                    log(job_id, f"LLM call failed (continuing without phonetics): {e}")
+
+            save_scan_cache(filename, words_with_counts, phonetics)
+
+        save_job_phonetics(job_id, [w for w, _ in words_with_counts], phonetics)
 
         job["text"] = text          # held in memory until conversion starts
         job["words"] = [{"word": w, "count": n} for w, n in words_with_counts]

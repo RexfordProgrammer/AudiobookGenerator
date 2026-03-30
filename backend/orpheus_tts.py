@@ -5,8 +5,12 @@ Lazy-loads the model on first use (~7 GB download). Requires:
 """
 
 import io
+import os
 import re
+from pathlib import Path
 from typing import Callable
+
+import threading
 
 import numpy as np
 import soundfile as sf
@@ -15,6 +19,21 @@ from pydub import AudioSegment
 from snac import SNAC
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
+def _load_env_file():
+    """Load .env from the project root (one level up from backend/)."""
+    env_path = Path(__file__).parent.parent / ".env"
+    if env_path.exists():
+        with open(env_path) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    key, _, val = line.partition("=")
+                    key = key.strip()
+                    val = val.strip().strip('"').strip("'")
+                    os.environ.setdefault(key, val)
+
+_load_env_file()
+
 SAMPLE_RATE = 24000
 ORPHEUS_VOICES = ["tara", "leah", "jess", "leo", "dan", "mia", "zac", "zoe"]
 MODEL_NAME = "canopylabs/orpheus-3b-0.1-ft"
@@ -22,6 +41,7 @@ MODEL_NAME = "canopylabs/orpheus-3b-0.1-ft"
 _snac_model = None
 _model = None
 _tokenizer = None
+_gpu_lock = threading.Lock()  # serialise all GPU inference — prevents OOM from concurrent calls
 
 
 def _get_device() -> str:
@@ -36,12 +56,24 @@ def get_models():
     global _snac_model, _model, _tokenizer
     if _model is None:
         device = _get_device()
+        hf_token = os.environ.get("HF_TOKEN") or os.environ.get("HUGGING_FACE_HUB_TOKEN")
+        if not hf_token:
+            raise RuntimeError(
+                "HuggingFace token required for gated model. "
+                "Set the HF_TOKEN environment variable: export HF_TOKEN=hf_..."
+            )
+
         print(f"[orpheus] Loading SNAC model…")
         _snac_model = SNAC.from_pretrained("hubertsiuzdak/snac_24khz").to(device)
 
         print(f"[orpheus] Loading Orpheus-3B model to {device} (first run downloads ~7 GB)…")
-        _model = AutoModelForCausalLM.from_pretrained(MODEL_NAME, torch_dtype=torch.bfloat16).to(device)
-        _tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+        _model = AutoModelForCausalLM.from_pretrained(
+            MODEL_NAME, torch_dtype=torch.bfloat16, token=hf_token
+        ).to(device)
+        _tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, token=hf_token)
+        if device == "cuda":
+            print("[orpheus] Compiling model with torch.compile (first inference will be slow)…")
+            _model = torch.compile(_model)
         print("[orpheus] Models ready.")
     return _snac_model, _model, _tokenizer
 
@@ -119,7 +151,7 @@ def _generate_audio(text: str, voice: str, max_new_tokens: int = 4096) -> np.nda
     device = _get_device()
 
     input_ids, attention_mask = _process_prompt(text, voice, tokenizer, device)
-    with torch.no_grad():
+    with _gpu_lock, torch.no_grad():
         generated_ids = model.generate(
             input_ids=input_ids,
             attention_mask=attention_mask,
@@ -135,7 +167,8 @@ def _generate_audio(text: str, voice: str, max_new_tokens: int = 4096) -> np.nda
     code_list = _parse_output(generated_ids)
     if not code_list:
         return np.array([], dtype=np.float32)
-    return _redistribute_codes(code_list, snac_model)
+    with _gpu_lock:
+        return _redistribute_codes(code_list, snac_model)
 
 
 def text_to_mp3(
@@ -153,11 +186,11 @@ def text_to_mp3(
     audio_arrays: list[np.ndarray] = []
 
     for i, chunk in enumerate(chunks):
-        if progress_callback:
-            progress_callback(5 + int((i / total) * 85))
         audio = _generate_audio(chunk, voice)
         if audio.size > 0:
             audio_arrays.append(audio)
+        if progress_callback:
+            progress_callback(5 + int(((i + 1) / total) * 85))
 
     if not audio_arrays:
         raise RuntimeError("Orpheus produced no audio output")

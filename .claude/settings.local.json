@@ -21,7 +21,10 @@
       "Bash(echo \"exit: $?\")",
       "Bash(powershell.exe -Command \"py -3.10 -m venv --upgrade .venv\")",
       "Bash(py -3.10 -c \"import venv; venv.main\\([''--upgrade'', ''.venv'', ''--without-pip'']\\)\")",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "Bash(npm install:*)",
+      "Bash(echo $SHELL)",
+      "Read(//c/Users/Rexford/**)"
     ]
   }
 }
