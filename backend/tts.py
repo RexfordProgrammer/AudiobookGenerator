@@ -29,7 +29,7 @@ def get_pipeline() -> KPipeline:
     return _pipeline
 
 
-def _split_chunks(text: str, chunk_size: int = 2000) -> list[str]:
+def split_chunks(text: str, chunk_size: int = 2000) -> list[str]:
     """Split text into chunks at paragraph boundaries."""
     paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
     chunks: list[str] = []
@@ -65,7 +65,7 @@ def text_to_mp3(
         return
 
     pipeline = get_pipeline()
-    chunks = _split_chunks(text)
+    chunks = split_chunks(text)
     total = len(chunks)
     audio_arrays: list[np.ndarray] = []
 

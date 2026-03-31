@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 
 const API = 'http://localhost:8000'
 
@@ -6,6 +6,7 @@ const STATUS_LABELS = {
   uploading: 'Uploading…',
   queued: 'Queued…',
   parsing: 'Parsing book…',
+  text_preview: 'Review & edit text',
   scanning: 'Scanning for unfamiliar words…',
   awaiting_review: 'Review phonetics',
   converting: 'Converting to speech…',
@@ -22,8 +23,20 @@ export default function App() {
   const [dragging, setDragging] = useState(false)
   const [voice, setVoice] = useState('af_heart')
   const [engine, setEngine] = useState('kokoro')
-  const [words, setWords] = useState([])        // [{original, phonetic}]
+
+  // Text preview state
+  const [chapters, setChapters] = useState([])          // [{title, text}]
+  const [editedText, setEditedText] = useState('')       // full joined text (editable)
+  const [fileType, setFileType] = useState('txt')
+  const [perChapter, setPerChapter] = useState(true)
+
+  // Phonetics review state
+  const [words, setWords] = useState([])
   const [playingWord, setPlayingWord] = useState(null)
+
+  // Output info
+  const [outputType, setOutputType] = useState('mp3')
+
   const pollRef = useRef(null)
   const inputRef = useRef(null)
   const audioRef = useRef(null)
@@ -40,8 +53,23 @@ export default function App() {
     setJobId(null)
     setJobStatus(null)
     setProgress(0)
+    setChapters([])
+    setEditedText('')
     setWords([])
   }
+
+  const fetchText = useCallback(async (id) => {
+    try {
+      const res = await fetch(`${API}/text/${id}`)
+      if (!res.ok) return
+      const data = await res.json()
+      setChapters(data.chapters ?? [])
+      setEditedText((data.chapters ?? []).map(c => c.text).join('\n\n'))
+      setFileType(data.file_type ?? 'txt')
+    } catch {
+      // ignore
+    }
+  }, [])
 
   function startPolling(id) {
     clearInterval(pollRef.current)
@@ -52,16 +80,24 @@ export default function App() {
         setJobStatus(data.status)
         setProgress(data.progress ?? 0)
 
+        if (data.status === 'text_preview') {
+          clearInterval(pollRef.current)
+          fetchText(id)
+        }
+
         if (data.status === 'awaiting_review') {
           clearInterval(pollRef.current)
-          // Build editable word list; all detected words shown, only those with
-          // LLM suggestions pre-populated — user can add/edit freely.
           const allWords = data.words ?? []
           const phoneticsMap = data.phonetics ?? {}
           setWords(allWords.map(({ word, count }) => ({ original: word, phonetic: phoneticsMap[word] ?? '', count })))
         }
 
-        if (data.status === 'done' || data.status === 'error') {
+        if (data.status === 'done') {
+          clearInterval(pollRef.current)
+          setOutputType(data.output_type ?? 'mp3')
+        }
+
+        if (data.status === 'error') {
           clearInterval(pollRef.current)
           if (data.error) setError(data.error)
         }
@@ -71,7 +107,7 @@ export default function App() {
     }, 1500)
   }
 
-  async function handleUpload(scan = true) {
+  async function handleUpload() {
     if (!file) return
     setError(null)
     setJobStatus('uploading')
@@ -79,7 +115,10 @@ export default function App() {
     const form = new FormData()
     form.append('file', file)
     try {
-      const res = await fetch(`${API}/upload?scan=${scan}&voice=${encodeURIComponent(voice)}&engine=${engine}`, { method: 'POST', body: form })
+      const res = await fetch(
+        `${API}/upload?voice=${encodeURIComponent(voice)}&engine=${engine}`,
+        { method: 'POST', body: form }
+      )
       const data = await res.json()
       if (!res.ok) throw new Error(data.detail ?? 'Upload failed')
       setJobId(data.job_id)
@@ -90,6 +129,86 @@ export default function App() {
       setJobStatus(null)
     }
   }
+
+  // ── Text preview actions ──────────────────────────────────────────────────
+
+  // True when the textarea still matches the joined chapter texts (no manual edits)
+  function chaptersInSync(text, chaps) {
+    return text === chaps.map(c => c.text).join('\n\n')
+  }
+
+  function applyStripUnusual() {
+    // Keep ASCII printable (0x20–0x7E) plus newline, carriage return, tab
+    const strip = t => t.replace(/[^\x20-\x7E\n\r\t]/g, '')
+    setEditedText(prev => strip(prev))
+    setChapters(prev => prev.map(c => ({ ...c, text: strip(c.text) })))
+  }
+
+  function applyStripQuotes() {
+    // Remove both ASCII and typographic quote characters
+    const strip = t => t.replace(/['"'""\u2018\u2019\u201c\u201d\u201e\u201f\u2039\u203a\u00ab\u00bb]/g, '')
+    setEditedText(prev => strip(prev))
+    setChapters(prev => prev.map(c => ({ ...c, text: strip(c.text) })))
+  }
+
+  function deleteChapter(idx) {
+    const newChapters = chapters.filter((_, i) => i !== idx)
+    setChapters(newChapters)
+    setEditedText(newChapters.map(c => c.text).join('\n\n'))
+  }
+
+  async function proceedToScan() {
+    const inSync = chaptersInSync(editedText, chapters)
+    // If user manually edited the textarea, send as a single chapter
+    const chapsToSend = inSync && chapters.length > 0
+      ? chapters
+      : [{ title: 'Full Text', text: editedText }]
+    const usePerChapter = inSync && perChapter && fileType === 'epub'
+
+    try {
+      const res = await fetch(`${API}/scan/${jobId}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ chapters: chapsToSend, per_chapter: usePerChapter }),
+      })
+      if (!res.ok) {
+        const data = await res.json()
+        throw new Error(data.detail ?? 'Failed to start scan')
+      }
+      setJobStatus('scanning')
+      setProgress(0)
+      startPolling(jobId)
+    } catch (e) {
+      setError(e.message)
+    }
+  }
+
+  async function proceedToConvert() {
+    const inSync = chaptersInSync(editedText, chapters)
+    const chapsToSend = inSync && chapters.length > 0
+      ? chapters
+      : [{ title: 'Full Text', text: editedText }]
+    const usePerChapter = inSync && perChapter && fileType === 'epub'
+
+    try {
+      const res = await fetch(`${API}/convert/${jobId}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ chapters: chapsToSend, per_chapter: usePerChapter }),
+      })
+      if (!res.ok) {
+        const data = await res.json()
+        throw new Error(data.detail ?? 'Failed to start conversion')
+      }
+      setJobStatus('converting')
+      setProgress(0)
+      startPolling(jobId)
+    } catch (e) {
+      setError(e.message)
+    }
+  }
+
+  // ── Phonetics review actions ──────────────────────────────────────────────
 
   function updatePhonetic(idx, value) {
     setWords(prev => prev.map((w, i) => i === idx ? { ...w, phonetic: value } : w))
@@ -165,15 +284,24 @@ export default function App() {
     setError(null)
     setVoice('af_heart')
     setEngine('kokoro')
+    setChapters([])
+    setEditedText('')
+    setFileType('txt')
+    setPerChapter(true)
     setWords([])
     setPlayingWord(null)
+    setOutputType('mp3')
   }
 
-  const busy = ['uploading', 'queued', 'scanning', 'parsing', 'converting'].includes(jobStatus)
+  const busy = ['uploading', 'queued', 'parsing', 'scanning', 'converting'].includes(jobStatus)
+
+  const cardMaxWidth = jobStatus === 'awaiting_review' ? 720
+    : jobStatus === 'text_preview' ? 960
+    : 480
 
   return (
     <div style={s.page}>
-      <div style={{ ...s.card, maxWidth: jobStatus === 'awaiting_review' ? 720 : 480 }}>
+      <div style={{ ...s.card, maxWidth: cardMaxWidth }}>
         <h1 style={s.title}>Ebook → Audiobook</h1>
         <p style={s.sub}>Upload an EPUB or TXT and get an MP3 — powered by Kokoro or Orpheus TTS</p>
 
@@ -256,14 +384,9 @@ export default function App() {
                     </label>
                   ))}
                 </div>
-                <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
-                  <button style={s.btn} onClick={() => handleUpload(true)}>
-                    Scan for Names →
-                  </button>
-                  <button style={{ ...s.btn, ...s.btnGray }} onClick={() => handleUpload(false)}>
-                    Quick Convert (MP3)
-                  </button>
-                </div>
+                <button style={s.btn} onClick={handleUpload}>
+                  Upload & Parse →
+                </button>
               </>
             )}
           </>
@@ -276,6 +399,27 @@ export default function App() {
             <div style={s.bar}><div style={{ ...s.fill, width: `${progress}%` }} /></div>
             <p style={s.pct}>{progress}%</p>
           </div>
+        )}
+
+        {/* ── Text preview & edit ── */}
+        {jobStatus === 'text_preview' && (
+          <TextPreviewPanel
+            chapters={chapters}
+            editedText={editedText}
+            fileType={fileType}
+            perChapter={perChapter}
+            voice={voice}
+            engine={engine}
+            onChaptersChange={setChapters}
+            onTextChange={setEditedText}
+            onPerChapterChange={setPerChapter}
+            onDeleteChapter={deleteChapter}
+            onStripUnusual={applyStripUnusual}
+            onStripQuotes={applyStripQuotes}
+            onScan={proceedToScan}
+            onConvert={proceedToConvert}
+            apiBase={API}
+          />
         )}
 
         {/* ── Phonetics review ── */}
@@ -295,7 +439,9 @@ export default function App() {
         {jobStatus === 'done' && (
           <div>
             <p style={s.success}>Your audiobook is ready!</p>
-            <button style={s.btn} onClick={handleDownload}>Download MP3</button>
+            <button style={s.btn} onClick={handleDownload}>
+              {outputType === 'zip' ? 'Download Chapters (ZIP)' : 'Download MP3'}
+            </button>
             <button style={{ ...s.btn, ...s.btnGray }} onClick={reset}>Convert another</button>
           </div>
         )}
@@ -307,6 +453,168 @@ export default function App() {
             <button style={{ ...s.btn, ...s.btnGray }} onClick={reset}>Try again</button>
           </div>
         )}
+      </div>
+    </div>
+  )
+}
+
+// ── Text Preview Panel ────────────────────────────────────────────────────────
+
+function TextPreviewPanel({
+  chapters, editedText, fileType, perChapter, voice, engine,
+  onChaptersChange, onTextChange, onPerChapterChange,
+  onDeleteChapter, onStripUnusual, onStripQuotes,
+  onScan, onConvert, apiBase,
+}) {
+  const [sampleLoading, setSampleLoading] = useState(false)
+  const [sampleAudioUrl, setSampleAudioUrl] = useState(null)
+  const sampleAudioRef = useRef(null)
+
+  const inSync = editedText === chapters.map(c => c.text).join('\n\n')
+  const isEpub = fileType === 'epub'
+  const canUsePerChapter = inSync && isEpub && chapters.length > 1
+
+  const totalChars = editedText.length
+  const totalWords = editedText.split(/\s+/).filter(Boolean).length
+
+  async function generateSample() {
+    if (sampleLoading) return
+    setSampleLoading(true)
+    try {
+      const sampleText = editedText.slice(0, 4000)
+      const res = await fetch(`${apiBase}/sample`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: sampleText, voice, engine }),
+      })
+      if (!res.ok) throw new Error('Sample generation failed')
+      const blob = await res.blob()
+      const url = URL.createObjectURL(blob)
+      if (sampleAudioRef.current) {
+        sampleAudioRef.current.pause()
+        URL.revokeObjectURL(sampleAudioRef.current.src)
+      }
+      const audio = new Audio(url)
+      sampleAudioRef.current = audio
+      setSampleAudioUrl(url)
+      audio.play()
+    } catch (e) {
+      console.error(e)
+    } finally {
+      setSampleLoading(false)
+    }
+  }
+
+  // Clean up audio on unmount
+  useEffect(() => {
+    return () => {
+      if (sampleAudioRef.current) {
+        sampleAudioRef.current.pause()
+      }
+    }
+  }, [])
+
+  return (
+    <div style={{ textAlign: 'left' }}>
+      <p style={s.statusTxt}>
+        Review the parsed text before converting.{' '}
+        <span style={{ color: '#64748b', fontWeight: 400 }}>
+          {totalWords.toLocaleString()} words · {totalChars.toLocaleString()} chars
+          {isEpub && ` · ${chapters.length} chapter${chapters.length !== 1 ? 's' : ''}`}
+        </span>
+      </p>
+
+      {/* ── Strip controls ── */}
+      <div style={s.stripRow}>
+        <span style={{ fontSize: 13, color: '#475569', fontWeight: 500 }}>Clean up:</span>
+        <button style={s.stripBtn} onClick={onStripUnusual} title="Remove all non-ASCII characters (accents, special symbols, etc.)">
+          Strip unusual Unicode
+        </button>
+        <button style={s.stripBtn} onClick={onStripQuotes} title="Remove all quotation mark characters">
+          Strip all quotes
+        </button>
+      </div>
+
+      {/* ── Main layout: chapters sidebar + text editor ── */}
+      <div style={{ display: 'flex', gap: 16, marginTop: 12, alignItems: 'flex-start' }}>
+
+        {/* Chapter list (EPUB only) */}
+        {isEpub && chapters.length > 0 && (
+          <div style={s.chapterList}>
+            <div style={s.chapterListHeader}>Chapters</div>
+            {chapters.map((ch, i) => (
+              <div key={i} style={s.chapterItem}>
+                <div style={s.chapterItemTitle} title={ch.title}>{ch.title || `Chapter ${i + 1}`}</div>
+                <div style={s.chapterItemMeta}>{ch.text.split(/\s+/).filter(Boolean).length.toLocaleString()} w</div>
+                <button
+                  style={s.chapterDeleteBtn}
+                  title="Remove this chapter from the output"
+                  onClick={() => onDeleteChapter(i)}
+                >✕</button>
+              </div>
+            ))}
+            {!inSync && (
+              <p style={{ fontSize: 11, color: '#94a3b8', padding: '6px 8px', margin: 0 }}>
+                Chapter list out of sync with manual edits
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* Text editor */}
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <textarea
+            style={s.textArea}
+            value={editedText}
+            onChange={e => onTextChange(e.target.value)}
+            spellCheck={false}
+          />
+        </div>
+      </div>
+
+      {/* ── Per-chapter toggle (EPUB only) ── */}
+      {isEpub && (
+        <div style={{ marginTop: 10, display: 'flex', alignItems: 'center', gap: 8 }}>
+          <label style={{ fontSize: 13, color: canUsePerChapter ? '#334155' : '#94a3b8', cursor: canUsePerChapter ? 'pointer' : 'default', display: 'flex', alignItems: 'center', gap: 6 }}>
+            <input
+              type="checkbox"
+              checked={perChapter && canUsePerChapter}
+              disabled={!canUsePerChapter}
+              onChange={e => onPerChapterChange(e.target.checked)}
+            />
+            Output one MP3 per chapter (download as ZIP)
+          </label>
+          {!canUsePerChapter && inSync && chapters.length <= 1 && (
+            <span style={{ fontSize: 12, color: '#94a3b8' }}>— requires multiple chapters</span>
+          )}
+          {!inSync && (
+            <span style={{ fontSize: 12, color: '#94a3b8' }}>— unavailable after manual text edits</span>
+          )}
+        </div>
+      )}
+
+      {/* ── Sample generation ── */}
+      <div style={{ marginTop: 14, display: 'flex', alignItems: 'center', gap: 10 }}>
+        <button
+          style={{ ...s.btn, ...s.btnGray, margin: 0, fontSize: 13, padding: '9px 18px' }}
+          onClick={generateSample}
+          disabled={sampleLoading || !editedText.trim()}
+        >
+          {sampleLoading ? 'Generating sample…' : '▶ Generate sample (~first 5 pages)'}
+        </button>
+        {sampleAudioUrl && !sampleLoading && (
+          <audio controls src={sampleAudioUrl} style={{ height: 32, flex: 1 }} />
+        )}
+      </div>
+
+      {/* ── Action buttons ── */}
+      <div style={{ marginTop: 20, display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
+        <button style={s.btn} onClick={onScan}>
+          Scan for names →
+        </button>
+        <button style={{ ...s.btn, ...s.btnGray }} onClick={onConvert}>
+          Convert directly
+        </button>
       </div>
     </div>
   )
@@ -405,8 +713,8 @@ function ReviewPanel({ words, playingWord, onUpdatePhonetic, onRemoveWord, onPla
 
 const s = {
   page: {
-    minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center',
-    background: '#f8fafc', fontFamily: 'system-ui, sans-serif', padding: 16,
+    minHeight: '100vh', display: 'flex', alignItems: 'flex-start', justifyContent: 'center',
+    background: '#f8fafc', fontFamily: 'system-ui, sans-serif', padding: 16, paddingTop: 40,
   },
   card: {
     background: '#fff', borderRadius: 16, padding: '48px 40px',
@@ -441,7 +749,45 @@ const s = {
   voiceLabel:  { fontWeight: 600, fontSize: 14, color: '#334155' },
   voiceOption: { fontSize: 14, color: '#475569', cursor: 'pointer' },
 
-  // Table
+  // Text preview
+  stripRow: { display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap', marginBottom: 4 },
+  stripBtn: {
+    padding: '5px 12px', background: '#f1f5f9', border: '1px solid #e2e8f0',
+    borderRadius: 6, fontSize: 12, color: '#475569', cursor: 'pointer', fontWeight: 500,
+  },
+  textArea: {
+    width: '100%', height: 420, padding: '12px 14px',
+    border: '1px solid #e2e8f0', borderRadius: 8,
+    fontSize: 13, fontFamily: 'monospace', lineHeight: 1.6,
+    resize: 'vertical', boxSizing: 'border-box', outline: 'none',
+    color: '#1e293b', background: '#fafafa',
+  },
+  chapterList: {
+    width: 200, flexShrink: 0,
+    border: '1px solid #e2e8f0', borderRadius: 8, overflow: 'hidden',
+    maxHeight: 420, overflowY: 'auto',
+  },
+  chapterListHeader: {
+    padding: '8px 10px', background: '#f8fafc',
+    borderBottom: '1px solid #e2e8f0', fontWeight: 600,
+    fontSize: 12, color: '#475569', textTransform: 'uppercase', letterSpacing: '0.05em',
+  },
+  chapterItem: {
+    display: 'flex', alignItems: 'center', gap: 4,
+    padding: '6px 8px', borderBottom: '1px solid #f1f5f9',
+    fontSize: 12,
+  },
+  chapterItemTitle: {
+    flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+    color: '#334155',
+  },
+  chapterItemMeta: { color: '#94a3b8', flexShrink: 0 },
+  chapterDeleteBtn: {
+    background: 'none', border: 'none', cursor: 'pointer',
+    color: '#dc2626', padding: '0 2px', fontSize: 11, flexShrink: 0,
+  },
+
+  // Table (phonetics review)
   table:  { border: '1px solid #e2e8f0', borderRadius: 10, overflow: 'hidden', marginTop: 8 },
   row:    { display: 'grid', gridTemplateColumns: '180px 48px 1fr 110px', alignItems: 'center', padding: '8px 12px', borderBottom: '1px solid #f1f5f9' },
   header: { background: '#f8fafc', fontWeight: 600, fontSize: 13, color: '#475569' },
