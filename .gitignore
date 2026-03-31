@@ -8,3 +8,4 @@
 /.vs
 /backend/phonetics
 /node_modules
+/backend/.claude
