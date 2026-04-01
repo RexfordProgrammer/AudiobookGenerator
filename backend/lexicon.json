@@ -9,7 +9,8 @@
     "_global": "ayeyes"
   },
   "AUFs": {
-    "_global": "A-U-F s"
+    "_global": "A-U-F s",
+    "am_echo": "A-U-F s"
   },
   "Aaaaahhhh": {
     "_global": "[Aaaaahhhh](/\u0251\u0251\u0251\u0251\u0251/)"
@@ -45,7 +46,7 @@
     "_global": "Acolyte"
   },
   "Acquisitions": {
-    "am_echo": "[Acquisitions](/\u02cc\u00e6kw\u026a\u02c8z\u026a\u0283\u0259nz/)"
+    "am_echo": "Acquisitions"
   },
   "Adams": {
     "_global": "[Adams](/\u02c8\u00e6d\u0259mz/)"
@@ -54,10 +55,12 @@
     "_global": "[Adams](/\u02c8\u00e6d\u0259mz/)"
   },
   "Adoracion": {
-    "_global": "[Adoracion](/\u0251d\u0254\u02d0\u0279\u0259\u02c8sjo\u028an/)"
+    "_global": "[Adoracion](/\u0251d\u0254\u02d0\u0279\u0259\u02c8sjo\u028an/)",
+    "am_echo": "[Adoracion](/\u0251d\u0254\u02d0\u0279\u0259\u02c8sjo\u028an/)"
   },
   "Adoracion's": {
-    "_global": "adorahseeon"
+    "_global": "adorahseeon",
+    "am_echo": "adorahseeon"
   },
   "Adoracion\u2019s": {
     "_global": "adorahseeons"
@@ -69,19 +72,22 @@
     "_global": "Advanced"
   },
   "Africa": {
-    "_global": "Africa"
+    "_global": "Africa",
+    "am_echo": "Africa"
   },
   "African": {
-    "_global": "[African](/\u02c8\u00e6fr\u026ak\u0259n/)"
+    "_global": "[African](/\u02c8\u00e6fr\u026ak\u0259n/)",
+    "am_echo": "African"
   },
   "African-American": {
     "_global": "africanamerican"
   },
   "Afro": {
-    "am_echo": "[Afro](/\u02c8\u00e6f\u0279o\u028a/)"
+    "am_echo": "Afro"
   },
   "Afro-Caribbean": {
-    "_global": "afrokaribeean"
+    "_global": "afrokaribeean",
+    "am_echo": "afrokaribeean"
   },
   "Aga": {
     "am_echo": "[Aga](/\u02c8\u0251\u0261\u0251/)"
@@ -93,7 +99,8 @@
     "_global": "[Agency](/\u02c8e\u026ad\u0292\u0259nsi/)"
   },
   "Agendas": {
-    "_global": "agendas"
+    "_global": "agendas",
+    "am_echo": "agendas"
   },
   "Agent": {
     "_global": "[Agent](/e\u026ad\u0292\u0259nt/)"
@@ -147,7 +154,8 @@
     "_global": "All"
   },
   "Alley": {
-    "_global": "alley"
+    "_global": "alley",
+    "am_echo": "alley"
   },
   "Aloud": {
     "_global": "Aloud"
@@ -165,7 +173,8 @@
     "am_echo": "[Alphas'payment](/\u02c8\u00e6lf\u0259z \u02c8pe\u026am\u0259nt/)"
   },
   "Alri": {
-    "_global": "[Alri](/\u02c8\u0251l\u0279a\u026a/)"
+    "_global": "[Alri](/\u02c8\u0251l\u0279a\u026a/)",
+    "am_echo": "Alri"
   },
   "Alright": {
     "_global": "alright"
@@ -177,10 +186,15 @@
     "_global": "altoh"
   },
   "Amanglic": {
-    "_global": "ahmangglik"
+    "_global": "ahmangglik",
+    "am_echo": "ahmangglik"
   },
   "Ameli": {
-    "_global": "ahmeleee"
+    "_global": "ahmeleee",
+    "am_echo": "ahmeleee"
+  },
+  "Ameli's": {
+    "am_echo": "ahmeleee"
   },
   "Amelia": {
     "_global": "[Amelia](/\u0259\u02c8mi\u026ali\u0259/)",
@@ -211,7 +225,8 @@
     "am_echo": "[Anamull](/\u00e6n\u0259m\u028cl/)"
   },
   "Anarchist": {
-    "_global": "Anarchist"
+    "_global": "Anarchist",
+    "am_echo": "Anarchist"
   },
   "Ancestors": {
     "_global": "Ancestors"
@@ -226,7 +241,8 @@
     "_global": "andreesons"
   },
   "Andric": {
-    "_global": "andrik"
+    "_global": "andrik",
+    "am_echo": "andrik"
   },
   "Angel": {
     "_global": "Angel"
@@ -242,19 +258,23 @@
     "_global": "[Angelou](/\u02c8\u00e6nd\u0292\u0259lo\u028a/)"
   },
   "Angels": {
-    "_global": "[Angels](/e\u026and\u0292\u0259lz/)"
+    "_global": "[Angels](/e\u026and\u0292\u0259lz/)",
+    "am_echo": "Angels"
   },
   "Anger": {
     "_global": "Anger"
   },
   "Angier": {
-    "_global": "anjeer"
+    "_global": "anjeer",
+    "am_echo": "anjeer"
   },
   "Angin": {
-    "_global": "[angin](/\u0251\u02d0n\u0261\u026an/)"
+    "_global": "[angin](/\u0251\u02d0n\u0261\u026an/)",
+    "am_echo": "[angin](/\u0251\u02d0n\u0261\u026an/)"
   },
   "Angkor": {
-    "_global": "[Angkor](/\u00e6\u014bk\u0254\u0279/)"
+    "_global": "[Angkor](/\u00e6\u014bk\u0254\u0279/)",
+    "am_echo": "[Angkor](/\u00e6\u014bk\u0254\u0279/)"
   },
   "Annoyed": {
     "_global": "Annoyed"
@@ -290,10 +310,12 @@
     "_global": "Argentina"
   },
   "Aribowo": {
-    "_global": "ahreebowoh"
+    "_global": "ahreebowoh",
+    "am_echo": "ahreebowoh"
   },
   "Aribowo's": {
-    "_global": "ahreebohwohz"
+    "_global": "ahreebohwohz",
+    "am_echo": "ahreebohwohz"
   },
   "Aribowo\u2019s": {
     "_global": "ahreebowwohs"
@@ -308,7 +330,8 @@
     "_global": "Armoury"
   },
   "Armstrong": {
-    "_global": "Armstrong"
+    "_global": "Armstrong",
+    "am_echo": "Armstrong"
   },
   "Art": {
     "_global": "Art"
@@ -317,7 +340,8 @@
     "_global": "[Artificial](/\u02cc\u0251\u0279t\u0259\u02c8f\u026a\u0283\u0259l/)"
   },
   "Artola": {
-    "_global": "artohlah"
+    "_global": "artohlah",
+    "am_echo": "artohlah"
   },
   "Asian": {
     "_global": "ayzhun"
@@ -335,7 +359,8 @@
     "_global": "Assess"
   },
   "Associates": {
-    "_global": "Associates"
+    "_global": "Associates",
+    "am_echo": "Associates"
   },
   "Athens": {
     "_global": "athenz"
@@ -362,7 +387,8 @@
     "_global": "Austin"
   },
   "Authority": {
-    "_global": "Authority"
+    "_global": "Authority",
+    "am_echo": "Authority"
   },
   "Autumn": {
     "_global": "Autumn"
@@ -441,7 +467,8 @@
     "_global": "bandaid"
   },
   "Banharn": {
-    "_global": "banharn"
+    "_global": "banharn",
+    "am_echo": "banharn"
   },
   "Banks": {
     "_global": "Banks"
@@ -450,7 +477,7 @@
     "_global": "barsuhloana"
   },
   "Barcoding": {
-    "am_echo": "[Barcoding](/\u02c8b\u0251\u0279\u02ccko\u028ad\u026a\u014b/)"
+    "am_echo": "Barcoding"
   },
   "Barkat": {
     "_global": "[Barkat](/b\u0251\u0279k\u0251t/)"
@@ -471,7 +498,8 @@
     "_global": "[Behold](/b\u026aho\u028ald/)"
   },
   "Beijing": {
-    "_global": "bejing"
+    "_global": "bejing",
+    "am_echo": "bejing"
   },
   "Bell": {
     "_global": "[Bell](/b\u025bl/)"
@@ -547,13 +575,14 @@
     "am_echo": "[Billyville](/\u02c8b\u026ali\u02ccv\u026al/)"
   },
   "Biofeed": {
-    "am_echo": "[Biofeed](/\u02c8ba\u026ao\u028a\u02ccfi\u026ad/)"
+    "am_echo": "Biofeed"
   },
   "Biology": {
     "_global": "Biology"
   },
   "Biosystems": {
-    "_global": "biosystems"
+    "_global": "biosystems",
+    "am_echo": "biosystems"
   },
   "Biotech": {
     "_global": "Biotech"
@@ -562,7 +591,8 @@
     "_global": "Birth"
   },
   "Bissou": {
-    "_global": "[Bissou](/b\u026a\u02c8suu/)"
+    "_global": "[Bissou](/b\u026a\u02c8suu/)",
+    "am_echo": "[Bissou](/b\u026asuu/)"
   },
   "Blah": {
     "_global": "[Blah](/bl\u0251/)"
@@ -599,7 +629,8 @@
     "_global": "Bobby"
   },
   "Bogdanovich": {
-    "_global": "[Bogdanovich](/b\u0251\u0261d\u0251n\u0259v\u026at\u0283/)"
+    "_global": "[Bogdanovich](/b\u0251\u0261d\u0251n\u0259v\u026at\u0283/)",
+    "am_echo": "[Bogdanovich](/b\u0251\u0261d\u0251n\u0259v\u026at\u0283/)"
   },
   "Bonilivak": {
     "_global": "[Bonilivak](/bo\u028an\u026al\u026av\u00e6k/)"
@@ -617,7 +648,8 @@
     "_global": "Boomerang"
   },
   "Bootkinaree": {
-    "_global": "[Bootkinaree](/bu\u02d0tk\u026an\u0259\u0279i/)"
+    "_global": "[Bootkinaree](/bu\u02d0tk\u026an\u0259\u0279i/)",
+    "am_echo": "[Bootkinaree](/bu\u02d0tk\u026an\u0259\u0279i/)"
   },
   "Borlaug": {
     "am_echo": "[Borlaug](/\u02c8b\u0254rl\u0251\u0261/)"
@@ -635,7 +667,8 @@
     "_global": "Boston"
   },
   "Boulevard": {
-    "_global": "[Boulevard](/b\u028al\u0259v\u0251\u0279d/)"
+    "_global": "[Boulevard](/b\u028al\u0259v\u0251\u0279d/)",
+    "am_echo": "Boulevard"
   },
   "Bouncing": {
     "_global": "Bouncing"
@@ -654,16 +687,19 @@
     "am_echo": "Bozo"
   },
   "Bradbury": {
-    "_global": "[Bradbury](/b\u0279\u00e6db\u025b\u0279i/)"
+    "_global": "[Bradbury](/b\u0279\u00e6db\u025b\u0279i/)",
+    "am_echo": "Bradbury"
   },
   "Bradwell": {
-    "_global": "bradwell"
+    "_global": "bradwell",
+    "am_echo": "bradwell"
   },
   "Brankovitch": {
-    "_global": "bran ko vitch"
+    "_global": "bran ko vitch",
+    "am_echo": "bran ko vitch"
   },
   "Bravo": {
-    "am_echo": "[Bravo](/\u02c8b\u0279\u0251vo\u028a/)"
+    "am_echo": "Bravo"
   },
   "Bricks": {
     "_global": "[Bricks](/br\u026aks/)"
@@ -690,10 +726,12 @@
     "_global": "Broadway"
   },
   "Broken": {
-    "_global": "[Broken](/b\u0279o\u028ak\u0259n/)"
+    "_global": "[Broken](/b\u0279o\u028ak\u0259n/)",
+    "am_echo": "Broken"
   },
   "Brotherhood": {
-    "_global": "brotherhood"
+    "_global": "brotherhood",
+    "am_echo": "brotherhood"
   },
   "Brown": {
     "am_echo": "Brown"
@@ -717,7 +755,8 @@
     "_global": "Buff"
   },
   "Bugs": {
-    "_global": "Bugs"
+    "_global": "Bugs",
+    "am_echo": "Bugs"
   },
   "Bulgari": {
     "_global": "boolgari"
@@ -745,7 +784,8 @@
     "_global": "Cabinet"
   },
   "Caidos": {
-    "_global": "kyedohs"
+    "_global": "kyedohs",
+    "am_echo": "kyedohs"
   },
   "Cairo": {
     "_global": "keyeroh"
@@ -760,13 +800,14 @@
     "_global": "Cambodia"
   },
   "Campaign": {
-    "_global": "Campaign"
+    "_global": "Campaign",
+    "am_echo": "Campaign"
   },
   "Can": {
     "_global": "Can"
   },
   "Can't": {
-    "am_echo": "[Can't](/k\u00e6nt/)"
+    "am_echo": "Can't"
   },
   "Canae": {
     "_global": "kaynay"
@@ -778,7 +819,7 @@
     "_global": "Candle"
   },
   "Cannibalises": {
-    "am_echo": "[Cannibalises](/\u02c8k\u00e6n\u0259b\u0259la\u026az\u026az/)"
+    "am_echo": "Cannibalises"
   },
   "Cannonballs": {
     "_global": "Cannonballs"
@@ -820,16 +861,20 @@
     "_global": "Carolina"
   },
   "Carolyn": {
-    "_global": "[Carolyn](/k\u00e6\u0279\u0259l\u026an/)"
+    "_global": "[Carolyn](/k\u00e6\u0279\u0259l\u026an/)",
+    "am_echo": "Carolyn"
   },
   "Carrefour": {
-    "_global": "[Carrefour](/\u02c8k\u00e6\u0279\u0259\u02ccf\u028a\u0279/)"
+    "_global": "[Carrefour](/\u02c8k\u00e6\u0279\u0259\u02ccf\u028a\u0279/)",
+    "am_echo": "Carrefour"
   },
   "Carrera": {
-    "_global": "[Carrera](/k\u02c8\u0279\u025b\u0279\u0259/)"
+    "_global": "[Carrera](/k\u02c8\u0279\u025b\u0279\u0259/)",
+    "am_echo": "[Carrera](/k\u02c8\u0279\u025b\u0279\u0259/)"
   },
   "Carrera's": {
-    "_global": "[Carrera](/k\u02c8\u0279\u025b\u0279\u0259/)'s"
+    "_global": "[Carrera](/k\u02c8\u0279\u025b\u0279\u0259/)'s",
+    "am_echo": "[Carrera](/k\u02c8\u0279\u025b\u0279\u0259/)'s"
   },
   "Carrera\u2019s": {
     "_global": "Cor-rarras"
@@ -838,7 +883,11 @@
     "_global": "[Carrington](/k\u00e6r\u026a\u014bt\u0259n/)"
   },
   "Cartel": {
-    "_global": "cartel"
+    "_global": "cartel",
+    "am_echo": "cartel"
+  },
+  "Cartel's": {
+    "am_echo": "cartel"
   },
   "Cartel-approved": {
     "_global": "car tell ap proovd"
@@ -847,7 +896,8 @@
     "_global": "cartels"
   },
   "Carter": {
-    "_global": "[Carter](/k\u0251\u0279t\u0259\u0279/)"
+    "_global": "[Carter](/k\u0251\u0279t\u0259\u0279/)",
+    "am_echo": "[Carter](/k\u0251\u0279t\u0259\u0279/)"
   },
   "Carthaginian": {
     "_global": "karthuhjinyun"
@@ -859,7 +909,8 @@
     "_global": "Slam"
   },
   "Castle": {
-    "_global": "[Castle](/\u02c8k\u00e6s\u0259l/)"
+    "_global": "[Castle](/\u02c8k\u00e6s\u0259l/)",
+    "am_echo": "Castle"
   },
   "Castleman": {
     "_global": "castleman"
@@ -874,7 +925,8 @@
     "_global": "Catlike"
   },
   "Caucasian": {
-    "_global": "kawkayzhun"
+    "_global": "kawkayzhun",
+    "am_echo": "kawkayzhun"
   },
   "Center": {
     "_global": "Center"
@@ -886,13 +938,15 @@
     "_global": "Chameleon"
   },
   "Chancellors": {
-    "am_echo": "[Chancellors](/\u02c8t\u0283\u00e6ns\u0259l\u0259\u0279z/)"
+    "am_echo": "Chancellors"
   },
   "Chandra": {
-    "_global": "[Chandra](/\u02a7\u028cnd\u0279\u0259/)"
+    "_global": "[Chandra](/\u02a7\u028cnd\u0279\u0259/)",
+    "am_echo": "Chandra"
   },
   "Chandra's": {
-    "_global": "[Chandra's](/t\u0283\u0251nd\u0279\u0259z/)"
+    "_global": "[Chandra's](/t\u0283\u0251nd\u0279\u0259z/)",
+    "am_echo": "[Chandra's](/t\u0283\u0251nd\u0279\u0259z/)"
   },
   "Chandra\u2019s": {
     "_global": "chandrahz"
@@ -900,11 +954,15 @@
   "Chang": {
     "_global": "[Chang](/t\u0283\u00e6\u014b/)"
   },
+  "Chang's": {
+    "am_echo": "Chang"
+  },
   "Chang\u2019s": {
     "_global": "changz"
   },
   "Chariset": {
-    "_global": "char ee set"
+    "_global": "char ee set",
+    "am_echo": "char ee set"
   },
   "Charles": {
     "_global": "Charles"
@@ -920,10 +978,11 @@
     "am_echo": "[Charlie](/\u02c8\u02a7\u0251\u0279li/)"
   },
   "Charter": {
-    "am_echo": "[Charter](/\u02c8\u02a7\u0251\u0279t\u025a/)"
+    "am_echo": "Charter"
   },
   "Chatichai": {
-    "_global": "[Chatichai](/t\u0283\u0251t\u026at\u0283a\u026a/)"
+    "_global": "[Chatichai](/t\u0283\u0251t\u026at\u0283a\u026a/)",
+    "am_echo": "[Chatichai](/t\u0283\u0251t\u026at\u0283a\u026a/)"
   },
   "Chatichai--there": {
     "_global": "chateechai thair"
@@ -971,10 +1030,12 @@
     "_global": "Chill"
   },
   "China": {
-    "_global": "China"
+    "_global": "China",
+    "am_echo": "China"
   },
   "Chinese": {
-    "_global": "Chinese"
+    "_global": "Chinese",
+    "am_echo": "Chinese"
   },
   "Chirismontak": {
     "_global": "[Chirismontak](/kr\u026asm\u0252nt\u00e6k/)"
@@ -989,10 +1050,15 @@
     "_global": "Chosen"
   },
   "Christ": {
-    "_global": "[Christ](/k\u0279a\u026ast/)"
+    "_global": "[Christ](/k\u0279a\u026ast/)",
+    "am_echo": "Christ"
+  },
+  "Christ's": {
+    "am_echo": "Christ's"
   },
   "Christian": {
-    "_global": "[Christian](/k\u0279\u026ast\u0283\u0259n/)"
+    "_global": "[Christian](/k\u0279\u026ast\u0283\u0259n/)",
+    "am_echo": "Christian"
   },
   "Christopher": {
     "am_echo": "Christopher"
@@ -1004,7 +1070,8 @@
     "_global": "siskoh"
   },
   "City": {
-    "_global": "city"
+    "_global": "city",
+    "am_echo": "city"
   },
   "Civil": {
     "_global": "Civil",
@@ -1023,7 +1090,7 @@
     "_global": "Clansmen"
   },
   "Clearing": {
-    "am_echo": "[Clearing](/\u02c8kl\u026a\u0259\u0279\u026a\u014b/)"
+    "am_echo": "Clearing"
   },
   "Cleveland": {
     "_global": "Cleveland"
@@ -1051,7 +1118,8 @@
     "_global": "Coke"
   },
   "Collide": {
-    "_global": "Collide"
+    "_global": "Collide",
+    "am_echo": "Collide"
   },
   "Colonel": {
     "_global": "kernul"
@@ -1060,25 +1128,29 @@
     "_global": "kolorado"
   },
   "Colourful": {
-    "am_echo": "[Colourful](/\u02c8k\u028cl\u0259rfl\u0329/)"
+    "am_echo": "Colourful"
   },
   "Columbus": {
     "am_echo": "Columbus"
   },
   "Command": {
-    "_global": "command"
+    "_global": "command",
+    "am_echo": "command"
   },
   "Commander": {
-    "am_echo": "[Commander](/k\u0259\u02c8m\u00e6nd\u0259\u0279/)"
+    "am_echo": "Commander"
   },
   "Commercial": {
-    "_global": "Commercial"
+    "_global": "Commercial",
+    "am_echo": "Commercial"
   },
   "Commin": {
-    "_global": "comin"
+    "_global": "comin",
+    "am_echo": "comin"
   },
   "Commu": {
-    "_global": "komyoo"
+    "_global": "komyoo",
+    "am_echo": "komyoo"
   },
   "Compromise": {
     "_global": "[Compromise](/\u02c8k\u0251mpr\u0259\u02ccma\u026az/)"
@@ -1090,7 +1162,8 @@
     "_global": "Conflict"
   },
   "Confucius": {
-    "_global": "Confucius"
+    "_global": "Confucius",
+    "am_echo": "Confucius"
   },
   "Congregational": {
     "am_echo": "[Congregational](/\u02cck\u0251\u014b\u0261r\u026a\u02c8\u0261e\u026a\u0283\u0259n\u0259l/)"
@@ -1117,13 +1190,14 @@
     "_global": "[Contents](/\u02c8k\u0251nt\u025bnts/)"
   },
   "Control": {
-    "_global": "Control"
+    "_global": "Control",
+    "am_echo": "Control"
   },
   "Cooder": {
     "am_echo": "[Cooder](/\u02c8ku\u028ad\u0259\u0279/)"
   },
   "Coral": {
-    "am_echo": "[Coral](/\u02c8k\u0254\u0279\u0259l/)"
+    "am_echo": "Coral"
   },
   "Cordelia": {
     "_global": "kordeeleeyaz",
@@ -1136,16 +1210,19 @@
     "_global": "cordees"
   },
   "Corporation": {
-    "_global": "corperation"
+    "_global": "corperation",
+    "am_echo": "corperation"
   },
   "Corporation's": {
-    "_global": "Corporation's"
+    "_global": "Corporation's",
+    "am_echo": "Corporation's"
   },
   "Corporation\u2019s": {
     "_global": "corporayshuns"
   },
   "Corps": {
-    "_global": "core"
+    "_global": "core",
+    "am_echo": "core"
   },
   "Corps-approved": {
     "_global": "core ap proovd"
@@ -1157,16 +1234,19 @@
     "_global": "Corridors"
   },
   "Cottinelli": {
-    "_global": "cot tin el lee"
+    "_global": "cot tin el lee",
+    "am_echo": "cot tin el lee"
   },
   "Council": {
-    "_global": "[Council](/ka\u028ans\u0259l/)"
+    "_global": "[Council](/ka\u028ans\u0259l/)",
+    "am_echo": "Council"
   },
   "Counterlaunch": {
-    "am_echo": "[Counterlaunch](/\u02c8ka\u028ant\u0259r\u02ccl\u0254nt\u0283/)"
+    "am_echo": "Counterlaunch"
   },
   "Court": {
-    "_global": "court"
+    "_global": "court",
+    "am_echo": "court"
   },
   "Cover": {
     "_global": "Cover"
@@ -1178,10 +1258,10 @@
     "_global": "Crankshaft"
   },
   "Crew": {
-    "am_echo": "[Crew](/k\u0279u/)"
+    "am_echo": "Crew"
   },
   "Crick-crickle": {
-    "am_echo": "[Crick-crickle](/\u02c8k\u0279\u026ak\u02cck\u0279\u026ak\u0259l/)"
+    "am_echo": "[Crick-crickle](/k\u0279\u026akk\u0279\u026ak\u0259l/)"
   },
   "Crouching": {
     "_global": "Crouching"
@@ -1193,13 +1273,16 @@
     "_global": "Crudity"
   },
   "Cruicksha": {
-    "_global": "krookshank"
+    "_global": "krookshank",
+    "am_echo": "krookshank"
   },
   "Cruickshank": {
-    "_global": "krookshank"
+    "_global": "krookshank",
+    "am_echo": "krookshank"
   },
   "Cruickshank's": {
-    "_global": "krookshanks"
+    "_global": "krookshanks",
+    "am_echo": "krookshanks"
   },
   "Cruickshank\u2019s": {
     "_global": "krookshanks"
@@ -1217,7 +1300,8 @@
     "_global": "Curly"
   },
   "CyberSex": {
-    "_global": "sighbersex"
+    "_global": "sighbersex",
+    "am_echo": "sighbersex"
   },
   "Cyrillic": {
     "_global": "Cyrillic"
@@ -1259,22 +1343,26 @@
     "_global": "duhmaskus"
   },
   "Damballah": {
-    "_global": "dambaala"
+    "_global": "dambaala",
+    "am_echo": "dambaala"
   },
   "Dan": {
     "_global": "[Dan](/d\u00e6n/)"
   },
   "Danang": {
-    "_global": "[Danang](/d\u0251\u0251n\u00e6\u014b/)"
+    "_global": "[Danang](/d\u0251\u0251n\u00e6\u014b/)",
+    "am_echo": "[Danang](/dang/)"
   },
   "Dance": {
     "_global": "Dance"
   },
   "Dangrek": {
-    "_global": "dangrek"
+    "_global": "dangrek",
+    "am_echo": "dangrek"
   },
   "Dangrek's": {
-    "_global": "dangreks"
+    "_global": "dangreks",
+    "am_echo": "dangreks"
   },
   "Dangrek\u2019s": {
     "_global": "dangreks"
@@ -1307,7 +1395,8 @@
     "_global": "Dawn"
   },
   "Dead": {
-    "_global": "Dead"
+    "_global": "Dead",
+    "am_echo": "Dead"
   },
   "Deaders": {
     "_global": "[Deaders](/\u02c8d\u025bd\u0259\u0279z/)"
@@ -1319,7 +1408,8 @@
     "_global": "Debris"
   },
   "Decatur": {
-    "_global": "Shithead"
+    "_global": "Shithead",
+    "am_echo": "Shithead"
   },
   "Deep": {
     "_global": "[Deep](/\u02c8di\u026ap/)"
@@ -1346,10 +1436,12 @@
     "_global": "Democrats"
   },
   "Demon": {
-    "_global": "[Demon](/di\u02d0m\u0259n/)"
+    "_global": "[Demon](/di\u02d0m\u0259n/)",
+    "am_echo": "[Demon](/di\u02d0m\u0259n/)"
   },
   "Demons": {
-    "_global": "[demons](/di\u02d0m\u0259n/)"
+    "_global": "[demons](/di\u02d0m\u0259n/)",
+    "am_echo": "[demons](/di\u02d0m\u0259n/)s"
   },
   "Demscatilintak": {
     "_global": "[Demscatilintak](/d\u025bmsk\u00e6t\u026al\u026ant\u00e6k/)"
@@ -1358,7 +1450,11 @@
     "_global": "Deneb"
   },
   "Deng": {
-    "_global": "[Deng](/d\u025b\u014b/)"
+    "_global": "[Deng](/d\u025b\u014b/)",
+    "am_echo": "[Deng](/d\u025b\u014b/)"
+  },
+  "Deng's": {
+    "am_echo": "[Deng](/d\u025b\u014b/)'s"
   },
   "Deng\u2019s": {
     "_global": "dengz"
@@ -1376,10 +1472,12 @@
     "_global": "Deployment"
   },
   "Deprez": {
-    "_global": "depray"
+    "_global": "depray",
+    "am_echo": "depray"
   },
   "Deprez's": {
-    "_global": "duprayz"
+    "_global": "duprayz",
+    "am_echo": "duprayz"
   },
   "Deprez\u2019s": {
     "_global": "deprays"
@@ -1394,10 +1492,12 @@
     "_global": "Deviant"
   },
   "Dhasanapongsakul": {
-    "_global": "[Dhasanapongsakul](/d\u0251\u02d0s\u0259n\u0259p\u0252\u014bs\u0259ku\u02d0l/)"
+    "_global": "[Dhasanapongsakul](/d\u0251\u02d0s\u0259n\u0259p\u0252\u014bs\u0259ku\u02d0l/)",
+    "am_echo": "[Dhasanapongsakul](/d\u0251\u02d0s\u0259n\u0259p\u0252\u014bs\u0259ku\u02d0l/)"
   },
   "Dhasanapongsakul's": {
-    "_global": "[Dhasanapongsakul](/d\u0251\u02d0s\u0259n\u0259p\u0252\u014bs\u0259ku\u02d0l/)s"
+    "_global": "[Dhasanapongsakul](/d\u0251\u02d0s\u0259n\u0259p\u0252\u014bs\u0259ku\u02d0l/)s",
+    "am_echo": "[Dhasanapongsakul](/d\u0251\u02d0s\u0259n\u0259p\u0252\u014bs\u0259ku\u02d0l/)s"
   },
   "Dhasanapongsakul\u2019s": {
     "_global": "dahsanapongsakools"
@@ -1409,7 +1509,8 @@
     "_global": "[DiSalvo](/d\u026as\u0251lvo\u028a/)"
   },
   "Diaries": {
-    "_global": "Diaries"
+    "_global": "Diaries",
+    "am_echo": "Diaries"
   },
   "Dickens": {
     "_global": "Dickens"
@@ -1418,16 +1519,18 @@
     "_global": "Didn't"
   },
   "Dig": {
-    "_global": "dig"
+    "_global": "dig",
+    "am_echo": "dig"
   },
   "Dimensionalist": {
-    "_global": "dim men shun a list"
+    "_global": "dim men shun a list",
+    "am_echo": "dim men shun a list"
   },
   "Dining": {
     "_global": "Dining"
   },
   "Dise": {
-    "am_echo": "[Dise](/da\u026as/)"
+    "am_echo": "Dise"
   },
   "Dismal": {
     "_global": "Dismal"
@@ -1436,7 +1539,8 @@
     "_global": "Disney"
   },
   "Distant": {
-    "_global": "distant"
+    "_global": "distant",
+    "am_echo": "distant"
   },
   "Ditto": {
     "_global": "Ditto"
@@ -1448,13 +1552,15 @@
     "_global": "Divine"
   },
   "Division": {
-    "am_echo": "[Division](/d\u026a\u02c8v\u026a\u0292\u0259n/)"
+    "am_echo": "Division"
   },
   "Djoko": {
-    "_global": "johkoh"
+    "_global": "johkoh",
+    "am_echo": "johkoh"
   },
   "Doc": {
-    "_global": "Doc"
+    "_global": "Doc",
+    "am_echo": "Doc"
   },
   "Dodger": {
     "_global": "[Dodger](/d\u0251d\u0292\u025a/)",
@@ -1465,13 +1571,15 @@
     "am_echo": "[Dodger](/d\u0251d\u0292\u025a/)"
   },
   "Doesn't": {
-    "am_echo": "[Doesn't](/\u02c8d\u028cz\u0259nt/)"
+    "am_echo": "Doesn't"
   },
   "Dog": {
-    "_global": "Dog"
+    "_global": "Dog",
+    "am_echo": "Dog"
   },
   "Don't": {
-    "_global": "Don't"
+    "_global": "Don't",
+    "am_echo": "Don't"
   },
   "Dora": {
     "_global": "Dora"
@@ -1515,7 +1623,7 @@
     "_global": "Dutch"
   },
   "Each'fab": {
-    "am_echo": "[Each'fab](/i\u026at\u0283f\u0251b/)"
+    "am_echo": "each fab"
   },
   "Earanium": {
     "_global": "eerayneeum"
@@ -1553,10 +1661,12 @@
     "_global": "eckert"
   },
   "Eddie": {
-    "_global": "[Eddie](/\u02c8\u025bdi/)"
+    "_global": "[Eddie](/\u02c8\u025bdi/)",
+    "am_echo": "[Eddie](/\u02c8\u025bdi/)"
   },
   "Eden": {
-    "_global": "[Eden](/i\u02d0d\u0259n/)"
+    "_global": "[Eden](/i\u02d0d\u0259n/)",
+    "am_echo": "[Eden](/i\u02d0d\u0259n/)"
   },
   "Edward": {
     "_global": "[Edward](/\u025bdw\u0259\u0279d/)",
@@ -1570,10 +1680,12 @@
     "_global": "[Eeyore](/i\u026a\u0254\u0279/)"
   },
   "Eggs": {
-    "_global": "Eggs"
+    "_global": "Eggs",
+    "am_echo": "Eggs"
   },
   "Egypt": {
-    "_global": "Egypt"
+    "_global": "Egypt",
+    "am_echo": "Egypt"
   },
   "Egyptian": {
     "_global": "Egyptian"
@@ -1588,7 +1700,7 @@
     "_global": "Election"
   },
   "Eleven": {
-    "am_echo": "[Eleven](/\u026a\u02c8l\u025bv\u0259n/)"
+    "am_echo": "Eleven"
   },
   "Endorphin": {
     "_global": "endorphin"
@@ -1600,7 +1712,8 @@
     "_global": "[England](/\u02c8\u026a\u014bgl\u0259nd/)"
   },
   "Enquiry": {
-    "_global": "Enquiry"
+    "_global": "Enquiry",
+    "am_echo": "Enquiry"
   },
   "Enquiry--you": {
     "_global": "enkwirey  yoo"
@@ -1615,7 +1728,8 @@
     "_global": "envyronmentahleereaktiv"
   },
   "Envoy": {
-    "_global": "Onvoy"
+    "_global": "Onvoy",
+    "am_echo": "Onvoy"
   },
   "Envoy-intuited": {
     "_global": "onvoy intooited"
@@ -1642,7 +1756,7 @@
     "_global": "Essence"
   },
   "Estate": {
-    "am_echo": "[Estate](/\u026a\u02c8ste\u026at/)"
+    "am_echo": "Estate"
   },
   "Europa": {
     "_global": "yoorohpuh"
@@ -1657,10 +1771,12 @@
     "am_echo": "[Europeans](/\u02ccj\u028a\u0279\u0259\u02c8pi\u026a\u0259nz/)"
   },
   "Eve": {
-    "_global": "Eve"
+    "_global": "Eve",
+    "am_echo": "Eve"
   },
   "Evenfall": {
-    "_global": "evenfall"
+    "_global": "evenfall",
+    "am_echo": "evenfall"
   },
   "Everything's": {
     "_global": "Everythings"
@@ -1695,7 +1811,7 @@
     "_global": "Facelifts"
   },
   "Facts": {
-    "am_echo": "[Facts](/f\u00e6kts/)"
+    "am_echo": "Facts"
   },
   "Faith": {
     "_global": "[Faith](/fe\u026a\u03b8/)"
@@ -1713,13 +1829,16 @@
     "_global": "Felt"
   },
   "Ferrer": {
-    "_global": "[Ferrer](/f\u025b\u02c8\u0279\u025b\u0279/)"
+    "_global": "[Ferrer](/f\u025b\u02c8\u0279\u025b\u0279/)",
+    "am_echo": "Ferrer"
   },
   "Field": {
-    "_global": "[Field](/fi\u026ald/)"
+    "_global": "[Field](/fi\u026ald/)",
+    "am_echo": "Field"
   },
   "Find": {
-    "_global": "find"
+    "_global": "find",
+    "am_echo": "find"
   },
   "Fire": {
     "_global": "Fire"
@@ -1728,7 +1847,8 @@
     "_global": "[First](/\u02c8f\u025c\u0279st/)"
   },
   "Fist": {
-    "_global": "Fist"
+    "_global": "Fist",
+    "am_echo": "Fist"
   },
   "Five": {
     "_global": "Five's"
@@ -1782,7 +1902,8 @@
     "_global": "Four"
   },
   "Fourty": {
-    "_global": "forty"
+    "_global": "forty",
+    "am_echo": "forty"
   },
   "Fourty-One": {
     "_global": "forty one"
@@ -1834,7 +1955,8 @@
     "_global": "[Fuck](/f\u028ck/)"
   },
   "Fucker": {
-    "_global": "Fucker"
+    "_global": "Fucker",
+    "am_echo": "Fucker"
   },
   "Funny": {
     "_global": "Funny"
@@ -1843,7 +1965,8 @@
     "_global": "Fuzzy"
   },
   "Gagarin": {
-    "_global": "Gagarin"
+    "_global": "Gagarin",
+    "am_echo": "Gagarin"
   },
   "Galilei": {
     "am_echo": "[Galilei](/\u0261\u00e6l\u026ale\u026ai/)"
@@ -1855,10 +1978,11 @@
     "_global": "Gallery"
   },
   "Gap": {
-    "_global": "gap"
+    "_global": "gap",
+    "am_echo": "gap"
   },
   "Garishly": {
-    "am_echo": "[Garishly](/\u02c8\u0261\u00e6\u0279\u026a\u0283li/)"
+    "am_echo": "Garishly"
   },
   "Gate": {
     "_global": "Gate"
@@ -1867,22 +1991,26 @@
     "_global": "Gates"
   },
   "Gaunt": {
-    "_global": "gaunt"
+    "_global": "gaunt",
+    "am_echo": "gaunt"
   },
   "Gemini": {
     "_global": "Gemini"
   },
   "General": {
-    "_global": "General"
+    "_global": "General",
+    "am_echo": "General"
   },
   "George": {
     "_global": "George"
   },
   "Geosynch": {
-    "_global": "gee oh sinch"
+    "_global": "gee oh sinch",
+    "am_echo": "gee oh sinch"
   },
   "Ghede": {
-    "_global": "gehdeh"
+    "_global": "gehdeh",
+    "am_echo": "gehdeh"
   },
   "Girl": {
     "_global": "Girl"
@@ -1955,7 +2083,11 @@
     "_global": "Gretel"
   },
   "Gretzky": {
-    "_global": "[Gretzky](/\u0261\u0279\u025btski/)"
+    "_global": "[Gretzky](/\u0261\u0279\u025btski/)",
+    "am_echo": "Gretzky"
+  },
+  "Gretzky's": {
+    "am_echo": "[Gretzky](/\u0261\u0279\u025btski/)"
   },
   "Gretzky\u2019s": {
     "_global": "gretskees"
@@ -1967,22 +2099,26 @@
     "_global": "Grins"
   },
   "Grist": {
-    "am_echo": "[Grist](/g\u0279\u026ast/)"
+    "am_echo": "Grist"
   },
   "Grost": {
     "am_echo": "[Grost](/\u0261ro\u028ast/)"
   },
   "Ground": {
-    "_global": "[Ground](/\u0261\u0279a\u028and/)"
+    "_global": "[Ground](/\u0261\u0279a\u028and/)",
+    "am_echo": "Ground"
   },
   "Guard": {
-    "_global": "Guard"
+    "_global": "Guard",
+    "am_echo": "Guard"
   },
   "Guerlain": {
-    "_global": "gairlan"
+    "_global": "gairlan",
+    "am_echo": "gairlan"
   },
   "Guild": {
-    "_global": "[Guild](/\u0261\u026ald/)"
+    "_global": "[Guild](/\u0261\u026ald/)",
+    "am_echo": "kilometres"
   },
   "Guild-paid": {
     "_global": "guild paid"
@@ -2015,7 +2151,7 @@
     "_global": "[HadadDemscaltilint](/h\u00e6d\u00e6d d\u025bmsk\u00e6lt\u026al\u026ant/)"
   },
   "Hadn't": {
-    "am_echo": "[Hadn't](/\u02c8h\u00e6d\u0259nt/)"
+    "am_echo": "Hadn't"
   },
   "Haiii": {
     "am_echo": "hiii"
@@ -2033,13 +2169,16 @@
     "_global": "[Ham](/h\u00e6m/)"
   },
   "Hammad": {
-    "_global": "hahmad"
+    "_global": "hahmad",
+    "am_echo": "hahmad"
   },
   "Hand": {
-    "_global": "hand"
+    "_global": "hand",
+    "am_echo": "hand"
   },
   "Hand's": {
-    "_global": "[Hand's](/h\u00e6ndz/)"
+    "_global": "[Hand's](/h\u00e6ndz/)",
+    "am_echo": "[Hand's](/h\u00e6ndz/)"
   },
   "Handel's": {
     "am_echo": "[Handel's](/\u02c8h\u00e6nd\u0259lz/)"
@@ -2057,7 +2196,11 @@
     "_global": "Hansel"
   },
   "Hansen": {
-    "_global": "[Hansen](/h\u00e6ns\u0259n/)"
+    "_global": "[Hansen](/h\u00e6ns\u0259n/)",
+    "am_echo": "Hansen"
+  },
+  "Hansen's": {
+    "am_echo": "Hansen"
   },
   "Hansen'vibe-blast": {
     "_global": "han sens vibe blast"
@@ -2069,13 +2212,16 @@
     "_global": "Happy"
   },
   "Harlan": {
-    "_global": "[Harlan](/h\u0251\u0279l\u0259n/)"
+    "_global": "[Harlan](/h\u0251\u0279l\u0259n/)",
+    "am_echo": "[Harlan](/h\u0251\u0279l\u0259n/)"
   },
   "Harlan's": {
-    "_global": "[Harlan's](/h\u0251\u0279l\u0259nz/)"
+    "_global": "[Harlan's](/h\u0251\u0279l\u0259nz/)",
+    "am_echo": "[Harlan's](/h\u0251\u0279l\u0259nz/)"
   },
   "Harlanites": {
-    "_global": "harlanites"
+    "_global": "harlanites",
+    "am_echo": "harlanites"
   },
   "Harlan\u2019s": {
     "_global": "harlanz"
@@ -2087,7 +2233,8 @@
     "am_echo": "Harry"
   },
   "Hat": {
-    "_global": "hat"
+    "_global": "hat",
+    "am_echo": "hat"
   },
   "Having": {
     "_global": "Having"
@@ -2099,10 +2246,12 @@
     "am_echo": "[Hawk's](/h\u0251ks/)"
   },
   "Hayashi": {
-    "_global": "hahyahshee"
+    "_global": "hahyahshee",
+    "am_echo": "hahyahshee"
   },
   "Hayashi's": {
-    "_global": "hahyahshee"
+    "_global": "hahyahshee",
+    "am_echo": "hahyahshee"
   },
   "Hayashi\u2019s": {
     "_global": "hahyahsheez"
@@ -2126,7 +2275,7 @@
     "_global": "[Herb](/h\u025c\u0279b/)"
   },
   "Heroes": {
-    "am_echo": "[Heroes](/\u02c8h\u026a\u0279o\u028az/)"
+    "am_echo": "Heroes"
   },
   "Hey": {
     "_global": "Hey"
@@ -2135,22 +2284,27 @@
     "_global": "heez"
   },
   "Hidden": {
-    "_global": "hidden"
+    "_global": "hidden",
+    "am_echo": "hidden"
   },
   "Hieronymus": {
     "_global": "[Hieronymus](/ha\u026a\u0259\u0279\u0251n\u026am\u0259s/)"
   },
   "High": {
-    "_global": "high"
+    "_global": "high",
+    "am_echo": "high"
   },
   "Highland": {
-    "_global": "Highland"
+    "_global": "Highland",
+    "am_echo": "Highland"
   },
   "Highlander": {
-    "_global": "[Highlander](/ha\u026a\u02ccl\u00e6nd\u0259\u0279/)"
+    "_global": "[Highlander](/ha\u026a\u02ccl\u00e6nd\u0259\u0279/)",
+    "am_echo": "[Highlander](/ha\u026a\u02ccl\u00e6nd\u0259\u0279/)"
   },
   "Highlands": {
-    "_global": "[Highlands](/\u02c8ha\u026al\u0259ndz/)"
+    "_global": "[Highlands](/\u02c8ha\u026al\u0259ndz/)",
+    "am_echo": "Highlands"
   },
   "Highway": {
     "_global": "[Highway](/\u02c8ha\u026awe\u026a/)"
@@ -2159,10 +2313,12 @@
     "_global": "Hill"
   },
   "Hirata": {
-    "_global": "heerahtah"
+    "_global": "heerahtah",
+    "am_echo": "heerahtah"
   },
   "Hirata's": {
-    "_global": "heerahtah"
+    "_global": "heerahtah",
+    "am_echo": "heerahtah"
   },
   "Hirata\u2019s": {
     "_global": "heeratahs"
@@ -2177,7 +2333,8 @@
     "_global": "Holy"
   },
   "Home": {
-    "_global": "[Home](/ho\u028am/)"
+    "_global": "[Home](/ho\u028am/)",
+    "am_echo": "Home"
   },
   "Home's": {
     "_global": "Home's"
@@ -2210,13 +2367,15 @@
     "am_echo": "[Houdini](/hudini/)"
   },
   "House": {
-    "_global": "House"
+    "_global": "House",
+    "am_echo": "House"
   },
   "Houston": {
     "_global": "hyoostun"
   },
   "Hoy": {
-    "_global": "[Hoy](/h\u0254\u026a/)"
+    "_global": "[Hoy](/h\u0254\u026a/)",
+    "am_echo": "Hoy"
   },
   "Hoyle": {
     "_global": "hoil",
@@ -2238,7 +2397,8 @@
     "_global": "Humour"
   },
   "Hun": {
-    "_global": "[Hun](/h\u028cn/)"
+    "_global": "[Hun](/h\u028cn/)",
+    "am_echo": "Hun"
   },
   "Hunk": {
     "_global": "Hunk"
@@ -2253,7 +2413,7 @@
     "_global": "wahng"
   },
   "Hypercasting": {
-    "am_echo": "[Hypercasting](/\u02c8ha\u026ap\u0259r\u02cck\u00e6st\u026a\u014b/)"
+    "am_echo": "Hypercasting"
   },
   "Hyperspace": {
     "_global": "[Hyperspace](/ha\u026ap\u0259rspe\u026as/)"
@@ -2262,20 +2422,22 @@
     "_global": "Hysteria"
   },
   "I'd": {
-    "am_echo": "[I'd](/a\u026ad/)"
+    "am_echo": "I'd"
   },
   "I'll": {
     "_global": "I'll",
     "am_echo": "I'll"
   },
   "I'm": {
-    "_global": "I'm"
+    "_global": "I'm",
+    "am_echo": "I'm"
   },
   "I'm-Not-Wycinski": {
     "am_echo": "[I'm-Not-Wycinski](/a\u026am n\u0251t v\u026a\u02c8s\u026anski/)"
   },
   "I've": {
-    "_global": "ive"
+    "_global": "ive",
+    "am_echo": "ive"
   },
   "I--finally--making": {
     "_global": "i    finally     making"
@@ -2287,16 +2449,18 @@
     "_global": "IFace"
   },
   "IIluminum": {
-    "_global": "[IIluminum](/\u026alum\u026an\u0259m/)"
+    "_global": "[IIluminum](/\u026alum\u026an\u0259m/)",
+    "am_echo": "[IIluminum](/\u026alum\u026an\u0259m/)"
   },
   "IV's": {
-    "am_echo": "[IV's](/a\u026a\u02c8vi\u026az/)"
+    "am_echo": "[IV's](/a\u026avi\u026az/)"
   },
   "IV--and": {
     "_global": "eye vee and"
   },
   "IVs": {
-    "_global": "eyeviez"
+    "_global": "eyeviez",
+    "am_echo": "eyeviez"
   },
   "IV\u2014and": {
     "_global": "eyevee"
@@ -2305,22 +2469,25 @@
     "_global": "eyevees"
   },
   "Ian": {
-    "_global": "Ian"
+    "_global": "Ian",
+    "am_echo": "Ian"
   },
   "Iberian": {
     "_global": "eyebereean"
   },
   "Icarus": {
-    "_global": "icarus"
+    "_global": "icarus",
+    "am_echo": "icarus"
   },
   "Idiot": {
     "_global": "[Idiot](/\u02c8\u026adi\u0259t/)"
   },
   "Iluminum": {
-    "am_echo": "[Iluminum](/\u026a\u02c8lu\u026am\u026an\u0259m/)"
+    "am_echo": "Iluminum"
   },
   "Ilustraciones": {
-    "_global": "iloostraaseeones"
+    "_global": "iloostraaseeones",
+    "am_echo": "iloostraaseeones"
   },
   "Imagine": {
     "_global": "Imagine"
@@ -2344,7 +2511,8 @@
     "_global": "inchon"
   },
   "Incorporation": {
-    "_global": "Incorporation"
+    "_global": "Incorporation",
+    "am_echo": "Incorporation"
   },
   "India": {
     "am_echo": "India"
@@ -2362,10 +2530,12 @@
     "_global": "Indians"
   },
   "Indigo": {
-    "_global": "indigo"
+    "_global": "indigo",
+    "am_echo": "indigo"
   },
   "Innenin": {
-    "_global": "[innenin](/\u026an\u026an\u026an/)"
+    "_global": "[innenin](/\u026an\u026an\u026an/)",
+    "am_echo": "[innenin](/\u026an\u026an\u026an/)"
   },
   "Intellect": {
     "am_echo": "Intellect"
@@ -2386,7 +2556,8 @@
     "_global": "Ironsides"
   },
   "Isaac": {
-    "_global": "[Isaac](/a\u026az\u0259k/)"
+    "_global": "[Isaac](/a\u026az\u0259k/)",
+    "am_echo": "[Isaac](/a\u026az\u0259k/)"
   },
   "Island": {
     "_global": "eyeland"
@@ -2410,7 +2581,8 @@
     "_global": "Ivan"
   },
   "Ivanna": {
-    "_global": "[Ivanna](/\u026av\u0251n\u0259/)"
+    "_global": "[Ivanna](/\u026av\u0251n\u0259/)",
+    "am_echo": "[Ivanna](/\u026av\u0251n\u0259/)"
   },
   "Iwo": {
     "_global": "eewoh"
@@ -2446,7 +2618,8 @@
     "_global": "James"
   },
   "Jan": {
-    "_global": "[Jan](/d\u0292\u00e6n/)"
+    "_global": "[Jan](/d\u0292\u00e6n/)",
+    "am_echo": "Jan"
   },
   "Jane": {
     "_global": "[Jane](/d\u0292e\u026an/)"
@@ -2491,25 +2664,31 @@
     "_global": "[Jessica](/d\u0292\u025bs\u026ak\u0259/)"
   },
   "Jesus": {
-    "_global": "[Jesus](/d\u0292i\u026az\u0259s/)"
+    "_global": "[Jesus](/d\u0292i\u026az\u0259s/)",
+    "am_echo": "[Jesus](/d\u0292iz\u0259s/)"
   },
   "Jiang": {
-    "_global": "jeeang"
+    "_global": "jeeang",
+    "am_echo": "jeeang"
   },
   "Jiang's": {
-    "_global": "jeeang"
+    "_global": "jeeang",
+    "am_echo": "jeeang"
   },
   "Jiang-ping": {
-    "_global": "jeeangping"
+    "_global": "jeeangping",
+    "am_echo": "jeeangping"
   },
   "Jiang\u2019s": {
     "_global": "jeeangz"
   },
   "Jianping": {
-    "_global": "jeeanping"
+    "_global": "jeeanping",
+    "am_echo": "jeeanping"
   },
   "Jianping's": {
-    "_global": "jeeanping"
+    "_global": "jeeanping",
+    "am_echo": "jeeanping"
   },
   "Jianping\u2019s": {
     "_global": "jeeanpingz"
@@ -2518,7 +2697,8 @@
     "_global": "jeema"
   },
   "Jimmy": {
-    "_global": "[Jimmy](/d\u0292\u026ami/)"
+    "_global": "[Jimmy](/d\u0292\u026ami/)",
+    "am_echo": "Jimmy"
   },
   "Joan": {
     "_global": "Joan"
@@ -2538,7 +2718,8 @@
     "_global": "[Joe](/\u02c8d\u0292o\u028a/)"
   },
   "John": {
-    "_global": "john"
+    "_global": "john",
+    "am_echo": "john"
   },
   "John-John": {
     "_global": "jonjon"
@@ -2553,7 +2734,8 @@
     "_global": "hohzey"
   },
   "Joshua": {
-    "_global": "[Joshua](/d\u0292\u0251\u0283u\u0259/)"
+    "_global": "[Joshua](/d\u0292\u0251\u0283u\u0259/)",
+    "am_echo": "[Joshua](/d\u0292\u0251\u0283u\u0259/)"
   },
   "Journal": {
     "_global": "Journal"
@@ -2571,10 +2753,12 @@
     "_global": "Jump"
   },
   "Jun": {
-    "_global": "junz"
+    "_global": "junz",
+    "am_echo": "junz"
   },
   "Jun's": {
-    "_global": "junz"
+    "_global": "junz",
+    "am_echo": "junz"
   },
   "Jun\u2019s": {
     "_global": "joons"
@@ -2587,37 +2771,47 @@
     "_global": "[Jutting](/\u02a4\u028ct\u026a\u014b/)"
   },
   "Kalashnikov": {
-    "_global": "[Kalashnikov](/k\u0259l\u0251\u0283n\u026ak\u0251f/)"
+    "_global": "[Kalashnikov](/k\u0259l\u0251\u0283n\u026ak\u0251f/)",
+    "am_echo": "[Kalashnikov](/k\u0259l\u0251\u0283n\u026ak\u0251f/)"
   },
   "Kalashnikovs": {
-    "_global": "[Kalashnikovs](/k\u0259l\u00e6\u0283n\u026ak\u0252vz/)"
+    "_global": "[Kalashnikovs](/k\u0259l\u00e6\u0283n\u026ak\u0252vz/)",
+    "am_echo": "[Kalashnikovs](/k\u0259l\u00e6\u0283n\u026ak\u0252vz/)"
   },
   "Kansas": {
     "_global": "Kansas"
   },
   "Kas": {
-    "_global": "cass"
+    "_global": "cass",
+    "am_echo": "cass"
   },
   "Katherine": {
     "_global": "katherine"
   },
   "Kemmerich": {
-    "_global": "kemeritch"
+    "_global": "kemeritch",
+    "am_echo": "kemeritch"
   },
   "Kemp": {
-    "_global": "[Kemp](/k\u025bmp/)"
+    "_global": "[Kemp](/k\u025bmp/)",
+    "am_echo": "[Kemp](/k\u025bmp/)"
+  },
+  "Kemp's": {
+    "am_echo": "[Kemp](/k\u025bmp/)"
   },
   "Kempist": {
-    "_global": "kempist"
+    "_global": "kempist",
+    "am_echo": "kempist"
   },
   "Kempist's": {
     "_global": "kempist"
   },
   "Kempists": {
-    "_global": "kempists"
+    "_global": "kempists",
+    "am_echo": "kempists"
   },
   "Kempists'm": {
-    "am_echo": "[Kempists'm](/\u02c8k\u025bmp\u026asts\u0259m/)"
+    "am_echo": "Kempists'm"
   },
   "Kempists'marauder": {
     "_global": "[Kempists'marauder](/\u02c8k\u025bmp\u026asts m\u0259\u02c8\u0279\u0254d\u025a/)"
@@ -2629,7 +2823,8 @@
     "_global": "kempist"
   },
   "Kempopolis": {
-    "_global": "kempopolis"
+    "_global": "kempopolis",
+    "am_echo": "kempopolis"
   },
   "Kemp\u2019s": {
     "_global": "kemps"
@@ -2638,7 +2833,8 @@
     "_global": "kenuhdee"
   },
   "Khumalo": {
-    "_global": "[Khumalo](/kum\u0251\u02d0lo\u028a/)"
+    "_global": "[Khumalo](/kum\u0251\u02d0lo\u028a/)",
+    "am_echo": "[Khumalo](/kum\u0251\u02d0lo\u028a/)"
   },
   "Kick": {
     "_global": "Kick"
@@ -2659,22 +2855,26 @@
     "_global": "knowledge"
   },
   "Ko-ko-ko-ko-kovacs": {
-    "_global": "[Ko-ko-ko-ko-kovacs](/ko\u028a:ko\u028a:ko\u028a:ko\u028a:ko\u028av\u00e6t\u0283/)"
+    "_global": "[Ko-ko-ko-ko-kovacs](/ko\u028a:ko\u028a:ko\u028a:ko\u028a:ko\u028av\u00e6t\u0283/)",
+    "am_echo": "[Ko-ko-ko-ko-kovacs](/ko\u028a:ko\u028a:ko\u028a:ko\u028a:ko\u028av\u00e6t\u0283/)"
   },
   "Kong": {
     "_global": "Kong"
   },
   "Konrad": {
-    "_global": "[Konrad](/k\u0251n\u0279\u00e6d/)"
+    "_global": "[Konrad](/k\u0251n\u0279\u00e6d/)",
+    "am_echo": "Konrad"
   },
   "Kosh": {
     "am_echo": "[Kosh](/k\u0251\u0283/)"
   },
   "Kov": {
-    "_global": "[Kov](/ko\u028av/)"
+    "_global": "[Kov](/ko\u028av/)",
+    "am_echo": "[Kov](/ko\u028av/)"
   },
   "Kovacs": {
-    "_global": "[Kovatch](/ko\u028av\u00e6t\u0283/)"
+    "_global": "[Kovatch](/ko\u028av\u00e6t\u0283/)",
+    "am_echo": "[Kovatch](/ko\u028av\u00e6t\u0283/)"
   },
   "Kreme": {
     "_global": "krem"
@@ -2693,10 +2893,12 @@
     "am_echo": "[Kubrick](/\u02c8kuubr\u026ak/)"
   },
   "Kwok": {
-    "_global": "kwok"
+    "_global": "kwok",
+    "am_echo": "kwok"
   },
   "Kwok's": {
-    "_global": "kwoks"
+    "_global": "kwoks",
+    "am_echo": "kwoks"
   },
   "Kwok\u2019s": {
     "_global": "kwokz"
@@ -2705,13 +2907,18 @@
     "_global": "[Labrador](/\u02c8l\u00e6b\u0279\u0259\u02ccd\u0254\u0279/)"
   },
   "Lai": {
-    "_global": "lie"
+    "_global": "lie",
+    "am_echo": "lie"
   },
   "Lakes": {
     "_global": "Lakes"
   },
   "Lamont": {
-    "_global": "[Lamont](/l\u0259m\u0251nt/)"
+    "_global": "[Lamont](/l\u0259m\u0251nt/)",
+    "am_echo": "[Lamont](/l\u0259m\u0251nt/)"
+  },
+  "Lamont's": {
+    "am_echo": "Lamont"
   },
   "Lamont\u2019s": {
     "_global": "lahmonts"
@@ -2724,7 +2931,8 @@
     "_global": "landtheez"
   },
   "Landfall": {
-    "_global": "landfall"
+    "_global": "landfall",
+    "am_echo": "landfall"
   },
   "Land\u2014these": {
     "_global": "land"
@@ -2737,10 +2945,12 @@
     "am_echo": "Language"
   },
   "Lao": {
-    "_global": "Lao"
+    "_global": "Lao",
+    "am_echo": "Lao"
   },
   "Lapinee": {
-    "_global": "lahpeeneh"
+    "_global": "lahpeeneh",
+    "am_echo": "lahpeeneh"
   },
   "Las": {
     "am_echo": "Las"
@@ -2758,10 +2968,12 @@
     "_global": "Later"
   },
   "Latimer": {
-    "_global": "latimer"
+    "_global": "latimer",
+    "am_echo": "latimer"
   },
   "Latimer's": {
-    "_global": "laytimerz"
+    "_global": "laytimerz",
+    "am_echo": "laytimerz"
   },
   "Latimer-based": {
     "_global": "lat im mer based"
@@ -2812,16 +3024,19 @@
     "_global": "[Lick](/l\u026ak/)"
   },
   "Lieutenant": {
-    "_global": "[Lieutenant](/lut\u025bn\u0259nt/)"
+    "_global": "[Lieutenant](/lut\u025bn\u0259nt/)",
+    "am_echo": "Lieutenant"
   },
   "Lifetime": {
     "_global": "Lifetime"
   },
   "Lights": {
-    "_global": "[Lights](/la\u026ats/)"
+    "_global": "[Lights](/la\u026ats/)",
+    "am_echo": "Lights"
   },
   "Limon": {
-    "_global": "leemon"
+    "_global": "leemon",
+    "am_echo": "leemon"
   },
   "Lincoln": {
     "_global": "linkin"
@@ -2830,37 +3045,45 @@
     "_global": "linkin"
   },
   "Linguapack": {
-    "_global": "[Linguapack](/l\u026a\u014b\u0261w\u0259p\u00e6k/)"
+    "_global": "[Linguapack](/l\u026a\u014b\u0261w\u0259p\u00e6k/)",
+    "am_echo": "Linguapack"
   },
   "Liping": {
-    "_global": "leeping"
+    "_global": "leeping",
+    "am_echo": "leeping"
   },
   "Liping's": {
-    "_global": "leepingz"
+    "_global": "leepingz",
+    "am_echo": "leepingz"
   },
   "Liping\u2019s": {
     "_global": "leepings"
   },
   "Little": {
-    "_global": "Little"
+    "_global": "Little",
+    "am_echo": "Little"
   },
   "Lobster": {
     "am_echo": "Lobster"
   },
   "Lock": {
-    "_global": "lock"
+    "_global": "lock",
+    "am_echo": "lock"
   },
   "Locker": {
     "_global": "Locker"
   },
   "Lockheed": {
-    "_global": "lockheed"
+    "_global": "lockheed",
+    "am_echo": "lockheed"
   },
   "Loemanako": {
-    "_global": "[Loemanako](/l\u0259m\u0251\u02d0n\u0259ko\u028a/)"
+    "_global": "[Loemanako](/l\u0259m\u0251\u02d0n\u0259ko\u028a/)",
+    "am_echo": "[Loemanako](/l\u0259m\u0251\u02d0n\u0259ko\u028a/)"
   },
   "Loemanako's": {
-    "_global": "[Loemanako](/l\u0259m\u0251\u02d0n\u0259ko\u028a/)'s"
+    "_global": "[Loemanako](/l\u0259m\u0251\u02d0n\u0259ko\u028a/)'s",
+    "am_echo": "[Loemanako](/l\u0259m\u0251\u02d0n\u0259ko\u028a/)'s"
   },
   "Loemanako\u2019s": {
     "_global": "loomahnahkohz"
@@ -2884,7 +3107,8 @@
     "_global": "Looney"
   },
   "Lorca": {
-    "_global": "[Lorca](/l\u0254\u0279k\u0259/)"
+    "_global": "[Lorca](/l\u0254\u0279k\u0259/)",
+    "am_echo": "Lorca"
   },
   "Loser": {
     "_global": "Chosen"
@@ -2897,19 +3121,27 @@
     "am_echo": "Louis"
   },
   "Lover": {
-    "_global": "[Lover](/l\u028cv\u0259\u0279/)"
+    "_global": "[Lover](/l\u028cv\u0259\u0279/)",
+    "am_echo": "Lover"
   },
   "Lower": {
-    "_global": "Lower"
+    "_global": "Lower",
+    "am_echo": "Lower"
   },
   "Loyko": {
-    "_global": "loyko"
+    "_global": "loyko",
+    "am_echo": "loyko"
   },
   "Luc": {
-    "_global": "look"
+    "_global": "look",
+    "am_echo": "look"
+  },
+  "Luc's": {
+    "am_echo": "look"
   },
   "Lucia": {
-    "_global": "[Lucia](/lusi\u026a\u0259/)"
+    "_global": "[Lucia](/lusi\u026a\u0259/)",
+    "am_echo": "Lucia"
   },
   "Luck": {
     "_global": "Luck"
@@ -2948,7 +3180,8 @@
     "_global": "Macy"
   },
   "Madame": {
-    "_global": "[Madame](/m\u0259d\u00e6m/)"
+    "_global": "[Madame](/m\u0259d\u00e6m/)",
+    "am_echo": "Madame"
   },
   "Madonna": {
     "_global": "[Madonna](/m\u0259\u02c8d\u0251n\u0259/)"
@@ -2963,7 +3196,8 @@
     "_global": "Makers"
   },
   "Man": {
-    "_global": "an"
+    "_global": "an",
+    "am_echo": "an"
   },
   "Man-of-the-Downtrodden": {
     "_global": "man of the down trod den"
@@ -2972,13 +3206,18 @@
     "_global": "[Manassas](/m\u0259\u02c8n\u00e6s\u0259s/)"
   },
   "Mandarin": {
-    "am_echo": "[Mandarin](/\u02c8m\u00e6nd\u0259r\u026an/)"
+    "am_echo": "Mandarin"
   },
   "Mandrake": {
-    "_global": "[Mandrake](/m\u00e6n\u02ccd\u0279e\u026ak/)"
+    "_global": "[Mandrake](/m\u00e6n\u02ccd\u0279e\u026ak/)",
+    "am_echo": "Mandrake"
   },
   "Mandrake'll": {
-    "_global": "man drake ill"
+    "_global": "man drake ill",
+    "am_echo": "man drake ill"
+  },
+  "Mandrake's": {
+    "am_echo": "[Mandrake](/m\u00e6n\u02ccd\u0279e\u026ak/)"
   },
   "Mandrake-recommended": {
     "_global": "man drake rec om mend ed"
@@ -2990,7 +3229,8 @@
     "_global": "mandrayks"
   },
   "Maori": {
-    "_global": "[Maori](/ma\u028ari/)"
+    "_global": "[Maori](/ma\u028ari/)",
+    "am_echo": "Maori"
   },
   "Map": {
     "_global": "Map"
@@ -3032,7 +3272,8 @@
     "_global": "Marine"
   },
   "Marines": {
-    "_global": "Marines"
+    "_global": "Marines",
+    "am_echo": "Marines"
   },
   "Mark": {
     "_global": "Mark",
@@ -3042,13 +3283,16 @@
     "_global": "Mark"
   },
   "Market": {
-    "_global": "Market"
+    "_global": "Market",
+    "am_echo": "Market"
   },
   "Markets'": {
-    "_global": "markits"
+    "_global": "markits",
+    "am_echo": "markits"
   },
   "Markus": {
-    "_global": "markus"
+    "_global": "markus",
+    "am_echo": "markus"
   },
   "Mars": {
     "_global": "Mars",
@@ -3056,32 +3300,38 @@
   },
   "Martian": {
     "_global": "[Martian](/m\u0251\u0279\u0283\u0259n/)",
-    "am_echo": "[Martian](/m\u0251\u0279\u0283\u0259n/)"
+    "am_echo": "Martian"
   },
   "Martians": {
     "_global": "[Martians](/m\u0251\u0279\u0283\u0259nz/)",
-    "am_echo": "[Martians](/m\u0251\u0279\u0283\u0259nz/)"
+    "am_echo": "Martians"
   },
   "Martin": {
-    "_global": "[Martin](/m\u0251\u0279t\u026an/)"
+    "_global": "[Martin](/m\u0251\u0279t\u026an/)",
+    "am_echo": "[Martin](/m\u0251\u0279t\u026an/)"
   },
   "Maryland": {
     "_global": "Maryland"
   },
   "Masson": {
-    "_global": "mason"
+    "_global": "mason",
+    "am_echo": "mason"
   },
   "Masters": {
-    "_global": "[Masters](/m\u00e6st\u0259\u0279z/)"
+    "_global": "[Masters](/m\u00e6st\u0259\u0279z/)",
+    "am_echo": "Masters"
   },
   "Mataran": {
-    "_global": "mataran"
+    "_global": "mataran",
+    "am_echo": "mataran"
   },
   "Matt": {
-    "_global": "[Matt](/m\u00e6t/)"
+    "_global": "[Matt](/m\u00e6t/)",
+    "am_echo": "Matt"
   },
   "Matthias": {
-    "_global": "[Matthias](/m\u0259\u03b8a\u026a\u0259s/)"
+    "_global": "[Matthias](/m\u0259\u03b8a\u026a\u0259s/)",
+    "am_echo": "Matthias"
   },
   "Mattock": {
     "am_echo": "[Mattock](/\u02c8m\u00e6t\u0259k/)"
@@ -3148,10 +3398,11 @@
     "_global": "Memorial"
   },
   "Mende": {
-    "am_echo": "[Mende](/\u02c8m\u025bndi/)"
+    "am_echo": "Mende"
   },
   "Mendel": {
-    "_global": "[Mendel](/m\u025bnd\u0259l/)"
+    "_global": "[Mendel](/m\u025bnd\u0259l/)",
+    "am_echo": "Mendel"
   },
   "Mendoza": {
     "_global": "[Mendoza](/m\u025bn\u02c8do\u028az\u0259/)"
@@ -3166,10 +3417,12 @@
     "_global": "Mexico"
   },
   "Mhlongo": {
-    "_global": "um long go"
+    "_global": "um long go",
+    "am_echo": "um long go"
   },
   "Mi's": {
-    "_global": "[Mi's](/mi\u026az/)"
+    "_global": "[Mi's](/mi\u026az/)",
+    "am_echo": "Mi's"
   },
   "Miami": {
     "_global": "myamee"
@@ -3178,10 +3431,11 @@
     "_global": "[Michelangelo](/ma\u026ak\u0259l\u02c8\u00e6nd\u0292\u0259lo\u028a/)"
   },
   "Micky": {
-    "_global": "[Micky](/\u02c8m\u026aki/)"
+    "_global": "[Micky](/\u02c8m\u026aki/)",
+    "am_echo": "Micky"
   },
   "Micromissile": {
-    "am_echo": "[Micromissile](/\u02c8ma\u026ak\u0279o\u028a\u02ccm\u026asl/)"
+    "am_echo": "Micromissile"
   },
   "Microsoft": {
     "_global": "Microsoft"
@@ -3199,25 +3453,27 @@
     "_global": "Millennia"
   },
   "Millsport": {
-    "_global": "millsport"
+    "_global": "millsport",
+    "am_echo": "millsport"
   },
   "Minesweeping": {
-    "am_echo": "[Minesweeping](/\u02c8ma\u026an\u02ccswi\u026ap\u026a\u014b/)"
+    "am_echo": "Minesweeping"
   },
   "Minimise": {
-    "am_echo": "[Minimise](/\u02c8m\u026an\u026ama\u026az/)"
+    "am_echo": "Minimise"
   },
   "Minnie": {
     "_global": "[Minnie](/m\u026ani/)"
   },
   "Minoru": {
-    "_global": "[Minoru](/m\u026ano\u028a\u0279u/)"
+    "_global": "[Minoru](/m\u026ano\u028a\u0279u/)",
+    "am_echo": "[Minoru](/m\u026ano\u028a\u0279u/)"
   },
   "Miro": {
     "_global": "[Miro](/\u02c8m\u026aro\u028a/)"
   },
   "Mishmashed": {
-    "am_echo": "[Mishmashed](/\u02c8m\u026a\u0283\u02ccm\u00e6\u0283t/)"
+    "am_echo": "Mishmashed"
   },
   "Miss": {
     "_global": "miss"
@@ -3226,28 +3482,35 @@
     "_global": "Mistaken"
   },
   "Mistress": {
-    "_global": "mistress"
+    "_global": "mistress",
+    "am_echo": "mistress"
   },
   "Mit": {
-    "_global": "Mit"
+    "_global": "Mit",
+    "am_echo": "Mit"
   },
   "Mit's": {
-    "_global": "mits"
+    "_global": "mits",
+    "am_echo": "mits"
   },
   "Mitcham": {
-    "_global": "mitchumz"
+    "_global": "mitchumz",
+    "am_echo": "mitchumz"
   },
   "Mitcham's": {
-    "_global": "mitchumz"
+    "_global": "mitchumz",
+    "am_echo": "mitchumz"
   },
   "Mitcham\u2019s": {
     "_global": "mitchums"
   },
   "Mitchell": {
-    "_global": "[Mitchell](/m\u026at\u0283\u0259l/)"
+    "_global": "[Mitchell](/m\u026at\u0283\u0259l/)",
+    "am_echo": "Mitchell"
   },
   "Mitoma": {
-    "_global": "mitoema"
+    "_global": "mitoema",
+    "am_echo": "mitoema"
   },
   "Mitoma--their": {
     "_global": "mee toe ma their"
@@ -3259,7 +3522,8 @@
     "_global": "mits"
   },
   "Mivtsemdi": {
-    "_global": "mivtsemdee"
+    "_global": "mivtsemdee",
+    "am_echo": "mivtsemdee"
   },
   "Mi\u2019s": {
     "_global": "mees"
@@ -3294,7 +3558,7 @@
     "_global": "Molly"
   },
   "Molotov": {
-    "am_echo": "[Molotov](/\u02c8m\u0251l\u0259\u02cct\u0251v/)"
+    "am_echo": "Molotov"
   },
   "Mom": {
     "_global": "Mom"
@@ -3342,7 +3606,8 @@
     "_global": "[More](/m\u0254r/)"
   },
   "Morgan": {
-    "_global": "[Morgan](/m\u0254\u0279\u0261\u0259n/)"
+    "_global": "[Morgan](/m\u0254\u0279\u0261\u0259n/)",
+    "am_echo": "Morgan"
   },
   "Morning": {
     "_global": "[Morning](/m\u0254\u0279n\u026a\u014b/)"
@@ -3351,10 +3616,12 @@
     "_global": "Moron"
   },
   "Morrison": {
-    "_global": "[Morrison](/m\u0254\u0279\u026as\u0259n/)"
+    "_global": "[Morrison](/m\u0254\u0279\u026as\u0259n/)",
+    "am_echo": "[Morrison](/m\u0254\u0279\u026as\u0259n/)"
   },
   "Morrisons": {
-    "_global": "mor ris sons"
+    "_global": "mor ris sons",
+    "am_echo": "mor ris sons"
   },
   "Most": {
     "_global": "[Most](/mo\u028ast/)"
@@ -3371,7 +3638,7 @@
     "_global": "Mother slash Billy"
   },
   "Mould": {
-    "am_echo": "[Mould](/\u02c8mo\u028ald/)"
+    "am_echo": "Mould"
   },
   "Mount": {
     "_global": "Mount"
@@ -3386,7 +3653,8 @@
     "_global": "Mouth"
   },
   "Mowai": {
-    "_global": "moewhy"
+    "_global": "moewhy",
+    "am_echo": "moewhy"
   },
   "Mr.I'm-Not-Wycinski": {
     "_global": "mister i'm not Wycinski"
@@ -3398,7 +3666,7 @@
     "_global": "mis ter ko vax"
   },
   "Muhammed": {
-    "am_echo": "[Muhammed](/mu\u02c8h\u0251m\u0259d/)"
+    "am_echo": "[Muhammed](/muh\u0251m\u0259d/)"
   },
   "Muhammed--what": {
     "_global": "moohahmedwut"
@@ -3413,10 +3681,12 @@
     "_global": "Munchkin"
   },
   "Munharto": {
-    "_global": "[Munharto](/munh\u0251\u0279to\u028a/)"
+    "_global": "[Munharto](/munh\u0251\u0279to\u028a/)",
+    "am_echo": "[Munharto](/munh\u0251\u0279to\u028a/)"
   },
   "Munharto's": {
-    "_global": "moonhaartoez"
+    "_global": "moonhaartoez",
+    "am_echo": "moonhaartoez"
   },
   "Munharto\u2019s": {
     "_global": "moonhartoss"
@@ -3452,10 +3722,12 @@
     "am_echo": "[Nagasaki](/n\u0251\u0261\u0259s\u0251k\u026a/)"
   },
   "Nagini": {
-    "_global": "[Nagini](/n\u0251d\u0292i\u02d0ni/)"
+    "_global": "[Nagini](/n\u0251d\u0292i\u02d0ni/)",
+    "am_echo": "Nagini"
   },
   "Nagini's": {
-    "_global": "[Nagini](/n\u0251d\u0292i\u02d0ni/)'s"
+    "_global": "[Nagini](/n\u0251d\u0292i\u02d0ni/)'s",
+    "am_echo": "[Nagini](/n\u0251d\u0292i\u02d0ni/)'s"
   },
   "Nagini\u2019s": {
     "_global": "nahgeenees"
@@ -3464,13 +3736,15 @@
     "_global": "Nah"
   },
   "Naki": {
-    "_global": "nakee"
+    "_global": "nakee",
+    "am_echo": "nakee"
   },
   "Nana": {
     "_global": "nana"
   },
   "Nanoscale": {
-    "_global": "nanohskayl"
+    "_global": "nanohskayl",
+    "am_echo": "nanohskayl"
   },
   "Nanotech": {
     "_global": "Nanotech"
@@ -3485,16 +3759,19 @@
     "_global": "Nature"
   },
   "Navy": {
-    "_global": "Navy"
+    "_global": "Navy",
+    "am_echo": "Navy"
   },
   "Neanderthal": {
-    "_global": "[Neanderthal](/ni\u02c8\u00e6nd\u0259\u0279\u02cc\u03b8\u0251l/)"
+    "_global": "[Neanderthal](/ni\u02c8\u00e6nd\u0259\u0279\u02cc\u03b8\u0251l/)",
+    "am_echo": "[Neanderthal](/ni\u02c8\u00e6nd\u0259\u0279\u02cc\u03b8\u0251l/)"
   },
   "Neil": {
     "_global": "Neil"
   },
   "Neo-Quellist": {
-    "_global": "[Neo-Quellist](/ni\u026ao\u028akw\u025bl\u026ast/)"
+    "_global": "[Neo-Quellist](/ni\u026ao\u028akw\u025bl\u026ast/)",
+    "am_echo": "[Neo-Quellist](/ni\u026ao\u028akw\u025bl\u026ast/)"
   },
   "Neptune": {
     "_global": "Neptune"
@@ -3503,16 +3780,19 @@
     "_global": "[Neurachem](/n\u028a\u0279o\u028ak\u025bm/)"
   },
   "New": {
-    "_global": "new"
+    "_global": "new",
+    "am_echo": "new"
   },
   "Newpest": {
-    "_global": "newpest"
+    "_global": "newpest",
+    "am_echo": "newpest"
   },
   "News": {
     "_global": "[News](/nuz/)"
   },
   "Nicola": {
-    "_global": "[Nicola](/n\u026ak\u0259l\u0259/)"
+    "_global": "[Nicola](/n\u026ak\u0259l\u0259/)",
+    "am_echo": "Nicola"
   },
   "Nike": {
     "_global": "Nike"
@@ -3533,7 +3813,8 @@
     "_global": "unkroomaz"
   },
   "Nkrumah's": {
-    "_global": "unkroomaz"
+    "_global": "unkroomaz",
+    "am_echo": "unkroomaz"
   },
   "Nkrumah\u2019s": {
     "_global": "enkroomahs"
@@ -3554,7 +3835,8 @@
     "_global": "North"
   },
   "Northern": {
-    "_global": "[Northern](/n\u0254\u0279\u00f0\u0259\u0279n/)"
+    "_global": "[Northern](/n\u0254\u0279\u00f0\u0259\u0279n/)",
+    "am_echo": "[Northern](/n\u0254\u0279\u00f0\u0259\u0279n/)"
   },
   "Northwestern": {
     "_global": "Northwestern"
@@ -3573,10 +3855,12 @@
     "am_echo": "[Noyze](/n\u0254\u026az/)"
   },
   "Nozawa": {
-    "_global": "no zah wah"
+    "_global": "no zah wah",
+    "am_echo": "no zah wah"
   },
   "Nuhanovic": {
-    "_global": "[Nuhanovic](/nuh\u0251\u02d0n\u0259v\u026at\u0283/)"
+    "_global": "[Nuhanovic](/nuh\u0251\u02d0n\u0259v\u026at\u0283/)",
+    "am_echo": "[Nuhanovic](/nuh\u0251\u02d0n\u0259v\u026at\u0283/)"
   },
   "O'Brian": {
     "_global": "O'Brian"
@@ -3600,7 +3884,8 @@
     "_global": "Office"
   },
   "Ogon": {
-    "_global": "oh gon"
+    "_global": "oh gon",
+    "am_echo": "oh gon"
   },
   "Ohio": {
     "_global": "Ohio"
@@ -3609,13 +3894,15 @@
     "am_echo": "[Okeydokey](/\u02cco\u028aki\u02c8do\u028aki/)"
   },
   "Old": {
-    "_global": "Old"
+    "_global": "Old",
+    "am_echo": "Old"
   },
   "Older": {
     "_global": "Older"
   },
   "Ole": {
-    "_global": "ohleh"
+    "_global": "ohleh",
+    "am_echo": "ohleh"
   },
   "Olga": {
     "_global": "[Olga](/\u02c8o\u028al\u0261\u0259/)",
@@ -3634,7 +3921,8 @@
     "am_echo": "Olympics"
   },
   "One": {
-    "_global": "wun"
+    "_global": "wun",
+    "am_echo": "wun"
   },
   "Oono": {
     "_global": "oono"
@@ -3646,19 +3934,21 @@
     "am_echo": "[Ooooookay](/o\u028ao\u028ao\u028ao\u028a\u02c8ke\u026a/)"
   },
   "Open": {
-    "_global": "open"
+    "_global": "open",
+    "am_echo": "open"
   },
   "Opera": {
     "_global": "[Opera](/\u02c8\u0251p\u0259\u0279\u0259/)"
   },
   "Orbit": {
-    "am_echo": "[Orbit](/\u02c8\u0254\u0279b\u026at/)"
+    "am_echo": "Orbit"
   },
   "Organised": {
-    "am_echo": "[Organised](/\u02c8\u0254r\u0261\u0259na\u026azd/)"
+    "am_echo": "Organised"
   },
   "Osupile": {
-    "_global": "oh soo pee lay"
+    "_global": "oh soo pee lay",
+    "am_echo": "oh soo pee lay"
   },
   "Oswald": {
     "_global": "Oswald"
@@ -3667,19 +3957,22 @@
     "_global": "Outer"
   },
   "Outside": {
-    "_global": "Outside"
+    "_global": "Outside",
+    "am_echo": "Outside"
   },
   "Oval": {
     "_global": "Oval"
   },
   "Overview": {
-    "_global": "overview"
+    "_global": "overview",
+    "am_echo": "overview"
   },
   "Pacific": {
     "_global": "Pacific"
   },
   "Pacification": {
-    "_global": "Pacification"
+    "_global": "Pacification",
+    "am_echo": "Pacification"
   },
   "Pale": {
     "_global": "[Pale](/pe\u026al/)"
@@ -3717,6 +4010,9 @@
   "Peet's": {
     "_global": "Peet's"
   },
+  "People": {
+    "am_echo": "People's"
+  },
   "People's": {
     "_global": "People's"
   },
@@ -3742,16 +4038,18 @@
     "_global": "Phantom"
   },
   "Pharintorn": {
-    "am_echo": "[Pharintorn](/f\u0251\u0279\u026ant\u0254\u0279n/)"
+    "am_echo": "Pharintorn"
   },
   "Phibun": {
-    "_global": "peeboon"
+    "_global": "peeboon",
+    "am_echo": "peeboon"
   },
   "Philip": {
     "_global": "Philip"
   },
   "Philips": {
-    "_global": "[Philips](/f\u026al\u026aps/)"
+    "_global": "[Philips](/f\u026al\u026aps/)",
+    "am_echo": "Philips"
   },
   "Picasso": {
     "_global": "Picasso"
@@ -3763,7 +4061,8 @@
     "_global": "peter"
   },
   "Pilger": {
-    "_global": "pilger"
+    "_global": "pilger",
+    "am_echo": "pilger"
   },
   "Pillar": {
     "_global": "Pillar"
@@ -3772,10 +4071,12 @@
     "_global": "Pilot"
   },
   "Pilot's": {
-    "_global": "Pilot's"
+    "_global": "Pilot's",
+    "am_echo": "Pilot's"
   },
   "Pilots'Revolt": {
-    "_global": "pielotsrivolt"
+    "_global": "pielotsrivolt",
+    "am_echo": "pielotsrivolt"
   },
   "Pilot\u2019s": {
     "_global": "pielots"
@@ -3805,7 +4106,7 @@
     "_global": "Places"
   },
   "Plains": {
-    "am_echo": "[Plains](/ple\u026anz/)"
+    "am_echo": "Plains"
   },
   "Planet": {
     "am_echo": "Planet"
@@ -3817,7 +4118,8 @@
     "_global": "Plastic"
   },
   "Plaza": {
-    "_global": "Plaza"
+    "_global": "Plaza",
+    "am_echo": "Plaza"
   },
   "Plexiglas": {
     "_global": "pleksiglass"
@@ -3826,7 +4128,8 @@
     "_global": "plexiglasstopped"
   },
   "Point": {
-    "_global": "[Point](/p\u0254\u026ant/)"
+    "_global": "[Point](/p\u0254\u026ant/)",
+    "am_echo": "Point"
   },
   "Polaris": {
     "_global": "Polaris"
@@ -3847,13 +4150,15 @@
     "_global": "[Porsche](/p\u0254r\u0283\u0259/)"
   },
   "Port": {
-    "_global": "Port"
+    "_global": "Port",
+    "am_echo": "Port"
   },
   "Portausaint": {
-    "_global": "portohsaint"
+    "_global": "portohsaint",
+    "am_echo": "portohsaint"
   },
   "Portillo": {
-    "am_echo": "[Portillo](/p\u0254\u0279\u02c8ti\u026ajo\u028a/)"
+    "am_echo": "Portillo"
   },
   "Portugal": {
     "_global": "porchuhgull"
@@ -3865,16 +4170,18 @@
     "_global": "Powerpuff"
   },
   "Pravet": {
-    "_global": "praavet"
+    "_global": "praavet",
+    "am_echo": "praavet"
   },
   "Prejudice": {
     "_global": "[Prejudice](/\u02c8p\u0279\u025bd\u0292\u0259d\u026as/)"
   },
   "Prelim": {
-    "am_echo": "[Prelim](/\u02c8pr\u025bl\u026am/)"
+    "am_echo": "Prelim"
   },
   "Presidential": {
-    "_global": "Presidential"
+    "_global": "Presidential",
+    "am_echo": "Presidential"
   },
   "Prevalent": {
     "_global": "Prevalent"
@@ -3901,7 +4208,8 @@
     "_global": "Project"
   },
   "Protectorate": {
-    "_global": "[Protectorate](/p\u0279\u0259\u02c8t\u025bkt\u0259\u0279\u0259t/)"
+    "_global": "[Protectorate](/p\u0279\u0259\u02c8t\u025bkt\u0259\u0279\u0259t/)",
+    "am_echo": "[Protectorate](/p\u0279\u0259\u02c8t\u025bkt\u0259\u0279\u0259t/)"
   },
   "Protectorate-sanctioned": {
     "_global": "pro tec tor ate sanc shund"
@@ -3913,7 +4221,7 @@
     "_global": "sykoh"
   },
   "Psychodynamic": {
-    "am_echo": "[Psychodynamic](/\u02ccsa\u026ako\u028ada\u026a\u02c8n\u00e6m\u026ak/)"
+    "am_echo": "Psychodynamic"
   },
   "Publix": {
     "_global": "Publix"
@@ -3937,19 +4245,24 @@
     "_global": "[Quarantine](/kw\u0254\u0279\u0259nti\u026an/)"
   },
   "Quell": {
-    "_global": "[Quell](/kw\u025bl/)"
+    "_global": "[Quell](/kw\u025bl/)",
+    "am_echo": "Quell"
   },
   "Quellism": {
-    "_global": "kwelizm"
+    "_global": "kwelizm",
+    "am_echo": "kwelizm"
   },
   "Quellisms": {
-    "_global": "kwelizums"
+    "_global": "kwelizums",
+    "am_echo": "kwelizums"
   },
   "Quellist": {
-    "_global": "quellist"
+    "_global": "quellist",
+    "am_echo": "quellist"
   },
   "Quellists": {
-    "_global": "kwelists"
+    "_global": "kwelists",
+    "am_echo": "kwelists"
   },
   "Quick": {
     "_global": "Quick"
@@ -3974,7 +4287,11 @@
     "_global": "rahmeerezz"
   },
   "Randall": {
-    "_global": "[Randall](/\u0279\u00e6nd\u0259l/)"
+    "_global": "[Randall](/\u0279\u00e6nd\u0259l/)",
+    "am_echo": "[Randall](/\u0279\u00e6nd\u0259l/)"
+  },
+  "Randall's": {
+    "am_echo": "Randall"
   },
   "Randall\u2019s": {
     "_global": "randalls"
@@ -3983,10 +4300,12 @@
     "_global": "Rapid"
   },
   "Rawling": {
-    "_global": "rawling"
+    "_global": "rawling",
+    "am_echo": "rawling"
   },
   "Rayong": {
-    "_global": "rayong"
+    "_global": "rayong",
+    "am_echo": "rayong"
   },
   "Razor-Sharp": {
     "_global": "Razor-Sharp"
@@ -3995,7 +4314,7 @@
     "_global": "ree sleeve"
   },
   "Real": {
-    "am_echo": "[Real](/\u0279i\u026al/)"
+    "am_echo": "Real"
   },
   "Reaper": {
     "_global": "[Reaper](/\u02c8\u0279i\u026ap\u0259\u0279/)"
@@ -4005,6 +4324,9 @@
   },
   "Rebel": {
     "_global": "Rebel"
+  },
+  "Rebel's": {
+    "am_echo": "Rebel"
   },
   "Rebels": {
     "_global": "Rebels"
@@ -4028,7 +4350,7 @@
     "_global": "Recurrence"
   },
   "Reef": {
-    "am_echo": "[Reef](/\u0279i\u026af/)"
+    "am_echo": "Reef"
   },
   "Reflex": {
     "_global": "Reflex"
@@ -4056,7 +4378,8 @@
     "_global": "Renaissance"
   },
   "Renouncer": {
-    "_global": "Renouncer"
+    "_global": "Renouncer",
+    "am_echo": "Renouncer"
   },
   "Repairs": {
     "_global": "repairs"
@@ -4074,13 +4397,14 @@
     "_global": "Resting"
   },
   "Retoque": {
-    "am_echo": "[Retoque](/\u0279\u025b\u02c8to\u028ak\u025b/)"
+    "am_echo": "Retoque"
   },
   "Revolving": {
     "_global": "Revolving"
   },
   "Richard": {
-    "_global": "[Richard](/\u0279\u026at\u0283\u0259\u0279d/)"
+    "_global": "[Richard](/\u0279\u026at\u0283\u0259\u0279d/)",
+    "am_echo": "Richard"
   },
   "Rider": {
     "_global": "Rider",
@@ -4097,7 +4421,8 @@
     "am_echo": "[Riders'home](/\u02c8ra\u026ad\u0259rzho\u028am/)"
   },
   "Rim": {
-    "_global": "[Rim](/\u0279\u026am/)"
+    "_global": "[Rim](/\u0279\u026am/)",
+    "am_echo": "[Rim](/\u0279\u026am/)"
   },
   "Ritts": {
     "_global": "Ritts"
@@ -4106,13 +4431,15 @@
     "_global": "Rivers"
   },
   "Road": {
-    "_global": "[Road](/ro\u028ad/)"
+    "_global": "[Road](/ro\u028ad/)",
+    "am_echo": "Road"
   },
   "Robert": {
     "_global": "Robert"
   },
   "Robin": {
-    "_global": "[Robin](/\u0279\u0251b\u026an/)"
+    "_global": "[Robin](/\u0279\u0251b\u026an/)",
+    "am_echo": "Robin"
   },
   "Robotics": {
     "_global": "Robotics"
@@ -4128,10 +4455,12 @@
     "_global": "Rodin"
   },
   "Roespinoedji": {
-    "_global": "[Roespinoedji](/ro\u028a\u025bsp\u026ano\u028a\u025bd\u0292i/)"
+    "_global": "[Roespinoedji](/ro\u028a\u025bsp\u026ano\u028a\u025bd\u0292i/)",
+    "am_echo": "[Roespinoedji](/ro\u028a\u025bsp\u026ano\u028a\u025bd\u0292i/)"
   },
   "Roespinoedji's": {
-    "_global": "[Roespinoedji](/ro\u028a\u025bsp\u026ano\u028a\u025bd\u0292i/)'s"
+    "_global": "[Roespinoedji](/ro\u028a\u025bsp\u026ano\u028a\u025bd\u0292i/)'s",
+    "am_echo": "[Roespinoedji](/ro\u028a\u025bsp\u026ano\u028a\u025bd\u0292i/)'s"
   },
   "Roespinoedji\u2019s": {
     "_global": "Rowespinoedgyz"
@@ -4195,7 +4524,8 @@
     "am_echo": "[S'up](/s\u028cp/)"
   },
   "Sabyrov": {
-    "_global": "sabeerov"
+    "_global": "sabeerov",
+    "am_echo": "sabeerov"
   },
   "Sacramento": {
     "_global": "Sacramento"
@@ -4210,10 +4540,12 @@
     "_global": "Sails"
   },
   "Samedi": {
-    "_global": "samadeez"
+    "_global": "samadeez",
+    "am_echo": "samadeez"
   },
   "Samedi's": {
-    "_global": "samadeez"
+    "_global": "samadeez",
+    "am_echo": "samadeez"
   },
   "Samedi\u2019s": {
     "_global": "sahmedeez"
@@ -4228,10 +4560,12 @@
     "_global": "Sanctified"
   },
   "Sanction": {
-    "_global": "sanction"
+    "_global": "sanction",
+    "am_echo": "sanction"
   },
   "Sandor": {
-    "_global": "sandor"
+    "_global": "sandor",
+    "am_echo": "sandor"
   },
   "Sandpaper": {
     "_global": "[Sandpaper](/\u02c8s\u00e6nd\u02ccpe\u026ap\u0259\u0279/)"
@@ -4246,10 +4580,11 @@
     "_global": "Satan"
   },
   "Sathakarn": {
-    "_global": "sathakarn"
+    "_global": "sathakarn",
+    "am_echo": "sathakarn"
   },
   "Satnav": {
-    "am_echo": "[Satnav](/\u02c8s\u00e6tn\u00e6v/)"
+    "am_echo": "Satnav"
   },
   "Saturday": {
     "_global": "saterday"
@@ -4258,10 +4593,12 @@
     "_global": "Saturn"
   },
   "Sauberville": {
-    "_global": "sohbervil"
+    "_global": "sohbervil",
+    "am_echo": "sohbervil"
   },
   "Sauberville's": {
-    "_global": "saw ber vills"
+    "_global": "saw ber vills",
+    "am_echo": "saw ber vills"
   },
   "Sauberville-related": {
     "_global": "saw ber vill ree lay ted"
@@ -4282,7 +4619,11 @@
     "am_echo": "[Schnei](/\u0283na\u026a/)"
   },
   "Schneider": {
-    "_global": "[Schneider](/\u0283na\u026ad\u0259\u0279/)"
+    "_global": "[Schneider](/\u0283na\u026ad\u0259\u0279/)",
+    "am_echo": "[Schneider](/\u0283na\u026ad\u0259\u0279/)"
+  },
+  "Schneider's": {
+    "am_echo": "[Schneider](/\u0283na\u026ad\u0259\u0279/)'s"
   },
   "Schneider--which": {
     "_global": "[Schneider](/\u0283na\u026ad\u0259\u0279/) which"
@@ -4303,13 +4644,15 @@
     "_global": "Scout"
   },
   "Scratcher": {
-    "_global": "Scratcher"
+    "_global": "Scratcher",
+    "am_echo": "Scratcher"
   },
   "Scratcher-equipped": {
     "_global": "scratchereequipt"
   },
   "Scratchers": {
-    "_global": "[scratchers](/sk\u0279\u00e6t\u0283\u0259\u0279z/)"
+    "_global": "[scratchers](/sk\u0279\u00e6t\u0283\u0259\u0279z/)",
+    "am_echo": "[scratchers](/sk\u0279\u00e6t\u0283\u0259\u0279z/)"
   },
   "Screwdrivers": {
     "_global": "Screwdrivers"
@@ -4342,10 +4685,12 @@
     "_global": "Security"
   },
   "Semetaire": {
-    "_global": "semetaire"
+    "_global": "semetaire",
+    "am_echo": "semetaire"
   },
   "Semetaire's": {
-    "_global": "semitair"
+    "_global": "semitair",
+    "am_echo": "semitair"
   },
   "Semetaire\u2019s": {
     "_global": "semetairs"
@@ -4354,7 +4699,8 @@
     "_global": "sem ee dee ployd"
   },
   "Senate": {
-    "_global": "Senate"
+    "_global": "Senate",
+    "am_echo": "Senate"
   },
   "Sentient": {
     "_global": "Sentient"
@@ -4363,22 +4709,26 @@
     "_global": "sarjunt"
   },
   "Series": {
-    "_global": "series"
+    "_global": "series",
+    "am_echo": "series"
   },
   "Service": {
     "_global": "Service"
   },
   "Settled": {
-    "_global": "Settled"
+    "_global": "Settled",
+    "am_echo": "Settled"
   },
   "Settlement": {
-    "_global": "Settlement"
+    "_global": "Settlement",
+    "am_echo": "Settlement"
   },
   "Seuss": {
     "_global": "[Seuss](/su\u028as/)"
   },
   "Sevens": {
-    "_global": "sevens"
+    "_global": "sevens",
+    "am_echo": "sevens"
   },
   "Seventy": {
     "_global": "Seventy"
@@ -4393,7 +4743,8 @@
     "am_echo": "[Shakespeare](/\u02c8\u0283e\u026aksp\u026ar/)"
   },
   "Shalai": {
-    "_global": "shaalai"
+    "_global": "shaalai",
+    "am_echo": "shaalai"
   },
   "Shall": {
     "_global": "Shall"
@@ -4402,10 +4753,11 @@
     "_global": "Sharp"
   },
   "Sharya": {
-    "am_echo": "[Sharya](/\u02c8\u0283\u0251\u0279j\u0259/)"
+    "am_echo": "Sharya"
   },
   "Sharyan": {
-    "_global": "shar ee an"
+    "_global": "shar ee an",
+    "am_echo": "shar ee an"
   },
   "Shastri": {
     "_global": "shastree"
@@ -4415,7 +4767,8 @@
     "am_echo": "She'd"
   },
   "She's": {
-    "_global": "she's"
+    "_global": "she's",
+    "am_echo": "she's"
   },
   "Sheetrock": {
     "_global": "Sheetrock"
@@ -4427,7 +4780,8 @@
     "_global": "Shh"
   },
   "Shintoists": {
-    "_global": "[Shintoists](/\u0283\u026anto\u028a\u026asts/)"
+    "_global": "[Shintoists](/\u0283\u026anto\u028a\u026asts/)",
+    "am_echo": "Shintoists"
   },
   "Shipwright": {
     "_global": "Shipwright",
@@ -4447,10 +4801,12 @@
     "_global": "Shithead"
   },
   "Shock": {
-    "_global": "Shock"
+    "_global": "Shock",
+    "am_echo": "Shock"
   },
   "Shockwaves": {
-    "_global": "shockwaves"
+    "_global": "shockwaves",
+    "am_echo": "shockwaves"
   },
   "Shorn": {
     "_global": "Shorn"
@@ -4459,7 +4815,8 @@
     "_global": "shourtlivd"
   },
   "Shotokan": {
-    "_global": "show toe can"
+    "_global": "show toe can",
+    "am_echo": "show toe can"
   },
   "Shy": {
     "_global": "shy"
@@ -4480,22 +4837,26 @@
     "_global": "sillikon"
   },
   "Simon": {
-    "_global": "[Simon](/sa\u026am\u0259n/)"
+    "_global": "[Simon](/sa\u026am\u0259n/)",
+    "am_echo": "Simon"
   },
   "Sims": {
     "_global": "Sims"
   },
   "Sinclair": {
-    "_global": "[Sinclair](/s\u026ankl\u025b\u0279/)"
+    "_global": "[Sinclair](/s\u026ankl\u025b\u0279/)",
+    "am_echo": "Sinclair"
   },
   "Sincomantak": {
     "_global": "[Sincomantak](/s\u026anko\u028am\u00e6nt\u00e6k/)"
   },
   "Sino": {
-    "_global": "synoh"
+    "_global": "synoh",
+    "am_echo": "synoh"
   },
   "Siren": {
-    "_global": "[Siren](/sa\u026a\u0279\u0259n/)"
+    "_global": "[Siren](/sa\u026a\u0279\u0259n/)",
+    "am_echo": "Siren"
   },
   "Sirius": {
     "_global": "Sirius"
@@ -4504,7 +4865,8 @@
     "_global": "Sisyphus"
   },
   "Site": {
-    "_global": "site"
+    "_global": "site",
+    "am_echo": "site"
   },
   "Skateboggan": {
     "_global": "skateboggan"
@@ -4540,7 +4902,8 @@
     "_global": "Sneaking"
   },
   "Snipe": {
-    "_global": "Snipe"
+    "_global": "Snipe",
+    "am_echo": "Snipe"
   },
   "Soar": {
     "_global": "Soar"
@@ -4549,13 +4912,15 @@
     "_global": "Social"
   },
   "Soft": {
-    "_global": "soft"
+    "_global": "soft",
+    "am_echo": "soft"
   },
   "Software": {
     "_global": "Software"
   },
   "Sol": {
-    "_global": "Sol"
+    "_global": "Sol",
+    "am_echo": "Sol"
   },
   "Sold": {
     "_global": "Sold"
@@ -4564,7 +4929,7 @@
     "_global": "Somehow"
   },
   "Someone'll": {
-    "am_echo": "[Someone'll](/\u02c8s\u028cm\u02ccw\u028cn\u0259l/)"
+    "am_echo": "Someone'll"
   },
   "Something": {
     "_global": "[Something](/\u02c8s\u028cm\u03b8\u026a\u014b/)"
@@ -4579,19 +4944,23 @@
     "_global": "[Sooner](/\u02c8suun\u0259\u0279/)"
   },
   "Soto": {
-    "_global": "[Soto](/so\u028ato\u028a/)"
+    "_global": "[Soto](/so\u028ato\u028a/)",
+    "am_echo": "[Soto](/so\u028ato\u028a/)"
   },
   "Soto's": {
-    "_global": "[Soto's](/so\u028ato\u028az/)"
+    "_global": "[Soto's](/so\u028ato\u028az/)",
+    "am_echo": "[Soto's](/so\u028ato\u028az/)"
   },
   "Soto\u2019s": {
     "_global": "sotohs"
   },
   "Soufriere": {
-    "_global": "soofreeair"
+    "_global": "soofreeair",
+    "am_echo": "soofreeair"
   },
   "Soul": {
-    "_global": "[Soul](/so\u028al/)"
+    "_global": "[Soul](/so\u028al/)",
+    "am_echo": "Soul"
   },
   "South": {
     "_global": "[South](/sa\u028a\u03b8/)"
@@ -4609,10 +4978,12 @@
     "_global": "[Spain](/spe\u026an/)"
   },
   "Spanish": {
-    "_global": "Spanish"
+    "_global": "Spanish",
+    "am_echo": "Spanish"
   },
   "Spanton": {
-    "_global": "spanton"
+    "_global": "spanton",
+    "am_echo": "spanton"
   },
   "Speak": {
     "_global": "Speak"
@@ -4692,7 +5063,8 @@
     "_global": "[Stones's](/sto\u028anz\u026az/)"
   },
   "Storage": {
-    "_global": "storage"
+    "_global": "storage",
+    "am_echo": "storage"
   },
   "Strange": {
     "_global": "[Strange](/st\u0279e\u026and\u0292/)",
@@ -4711,7 +5083,8 @@
     "_global": "Street"
   },
   "Stripjap": {
-    "_global": "strip jap"
+    "_global": "strip jap",
+    "am_echo": "strip jap"
   },
   "Strontium": {
     "_global": "[Strontium](/str\u0251nti\u0259m/)"
@@ -4726,7 +5099,8 @@
     "_global": "Stupid"
   },
   "Suchinda": {
-    "_global": "soochinda"
+    "_global": "soochinda",
+    "am_echo": "soochinda"
   },
   "Suffice": {
     "_global": "Suffice"
@@ -4735,16 +5109,22 @@
     "_global": "[Suffocate](/\u02c8s\u028cf\u0259\u02ccke\u026at/)"
   },
   "Sun": {
-    "_global": "[Sun](/s\u028cn/)"
+    "_global": "[Sun](/s\u028cn/)",
+    "am_echo": "Sun"
+  },
+  "Sun's": {
+    "am_echo": "Sun"
   },
   "Sunfish": {
     "_global": "Sunfish"
   },
   "Sunjet": {
-    "_global": "sunjet"
+    "_global": "sunjet",
+    "am_echo": "sunjet"
   },
   "Sunjets": {
-    "_global": "sunjets"
+    "_global": "sunjets",
+    "am_echo": "sunjets"
   },
   "Sun\u2019s": {
     "_global": "sunz"
@@ -4756,10 +5136,12 @@
     "_global": "Surrender"
   },
   "Sutjiadi": {
-    "_global": "[Sutjiadi](su\u02c8t\u0283\u0251\u02d0di)"
+    "_global": "[Sutjiadi](su\u02c8t\u0283\u0251\u02d0di)",
+    "am_echo": "[Sutjiadi](su\u02c8t\u0283\u0251\u02d0di)"
   },
   "Sutjiadi's": {
-    "_global": "[Sutjiadi](su\u02c8t\u0283\u0251\u02d0di)'s"
+    "_global": "[Sutjiadi](su\u02c8t\u0283\u0251\u02d0di)'s",
+    "am_echo": "[Sutjiadi](su\u02c8t\u0283\u0251\u02d0di)'s"
   },
   "Sutjiadi\u2019s": {
     "_global": "sootjeeahdeez"
@@ -4780,25 +5162,31 @@
     "_global": "Sydney"
   },
   "Symmetry": {
-    "_global": "Symmetry"
+    "_global": "Symmetry",
+    "am_echo": "Symmetry"
   },
   "Syndrome": {
-    "_global": "syndrome"
+    "_global": "syndrome",
+    "am_echo": "syndrome"
   },
   "Syntheta": {
-    "_global": "sinthita"
+    "_global": "sinthita",
+    "am_echo": "sinthita"
   },
   "System": {
-    "_global": "System"
+    "_global": "System",
+    "am_echo": "System"
   },
   "Systems": {
-    "_global": "systems"
+    "_global": "systems",
+    "am_echo": "systems"
   },
   "T'sup": {
     "_global": "[T'sup](/t\u02c8s\u028cp/)"
   },
   "T-shirt": {
-    "_global": "teeshirt"
+    "_global": "teeshirt",
+    "am_echo": "teeshirt"
   },
   "T-shirts": {
     "_global": "teeshirts"
@@ -4810,16 +5198,19 @@
     "_global": "[Taco](/\u02c8t\u0251ko\u028a/)"
   },
   "Tak": {
-    "_global": "tahk"
+    "_global": "tahk",
+    "am_echo": "tahk"
   },
   "Take": {
     "_global": "Take"
   },
   "Takeshi": {
-    "_global": "[Takashi](/t\u0259k\u0251\u02d0\u0283i/)"
+    "_global": "[Takashi](/t\u0259k\u0251\u02d0\u0283i/)",
+    "am_echo": "[Takashi](/t\u0259k\u0251\u02d0\u0283i/)"
   },
   "Takeshi-san": {
-    "_global": "tahkehsheesahn"
+    "_global": "tahkehsheesahn",
+    "am_echo": "tahkehsheesahn"
   },
   "Taller": {
     "_global": "Taller"
@@ -4836,10 +5227,12 @@
     "_global": "[Tamarantak](/t\u00e6m\u0259r\u00e6nt\u00e6k/)"
   },
   "Tan": {
-    "_global": "tan"
+    "_global": "tan",
+    "am_echo": "tan"
   },
   "Tanya": {
-    "_global": "[Tanya](/t\u0251\u02d0nj\u0259/)"
+    "_global": "[Tanya](/t\u0251\u02d0nj\u0259/)",
+    "am_echo": "[Tanya](/t\u0251\u02d0nj\u0259/)"
   },
   "Tate": {
     "_global": "tate",
@@ -4861,7 +5254,8 @@
     "_global": "[Teen](/ti:\u026an/)"
   },
   "Ten": {
-    "_global": "ten"
+    "_global": "ten",
+    "am_echo": "ten"
   },
   "Tennessee": {
     "_global": "Tennessee"
@@ -4882,10 +5276,12 @@
     "_global": "texasstyle"
   },
   "Thai": {
-    "_global": "thai"
+    "_global": "thai",
+    "am_echo": "thai"
   },
   "Thaisawasdi": {
-    "_global": "tiesahwasdee"
+    "_global": "tiesahwasdee",
+    "am_echo": "tiesahwasdee"
   },
   "ThanksgivingDay": {
     "_global": "ThanksgivingDay"
@@ -4895,7 +5291,7 @@
     "am_echo": "the"
   },
   "They've": {
-    "am_echo": "[They've](/\u00f0e\u026av/)"
+    "am_echo": "They've"
   },
   "Thinker": {
     "_global": "Thinker"
@@ -4937,7 +5333,8 @@
     "_global": "Three"
   },
   "Thumb": {
-    "_global": "[Thumb](/\u03b8\u028cm/)"
+    "_global": "[Thumb](/\u03b8\u028cm/)",
+    "am_echo": "Thumb"
   },
   "Ticktock": {
     "_global": "Ticktock"
@@ -4977,10 +5374,12 @@
     "_global": "Tom's"
   },
   "Tomas": {
-    "_global": "[Tomas](/to\u028amas/)"
+    "_global": "[Tomas](/to\u028amas/)",
+    "am_echo": "[Tomas](/t\u028amas/)"
   },
   "Tony": {
-    "_global": "[Tony](/to\u028ani/)"
+    "_global": "[Tony](/to\u028ani/)",
+    "am_echo": "[Tony](/to\u028ani/)"
   },
   "Tonya": {
     "_global": "[Tonya](/\u02c8t\u0251nj\u0259/)"
@@ -4989,20 +5388,23 @@
     "_global": "Took"
   },
   "Top": {
-    "_global": "Top"
+    "_global": "Top",
+    "am_echo": "Top"
   },
   "Toronto": {
     "_global": "Toronto"
   },
   "Toru": {
-    "_global": "toeroo"
+    "_global": "toeroo",
+    "am_echo": "toeroo"
   },
   "Touch": {
     "_global": "touch",
     "am_echo": "touch"
   },
   "Touchdown": {
-    "_global": "Touchdown"
+    "_global": "Touchdown",
+    "am_echo": "Touchdown"
   },
   "Tour": {
     "am_echo": "Tour"
@@ -5012,7 +5414,8 @@
     "am_echo": "tower"
   },
   "Town": {
-    "_global": "Town"
+    "_global": "Town",
+    "am_echo": "Town"
   },
   "Traducci": {
     "am_echo": "tradooksee"
@@ -5030,7 +5433,7 @@
     "_global": "Triceratops"
   },
   "Trickledown": {
-    "am_echo": "[Trickledown](/\u02c8tr\u026ak\u0259l\u02ccda\u028an/)"
+    "am_echo": "Trickledown"
   },
   "Troika": {
     "am_echo": "[Troika](/tr\u0254\u026ak\u0259/)"
@@ -5055,7 +5458,8 @@
     "_global": "Twelve"
   },
   "Twenty": {
-    "_global": "Twenty"
+    "_global": "Twenty",
+    "am_echo": "Twenty"
   },
   "Twenty-Eight": {
     "_global": "twenteeyt"
@@ -5088,7 +5492,7 @@
     "_global": "Twin"
   },
   "Twinges": {
-    "am_echo": "[Twinges](/\u02c8tw\u026and\u0292\u026az/)"
+    "am_echo": "Twinges"
   },
   "Twist": {
     "_global": "Twist"
@@ -5103,7 +5507,8 @@
     "_global": "Tyrannosaurus"
   },
   "Tzu": {
-    "_global": "tsoo"
+    "_global": "tsoo",
+    "am_echo": "tsoo"
   },
   "UN\u2019s": {
     "_global": "youens"
@@ -5112,16 +5517,17 @@
     "am_echo": "[Uhhh](/\u028c\u028c/)"
   },
   "Uhhhhhh": {
-    "_global": "[Uhhhhhh](/\u028c\u028c/)"
+    "_global": "[Uhhhhhh](/\u028c\u028c/)",
+    "am_echo": "[Uhhhhhh](/\u028c\u028c/)"
   },
   "Ultravibe": {
     "_global": "[Ultravibe](/\u028clt\u0279\u0259va\u026ab/)"
   },
   "Umbrella": {
-    "am_echo": "[Umbrella](/\u028cm\u02c8br\u025bl\u0259/)"
+    "am_echo": "Umbrella"
   },
   "Unblaming": {
-    "am_echo": "[Unblaming](/\u028cn\u02c8ble\u026am\u026a\u014b/)"
+    "am_echo": "Unblaming"
   },
   "Underwater": {
     "_global": "Underwater"
@@ -5147,16 +5553,19 @@
     "_global": "University"
   },
   "Uprising": {
-    "_global": "Uprising"
+    "_global": "Uprising",
+    "am_echo": "Uprising"
   },
   "Ursula": {
     "_global": "[Ursula](/\u025c\u0279s\u0259l\u0259/)"
   },
   "VacCom": {
-    "_global": "VacCom"
+    "_global": "VacCom",
+    "am_echo": "VacCom"
   },
   "Vacuum": {
-    "_global": "Vacuum"
+    "_global": "Vacuum",
+    "am_echo": "Vacuum"
   },
   "Vader": {
     "_global": "Vader"
@@ -5180,7 +5589,7 @@
     "_global": "varoh"
   },
   "Vasvik": {
-    "am_echo": "[Vasvik](/\u02c8v\u00e6sv\u026ak/)"
+    "am_echo": "[Vasvik](/v\u00e6sv\u026ak/)"
   },
   "Vega": {
     "_global": "Vega"
@@ -5195,16 +5604,19 @@
     "_global": "Vermeers"
   },
   "Vertigo": {
-    "_global": "Vertigo"
+    "_global": "Vertigo",
+    "am_echo": "Vertigo"
   },
   "Vesuvius": {
     "am_echo": "[Vesuvius](/v\u0259suv\u026a\u0259s/)"
   },
   "Veutin": {
-    "_global": "vootan"
+    "_global": "vootan",
+    "am_echo": "vootan"
   },
   "Veutin's": {
-    "_global": "voo tins"
+    "_global": "voo tins",
+    "am_echo": "voo tins"
   },
   "Veutin\u2019s": {
     "_global": "vyootins"
@@ -5216,10 +5628,12 @@
     "_global": "victory"
   },
   "Vidaura": {
-    "_global": "[Vidaurasaved](/v\u026ado\u028a\u0279\u0259/)"
+    "_global": "[Vidaurasaved](/v\u026ado\u028a\u0279\u0259/)",
+    "am_echo": "[Vidaura](/v\u026ado\u028a\u0279\u0259/)"
   },
   "Vidaura's": {
-    "_global": "vidowra"
+    "_global": "vidowra",
+    "am_echo": "vidowra"
   },
   "Vidaura\u2019s": {
     "_global": "vihdowrahz"
@@ -5236,22 +5650,26 @@
     "am_echo": "Violet"
   },
   "Virginia": {
-    "_global": "[Virginia](/v\u0259\u0279d\u0292\u026anj\u0259/)"
+    "_global": "[Virginia](/v\u0259\u0279d\u0292\u026anj\u0259/)",
+    "am_echo": "[Virginia](/v\u0259\u0279d\u0292\u026anj\u0259/)"
   },
   "Virtue": {
-    "am_echo": "[Virtue](/\u02c8v\u025c\u0279\u02a7u/)"
+    "am_echo": "Virtue"
   },
   "Virtues": {
     "_global": "Virtues"
   },
   "Voices": {
-    "_global": "voices"
+    "_global": "voices",
+    "am_echo": "voices"
   },
   "Vongsavath": {
-    "_global": "vongsahvath"
+    "_global": "vongsahvath",
+    "am_echo": "vongsahvoth"
   },
   "Vongsavath's": {
-    "_global": "vongsahvaths"
+    "_global": "vongsahvaths",
+    "am_echo": "vongsahvaths"
   },
   "Vongsavath--another": {
     "_global": "vongsahvath another"
@@ -5266,7 +5684,8 @@
     "_global": "Vulcan"
   },
   "Wacharin": {
-    "_global": "wahcharin"
+    "_global": "wahcharin",
+    "am_echo": "wahcharin"
   },
   "Waiter": {
     "_global": "Waiter"
@@ -5287,26 +5706,30 @@
     "_global": "Wall"
   },
   "Wang": {
-    "_global": "Wang"
+    "_global": "Wang",
+    "am_echo": "Wang"
   },
   "War": {
     "_global": "war",
     "am_echo": "war"
   },
   "War-based": {
-    "_global": "war based"
+    "_global": "war based",
+    "am_echo": "war based"
   },
   "Wardani": {
-    "_global": "Ordani"
+    "_global": "Ordani",
+    "am_echo": "Ordani"
   },
   "Wardani's": {
-    "_global": "wardahneez"
+    "_global": "wardahneez",
+    "am_echo": "wardahneez"
   },
   "Wardani\u2019s": {
     "_global": "wardahneez"
   },
   "Warehouse": {
-    "am_echo": "[Warehouse](/\u02c8w\u025b\u0279\u02ccha\u028as/)"
+    "am_echo": "Warehouse"
   },
   "Warriors": {
     "_global": "Warriors"
@@ -5315,7 +5738,8 @@
     "_global": "woshington"
   },
   "Waste": {
-    "_global": "Waste"
+    "_global": "Waste",
+    "am_echo": "Waste"
   },
   "Watcher": {
     "_global": "[Watcher](/\u02c8w\u0251t\u0283\u0259r/)"
@@ -5327,7 +5751,7 @@
     "_global": "waterbaby"
   },
   "We'll": {
-    "am_echo": "[We'll](/wi\u026al/)"
+    "am_echo": "We'll"
   },
   "Weaponry": {
     "_global": "Weaponry"
@@ -5339,7 +5763,11 @@
     "_global": "Weber"
   },
   "Wedge": {
-    "_global": "[Wedge](/w\u025bd\u0292/)"
+    "_global": "[Wedge](/w\u025bd\u0292/)",
+    "am_echo": "[Wedge](/w\u025bd\u0292/)"
+  },
+  "Wedge's": {
+    "am_echo": "[Wedge](/w\u025bd\u0292/)'s"
   },
   "Wedge-coded": {
     "_global": "wedjkoded"
@@ -5348,7 +5776,8 @@
     "_global": "wedgecustomized"
   },
   "Wedgemen": {
-    "_global": "wedgemen"
+    "_global": "wedgemen",
+    "am_echo": "wedgemen"
   },
   "Wedge\u2019s": {
     "_global": "wedjez"
@@ -5375,7 +5804,8 @@
     "_global": "Weller"
   },
   "Weng": {
-    "_global": "weng"
+    "_global": "weng",
+    "am_echo": "weng"
   },
   "West": {
     "_global": "West"
@@ -5396,7 +5826,8 @@
     "_global": "[Wha](/\u02c8w\u0251/)"
   },
   "Wharfwhore": {
-    "_global": "warf hore"
+    "_global": "warf hore",
+    "am_echo": "warf hore"
   },
   "What": {
     "_global": "wot"
@@ -5411,13 +5842,15 @@
     "_global": "where's"
   },
   "Whitaker": {
-    "_global": "[Whitaker](/w\u026at\u0259k\u0259\u0279/)"
+    "_global": "[Whitaker](/w\u026at\u0259k\u0259\u0279/)",
+    "am_echo": "Whitaker"
   },
   "White": {
     "_global": "White"
   },
   "Whiteboy": {
-    "_global": "white boy"
+    "_global": "white boy",
+    "am_echo": "white boy"
   },
   "Whoosh": {
     "_global": "[Whoosh](/wu\u0283/)"
@@ -5441,7 +5874,7 @@
     "_global": "[William](/\u02c8w\u026alj\u0259m/)"
   },
   "Winter": {
-    "am_echo": "[Winter](/\u02c8w\u026ant\u0259\u0279/)"
+    "am_echo": "Winter"
   },
   "Wit": {
     "_global": "Wit"
@@ -5450,7 +5883,8 @@
     "_global": "Without"
   },
   "Wolf": {
-    "_global": "[Wolf](/w\u028alf/)"
+    "_global": "[Wolf](/w\u028alf/)",
+    "am_echo": "[Wolf](/w\u028alf/)"
   },
   "Wonderland": {
     "_global": "Wonderland"
@@ -5462,10 +5896,12 @@
     "am_echo": "[Woody's](/\u02c8w\u028adiz/)"
   },
   "World": {
-    "_global": "world"
+    "_global": "world",
+    "am_echo": "world"
   },
   "Worlds": {
-    "_global": "Worlds"
+    "_global": "Worlds",
+    "am_echo": "Worlds"
   },
   "Wormers": {
     "_global": "Wormers"
@@ -5486,10 +5922,12 @@
     "_global": "Wrist breaker"
   },
   "Wycinski": {
-    "_global": "Wycinski"
+    "_global": "Wycinski",
+    "am_echo": "Wycinski"
   },
   "Wycinski's": {
-    "_global": "wisinskeez"
+    "_global": "wisinskeez",
+    "am_echo": "wisinskeez"
   },
   "Wycinski-esque": {
     "_global": "wihsinski eesk"
@@ -5507,7 +5945,8 @@
     "_global": "X-Men"
   },
   "Xiaodong": {
-    "_global": "shaodong"
+    "_global": "shaodong",
+    "am_echo": "shaodong"
   },
   "Ya-ahh": {
     "_global": "[Ya-ahh](/j\u0251\u0251/)"
@@ -5536,22 +5975,26 @@
     "_global": "yeh"
   },
   "Yeahhh": {
-    "_global": "yeah"
+    "_global": "yeah",
+    "am_echo": "yeah"
   },
   "Year": {
     "_global": "Year's"
   },
   "Year's": {
-    "_global": "Year's"
+    "_global": "Year's",
+    "am_echo": "Year's"
   },
   "Years": {
-    "_global": "Years"
+    "_global": "Years",
+    "am_echo": "Years"
   },
   "Year\u2019s": {
     "_global": "years"
   },
   "Yee": {
-    "_global": "yee"
+    "_global": "yee",
+    "am_echo": "yee"
   },
   "Yikes": {
     "_global": "[Yikes](/\u02c8ja\u026aks/)"
@@ -5566,37 +6009,44 @@
     "_global": "Yosemite"
   },
   "Yoshimoto": {
-    "_global": "yosh ee moe toe"
+    "_global": "yosh ee moe toe",
+    "am_echo": "yosh ee moe toe"
   },
   "You": {
     "_global": "You"
   },
   "You're": {
-    "am_echo": "[You're](/j\u028a\u0279/)"
+    "am_echo": "You're"
   },
   "You've": {
-    "_global": "You've"
+    "_global": "You've",
+    "am_echo": "You've"
   },
   "Young": {
     "_global": "Young"
   },
   "Yuen": {
-    "_global": "yooen"
+    "_global": "yooen",
+    "am_echo": "yooen"
   },
   "Yvette": {
-    "_global": "[Yvette](/\u026a\u02c8v\u025bt/)"
+    "_global": "[Yvette](/\u026a\u02c8v\u025bt/)",
+    "am_echo": "[Yvette](/\u026a\u02c8v\u025bt/)"
   },
   "Zen": {
-    "_global": "zen"
+    "_global": "zen",
+    "am_echo": "zen"
   },
   "Zen-rigged": {
     "_global": "zenrigged"
   },
   "Zeyneb": {
-    "_global": "zayneb"
+    "_global": "zayneb",
+    "am_echo": "zayneb"
   },
   "Zhao": {
-    "_global": "jow"
+    "_global": "jow",
+    "am_echo": "jow"
   },
   "Zone": {
     "_global": "Zone",
@@ -5606,1659 +6056,1698 @@
     "am_echo": "Zones"
   },
   "aerogel": {
-    "am_echo": "[aerogel](/\u02c8\u025b\u0279o\u028a\u02ccd\u0292\u025bl/)"
+    "am_echo": "aerogel"
   },
   "afileres": {
-    "am_echo": "[afileres](/\u0251f\u026a\u02c8l\u025b\u0279\u025bs/)"
+    "am_echo": "[afileres](/\u0251fl\u025b\u0279\u025bs/)"
   },
   "agonised": {
-    "am_echo": "[agonised](/\u02c8\u00e6\u0261\u0259na\u026azd/)"
+    "am_echo": "agonised"
   },
   "agonising": {
-    "am_echo": "[agonising](/\u02c8\u00e6\u0261\u0259na\u026az\u026a\u014b/)"
+    "am_echo": "agonising"
   },
   "ahhhh": {
     "am_echo": "[ahhhh](/\u0251\u0251\u0251\u0251/)"
   },
   "aircruiser": {
-    "am_echo": "[aircruiser](/\u02c8\u025b\u0279\u02cck\u0279u\u028az\u0259\u0279/)"
+    "am_echo": "aircruiser"
   },
   "airjeep": {
-    "am_echo": "[airjeep](/\u02c8\u025b\u0279\u02ccd\u0292i\u026ap/)"
+    "am_echo": "airjeep"
   },
   "airpacks": {
-    "am_echo": "[airpacks](/\u02c8\u025br\u02ccp\u00e6ks/)"
+    "am_echo": "airpacks"
   },
   "alcoved": {
-    "am_echo": "[alcoved](/\u02c8\u00e6lk\u0259vd/)"
+    "am_echo": "alcoved"
   },
   "alongs": {
-    "am_echo": "[alongs](/\u0259\u02c8l\u0254\u014bz/)"
+    "am_echo": "alongs"
   },
   "amped": {
-    "am_echo": "[amped](/\u00e6mpt/)"
+    "am_echo": "amped"
   },
   "anatomiser": {
-    "am_echo": "[anatomiser](/\u0259\u02c8n\u00e6t\u0259\u02ccma\u026az\u0259\u0279/)"
+    "am_echo": "[anatomiser](/\u0259n\u00e6t\u0259ma\u026az\u0259\u0279/)"
   },
   "angelfire": {
-    "am_echo": "[angelfire](/\u02c8e\u026and\u0292\u0259l\u02ccfa\u026a\u0259r/)"
+    "am_echo": "angelfire"
   },
   "antigrav": {
-    "am_echo": "[antigrav](/\u02c8\u00e6nt\u026a\u02cc\u0261\u0279\u00e6v/)"
+    "am_echo": "antigrav"
   },
   "antihuman": {
-    "am_echo": "[antihuman](/\u02cc\u00e6nti\u02c8hju\u026am\u0259n/)"
+    "am_echo": "antihuman"
   },
   "antirad": {
-    "am_echo": "[antirad](/\u02c8\u00e6nt\u026a\u02cc\u0279\u00e6d/)"
+    "am_echo": "antirad"
   },
   "apologise": {
-    "am_echo": "[apologise](/\u0259\u02c8p\u0251l\u0259\u02ccd\u0292a\u026az/)"
+    "am_echo": "apologise"
   },
   "apologising": {
-    "am_echo": "[apologising](/\u0259\u02c8p\u0251l\u0259d\u0292a\u026az\u026a\u014b/)"
+    "am_echo": "apologising"
   },
   "appetisers": {
-    "am_echo": "[appetisers](/\u02c8\u00e6p\u026a\u02ccta\u026az\u0259\u0279z/)"
+    "am_echo": "appetisers"
+  },
+  "archaeologue": {
+    "am_echo": "Archaeolog"
   },
   "archaeologues": {
-    "am_echo": "[archaeologues](/\u02cc\u0251\u0279ki\u02c8\u0251l\u0251\u0261z/)"
+    "am_echo": "[archaeologues](/\u02cc\u0251\u0279kiol\u0251\u0261z/)"
   },
   "armoured": {
-    "am_echo": "[armoured](/\u02c8\u0251\u0279m\u0259\u0279d/)"
+    "am_echo": "armoured"
   },
   "armouring": {
-    "am_echo": "[armouring](/\u02c8\u0251rm\u0259r\u026a\u014b/)"
+    "am_echo": "armouring"
+  },
+  "armoury": {
+    "am_echo": "Armoury"
   },
   "arse": {
-    "am_echo": "[arse](/\u0251\u0279s/)"
+    "am_echo": "ass"
   },
   "asteroidal": {
-    "am_echo": "[asteroidal](/\u02cc\u00e6st\u0259\u02c8\u0279\u0254\u026ad\u0259l/)"
+    "am_echo": "asteroidal"
   },
   "ation": {
-    "am_echo": "[ation](/e\u026a\u0283\u0259n/)"
+    "am_echo": "ation"
   },
   "authorisation": {
-    "am_echo": "[authorisation](/\u02cc\u0254\u03b8\u0259\u0279\u0259\u02c8ze\u026a\u0283\u0259n/)"
+    "am_echo": "authorisation"
   },
   "authorise": {
-    "am_echo": "[authorise](/\u02c8\u0254\u03b8\u0259\u0279a\u026az/)"
+    "am_echo": "authorise"
   },
   "authorised": {
-    "am_echo": "[authorised](/\u02c8\u0251\u0251\u03b8\u0259\u02ccra\u026azd/)"
+    "am_echo": "authorised"
   },
   "autocannon": {
-    "am_echo": "[autocannon](/\u02c8\u0254to\u028a\u02cck\u00e6n\u0259n/)"
+    "am_echo": "autocannon"
   },
   "autodefensive": {
-    "am_echo": "[autodefensive](/\u02c8\u0254to\u028ad\u026a\u02ccf\u025bns\u026av/)"
+    "am_echo": "autodefensive"
   },
   "automould": {
-    "am_echo": "[automould](/\u02c8\u0251\u0251to\u028a\u02ccmo\u028ald/)"
+    "am_echo": "[automould](/\u0251\u0251to\u028amo\u028ald/)"
   },
   "autorepair": {
-    "am_echo": "[autorepair](/\u02c8\u0254to\u028a\u0279\u026a\u02ccp\u025b\u0279/)"
+    "am_echo": "autorepair"
   },
   "autoseek": {
-    "am_echo": "[autoseek](/\u02c8\u0254to\u028a\u02ccsi\u026ak/)"
+    "am_echo": "autoseek"
   },
   "autosurgeon": {
-    "am_echo": "[autosurgeon](/\u02c8\u0251\u0251to\u028a\u02ccs\u025c\u0279d\u0292\u0259n/)"
+    "am_echo": "autosurgeon"
   },
   "backblown": {
-    "am_echo": "[backblown](/b\u00e6k\u02c8blo\u028an/)"
+    "am_echo": "backblown"
   },
   "backflipped": {
-    "am_echo": "[backflipped](/\u02c8b\u00e6k\u02ccfl\u026apt/)"
+    "am_echo": "backflipped"
   },
   "backglow": {
-    "am_echo": "[backglow](/\u02c8b\u00e6k\u02cc\u0261lo\u028a/)"
+    "am_echo": "backglow"
   },
   "backreeled": {
-    "am_echo": "[backreeled](/b\u00e6k\u02c8ri\u026ald/)"
+    "am_echo": "backreeled"
   },
   "backstab": {
-    "am_echo": "[backstab](/\u02c8b\u00e6k\u02ccst\u00e6b/)"
+    "am_echo": "backstab"
   },
   "backsteps": {
-    "am_echo": "[backsteps](/\u02c8b\u00e6k\u02ccst\u025bps/)"
+    "am_echo": "backsteps"
   },
   "bannered": {
-    "am_echo": "[bannered](/\u02c8b\u00e6n\u0259rd/)"
+    "am_echo": "bannered"
   },
   "basslined": {
-    "am_echo": "[basslined](/\u02c8be\u026as\u02ccla\u026and/)"
+    "am_echo": "basslined"
   },
   "battlecomputer": {
-    "am_echo": "[battlecomputer](/\u02c8b\u00e6t\u0259l\u02cck\u0259mpju\u028at\u0259\u0279/)"
+    "am_echo": "battlecomputer"
   },
   "battletech": {
-    "am_echo": "[battletech](/\u02c8b\u00e6t\u0259l\u02cct\u025bk/)"
+    "am_echo": "battletech"
   },
   "battlezones": {
-    "am_echo": "[battlezones](/\u02c8b\u00e6tl\u02cczo\u028anz/)"
+    "am_echo": "targetless"
   },
   "beastie": {
-    "am_echo": "[beastie](/\u02c8bi\u026asti/)"
+    "am_echo": "beastie"
   },
   "bedsheet": {
-    "am_echo": "[bedsheet](/\u02c8b\u025bd\u02cc\u0283i\u026at/)"
+    "am_echo": "bedsheet"
   },
   "bedshelf": {
-    "am_echo": "[bedshelf](/\u02c8b\u025bd\u02cc\u0283\u025blf/)"
+    "am_echo": "bedshelf"
   },
   "bedshelves": {
-    "am_echo": "[bedshelves](/\u02c8b\u025bd\u02cc\u0283\u025blvz/)"
+    "am_echo": "bedshelves"
   },
   "bedspace": {
-    "am_echo": "[bedspace](/\u02c8b\u025bdspe\u026as/)"
+    "am_echo": "bedspace"
   },
   "behaviour": {
-    "am_echo": "[behaviour](/b\u026a\u02c8he\u026avj\u0259\u0279/)"
+    "am_echo": "behaviour"
   },
   "behavioural": {
-    "am_echo": "[behavioural](/b\u026a\u02c8he\u026avj\u0259\u0279\u0259l/)"
+    "am_echo": "behavioural"
   },
   "belaweed": {
     "am_echo": "[belaweed](/b\u025bl\u0259wi\u026ad/)"
   },
   "bento": {
-    "am_echo": "[bento](/\u02c8b\u025bnto\u028a/)"
+    "am_echo": "bento"
   },
   "betathanatine": {
-    "am_echo": "[betathanatine](/\u02ccbe\u026at\u0259\u02c8\u03b8\u00e6n\u0259t\u026an/)"
+    "am_echo": "betathanatine"
   },
   "bioalloy": {
-    "am_echo": "[bioalloy](/\u02c8ba\u026ao\u028a\u02cc\u00e6lo\u026a/)"
+    "am_echo": "[bioalloy](/ba\u026ao\u028aallo\u026a/)"
   },
   "biocircuits": {
-    "am_echo": "[biocircuits](/\u02c8ba\u026ao\u028a\u02ccs\u025crk\u026ats/)"
+    "am_echo": "biocircuits"
   },
   "biodata": {
-    "am_echo": "[biodata](/\u02ccba\u026ao\u028a\u02c8de\u026at\u0259/)"
+    "am_echo": "biodata"
   },
   "biofilaments": {
-    "am_echo": "[biofilaments](/\u02ccba\u026ao\u028a\u02c8f\u026al\u0259m\u0259nts/)"
+    "am_echo": "biofilaments"
   },
   "biohazard": {
-    "am_echo": "[biohazard](/\u02c8ba\u026ao\u028a\u02cch\u00e6z\u025ad/)"
+    "am_echo": "biohazard"
   },
   "biolab": {
-    "am_echo": "[biolab](/\u02c8ba\u026ao\u028al\u00e6b/)"
+    "am_echo": "biolab"
   },
   "bioplate": {
-    "am_echo": "[bioplate](/\u02c8ba\u026ao\u028a\u02ccple\u026at/)"
+    "am_echo": "bioplate"
   },
   "bioplates": {
-    "am_echo": "[bioplates](/\u02c8ba\u026ao\u028a\u02ccple\u026ats/)"
+    "am_echo": "bioplates"
   },
   "bioscience": {
-    "am_echo": "[bioscience](/\u02c8ba\u026ao\u028a\u02ccsa\u026a\u0259ns/)"
+    "am_echo": "bioscience"
   },
   "biosciences": {
-    "am_echo": "[biosciences](/\u02c8ba\u026ao\u028a\u02ccsa\u026a\u0259ns\u026az/)"
+    "am_echo": "biosciences"
   },
   "biosigns": {
-    "am_echo": "[biosigns](/\u02c8ba\u026ao\u028asa\u026anz/)"
+    "am_echo": "biosigns"
   },
   "biotags": {
-    "am_echo": "[biotags](/\u02c8ba\u026ao\u028a\u02cct\u00e6\u0261z/)"
+    "am_echo": "biotags"
   },
   "biotechs": {
-    "am_echo": "[biotechs](/\u02c8ba\u026ao\u028a\u02cct\u025bks/)"
+    "am_echo": "biotechs"
   },
   "bioware": {
-    "am_echo": "[bioware](/\u02c8ba\u026ao\u028a\u02ccw\u025b\u0279/)"
+    "am_echo": "bioware"
   },
   "blam": {
-    "am_echo": "[blam](/bl\u00e6m/)"
+    "am_echo": "blam"
   },
   "blas": {
-    "am_echo": "[blas](/bl\u00e6s/)"
+    "am_echo": "blas"
   },
   "blowback": {
-    "am_echo": "[blowback](/\u02c8blo\u028a\u02ccb\u00e6k/)"
+    "am_echo": "blowback"
   },
   "blowjob": {
-    "am_echo": "[blowjob](/\u02c8blo\u028a\u02a4\u0251b/)"
+    "am_echo": "blowjob"
   },
   "blowjobs": {
-    "am_echo": "[blowjobs](/\u02c8blo\u028a\u02ccd\u0292\u0251bz/)"
+    "am_echo": "blowjobs"
   },
   "bonelessly": {
-    "am_echo": "[bonelessly](/\u02c8bo\u028anl\u0259sli/)"
+    "am_echo": "bonelessly"
   },
   "bookchips": {
-    "am_echo": "[bookchips](/\u02c8b\u028ak\u02cc\u02a7\u026aps/)"
+    "am_echo": "bookchips"
   },
   "bootsoles": {
-    "am_echo": "[bootsoles](/\u02c8bu\u026at\u02ccso\u028alz/)"
+    "am_echo": "bootsoles"
   },
   "bottleback": {
-    "am_echo": "[bottleback](/\u02c8b\u0251t\u0259l\u02ccb\u00e6k/)"
+    "am_echo": "bottleback"
   },
   "brainstem": {
-    "am_echo": "[brainstem](/\u02c8b\u0279e\u026an\u02ccst\u025bm/)"
+    "am_echo": "brainstem"
   },
   "broomed": {
-    "am_echo": "[broomed](/b\u0279u\u028amd/)"
+    "am_echo": "broomed"
   },
   "bubblefab": {
-    "am_echo": "[bubblefab](/\u02c8b\u028cb\u0259l\u02ccf\u00e6b/)"
+    "am_echo": "[bubblefab](/\u02c8b\u028cb\u0259lf\u00e6b/)"
   },
   "bubblefabs": {
     "am_echo": "[bubblefabs](/\u02c8b\u028cb\u0259l\u02ccf\u00e6bz/)"
   },
   "bubblestuff": {
-    "am_echo": "[bubblestuff](/\u02c8b\u028cb\u0259l\u02ccst\u028cf/)"
+    "am_echo": "bubblestuff"
   },
   "buttonhead": {
-    "am_echo": "[buttonhead](/\u02c8b\u028ct\u0259n\u02cch\u025bd/)"
+    "am_echo": "buttonhead"
   },
   "camas": {
-    "am_echo": "[camas](/\u02c8k\u0251m\u0251s/)"
+    "am_echo": "[camas](/k\u0251m\u0251s/)"
   },
   "cannibalised": {
-    "am_echo": "[cannibalised](/\u02c8k\u00e6n\u026ab\u0259\u02ccla\u026azd/)"
+    "am_echo": "cannibalised"
   },
   "canvasynth": {
-    "am_echo": "[canvasynth](/\u02c8k\u00e6nv\u0259\u02ccs\u026an\u03b8/)"
+    "am_echo": "canvasynth"
   },
   "capitancebolleta": {
-    "am_echo": "[capitancebolleta](/\u02cck\u00e6p\u026at\u0259nsbo\u028a\u02c8l\u025bt\u0259/)"
+    "am_echo": "[capitancebolleta](/k\u00e6p\u026at\u0259nsbo\u028al\u025bt\u0259/)"
   },
   "categorised": {
-    "am_echo": "[categorised](/\u02c8k\u00e6t\u0259\u0261\u0259\u02cc\u0279a\u026azd/)"
+    "am_echo": "categorised"
   },
   "cathedric": {
-    "am_echo": "[cathedric](/k\u0259\u02c8\u03b8i\u026adr\u026ak/)"
+    "am_echo": "[cathedric](/k\u0259\u03b8i\u026adr\u026ak/)"
   },
   "cauterised": {
-    "am_echo": "[cauterised](/\u02c8k\u0254t\u0259ra\u026azd/)"
+    "am_echo": "cauterised"
   },
   "cauterises": {
-    "am_echo": "[cauterises](/\u02c8k\u0254t\u0259\u0279a\u026az\u026az/)"
+    "am_echo": "cauterises"
   },
   "ceilinged": {
-    "am_echo": "[ceilinged](/\u02c8si\u026al\u026a\u014bd/)"
+    "am_echo": "[ceilinged](/si\u026al\u026a\u014bd/)"
   },
   "centimetre": {
-    "am_echo": "[centimetre](/\u02c8s\u025bnt\u0259\u02ccmi\u026at\u025a/)"
+    "am_echo": "[centimetre](/s\u025bnt\u0259miter/)"
   },
   "centimetres": {
-    "am_echo": "[centimetres](/\u02c8s\u025bnt\u0259\u02ccmi\u026at\u0259\u0279z/)"
+    "am_echo": "[centimetres](/s\u025bnt\u0259meterz/)"
   },
   "centipedal": {
-    "am_echo": "[centipedal](/\u02ccs\u025bnt\u026a\u02c8pi\u026adl/)"
+    "am_echo": "[centipedal](/s\u025bnt\u026api\u026adl/)"
   },
   "centre": {
-    "am_echo": "[centre](/\u02c8s\u025bnt\u0259\u0279/)"
+    "am_echo": "centre"
   },
   "centred": {
-    "am_echo": "[centred](/\u02c8s\u025bnt\u0259\u0279d/)"
+    "am_echo": "centred"
   },
   "centredness": {
-    "am_echo": "[centredness](/\u02c8s\u025bnt\u0259rdn\u025bs/)"
+    "am_echo": "centredness"
   },
   "centres": {
-    "am_echo": "[centres](/\u02c8s\u025bnt\u0259\u0279z/)"
+    "am_echo": "centres"
   },
   "chambering": {
-    "am_echo": "[chambering](/\u02c8\u02a7e\u026amb\u0259\u0279\u026a\u014b/)"
+    "am_echo": "chambering"
   },
   "chameleochrome": {
     "am_echo": "[chameleochrome](/k\u0259\u02c8mi\u026ali\u02cco\u028a\u02cck\u0279o\u028am/)"
   },
   "chem": {
-    "am_echo": "[chem](/k\u025bm/)"
+    "am_echo": "chem"
   },
   "chickling": {
-    "am_echo": "[chickling](/\u02c8t\u0283\u026akl\u026a\u014b/)"
+    "am_echo": "chickling"
   },
   "chiploader": {
-    "am_echo": "[chiploader](/\u02c8t\u0283\u026ap\u02cclo\u028ad\u0259r/)"
+    "am_echo": "chiploader"
   },
   "circuitboards": {
-    "am_echo": "[circuitboards](/\u02c8s\u025c\u0279k\u026at\u02ccb\u0254\u0279dz/)"
+    "am_echo": "circuitboards"
   },
   "civilisation": {
-    "am_echo": "[civilisation](/\u02ccs\u026av\u0259l\u0259\u02c8ze\u026a\u0283\u0259n/)"
+    "am_echo": "civilisation"
   },
   "civilisations": {
-    "am_echo": "[civilisations](/\u02ccs\u026av\u0259la\u026a\u02c8ze\u026a\u0283\u0259nz/)"
+    "am_echo": "civilisations"
   },
   "civilised": {
-    "am_echo": "[civilised](/\u02c8s\u026av\u0259la\u026azd/)"
+    "am_echo": "civilised"
   },
   "cobwebbing": {
-    "am_echo": "[cobwebbing](/\u02c8k\u0251bw\u025bb\u026a\u014b/)"
+    "am_echo": "cobwebbing"
   },
   "colonisation": {
-    "am_echo": "[colonisation](/\u02cck\u0251l\u0259na\u026a\u02c8ze\u026a\u0283\u0259n/)"
+    "am_echo": "colonisation"
   },
   "colonise": {
-    "am_echo": "[colonise](/\u02c8k\u0251l\u0259na\u026az/)"
+    "am_echo": "colonise"
   },
   "colonised": {
-    "am_echo": "[colonised](/\u02c8k\u0251l\u0259\u02ccna\u026azd/)"
+    "am_echo": "colonised"
   },
   "colour": {
-    "am_echo": "[colour](/\u02c8k\u028cl\u0259\u0279/)"
+    "am_echo": "color"
   },
   "colouring": {
-    "am_echo": "[colouring](/\u02c8k\u028cl\u0259r\u026a\u014b/)"
+    "am_echo": "colouring"
   },
   "colours": {
-    "am_echo": "[colours](/\u02c8k\u028cl\u0259\u0279z/)"
+    "am_echo": "colours"
   },
   "comlink": {
-    "am_echo": "[comlink](/\u02c8k\u0251m\u02ccl\u026a\u014bk/)"
+    "am_echo": "[comlink](/k\u0251ml\u026a\u014bk/)"
   },
   "communiqu": {
-    "am_echo": "[communiqu](/k\u0259\u02ccmju\u026an\u026a\u02c8ke\u026a/)"
+    "am_echo": "communique"
   },
   "comp": {
-    "am_echo": "[comp](/k\u0251mp/)"
+    "am_echo": "comp"
   },
   "compa": {
-    "am_echo": "[compa](/\u02c8k\u0251mp\u0251/)"
+    "am_echo": "[compa](/k\u0251mp\u0251/)"
   },
   "compartmentalisation": {
-    "am_echo": "[compartmentalisation](/k\u0259m\u02ccp\u0251\u0279tm\u025bnt\u0259l\u026a\u02c8ze\u026a\u0283\u0259n/)"
+    "am_echo": "compartmentalisation"
   },
   "compensators": {
-    "am_echo": "[compensators](/\u02c8k\u0251mp\u0259n\u02ccse\u026at\u0259\u0279z/)"
+    "am_echo": "compensators"
   },
   "comset": {
-    "am_echo": "[comset](/\u02c8k\u0251m\u02ccs\u025bt/)"
+    "am_echo": "[comset](/k\u0251ms\u025bt/)"
   },
   "comsystem": {
-    "am_echo": "[comsystem](/\u02c8k\u0251m\u02ccs\u026ast\u0259m/)"
+    "am_echo": "[comsystem](/k\u0251ms\u026ast\u0259m/)"
   },
   "config": {
-    "am_echo": "[config](/\u02c8k\u0251nf\u026a\u0261/)"
+    "am_echo": "config"
   },
   "configs": {
-    "am_echo": "[configs](/\u02c8k\u0251nf\u026a\u0261z/)"
+    "am_echo": "configs"
   },
   "contam": {
-    "am_echo": "[contam](/\u02c8k\u0251nt\u00e6m/)"
+    "am_echo": "contam"
   },
   "corporates": {
     "am_echo": "[corporates](/\u02c8k\u0254\u0279p\u0259\u0279\u026ats/)"
   },
   "cosily": {
-    "am_echo": "[cosily](/\u02c8ko\u028az\u026ali/)"
+    "am_echo": "cosily"
   },
   "counselling": {
-    "am_echo": "[counselling](/\u02c8ka\u028ans\u0259l\u026a\u014b/)"
+    "am_echo": "counselling"
   },
   "counterfeed": {
-    "am_echo": "[counterfeed](/\u02c8ka\u028ant\u0259\u0279fi\u026ad/)"
+    "am_echo": "counterfeed"
   },
   "counterintrusion": {
-    "am_echo": "[counterintrusion](/\u02ccka\u028ant\u0259\u0279\u026an\u02c8t\u0279u\u028a\u0292\u0259n/)"
+    "am_echo": "counterintrusion"
   },
   "coveralled": {
-    "am_echo": "[coveralled](/\u02c8k\u028cv\u0259r\u0254\u02d0ld/)"
+    "am_echo": "coveralled"
   },
   "crashball": {
-    "am_echo": "[crashball](/\u02c8kr\u00e6\u0283b\u0254l/)"
+    "am_echo": "crashball"
   },
   "crenellation": {
-    "am_echo": "[crenellation](/\u02cckr\u025bn\u0259\u02c8le\u026a\u0283\u0259n/)"
+    "am_echo": "crenellation"
   },
   "crickle": {
-    "am_echo": "[crickle](/\u02c8kr\u026akl/)"
+    "am_echo": "crickle"
   },
   "crickling": {
-    "am_echo": "[crickling](/\u02c8kr\u026akl\u026a\u014b/)"
+    "am_echo": "crickling"
   },
   "crit": {
-    "am_echo": "[crit](/kr\u026at/)"
+    "am_echo": "crit"
   },
   "cryocap": {
-    "am_echo": "[cryocap](/\u02c8k\u0279a\u026ao\u028a\u02cck\u00e6p/)"
+    "am_echo": "cryocap"
   },
   "cryocapped": {
-    "am_echo": "[cryocapped](/\u02c8k\u0279a\u026ao\u028a\u02cck\u00e6pt/)"
+    "am_echo": "cryocapped"
   },
   "cryocaps": {
-    "am_echo": "[cryocaps](/\u02c8k\u0279a\u026ao\u028a\u02cck\u00e6ps/)"
+    "am_echo": "cryocaps"
   },
   "cryocapsules": {
-    "am_echo": "[cryocapsules](/\u02c8k\u0279a\u026ao\u028a\u02cck\u00e6psu\u026alz/)"
+    "am_echo": "[cryocapsules](/k\u0279a\u026ao\u028ak\u00e6psu\u026alz/)"
   },
   "cryosystems": {
-    "am_echo": "[cryosystems](/\u02c8kra\u026ao\u028a\u02ccs\u026ast\u0259mz/)"
+    "am_echo": "cryosystems"
   },
   "cryotanks": {
-    "am_echo": "[cryotanks](/\u02c8kra\u026ao\u028at\u00e6\u014bks/)"
+    "am_echo": "cryotanks"
   },
   "curfewed": {
-    "am_echo": "[curfewed](/\u02c8k\u025c\u0279fju\u026ad/)"
+    "am_echo": "curfewed"
   },
   "customised": {
-    "am_echo": "[customised](/\u02c8k\u028cst\u0259\u02ccma\u026azd/)"
+    "am_echo": "customised"
   },
   "cyclopic": {
-    "am_echo": "[cyclopic](/sa\u026a\u02c8kl\u0251p\u026ak/)"
+    "am_echo": "cyclopic"
   },
   "datachips": {
-    "am_echo": "[datachips](/\u02c8de\u026at\u0259\u02cct\u0283\u026aps/)"
+    "am_echo": "datachips"
   },
   "datacoil": {
-    "am_echo": "[datacoil](/\u02c8de\u026at\u0259\u02cck\u0254\u026al/)"
+    "am_echo": "datacoil"
   },
   "datacore": {
-    "am_echo": "[datacore](/\u02c8de\u026at\u0259\u02cck\u0254\u0279/)"
+    "am_echo": "datacore"
   },
   "datadisplay": {
-    "am_echo": "[datadisplay](/\u02c8de\u026at\u0259\u02ccd\u026asple\u026a/)"
+    "am_echo": "datadisplay"
   },
   "datafeeds": {
-    "am_echo": "[datafeeds](/\u02c8de\u026at\u0259fi\u026adz/)"
+    "am_echo": "datafeeds"
   },
   "dataflow": {
-    "am_echo": "[dataflow](/\u02c8de\u026at\u0259\u02ccflo\u028a/)"
+    "am_echo": "dataflow"
   },
   "datahead": {
-    "am_echo": "[datahead](/\u02c8de\u026at\u0259\u02cch\u025bd/)"
+    "am_echo": "datahead"
   },
   "datalaunch": {
-    "am_echo": "[datalaunch](/\u02c8de\u026at\u0259\u02ccl\u0254nt\u0283/)"
+    "am_echo": "datalaunch"
   },
   "dataport": {
-    "am_echo": "[dataport](/\u02c8de\u026at\u0259\u02ccp\u0254\u0279t/)"
+    "am_echo": "[dataport](/de\u026at\u0259p\u0254\u0279t/)"
   },
   "dataprocessing": {
-    "am_echo": "[dataprocessing](/\u02c8de\u026at\u0259\u02ccpr\u0251s\u025bs\u026a\u014b/)"
+    "am_echo": "dataprocessing"
   },
   "datastack": {
-    "am_echo": "[datastack](/\u02c8de\u026at\u0259\u02ccst\u00e6k/)"
+    "am_echo": "datastack"
   },
   "datastacks": {
-    "am_echo": "[datastacks](/\u02c8de\u026at\u0259\u02ccst\u00e6ks/)"
+    "am_echo": "[datastacks](/de\u026at\u0259st\u00e6ks/)"
   },
   "datasystem": {
-    "am_echo": "[datasystem](/\u02c8de\u026at\u0259\u02ccs\u026ast\u0259m/)"
+    "am_echo": "[datasystem](/de\u026at\u0259s\u026ast\u0259m/)"
   },
   "datasystems": {
-    "am_echo": "[datasystems](/\u02c8de\u026at\u0259\u02ccs\u026ast\u0259mz/)"
+    "am_echo": "datasystems"
   },
   "dataware": {
-    "am_echo": "[dataware](/\u02c8de\u026at\u0259\u02ccw\u025br/)"
+    "am_echo": "dataware"
   },
   "deactivator": {
-    "am_echo": "[deactivator](/di\u02c8\u00e6kt\u026ave\u026at\u0259\u0279/)"
+    "am_echo": "stylised"
   },
   "deadwired": {
-    "am_echo": "[deadwired](/\u02c8d\u025bd\u02ccwa\u026a\u0259rd/)"
+    "am_echo": "deadwired"
   },
   "defence": {
-    "am_echo": "[defence](/d\u026a\u02c8f\u025bns/)"
+    "am_echo": "defence"
   },
   "defenceless": {
-    "am_echo": "[defenceless](/d\u026a\u02c8f\u025bnsl\u0259s/)"
+    "am_echo": "defenceless"
   },
   "defences": {
-    "am_echo": "[defences](/d\u026a\u02c8f\u025bns\u026az/)"
+    "am_echo": "defences"
   },
   "defocused": {
-    "am_echo": "[defocused](/di\u026a\u02c8fo\u028ak\u0259st/)"
+    "am_echo": "defocused"
   },
   "defunded": {
-    "am_echo": "[defunded](/di\u026a\u02c8f\u028cnd\u026ad/)"
+    "am_echo": "defunded"
   },
   "demeanour": {
-    "am_echo": "[demeanour](/d\u026a\u02c8mi\u026an\u0259\u0279/)"
+    "am_echo": "[demeanour](/d\u026aminer/)"
   },
   "denned": {
-    "am_echo": "[denned](/d\u025bnd/)"
+    "am_echo": "denned"
   },
   "dermals": {
-    "am_echo": "[dermals](/\u02c8d\u025c\u0279m\u0259lz/)"
+    "am_echo": "dermals"
   },
   "dialled": {
-    "am_echo": "[dialled](/\u02c8da\u026a\u0259ld/)"
+    "am_echo": "dialled"
   },
   "dighead": {
-    "am_echo": "[dighead](/\u02c8d\u026a\u0261\u02cch\u025bd/)"
+    "am_echo": "dighead"
   },
   "digitise": {
-    "am_echo": "[digitise](/\u02c8d\u026ad\u0292\u026ata\u026az/)"
+    "am_echo": "digitise"
   },
   "digitised": {
-    "am_echo": "[digitised](/\u02c8d\u026ad\u0292\u026ata\u026azd/)"
+    "am_echo": "digitised"
   },
   "dizzyingly": {
-    "am_echo": "[dizzyingly](/\u02c8d\u026azi\u026a\u014bli/)"
+    "am_echo": "dizzyingly"
   },
   "downscroll": {
-    "am_echo": "[downscroll](/\u02c8da\u028anskro\u028al/)"
+    "am_echo": "downscroll"
   },
   "downturned": {
-    "am_echo": "[downturned](/\u02c8da\u028ant\u025c\u0279nd/)"
+    "am_echo": "downturned"
   },
   "downwhining": {
-    "am_echo": "[downwhining](/\u02c8da\u028an\u02ccwa\u026an\u026a\u014b/)"
+    "am_echo": "downwhining"
   },
   "draughty": {
-    "am_echo": "[draughty](/\u02c8dr\u00e6fti/)"
+    "am_echo": "draughty"
   },
   "dreadlocked": {
-    "am_echo": "[dreadlocked](/\u02c8dr\u025bdl\u0251kt/)"
+    "am_echo": "dreadlocked"
   },
   "dreamsleep": {
-    "am_echo": "[dreamsleep](/\u02c8d\u0279i\u026am\u02ccsli\u026ap/)"
+    "am_echo": "dreamsleep"
   },
   "drumroll": {
-    "am_echo": "[drumroll](/\u02c8d\u0279\u028cm\u02cc\u0279o\u028al/)"
+    "am_echo": "drumroll"
   },
   "dustmite": {
-    "am_echo": "[dustmite](/\u02c8d\u028cstma\u026at/)"
+    "am_echo": "dustmite"
   },
   "ePub": {
-    "am_echo": "[ePub](/\u02c8i\u026a\u02ccp\u028cb/)"
+    "am_echo": "ePub"
   },
   "earnt": {
-    "am_echo": "[earnt](/\u025c\u0279nt/)"
+    "am_echo": "earnt"
   },
   "eeled": {
-    "am_echo": "[eeled](/i\u026ald/)"
+    "am_echo": "eeled"
   },
   "eeling": {
-    "am_echo": "[eeling](/\u02c8i\u026al\u026a\u014b/)"
+    "am_echo": "eeling"
   },
   "electromag": {
-    "am_echo": "[electromag](/\u026a\u02c8l\u025bkt\u0279o\u028a\u02ccm\u00e6\u0261/)"
+    "am_echo": "electromag"
   },
   "electroneural": {
-    "am_echo": "[electroneural](/\u026a\u02ccl\u025bkt\u0279o\u028a\u02c8n\u028a\u0279\u0259l/)"
+    "am_echo": "electroneural"
   },
   "empathin": {
-    "am_echo": "[empathin](/\u02c8\u025bmp\u0259\u03b8\u026an/)"
+    "am_echo": "empathin"
   },
   "empathist": {
-    "am_echo": "[empathist](/\u02c8\u025bmp\u0259\u03b8\u026ast/)"
+    "am_echo": "empathist"
   },
   "empathists": {
-    "am_echo": "[empathists](/\u02c8\u025bmp\u0259\u03b8\u026asts/)"
+    "am_echo": "empathists"
   },
   "epicanthic": {
-    "am_echo": "[epicanthic](/\u02cc\u025bp\u026a\u02c8k\u00e6n\u03b8\u026ak/)"
+    "am_echo": "epicanthic"
   },
   "esque": {
-    "am_echo": "[esque](/\u025bsk/)"
+    "am_echo": "esque"
   },
   "essss": {
     "am_echo": "essss"
   },
   "etcetera": {
-    "am_echo": "[etcetera](/\u025bt\u02c8s\u025bt\u0259\u0279\u0259/)"
+    "am_echo": "[etcetera](/\u025bts\u025bt\u0259\u0279\u0259/)"
   },
   "evac": {
-    "am_echo": "[evac](/\u026a\u02c8v\u00e6k/)"
+    "am_echo": "evac"
   },
   "exitway": {
-    "am_echo": "[exitway](/\u02c8\u025b\u0261z\u026at\u02ccwe\u026a/)"
+    "am_echo": "exitway"
+  },
+  "experia": {
+    "am_echo": "[Experia](/\u025bksp\u026a\u0279i\u0259/)"
   },
   "eyemask": {
-    "am_echo": "[eyemask](/\u02c8a\u026am\u00e6sk/)"
+    "am_echo": "eyemask"
   },
   "eyesockets": {
-    "am_echo": "[eyesockets](/\u02c8a\u026a\u02ccs\u0251k\u026ats/)"
+    "am_echo": "eyesockets"
   },
   "eyestalks": {
-    "am_echo": "[eyestalks](/\u02c8a\u026ast\u0254ks/)"
+    "am_echo": "eyestalks"
   },
   "factly": {
-    "am_echo": "[factly](/\u02c8f\u00e6ktli/)"
+    "am_echo": "factly"
   },
   "factness": {
-    "am_echo": "[factness](/\u02c8f\u00e6ktn\u0259s/)"
+    "am_echo": "factness"
   },
   "failsafes": {
-    "am_echo": "[failsafes](/\u02c8fe\u026alse\u026afs/)"
+    "am_echo": "failsafes"
   },
   "fanmail": {
-    "am_echo": "[fanmail](/\u02c8f\u00e6nme\u026al/)"
+    "am_echo": "fanmail"
   },
   "fantasising": {
-    "am_echo": "[fantasising](/\u02c8f\u00e6nt\u0259sa\u026az\u026a\u014b/)"
+    "am_echo": "fantasising"
   },
   "fastload": {
-    "am_echo": "[fastload](/\u02c8f\u00e6st\u02cclo\u028ad/)"
+    "am_echo": "fastload"
   },
   "favour": {
-    "am_echo": "[favour](/\u02c8fe\u026av\u0259\u0279/)"
+    "am_echo": "favour"
   },
   "favourite": {
-    "am_echo": "[favourite](/\u02c8fe\u026av\u0259\u0279\u026at/)"
+    "am_echo": "favorite"
   },
   "favours": {
-    "am_echo": "[favours](/\u02c8fe\u026av\u0259\u0279z/)"
+    "am_echo": "favours"
   },
   "ferrocrete": {
-    "am_echo": "[ferrocrete](/\u02c8f\u025b\u0279o\u028a\u02cck\u0279i\u026at/)"
+    "am_echo": "[ferrocrete](/f\u025b\u0279o\u028ak\u0279i\u026at/)"
   },
   "fervour": {
-    "am_echo": "[fervour](/\u02c8f\u025c\u0279v\u0259r/)"
+    "am_echo": "fervour"
   },
   "fffffffuuuuck": {
     "am_echo": "[fffffffuuuuck](/f\u028a\u028a\u028ak/)"
   },
   "fibre": {
-    "am_echo": "[fibre](/\u02c8fa\u026ab\u0259\u0279/)"
+    "am_echo": "fibre"
   },
   "fibregrip": {
-    "am_echo": "[fibregrip](/\u02c8fa\u026ab\u0259r\u02cc\u0261r\u026ap/)"
+    "am_echo": "fibregrip"
   },
   "fibres": {
-    "am_echo": "[fibres](/\u02c8fa\u026ab\u0259\u0279z/)"
+    "am_echo": "fibres"
   },
   "fibrously": {
-    "am_echo": "[fibrously](/\u02c8fa\u026abr\u0259sli/)"
+    "am_echo": "fibrously"
   },
   "fireglow": {
-    "am_echo": "[fireglow](/\u02c8fa\u026a\u0259r\u02cc\u0261lo\u028a/)"
+    "am_echo": "fireglow"
   },
   "flarelight": {
-    "am_echo": "[flarelight](/\u02c8fl\u025b\u0279\u02ccla\u026at/)"
+    "am_echo": "flarelight"
   },
   "flavours": {
-    "am_echo": "[flavours](/\u02c8fle\u026av\u0259rz/)"
+    "am_echo": "flavours"
   },
   "flenses": {
-    "am_echo": "[flenses](/\u02c8fl\u025bnz\u026az/)"
+    "am_echo": "flenses"
   },
   "foldedness": {
-    "am_echo": "[foldedness](/\u02c8fo\u028ald\u026adn\u025bs/)"
+    "am_echo": "foldedness"
   },
   "foldings": {
-    "am_echo": "[foldings](/\u02c8fo\u028ald\u026a\u014bz/)"
+    "am_echo": "foldings"
   },
   "forcefield": {
-    "am_echo": "[forcefield](/\u02c8f\u0254rs\u02ccfi\u026ald/)"
+    "am_echo": "forcefield"
   },
   "forgettably": {
-    "am_echo": "[forgettably](/f\u0259\u0279\u02c8\u0261\u025bt\u0259bli/)"
+    "am_echo": "forgettably"
   },
   "fountaining": {
-    "am_echo": "[fountaining](/\u02c8fa\u028ant\u0259n\u026a\u014b/)"
+    "am_echo": "fountaining"
   },
   "freefall": {
-    "am_echo": "[freefall](/\u02c8f\u0279i\u026a\u02ccf\u0254l/)"
+    "am_echo": "freefall"
   },
   "fricfree": {
-    "am_echo": "[fricfree](/\u02c8f\u0279\u026ak\u02ccf\u0279i\u026a/)"
+    "am_echo": "fricfree"
   },
   "frub": {
-    "am_echo": "[frub](/fr\u028cb/)"
+    "am_echo": "frub"
   },
   "frubbed": {
-    "am_echo": "[frubbed](/fr\u028cbd/)"
+    "am_echo": "frubbed"
   },
   "fuckwit": {
-    "am_echo": "[fuckwit](/\u02c8f\u028ck\u02ccw\u026at/)"
+    "am_echo": "fuckwit"
   },
   "generalisable": {
-    "am_echo": "[generalisable](/\u02ccd\u0292\u025bn\u0259\u0279\u0259\u02c8la\u026az\u0259b\u0259l/)"
+    "am_echo": "generalisable"
   },
   "genetech": {
-    "am_echo": "[genetech](/\u02c8d\u0292\u025bn\u026at\u025bk/)"
+    "am_echo": "gene-tech"
   },
   "geolocational": {
-    "am_echo": "[geolocational](/\u02ccd\u0292i\u026ao\u028alo\u028a\u02c8ke\u026a\u0283\u0259n\u0259l/)"
+    "am_echo": "geolocational"
   },
   "geoscan": {
-    "am_echo": "[geoscan](/\u02c8d\u0292i\u026ao\u028ask\u00e6n/)"
+    "am_echo": "geoscan"
   },
   "geosynchs": {
-    "am_echo": "[geosynchs](/\u02c8d\u0292i\u026ao\u028as\u026a\u014bks/)"
+    "am_echo": "geosynchs"
   },
   "gouted": {
-    "am_echo": "[gouted](/\u02c8\u0261a\u028at\u026ad/)"
+    "am_echo": "gouted"
   },
   "gouting": {
-    "am_echo": "[gouting](/\u02c8\u0261a\u028at\u026a\u014b/)"
+    "am_echo": "gouting"
   },
   "gouts": {
-    "am_echo": "[gouts](/\u02c8\u0261a\u028ats/)"
+    "am_echo": "gouts"
   },
   "grafiti": {
-    "am_echo": "[grafiti](/\u0261r\u0259\u02c8fi\u026ati/)"
+    "am_echo": "grafiti"
   },
   "grav": {
     "am_echo": "[grav](/\u0261\u0279\u00e6v/)"
   },
   "gravchute": {
-    "am_echo": "[gravchute](/\u02c8\u0261\u0279\u00e6v\u02cc\u0283u\u028at/)"
+    "am_echo": "gravchute"
   },
   "gravs": {
-    "am_echo": "[gravs](/\u0261\u0279\u00e6vz/)"
+    "am_echo": "gravs"
   },
   "handjob": {
-    "am_echo": "[handjob](/\u02c8h\u00e6nd\u02ccd\u0292\u0251b/)"
+    "am_echo": "handjob"
   },
   "handsbreadth": {
-    "am_echo": "[handsbreadth](/\u02c8h\u00e6ndz\u02ccb\u0279\u025bd\u03b8/)"
+    "am_echo": "handsbreadth"
   },
   "harbour": {
-    "am_echo": "[harbour](/\u02c8h\u0251rb\u0259r/)"
+    "am_echo": "harbour"
   },
   "hardcopy": {
-    "am_echo": "[hardcopy](/\u02c8h\u0251\u0279d\u02cck\u0251pi/)"
+    "am_echo": "hardcopy"
   },
   "hatbrim": {
-    "am_echo": "[hatbrim](/\u02c8h\u00e6t\u02ccbr\u026am/)"
+    "am_echo": "hatbrim"
   },
   "hearthfire": {
-    "am_echo": "[hearthfire](/\u02c8h\u0251r\u03b8\u02ccfa\u026a\u0259r/)"
+    "am_echo": "hearthfire"
   },
   "heatseeker": {
-    "am_echo": "[heatseeker](/\u02c8hi\u026at\u02ccsi\u026ak\u0259r/)"
+    "am_echo": "heatseeker"
   },
   "heterosex": {
-    "am_echo": "[heterosex](/\u02c8h\u025bt\u0259ro\u028a\u02ccs\u025bks/)"
+    "am_echo": "heterosex"
   },
   "hillscape": {
-    "am_echo": "[hillscape](/\u02c8h\u026al\u02ccske\u026ap/)"
+    "am_echo": "hillscape"
   },
   "hmmm": {
     "am_echo": "hummm"
   },
   "holo": {
-    "am_echo": "[holo](/\u02c8ho\u028alo\u028a/)"
+    "am_echo": "holo"
   },
   "holodisplay": {
-    "am_echo": "[holodisplay](/\u02c8ho\u028alo\u028a\u02ccd\u026asple\u026a/)"
+    "am_echo": "holodisplay"
   },
   "holofront": {
-    "am_echo": "[holofront](/\u02c8ho\u028alo\u028afr\u028cnt/)"
+    "am_echo": "holofront"
   },
   "holomaps": {
-    "am_echo": "[holomaps](/\u02c8ho\u028alo\u028a\u02ccm\u00e6ps/)"
+    "am_echo": "holomaps"
   },
   "holomenu": {
-    "am_echo": "[holomenu](/\u02c8ho\u028alo\u028a\u02ccm\u025bnjuu/)"
+    "am_echo": "holomenu"
   },
   "holoporn": {
     "am_echo": "[holoporn](/\u02c8ho\u028alo\u028a\u02ccp\u0254\u0279n/)"
   },
   "holos": {
-    "am_echo": "[holos](/\u02c8ho\u028alo\u028az/)"
+    "am_echo": "holos"
   },
   "holoshift": {
-    "am_echo": "[holoshift](/\u02c8ho\u028alo\u028a\u02cc\u0283\u026aft/)"
+    "am_echo": "holoshift"
   },
   "holoshot": {
-    "am_echo": "[holoshot](/\u02c8ho\u028alo\u028a\u02cc\u0283\u0251t/)"
+    "am_echo": "holoshot"
   },
   "holotoy": {
-    "am_echo": "[holotoy](/\u02c8ho\u028alo\u028at\u0254\u026a/)"
+    "am_echo": "holotoy"
   },
   "holowhore": {
-    "am_echo": "[holowhore](/\u02c8ho\u028alo\u028a\u02cch\u0254\u0279/)"
+    "am_echo": "holowhore"
   },
   "honour": {
-    "am_echo": "[honour](/\u02c8\u0251n\u0259r/)"
+    "am_echo": "honour"
   },
   "honoured": {
-    "am_echo": "[honoured](/\u02c8\u0251n\u025ad/)"
+    "am_echo": "honoured"
   },
   "hougan": {
-    "am_echo": "[hougan](/\u02c8hu\u0261\u0251n/)"
+    "am_echo": "[hougan](/hu\u0261\u0251n/)"
   },
   "hougans": {
-    "am_echo": "[hougans](/\u02c8hu\u0261\u0259nz/)"
+    "am_echo": "hougans"
+  },
+  "humour": {
+    "am_echo": "Humour"
   },
   "hypercast": {
-    "am_echo": "[hypercast](/\u02c8ha\u026ap\u0259\u0279\u02cck\u00e6st/)"
+    "am_echo": "hypercast"
   },
   "hypercaster": {
-    "am_echo": "[hypercaster](/\u02c8ha\u026ap\u0259\u0279\u02cck\u00e6st\u0259\u0279/)"
+    "am_echo": "hypercaster"
   },
   "hypercasts": {
-    "am_echo": "[hypercasts](/\u02c8ha\u026ap\u0259r\u02cck\u00e6sts/)"
+    "am_echo": "hypercasts"
   },
   "hyperdimensional": {
-    "am_echo": "[hyperdimensional](/\u02ccha\u026ap\u0259r\u02ccd\u026am\u025bn\u0283\u0259n\u0259l/)"
+    "am_echo": "hyperdimensional"
   },
   "hyperefficiency": {
-    "am_echo": "[hyperefficiency](/\u02ccha\u026ap\u0259r\u026a\u02c8f\u026a\u0283\u0259nsi/)"
+    "am_echo": "hyperefficiency"
   },
   "hyperportal": {
-    "am_echo": "[hyperportal](/\u02c8ha\u026ap\u025a\u02ccp\u0254\u0279t\u0259l/)"
+    "am_echo": "hyperportal"
   },
   "hyperswift": {
-    "am_echo": "[hyperswift](/\u02c8ha\u026ap\u0259\u0279\u02ccsw\u026aft/)"
+    "am_echo": "hyperswift"
   },
   "hypertechnology": {
-    "am_echo": "[hypertechnology](/\u02ccha\u026ap\u0259\u0279t\u025bk\u02c8n\u0251l\u0259d\u0292i/)"
+    "am_echo": "hypertechnology"
   },
   "hypnomode": {
-    "am_echo": "[hypnomode](/\u02c8h\u026apno\u028a\u02ccmo\u028ad/)"
+    "am_echo": "hypnomode"
   },
   "hypnotised": {
-    "am_echo": "[hypnotised](/\u02c8h\u026apn\u0259ta\u026azd/)"
+    "am_echo": "hypnotised"
   },
   "hypospray": {
-    "am_echo": "[hypospray](/\u02c8ha\u026apo\u028a\u02ccsp\u0279e\u026a/)"
+    "am_echo": "hypospray"
   },
   "illuminum": {
     "am_echo": "[illuminum](/\u026a\u02c8lu\u028am\u026an\u0259m/)"
   },
   "immedi": {
-    "am_echo": "[immedi](/\u026a\u02c8midi/)"
+    "am_echo": "immedi"
   },
   "inhib": {
     "am_echo": "[inhib](/\u026an\u02c8h\u026ab/)"
   },
   "interstellars": {
-    "am_echo": "[interstellars](/\u02cc\u026ant\u0259\u0279\u02c8st\u025bl\u0259\u0279z/)"
+    "am_echo": "interstellars"
   },
   "intra": {
-    "am_echo": "[intra](/\u02c8\u026ant\u0279\u0251/)"
+    "am_echo": "intra"
   },
   "jewellery": {
-    "am_echo": "[jewellery](/\u02c8d\u0292u\u0259lri/)"
+    "am_echo": "jewellery"
   },
   "kilometre": {
-    "am_echo": "[kilometre](/k\u026a\u02c8l\u0251m\u026at\u0259\u0279/)"
+    "am_echo": "kilometre"
   },
   "kilometres": {
-    "am_echo": "[kilometres](/k\u026a\u02c8l\u0251m\u026at\u0259\u0279z/)"
+    "am_echo": "kilometres"
   },
   "kitpack": {
-    "am_echo": "[kitpack](/\u02c8k\u026at\u02ccp\u00e6k/)"
+    "am_echo": "kitpack"
   },
   "klick": {
-    "am_echo": "[klick](/kl\u026ak/)"
+    "am_echo": "klick"
   },
   "klicks": {
-    "am_echo": "[klicks](/kl\u026aks/)"
+    "am_echo": "klicks"
   },
   "lamplit": {
-    "am_echo": "[lamplit](/\u02c8l\u00e6mp\u02ccl\u026at/)"
+    "am_echo": "lamplit"
   },
   "lasered": {
-    "am_echo": "[lasered](/\u02c8le\u026az\u0259\u0279d/)"
+    "am_echo": "lasered"
   },
   "leaktight": {
-    "am_echo": "[leaktight](/\u02c8lik\u02ccta\u026at/)"
+    "am_echo": "leaktight"
   },
   "leant": {
     "am_echo": "[leant](/l\u025bnt/)"
   },
   "liberalisation": {
-    "am_echo": "[liberalisation](/\u02ccl\u026ab\u0259r\u0259la\u026a\u02c8ze\u026a\u0283\u0259n/)"
+    "am_echo": "liberalisation"
   },
   "limbed": {
-    "am_echo": "[limbed](/l\u026amd/)"
+    "am_echo": "limbed"
   },
   "loadlifter": {
-    "am_echo": "[loadlifter](/\u02c8lo\u028ad\u02ccl\u026aft\u0259r/)"
+    "am_echo": "loadlifter"
   },
   "localised": {
-    "am_echo": "[localised](/\u02c8lo\u028ak\u0259la\u026azd/)"
+    "am_echo": "localised"
   },
   "loch": {
-    "am_echo": "[loch](/l\u0251k/)"
+    "am_echo": "lock"
   },
   "lochside": {
-    "am_echo": "[lochside](/\u02c8l\u0251k\u02ccsa\u026ad/)"
+    "am_echo": "lochside"
   },
   "mandroid": {
-    "am_echo": "[mandroid](/\u02c8m\u00e6n\u02ccd\u0279\u0254\u026ad/)"
+    "am_echo": "mandroid"
   },
   "manigrab": {
-    "am_echo": "[manigrab](/\u02c8m\u00e6ni\u02cc\u0261\u0279\u00e6b/)"
+    "am_echo": "manigrab"
   },
   "manoeuvre": {
-    "am_echo": "[manoeuvre](/m\u0259\u02c8nuuv\u0259\u0279/)"
+    "am_echo": "manoeuvre"
   },
   "manoeuvring": {
-    "am_echo": "[manoeuvring](/m\u0259\u02c8nuv\u0259r\u026a\u014b/)"
+    "am_echo": "manoeuvring"
   },
   "masting": {
-    "am_echo": "[masting](/\u02c8m\u00e6st\u026a\u014b/)"
+    "am_echo": "masting"
   },
   "maths": {
-    "am_echo": "[maths](/m\u00e6\u03b8s/)"
+    "am_echo": "maths"
   },
   "maximised": {
-    "am_echo": "[maximised](/\u02c8m\u00e6ks\u026a\u02ccma\u026azd/)"
+    "am_echo": "maximised"
   },
   "medipack": {
-    "am_echo": "[medipack](/\u02c8m\u025bdi\u02ccp\u00e6k/)"
+    "am_echo": "[medipack](/m\u025bdip\u00e6k/)"
   },
   "mediwrap": {
-    "am_echo": "[mediwrap](/\u02c8m\u025bdi\u02ccr\u00e6p/)"
+    "am_echo": "[mediwrap](/m\u025bdirap/)"
   },
   "memoryboard": {
-    "am_echo": "[memoryboard](/\u02c8m\u025bm\u0259\u0279i\u02ccb\u0254\u0279d/)"
+    "am_echo": "memoryboard"
   },
   "meth": {
-    "am_echo": "[meth](/m\u025b\u03b8/)"
+    "am_echo": "meth"
   },
   "metre": {
-    "am_echo": "[metre](/\u02c8mi\u026at\u0259\u0279/)"
+    "am_echo": "meter"
   },
   "metres": {
-    "am_echo": "[metres](/\u02c8mi\u026at\u0259\u0279z/)"
+    "am_echo": "meterz"
   },
   "microbombers": {
-    "am_echo": "[microbombers](/\u02c8ma\u026akro\u028a\u02ccb\u0251m\u0259r/z)"
+    "am_echo": "microbombers"
   },
   "microcam": {
-    "am_echo": "[microcam](/\u02c8ma\u026ak\u0279o\u028a\u02cck\u00e6m/)"
+    "am_echo": "microcam"
   },
   "micrometre": {
-    "am_echo": "[micrometre](/\u02c8ma\u026akro\u028a\u02ccmi\u026at\u0259r/)"
+    "am_echo": "micrometer"
   },
   "microset": {
-    "am_echo": "[microset](/\u02c8ma\u026ak\u0279o\u028a\u02ccs\u025bt/)"
+    "am_echo": "microset"
   },
   "microtech": {
-    "am_echo": "[microtech](/\u02c8ma\u026akro\u028at\u025bk/)"
+    "am_echo": "microtech"
   },
   "milflash": {
-    "am_echo": "[milflash](/\u02c8m\u026al\u02ccfl\u00e6\u0283/)"
+    "am_echo": "[milflash](/m\u026alfl\u00e6\u0283/)"
   },
   "millimetres": {
-    "am_echo": "[millimetres](/\u02c8m\u026al\u026a\u02ccmi\u026at\u0259\u0279z/)"
+    "am_echo": "[millimetres](/m\u026al\u026amit\u0259rz/)"
   },
   "mindedly": {
-    "am_echo": "[mindedly](/\u02c8ma\u026and\u026adli/)"
+    "am_echo": "mindedly"
   },
   "minimised": {
-    "am_echo": "[minimised](/\u02c8m\u026an\u026ama\u026azd/)"
+    "am_echo": "minimised"
   },
   "modeller": {
-    "am_echo": "[modeller](/\u02c8m\u0251d\u0259l\u0259r/)"
+    "am_echo": "modeller"
   },
   "monofilaments": {
-    "am_echo": "[monofilaments](/\u02ccm\u0251no\u028a\u02c8f\u026al\u0259m\u0259nt/s)"
+    "am_echo": "monofilaments"
   },
   "monomol": {
-    "am_echo": "[monomol](/\u02c8m\u0251no\u028a\u02ccm\u0251l/)"
+    "am_echo": "monomol"
   },
   "mortem": {
-    "am_echo": "[mortem](/\u02c8m\u0254rt\u0259m/)"
+    "am_echo": "mortem"
   },
   "motherframes": {
-    "am_echo": "[motherframes](/\u02c8m\u028c\u00f0\u025a\u02ccf\u0279e\u026amz/)"
+    "am_echo": "motherframes"
   },
   "moulded": {
-    "am_echo": "[moulded](/\u02c8mo\u028ald\u026ad/)"
+    "am_echo": "moulded"
   },
   "mudball": {
-    "am_echo": "[mudball](/\u02c8m\u028cd\u02ccb\u0251l/)"
+    "am_echo": "mudball"
   },
   "multi": {
-    "am_echo": "[multi](/\u02c8m\u028clti/)"
+    "am_echo": "multi"
   },
   "multicoloured": {
-    "am_echo": "[multicoloured](/\u02ccm\u028clti\u02c8k\u028cl\u0259rd/)"
+    "am_echo": "multicoloured"
   },
   "multilevelled": {
-    "am_echo": "[multilevelled](/\u02ccm\u028clti\u02c8l\u025bv\u0259ld/)"
+    "am_echo": "multilevelled"
   },
   "nanobe": {
     "am_echo": "[nanobe](/\u02c8n\u00e6no\u028a\u02ccbi\u026a/)"
   },
   "nanobes": {
-    "am_echo": "[nanobes](/\u02c8n\u00e6no\u028a\u02ccbi\u026az/)"
+    "am_echo": "nanobes"
   },
   "nanocolonies": {
-    "am_echo": "[nanocolonies](/\u02c8n\u00e6no\u028a\u02cck\u0251l\u0259ni\u026az/)"
+    "am_echo": "[nanocolonies](/n\u00e6nok\u0251l\u0259ni\u026az/)"
   },
   "nanocopter": {
-    "am_echo": "[nanocopter](/\u02c8n\u00e6no\u028a\u02cck\u0251pt\u025a/)"
+    "am_echo": "nanocopter"
   },
   "nanocopters": {
-    "am_echo": "[nanocopters](/\u02c8n\u00e6no\u028a\u02cck\u0251pt\u0259\u0279z/)"
+    "am_echo": "nanocopters"
   },
   "nanocreatures": {
-    "am_echo": "[nanocreatures](/\u02c8n\u00e6no\u028a\u02cckri\u026at\u0283\u0259r/z)"
+    "am_echo": "[nanocreatures](/n\u00e6no\u028akri\u026at\u0283\u0259r/z)"
   },
   "nanorepair": {
-    "am_echo": "[nanorepair](/\u02c8n\u00e6no\u028ar\u026a\u02ccp\u025b\u0279/)"
+    "am_echo": "nanorepair"
   },
   "nanosized": {
-    "am_echo": "[nanosized](/\u02c8n\u00e6no\u028a\u02ccsa\u026azd/)"
+    "am_echo": "nanosized"
   },
   "nanosystems": {
-    "am_echo": "[nanosystems](/\u02c8n\u00e6no\u028a\u02ccs\u026ast\u0259mz/)"
+    "am_echo": "nanosystems"
+  },
+  "nanotech": {
+    "am_echo": "Nanotech"
   },
   "nanotechnolgy": {
-    "am_echo": "[nanotechnolgy](/\u02c8n\u00e6no\u028at\u025bk\u02ccn\u0251ld\u0292i/)"
+    "am_echo": "[nanotechnolgy](/n\u00e6n\u028at\u025bkn\u0251ld\u0292i/)"
   },
   "nanoware": {
-    "am_echo": "[nanoware](/\u02c8n\u00e6no\u028a\u02ccw\u025b\u0279/)"
+    "am_echo": "[nanoware](/n\u00e6now\u025b\u0279/)"
   },
   "narrowcast": {
-    "am_echo": "[narrowcast](/\u02c8n\u00e6ro\u028a\u02cck\u00e6st/)"
+    "am_echo": "narrowcast"
   },
   "naturedly": {
-    "am_echo": "[naturedly](/\u02c8ne\u026at\u0283\u0259\u0279dli/)"
+    "am_echo": "naturedly"
   },
   "needlecast": {
     "am_echo": "[needlecast](/\u02c8ni\u026ad\u0259l\u02cck\u00e6st/)"
   },
   "needlecasting": {
-    "am_echo": "[needlecasting](/\u02c8ni\u026ad\u0259l\u02cck\u00e6st\u026a\u014b/)"
+    "am_echo": "needlecasting"
   },
   "neighbourhood": {
-    "am_echo": "[neighbourhood](/\u02c8ne\u026ab\u025a\u02cch\u028ad/)"
+    "am_echo": "neighbourhood"
   },
   "neighbours": {
-    "am_echo": "[neighbours](/\u02c8ne\u026ab\u0259\u0279z/)"
+    "am_echo": "neighbours"
   },
   "neoQuellist": {
-    "am_echo": "[neoQuellist](/\u02ccni\u026ao\u028a\u02c8kw\u025bl\u026ast/)"
+    "am_echo": "neoQuellist"
   },
   "neurache": {
     "am_echo": "[neurache](/\u02c8n\u028a\u0279\u0259\u02cce\u026ak/)"
   },
+  "neurachem": {
+    "am_echo": "[Neurochem](/n\u028a\u0279\u028ak\u025bm/)"
+  },
   "neuroshock": {
-    "am_echo": "[neuroshock](/\u02c8n\u028a\u0279o\u028a\u02cc\u0283\u0251k/)"
+    "am_echo": "neuroshock"
   },
   "neutralised": {
-    "am_echo": "[neutralised](/\u02c8nu\u026at\u0279\u0259\u02ccla\u026azd/)"
+    "am_echo": "neutralised"
   },
   "neutraliser": {
-    "am_echo": "[neutraliser](/\u02c8nu\u026atr\u0259la\u026az\u0259\u0279/)"
+    "am_echo": "neutraliser"
   },
   "normalised": {
-    "am_echo": "[normalised](/\u02c8n\u0254\u0279m\u0259la\u026azd/)"
+    "am_echo": "normalised"
   },
   "nubbed": {
-    "am_echo": "[nubbed](/n\u028cbd/)"
+    "am_echo": "nubbed"
   },
   "odour": {
-    "am_echo": "[odour](/\u02c8o\u028ad\u0259\u0279/)"
+    "am_echo": "odour"
   },
   "odours": {
-    "am_echo": "[odours](/\u02c8o\u028ad\u0259r/z)"
+    "am_echo": "odours"
   },
   "offbursts": {
-    "am_echo": "[offbursts](/\u02c8\u0254f\u02ccb\u025crst/s)"
+    "am_echo": "offbursts"
   },
   "offence": {
-    "am_echo": "[offence](/\u0259\u02c8f\u025bns/)"
+    "am_echo": "offence"
   },
   "offworld": {
-    "am_echo": "[offworld](/\u02cc\u0254f\u02c8w\u025c\u0279ld/)"
+    "am_echo": "offworld"
   },
   "olds": {
-    "am_echo": "[olds](/o\u028aldz/)"
+    "am_echo": "olds"
   },
   "onboard": {
-    "am_echo": "[onboard](/\u02cc\u0251n\u02c8b\u0254\u0279d/)"
+    "am_echo": "onboard"
   },
   "organisational": {
-    "am_echo": "[organisational](/\u02cc\u0254\u0279\u0261\u0259n\u026a\u02c8ze\u026a\u0283\u0259nl/)"
+    "am_echo": "organisational"
   },
   "organisations": {
-    "am_echo": "[organisations](/\u02cc\u0254\u0279\u0261\u0259n\u0259\u02c8ze\u026a\u0283\u0259nz/)"
+    "am_echo": "organisations"
   },
   "overcomplex": {
-    "am_echo": "[overcomplex](/\u02cco\u028av\u0259r\u02c8k\u0251mpl\u025bks/)"
+    "am_echo": "overcomplex"
   },
   "overcued": {
-    "am_echo": "[overcued](/\u02c8o\u028av\u0259\u0279\u02cckju\u026ad/)"
+    "am_echo": "overcued"
   },
   "overculture": {
-    "am_echo": "[overculture](/\u02c8o\u028av\u0259\u0279\u02cck\u028clt\u0283\u0259\u0279/)"
+    "am_echo": "overculture"
   },
   "overhyped": {
-    "am_echo": "[overhyped](/\u02cco\u028av\u0259r\u02c8ha\u026apt/)"
+    "am_echo": "overhyped"
   },
   "overkeen": {
-    "am_echo": "[overkeen](/\u02cco\u028av\u0259r\u02c8ki\u026an/)"
+    "am_echo": "overkeen"
   },
   "overloud": {
-    "am_echo": "[overloud](/\u02cco\u028av\u0259\u0279\u02c8la\u028ad/)"
+    "am_echo": "overloud"
   },
   "overproof": {
-    "am_echo": "[overproof](/\u02c8o\u028av\u0259\u0279\u02ccpru\u026af/)"
+    "am_echo": "overproof"
   },
   "palmful": {
-    "am_echo": "[palmful](/\u02c8p\u0251m\u02ccf\u028al/)"
+    "am_echo": "palmful"
   },
   "paralysed": {
-    "am_echo": "[paralysed](/\u02c8p\u00e6r\u0259la\u026azd/)"
+    "am_echo": "paralysed"
   },
   "pearlish": {
-    "am_echo": "[pearlish](/\u02c8p\u025crl\u026a\u0283/)"
+    "am_echo": "pearlish"
   },
   "pened": {
-    "am_echo": "[pened](/p\u025bnd/)"
+    "am_echo": "pened"
   },
   "permaplastic": {
-    "am_echo": "[permaplastic](/\u02c8p\u025crm\u0259\u02ccpl\u00e6st\u026ak/)"
+    "am_echo": "permaplastic"
   },
   "photoreceptors": {
-    "am_echo": "[photoreceptors](/\u02ccfo\u028ato\u028a\u0279\u026a\u02c8s\u025bpt\u0259\u0279z/)"
+    "am_echo": "[photoreceptors](/fo\u028ato\u028a\u0279\u026as\u025bpt\u0259\u0279z/)"
   },
   "pittering": {
-    "am_echo": "[pittering](/\u02c8p\u026at\u0259r\u026a\u014b/)"
+    "am_echo": "pittering"
   },
   "planetfall": {
-    "am_echo": "[planetfall](/\u02c8pl\u00e6n\u026at\u02ccf\u0254l/)"
+    "am_echo": "planetfall"
   },
   "plastified": {
-    "am_echo": "[plastified](/\u02c8pl\u00e6st\u026a\u02ccfa\u026ad/)"
+    "am_echo": "plastified"
   },
   "playlist": {
-    "am_echo": "[playlist](/\u02c8ple\u026al\u026ast/)"
+    "am_echo": "[playlist](/ple\u026al\u026ast/)"
   },
   "plinthed": {
-    "am_echo": "[plinthed](/pl\u026an\u03b8t/)"
+    "am_echo": "plinthed"
   },
   "polalloy": {
-    "am_echo": "[polalloy](/p\u0251l\u02c8\u00e6l\u0254\u026a/)"
+    "am_echo": "[polalloy](/p\u0251ul\u02c8\u00e6l\u0254\u026a/)"
   },
   "polarised": {
-    "am_echo": "[polarised](/\u02c8po\u028al\u0259\u0279a\u026azd/)"
+    "am_echo": "polarised"
   },
   "portada": {
-    "am_echo": "[portada](/p\u0254\u0279\u02c8t\u0251d\u0251/)"
+    "am_echo": "portada"
   },
   "poss": {
-    "am_echo": "[poss](/p\u0251s/)"
+    "am_echo": "poss"
   },
   "powerbrush": {
-    "am_echo": "[powerbrush](/\u02c8pa\u028a\u025a\u02ccb\u0279\u028c\u0283/)"
+    "am_echo": "powerbrush"
   },
   "powerpack": {
-    "am_echo": "[powerpack](/\u02c8pa\u028a\u0259\u0279\u02ccp\u00e6k/)"
+    "am_echo": "powerpack"
   },
   "preprogrammed": {
-    "am_echo": "[preprogrammed](/pri\u026a\u02c8pro\u028a\u0261r\u00e6md/)"
+    "am_echo": "preprogrammed"
   },
   "primadonnas": {
-    "am_echo": "[primadonnas](/\u02ccpri\u026am\u0259\u02c8d\u0251n\u0259z/)"
+    "am_echo": "[primadonnas](/pr\u026am\u0259d\u0251n\u0259z/)"
   },
   "prised": {
-    "am_echo": "[prised](/p\u0279a\u026azd/)"
+    "am_echo": "prised"
+  },
+  "programme": {
+    "am_echo": "program"
   },
   "psychevaluation": {
-    "am_echo": "[psychevaluation](/sa\u026ak\u026a\u026a\u02ccv\u00e6lju\u02c8e\u026a\u0283\u0259n/)"
+    "am_echo": "psychevaluation"
   },
   "psychoglue": {
-    "am_echo": "[psychoglue](/\u02c8sa\u026ako\u028a\u0261lu\u026a/)"
+    "am_echo": "psychoglue"
   },
   "psychogram": {
-    "am_echo": "[psychogram](/\u02c8sa\u026ako\u028a\u02cc\u0261\u0279\u00e6m/)"
+    "am_echo": "psychogram"
   },
   "psychosense": {
-    "am_echo": "[psychosense](/\u02c8sa\u026ako\u028a\u02ccs\u025bns/)"
+    "am_echo": "psychosense"
   },
   "psychosurgeon": {
-    "am_echo": "[psychosurgeon](/\u02c8sa\u026ako\u028a\u02ccs\u025c\u0279d\u0292\u0259n/)"
+    "am_echo": "psychosurgeon"
   },
   "psychosurgeons": {
-    "am_echo": "[psychosurgeons](/\u02ccsa\u026ako\u028a\u02c8s\u025c\u0279d\u0292\u0259nz/)"
+    "am_echo": "psychosurgeons"
   },
   "pubescents": {
-    "am_echo": "[pubescents](/pju\u02c8b\u025bs\u0259nts/)"
+    "am_echo": "pubescents"
   },
   "quickmould": {
-    "am_echo": "[quickmould](/\u02c8kw\u026ak\u02ccmo\u028ald/)"
+    "am_echo": "quickmould"
   },
   "quickplant": {
-    "am_echo": "[quickplant](/\u02c8kw\u026ak\u02ccpl\u00e6nt/)"
+    "am_echo": "[quickplant](/kw\u026akpl\u00e6nt/)"
   },
   "ramping": {
-    "am_echo": "[ramping](/\u02c8r\u00e6mp\u026a\u014b/)"
+    "am_echo": "ramping"
   },
   "rancour": {
-    "am_echo": "[rancour](/\u02c8r\u00e6\u014bk\u0259\u0279/)"
+    "am_echo": "rancour"
   },
   "razored": {
-    "am_echo": "[razored](/\u02c8re\u026az\u0259rd/)"
+    "am_echo": "razored"
   },
   "razorfish": {
-    "am_echo": "[razorfish](/\u02c8\u0279e\u026az\u0259\u0279\u02ccf\u026a\u0283/)"
+    "am_echo": "razorfish"
   },
   "realisation": {
-    "am_echo": "[realisation](/\u02ccri\u026al\u0259\u02c8ze\u026a\u0283\u0259n/)"
+    "am_echo": "realisation"
   },
   "realise": {
-    "am_echo": "[realise](/\u02c8\u0279i\u026a\u0259\u02ccla\u026az/)"
+    "am_echo": "realise"
   },
   "realised": {
     "am_echo": "[realised](/\u02c8\u0279i\u026a\u0259\u02ccla\u026azd/)"
   },
   "recalibrated": {
-    "am_echo": "[recalibrated](/ri\u026a\u02c8k\u00e6l\u026a\u02ccbre\u026at\u026ad/)"
+    "am_echo": "recalibrated"
   },
   "recognisable": {
-    "am_echo": "[recognisable](/\u02c8r\u025bk\u0259\u0261\u02ccna\u026az\u0259b\u0259l/)"
+    "am_echo": "recognisable"
   },
   "recognisably": {
-    "am_echo": "[recognisably](/\u02c8r\u025bk\u0259\u0261\u02ccna\u026az\u0259bli/)"
+    "am_echo": "recognisably"
   },
   "recognise": {
-    "am_echo": "[recognise](/\u02c8\u0279\u025bk\u0259\u0261\u02ccna\u026az/)"
+    "am_echo": "recognise"
   },
   "recognised": {
-    "am_echo": "[recognised](/\u02c8\u0279\u025bk\u0259\u0261\u02ccna\u026azd/)"
+    "am_echo": "recognised"
   },
   "refrosting": {
-    "am_echo": "[refrosting](/ri\u026a\u02c8fr\u0251st\u026a\u014b/)"
+    "am_echo": "refrosting"
   },
   "reloaned": {
-    "am_echo": "[reloaned](/\u0279i\u02c8lo\u028and/)"
+    "am_echo": "reloaned"
   },
   "reprised": {
-    "am_echo": "[reprised](/r\u026a\u02c8pra\u026azd/)"
+    "am_echo": "reprised"
   },
   "repulsor": {
-    "am_echo": "[repulsor](/r\u026a\u02c8p\u028cls\u0259\u0279/)"
+    "am_echo": "repulsor"
   },
   "resheening": {
-    "am_echo": "[resheening](/ri\u026a\u02c8\u0283i\u026an\u026a\u014b/)"
+    "am_echo": "resheening"
   },
   "ribboned": {
-    "am_echo": "[ribboned](/\u02c8r\u026ab\u0259nd/)"
+    "am_echo": "ribboned"
   },
   "ridiculou": {
-    "am_echo": "[ridiculou](/r\u026a\u02c8d\u026akj\u0259lo\u028a/)"
+    "am_echo": "ridiculous"
   },
   "rigours": {
-    "am_echo": "[rigours](/\u02c8\u0279\u026a\u0261\u0259\u0279z/)"
+    "am_echo": "rigours"
   },
   "rumour": {
-    "am_echo": "[rumour](/\u02c8\u0279u\u028am\u0259\u0279/)"
+    "am_echo": "rumour"
   },
   "runnelled": {
-    "am_echo": "[runnelled](/\u02c8\u0279\u028cn\u0259ld/)"
+    "am_echo": "runnelled"
   },
   "sacapuntas": {
-    "am_echo": "[sacapuntas](/s\u0251k\u0251\u02c8punt\u0251s/)"
+    "am_echo": "[sacapuntas](/s\u0251k\u0251punt\u0251s/)"
+  },
+  "saft": {
+    "am_echo": "[Saft](/s\u0251ft/)"
   },
   "saiiii": {
     "am_echo": "saaaai"
   },
   "sandbagger": {
-    "am_echo": "[sandbagger](/\u02c8s\u00e6ndb\u00e6\u0261\u0259r/)"
+    "am_echo": "sandbagger"
   },
   "sanitise": {
-    "am_echo": "[sanitise](/\u02c8s\u00e6n\u026ata\u026az/)"
+    "am_echo": "sanitise"
   },
   "sanitised": {
-    "am_echo": "[sanitised](/\u02c8s\u00e6n\u026a\u02ccta\u026azd/)"
+    "am_echo": "sanitised"
   },
   "sashimi": {
-    "am_echo": "[sashimi](/s\u0259\u02c8\u0283i\u026ami/)"
+    "am_echo": "sashimi"
   },
   "satdata": {
-    "am_echo": "[satdata](/\u02c8s\u00e6t\u02ccde\u026at\u0259/)"
+    "am_echo": "satdata"
   },
   "savour": {
-    "am_echo": "[savour](/\u02c8se\u026av\u0259\u0279/)"
+    "am_echo": "savour"
   },
   "sceptical": {
-    "am_echo": "[sceptical](/\u02c8sk\u025bpt\u026ak\u0259l/)"
+    "am_echo": "sceptical"
   },
   "sceptically": {
-    "am_echo": "[sceptically](/\u02c8sk\u025bpt\u026akli/)"
+    "am_echo": "sceptically"
   },
   "schneider": {
     "_global": "[Schneider](/\u0283na\u026ad\u0259\u0279/)"
   },
   "scorchmarks": {
-    "am_echo": "[scorchmarks](/\u02c8sk\u0254rt\u0283\u02ccm\u0251rks/)"
+    "am_echo": "scorchmarks"
   },
   "scrawlings": {
-    "am_echo": "[scrawlings](/\u02c8sk\u0279\u0254l\u026a\u014bz/)"
+    "am_echo": "scrawlings"
   },
   "sealwrap": {
-    "am_echo": "[sealwrap](/\u02c8si\u026al\u02ccr\u00e6p/)"
+    "am_echo": "sealwrap"
   },
   "seater": {
-    "am_echo": "[seater](/\u02c8si\u026at\u0259r/)"
+    "am_echo": "seater"
   },
   "securicam": {
-    "am_echo": "[securicam](/s\u026a\u02c8kj\u028a\u0279\u026ak\u00e6m/)"
+    "am_echo": "securicam"
   },
   "securisys": {
-    "am_echo": "[securisys](/\u02c8s\u025bkj\u028a\u0279\u026as\u026as/)"
+    "am_echo": "[securisys](/s\u025bkj\u028a\u0279\u026as\u026as/)"
   },
   "sentiences": {
-    "am_echo": "[sentiences](/\u02c8s\u025bn\u0283\u0259ns\u026az/)"
+    "am_echo": "sentiences"
   },
   "servoamp": {
-    "am_echo": "[servoamp](/\u02c8s\u025c\u0279vo\u028a\u02cc\u00e6mp/)"
+    "am_echo": "servo amp"
   },
   "sheened": {
-    "am_echo": "[sheened](/\u02c8\u0283i\u026and/)"
+    "am_echo": "sheened"
   },
   "shithole": {
-    "am_echo": "[shithole](/\u02c8\u0283\u026at\u02ccho\u028al/)"
+    "am_echo": "shithole"
   },
   "silicoflesh": {
-    "am_echo": "[silicoflesh](/\u02c8s\u026al\u026ako\u028a\u02ccfl\u025b\u0283/)"
+    "am_echo": "silicoflesh"
   },
   "silverfry": {
-    "am_echo": "[silverfry](/\u02c8s\u026alv\u0259r\u02ccfra\u026a/)"
+    "am_echo": "silverfry"
   },
   "sketchboard": {
-    "am_echo": "[sketchboard](/\u02c8sk\u025bt\u0283b\u0254rd/)"
+    "am_echo": "sketchboard"
   },
   "sleevable": {
-    "am_echo": "[sleevable](/\u02c8sli\u026av\u0259b\u0259l/)"
+    "am_echo": "sleevable"
   },
   "sleevers": {
-    "am_echo": "[sleevers](/\u02c8sli\u026av\u0259\u0279z/)"
+    "am_echo": "[sleevers](/sli\u026av\u0259\u0279z/)"
   },
   "sleeving": {
-    "am_echo": "[sleeving](/\u02c8sli\u026av\u026a\u014b/)"
+    "am_echo": "sleeving"
   },
   "slictopus": {
-    "am_echo": "[slictopus](/\u02c8sl\u026ak\u02cct\u0251p\u0259s/)"
+    "am_echo": "[slictopus](/sl\u026akt\u0259pus/)"
   },
   "slitted": {
-    "am_echo": "[slitted](/\u02c8sl\u026at\u026ad/)"
+    "am_echo": "slitted"
   },
   "socketed": {
-    "am_echo": "[socketed](/\u02c8s\u0251k\u026at\u026ad/)"
+    "am_echo": "socketed"
   },
   "softcore": {
-    "am_echo": "[softcore](/\u02c8s\u0254ft\u02cck\u0254\u0279/)"
+    "am_echo": "softcore"
+  },
+  "songspire": {
+    "am_echo": "[Songspire](/s\u0254ngspa\u026a\u0279/)"
   },
   "songspires": {
-    "am_echo": "[songspires](/\u02c8s\u0254\u014b\u02ccspa\u026a\u0279z/)"
+    "am_echo": "songspires"
   },
   "spacesuited": {
-    "am_echo": "[spacesuited](/\u02c8spe\u026as\u02ccsu\u026at\u026ad/)"
+    "am_echo": "spacesuited"
   },
   "spasmed": {
-    "am_echo": "[spasmed](/\u02c8sp\u00e6zmd/)"
+    "am_echo": "spasmed"
   },
   "speciality": {
-    "am_echo": "[speciality](/\u02ccsp\u025b\u0283i\u02c8\u00e6l\u0259ti/)"
+    "am_echo": "speciality"
   },
   "spectroscanners": {
-    "am_echo": "[spectroscanners](/\u02c8sp\u025bktro\u028a\u02ccsk\u00e6n\u0259\u0279z/)"
+    "am_echo": "spectroscanners"
   },
   "spidering": {
-    "am_echo": "[spidering](/\u02c8spa\u026ad\u0259\u0279\u026a\u014b/)"
+    "am_echo": "spidering"
   },
   "splendour": {
-    "am_echo": "[splendour](/\u02c8spl\u025bnd\u0259r/)"
+    "am_echo": "splendour"
   },
   "stabilise": {
-    "am_echo": "[stabilise](/\u02c8ste\u026ab\u0259la\u026az/)"
+    "am_echo": "stabilise"
   },
   "starfaring": {
-    "am_echo": "[starfaring](/\u02c8st\u0251\u0279\u02ccf\u025b\u0279\u026a\u014b/)"
+    "am_echo": "starfaring"
   },
   "starfield": {
-    "am_echo": "[starfield](/\u02c8st\u0251\u0279\u02ccfi\u026ald/)"
+    "am_echo": "starfield"
   },
   "starfire": {
-    "am_echo": "[starfire](/\u02c8st\u0251r\u02ccfa\u026a\u0259r/)"
+    "am_echo": "starfire"
   },
   "starscape": {
-    "am_echo": "[starscape](/\u02c8st\u0251\u0279\u02ccske\u026ap/)"
+    "am_echo": "starscape"
   },
   "starship": {
     "am_echo": "[starship](/\u02c8st\u0251\u0279\u02cc\u0283\u026ap/)"
   },
   "starv": {
-    "am_echo": "[starv](/st\u0251rv/)"
+    "am_echo": "starv"
   },
   "steepled": {
-    "am_echo": "[steepled](/\u02c8sti\u026ap\u0259ld/)"
+    "am_echo": "steepled"
   },
   "stressblasting": {
-    "am_echo": "[stressblasting](/\u02c8st\u0279\u025bs\u02ccbl\u00e6st\u026a\u014b/)"
+    "am_echo": "stressblasting"
   },
   "stretchscreen": {
-    "am_echo": "[stretchscreen](/\u02c8str\u025bt\u0283\u02ccskri\u026an/)"
+    "am_echo": "stretchscreen"
   },
   "stunblast": {
-    "am_echo": "[stunblast](/\u02c8st\u028cn\u02ccbl\u00e6st/)"
+    "am_echo": "stunblast"
   },
   "stylised": {
-    "am_echo": "[stylised](/\u02c8sta\u026ala\u026azd/)"
+    "am_echo": "stylised"
   },
   "suborbitals": {
-    "am_echo": "[suborbitals](/s\u028cb\u02c8\u0254\u0279b\u026atlz/)"
+    "am_echo": "suborbitals"
   },
   "suitfarts": {
-    "am_echo": "[suitfarts](/\u02c8sut\u02ccf\u0251rts/)"
+    "am_echo": "suit farts"
   },
   "sulphate": {
-    "am_echo": "[sulphate](/\u02c8s\u028clfe\u026at/)"
+    "am_echo": "sulphate"
   },
   "sunblasted": {
-    "am_echo": "[sunblasted](/\u02c8s\u028cn\u02ccbl\u00e6st\u026ad/)"
+    "am_echo": "sunblasted"
   },
   "sunlenses": {
-    "am_echo": "[sunlenses](/\u02c8s\u028cn\u02ccl\u025bnz\u026az/)"
+    "am_echo": "sunlenses"
   },
   "sunscorched": {
-    "am_echo": "[sunscorched](/s\u028cn\u02c8sk\u0254\u0279t\u0283t/)"
+    "am_echo": "sunscorched"
   },
   "superamped": {
-    "am_echo": "[superamped](/\u02ccsup\u0259r\u02c8\u00e6mpt/)"
+    "am_echo": "superamped"
   },
   "syllabled": {
-    "am_echo": "[syllabled](/\u02c8s\u026al\u0259b\u0259ld/)"
+    "am_echo": "syllabled"
   },
   "symbiote": {
-    "am_echo": "[symbiote](/\u02c8s\u026ambi\u02cco\u028at/)"
+    "am_echo": "symbiote"
   },
   "sympathise": {
-    "am_echo": "[sympathise](/\u02c8s\u026amp\u0259\u03b8a\u026az/)"
+    "am_echo": "sympathise"
   },
   "sympathiser": {
-    "am_echo": "[sympathiser](/\u02c8s\u026amp\u0259\u03b8a\u026az\u0259r/)"
+    "am_echo": "sympathiser"
   },
   "synchronised": {
-    "am_echo": "[synchronised](/\u02c8s\u026a\u014bk\u0279\u0259\u02ccna\u026azd/)"
+    "am_echo": "synchronised"
   },
   "synthesise": {
-    "am_echo": "[synthesise](/\u02c8s\u026an\u03b8\u0259sa\u026az/)"
+    "am_echo": "synthesise"
   },
   "synthesiser": {
-    "am_echo": "[synthesiser](/\u02c8s\u026an\u03b8\u0259sa\u026az\u0259r/)"
+    "am_echo": "synthesiser"
   },
   "targetless": {
-    "am_echo": "[targetless](/\u02c8t\u0251\u0279\u0261\u026atl\u0259s/)"
+    "am_echo": "targetless"
   },
   "tech": {
-    "am_echo": "[tech](/t\u025bk/)"
+    "am_echo": "tech"
   },
   "technoaccess": {
-    "am_echo": "[technoaccess](/\u02cct\u025bkno\u028a\u02c8\u00e6ks\u025bs/)"
+    "am_echo": "[technoaccess](/t\u025bkno\u028a\u00e6ks\u025bs/)"
   },
   "technoglyph": {
-    "am_echo": "[technoglyph](/\u02c8t\u025bkno\u028a\u02cc\u0261l\u026af/)"
+    "am_echo": "technoglyph"
   },
   "technoglyphs": {
-    "am_echo": "[technoglyphs](/\u02c8t\u025bkno\u028a\u02cc\u0261l\u026afs/)"
+    "am_echo": "technoglyphs"
   },
   "technomilitary": {
-    "am_echo": "[technomilitary](/\u02cct\u025bkno\u028a\u02c8m\u026al\u026at\u025bri/)"
+    "am_echo": "technomilitary"
   },
   "technoscribes": {
-    "am_echo": "[technoscribes](/\u02c8t\u025bkno\u028a\u02ccskra\u026abz/)"
+    "am_echo": "technoscribes"
   },
   "terracentric": {
-    "am_echo": "[terracentric](/\u02cct\u025br\u0259\u02c8s\u025bntr\u026ak/)"
+    "am_echo": "[terracentric](/t\u025br\u0259s\u025bntr\u026ak/)"
   },
   "terraforming": {
-    "am_echo": "[terraforming](/\u02c8t\u025br\u0259f\u0254rm\u026a\u014b/)"
+    "am_echo": "terraforming"
   },
   "terrestroid": {
-    "am_echo": "[terrestroid](/t\u0259\u02c8\u0279\u025bst\u0279\u0254\u026ad/)"
+    "am_echo": "[terrestroid](/t\u0259\u0279\u025bst\u0279\u0254\u026ad/)"
+  },
+  "tetrameth": {
+    "am_echo": "tetra:meth"
   },
   "ther": {
-    "am_echo": "[ther](/\u00f0\u025br/)"
+    "am_echo": "ther"
   },
   "throatful": {
-    "am_echo": "[throatful](/\u02c8\u03b8\u0279o\u028atf\u028al/)"
+    "am_echo": "throatful"
   },
   "thumbhold": {
-    "am_echo": "[thumbhold](/\u02c8\u03b8\u028cmho\u028ald/)"
+    "am_echo": "thumbhold"
   },
   "tightlock": {
-    "am_echo": "[tightlock](/\u02c8ta\u026at\u02ccl\u0251k/)"
+    "am_echo": "tightlock"
   },
   "triangled": {
-    "am_echo": "[triangled](/\u02c8tra\u026a\u00e6\u014b\u0261\u0259ld/)"
+    "am_echo": "triangled"
   },
   "trolleyed": {
-    "am_echo": "[trolleyed](/\u02c8t\u0279\u0251li\u026ad/)"
+    "am_echo": "trolleyed"
   },
   "tulo": {
-    "am_echo": "[tulo](/\u02c8tulo\u028a/)"
+    "am_echo": "[tulo](/tul\u028a/)"
   },
   "tumour": {
-    "am_echo": "[tumour](/\u02c8tu\u028am\u0259\u0279/)"
+    "am_echo": "tumour"
   },
   "ularity": {
-    "am_echo": "[ularity](/ju\u02c8l\u0251\u0279\u026ati/)"
+    "am_echo": "ularity"
+  },
+  "ultravibe": {
+    "am_echo": "[Ultravibe](/\u028clt\u0279\u0259va\u026ab/)"
   },
   "unarmoured": {
-    "am_echo": "[unarmoured](/\u028cn\u02c8\u0251\u0279m\u025ad/)"
+    "am_echo": "[unarmoured](/\u028cn\u0251\u0279m\u025ad/)"
   },
   "uncoded": {
-    "am_echo": "[uncoded](/\u028cn\u02c8ko\u028ad\u026ad/)"
+    "am_echo": "uncoded"
   },
   "unflex": {
-    "am_echo": "[unflex](/\u028cn\u02c8fl\u025bks/)"
+    "am_echo": "unflex"
   },
   "unfocus": {
-    "am_echo": "[unfocus](/\u028cn\u02c8fo\u028ak\u0259s/)"
+    "am_echo": "unfocus"
   },
   "ungoosefleshed": {
-    "am_echo": "[ungoosefleshed](/\u028cn\u02c8\u0261u\u026asfle\u0283t/)"
+    "am_echo": "ungoosefleshed"
   },
   "unhealth": {
-    "am_echo": "[unhealth](/\u028cn\u02c8h\u025bl\u03b8/)"
+    "am_echo": "unhealth"
+  },
+  "unhuman": {
+    "am_echo": "Unhuman"
   },
   "unlooked": {
-    "am_echo": "[unlooked](/\u028cn\u02c8l\u028akt/)"
+    "am_echo": "unlooked"
   },
   "unmanufactured": {
-    "am_echo": "[unmanufactured](/\u028cnm\u00e6nj\u0259\u02c8f\u00e6kt\u0283\u0259\u0279d/)"
+    "am_echo": "unmanufactured"
   },
   "unpartitioned": {
-    "am_echo": "[unpartitioned](/\u02cc\u028cnp\u0251\u0279\u02c8t\u026a\u0283\u0259nd/)"
+    "am_echo": "unpartitioned"
   },
   "unpleasantries": {
-    "am_echo": "[unpleasantries](/\u028cn\u02c8pl\u025bz\u0259ntriz/)"
+    "am_echo": "unpleasantries"
   },
   "unpolarised": {
-    "am_echo": "[unpolarised](/\u028cn\u02c8po\u028al\u0259\u0279a\u026azd/)"
+    "am_echo": "unpolarised"
   },
   "unpressured": {
-    "am_echo": "[unpressured](/\u028cn\u02c8pr\u025b\u0283\u0259rd/)"
+    "am_echo": "unpressured"
   },
   "unrecognisable": {
-    "am_echo": "[unrecognisable](/\u02cc\u028cn\u02cc\u0279\u025bk\u0259\u0261\u02c8na\u026az\u0259b\u0259l/)"
+    "am_echo": "unrecognisable"
   },
   "unseamed": {
-    "am_echo": "[unseamed](/\u028cn\u02c8si\u026amd/)"
+    "am_echo": "unseamed"
   },
   "unstirring": {
-    "am_echo": "[unstirring](/\u028cn\u02c8st\u025c\u0279\u026a\u014b/)"
+    "am_echo": "unstirring"
   },
   "untamped": {
-    "am_echo": "[untamped](/\u028cn\u02c8t\u00e6mpd/)"
+    "am_echo": "untamped"
   },
   "untanked": {
-    "am_echo": "[untanked](/\u028cn\u02c8t\u00e6\u014bkt/)"
+    "am_echo": "untanked"
   },
   "unwiped": {
-    "am_echo": "[unwiped](/\u028cn\u02c8wa\u026apt/)"
+    "am_echo": "unwiped"
   },
   "uplink": {
-    "am_echo": "[uplink](/\u02c8\u028cp\u02ccl\u026a\u014bk/)"
+    "am_echo": "uplink"
+  },
+  "vaporise": {
+    "am_echo": "Vaporise"
   },
   "vaporised": {
-    "am_echo": "[vaporised](/\u02c8ve\u026ap\u0259\u0279a\u026azd/)"
+    "am_echo": "vaporised"
   },
   "vaporises": {
-    "am_echo": "[vaporises](/\u02c8ve\u026ap\u0259ra\u026az\u026az/)"
+    "am_echo": "vaporises"
   },
   "vapour": {
-    "am_echo": "[vapour](/\u02c8ve\u026ap\u0259r/)"
+    "am_echo": "vapour"
   },
   "vibroknife": {
-    "am_echo": "[vibroknife](/\u02c8va\u026abro\u028a\u02ccna\u026af/)"
+    "am_echo": "vibroknife"
   },
   "videoscan": {
-    "am_echo": "[videoscan](/\u02c8v\u026adio\u028a\u02ccsk\u00e6n/)"
+    "am_echo": "videoscan"
   },
   "viewport": {
-    "am_echo": "[viewport](/\u02c8vjuu\u02ccp\u0254\u0279t/)"
+    "am_echo": "viewport"
   },
   "viewports": {
-    "am_echo": "[viewports](/\u02c8vju\u02ccp\u0254\u0279ts/)"
+    "am_echo": "viewports"
   },
   "virtualink": {
-    "am_echo": "[virtualink](/\u02c8v\u025c\u0279t\u0283u\u0259l\u026a\u014bk/)"
+    "am_echo": "virtualink"
   },
   "virtualities": {
-    "am_echo": "[virtualities](/\u02ccv\u025crt\u0283u\u02c8\u00e6l\u0259t\u026az/)"
+    "am_echo": "virtualities"
   },
   "visualise": {
-    "am_echo": "[visualise](/\u02c8v\u026a\u0292u\u0259la\u026az/)"
+    "am_echo": "visualise"
   },
   "wasteground": {
-    "am_echo": "[wasteground](/\u02c8we\u026ast\u02cc\u0261\u0279a\u028and/)"
+    "am_echo": "wasteground"
   },
   "weirding": {
-    "am_echo": "[weirding](/\u02c8w\u026a\u0279d\u026a\u014b/)"
+    "am_echo": "weirding"
   },
   "wharfside": {
-    "am_echo": "[wharfside](/\u02c8w\u0254rfsa\u026ad/)"
+    "am_echo": "wharfside"
   },
   "whiplashed": {
-    "am_echo": "[whiplashed](/\u02c8w\u026ap\u02ccl\u00e6\u0283t/)"
+    "am_echo": "whiplashed"
   },
   "wholecloth": {
-    "am_echo": "[wholecloth](/\u02c8ho\u028al\u02cckl\u0254\u03b8/)"
+    "am_echo": "wholecloth"
   },
   "wingspurs": {
-    "am_echo": "[wingspurs](/\u02c8w\u026a\u014b\u02ccsp\u025cr/z)"
+    "am_echo": "wingspurs"
   },
   "wipings": {
-    "am_echo": "[wipings](/\u02c8wa\u026ap\u026a\u014bz/)"
+    "am_echo": "wipings"
   },
   "wirehead": {
-    "am_echo": "[wirehead](/\u02c8wa\u026a\u025a\u02cch\u025bd/)"
+    "am_echo": "wirehead"
   },
   "wireheads": {
-    "am_echo": "[wireheads](/\u02c8wa\u026a\u0259\u0279\u02cch\u025bdz/)"
+    "am_echo": "wireheads"
   },
   "woodsmoke": {
-    "am_echo": "[woodsmoke](/\u02c8w\u028ad\u02ccsmo\u028ak/)"
+    "am_echo": "woodsmoke"
   },
   "worldweariness": {
-    "am_echo": "[worldweariness](/\u02c8w\u025c\u0279ld\u02ccw\u026a\u0279i\u026an\u0259s/)"
+    "am_echo": "worldweariness"
   },
   "writhings": {
-    "am_echo": "[writhings](/\u02c8ra\u026a\u00f0\u026a\u014bz/)"
+    "am_echo": "writhings"
   },
   "xenoculture": {
-    "am_echo": "[xenoculture](/\u02c8z\u025bno\u028a\u02cck\u028clt\u0283\u0259\u0279/)"
+    "am_echo": "xenoculture"
   },
   "xenology": {
-    "am_echo": "[xenology](/z\u026a\u02c8n\u0251l\u0259d\u0292i/)"
+    "am_echo": "xenology"
   },
   "yakuza": {
-    "am_echo": "[yakuza](/\u02c8j\u0251ku\u02d0z\u0251/)"
+    "am_echo": "yakuza"
   }
 }
