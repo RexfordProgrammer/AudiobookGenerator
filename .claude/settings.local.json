@@ -24,7 +24,8 @@
       "Bash(pip install:*)",
       "Bash(npm install:*)",
       "Bash(echo $SHELL)",
-      "Read(//c/Users/Rexford/**)"
+      "Read(//c/Users/Rexford/**)",
+      "Bash(git filter-repo:*)"
     ]
   }
 }

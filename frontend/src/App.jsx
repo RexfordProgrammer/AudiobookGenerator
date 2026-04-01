@@ -100,7 +100,7 @@ export default function App() {
           const altMap = data.phonetic_alternatives ?? {}
           setPhoneticSources(sourcesMap)
           setPhoneticAlternatives(altMap)
-          setWords(allWords.map(({ word, count }) => ({ original: word, phonetic: phoneticsMap[word] ?? '', count })))
+          setWords(allWords.map(({ word, count }) => ({ original: word, phonetic: phoneticsMap[word] ?? '', initialPhonetic: phoneticsMap[word] ?? '', count })))
         }
 
         if (data.status === 'done') {
@@ -710,6 +710,7 @@ const VOICE_LABELS = {
 function ReviewPanel({ words, playingWord, phoneticSources, phoneticAlternatives = {}, onUpdatePhonetic, onRemoveWord, onAddWord, onPlay, onApprove, onSkip, apiBase, voice, engine }) {
   const [showLexicon, setShowLexicon] = useState(false)
   const [addWordInput, setAddWordInput] = useState('')
+  const [autoPreview, setAutoPreview] = useState(false)
   const substitutionCount = words.filter(w => w.phonetic.trim()).length
   const lexiconCount = words.filter(w => phoneticSources[w.original] === 'lexicon').length
 
@@ -728,23 +729,34 @@ function ReviewPanel({ words, playingWord, phoneticSources, phoneticAlternatives
               ? <>{substitutionCount} ha{substitutionCount !== 1 ? 've' : 's'} suggested phonetics.</>
               : 'Add phonetic spellings below.'}
           </p>
-          <p style={s.hint2}>
-            Click <strong>▶</strong> to hear how Kokoro pronounces the phonetic spelling. Edit
-            the field if it sounds wrong. Words with an empty phonetic field keep their original spelling.
-            <span style={{ color: '#059669', marginLeft: 6 }}>Saved</span> = from your lexicon.
-          </p>
+          <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 12, marginBottom: 12 }}>
+            <p style={{ ...s.hint2, margin: 0 }}>
+              Click <strong>▶</strong> to hear how Kokoro pronounces the phonetic spelling. Edit
+              the field if it sounds wrong. Words with an empty phonetic field keep their original spelling.
+              <span style={{ color: '#059669', marginLeft: 6 }}>Saved</span> = from your lexicon.
+            </p>
+            <label style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12, color: '#475569', cursor: 'pointer', flexShrink: 0, whiteSpace: 'nowrap' }}>
+              <input
+                type="checkbox"
+                checked={autoPreview}
+                onChange={e => setAutoPreview(e.target.checked)}
+              />
+              Auto-preview on edit
+            </label>
+          </div>
 
           <div style={s.table}>
             <div style={{ ...s.row, ...s.header }}>
               <div style={s.cOrig}>Original word</div>
               <div style={s.cCount}>#</div>
               <div style={s.cPhon}>Phonetic spelling</div>
-              <div style={s.cAct}>Preview / Remove</div>
+              <div style={s.cAct}>Preview / Ignore / Remove</div>
             </div>
 
             {words.map((w, i) => {
               const isPlaying = playingWord === (w.phonetic.trim() || w.original)
               const fromLexicon = phoneticSources[w.original] === 'lexicon'
+              const isIgnored = w.phonetic.trim() === w.original
               const alts = !w.phonetic.trim() ? (phoneticAlternatives[w.original] ?? {}) : {}
               const altEntries = Object.entries(alts)
               return (
@@ -754,16 +766,20 @@ function ReviewPanel({ words, playingWord, phoneticSources, phoneticAlternatives
                     {fromLexicon && (
                       <span style={s.savedBadge} title="Loaded from your saved lexicon">saved</span>
                     )}
+                    {isIgnored && (
+                      <span style={{ ...s.savedBadge, background: '#fef9c3', color: '#92400e', borderColor: '#fde68a' }} title="Marked to use original spelling">ignored</span>
+                    )}
                   </div>
                   <div style={s.cCount}>
                     <span style={s.countBadge}>{w.count ?? '—'}</span>
                   </div>
                   <div style={s.cPhon}>
                     <input
-                      style={{ ...s.input, borderColor: fromLexicon ? '#86efac' : '#e2e8f0' }}
+                      style={{ ...s.input, borderColor: isIgnored ? '#fde68a' : fromLexicon ? '#86efac' : '#e2e8f0' }}
                       value={w.phonetic}
                       placeholder="e.g. her-MY-oh-nee"
                       onChange={(e) => onUpdatePhonetic(i, e.target.value)}
+                      onBlur={() => { if (autoPreview) onPlay(w.phonetic.trim() || w.original) }}
                     />
                     {altEntries.length > 0 && (
                       <div style={{ marginTop: 4, display: 'flex', flexWrap: 'wrap', gap: 4 }}>
@@ -788,6 +804,17 @@ function ReviewPanel({ words, playingWord, phoneticSources, phoneticAlternatives
                       onClick={() => onPlay(w.phonetic.trim() || w.original)}
                     >
                       {isPlaying ? '⏹' : '▶'}
+                    </button>
+                    <button
+                      title={isIgnored ? 'Revert — clear phonetic field' : 'Ignore — use original spelling as-is'}
+                      style={{ ...s.iconBtn, background: isIgnored ? '#fef9c3' : '#f0fdf4', color: isIgnored ? '#92400e' : '#15803d' }}
+                      onClick={() => {
+                        const newPhonetic = isIgnored ? w.initialPhonetic : w.original
+                        onUpdatePhonetic(i, newPhonetic)
+                        onPlay(newPhonetic.trim() || w.original)
+                      }}
+                    >
+                      {isIgnored ? '↺' : '~'}
                     </button>
                     <button
                       title="Remove from substitution list"
@@ -1176,7 +1203,7 @@ const s = {
 
   // Table (phonetics review)
   table:  { border: '1px solid #e2e8f0', borderRadius: 10, overflow: 'hidden', marginTop: 8 },
-  row:    { display: 'grid', gridTemplateColumns: '180px 48px 1fr 110px', alignItems: 'center', padding: '8px 12px', borderBottom: '1px solid #f1f5f9' },
+  row:    { display: 'grid', gridTemplateColumns: '180px 48px 1fr 150px', alignItems: 'center', padding: '8px 12px', borderBottom: '1px solid #f1f5f9' },
   header: { background: '#f8fafc', fontWeight: 600, fontSize: 13, color: '#475569' },
   cOrig:  { fontSize: 14 },
   cCount: { textAlign: 'center', fontSize: 13 },
