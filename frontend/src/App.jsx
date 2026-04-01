@@ -47,6 +47,8 @@ export default function App() {
   const pollRef = useRef(null)
   const inputRef = useRef(null)
   const audioRef = useRef(null)
+  const previewQueueRef = useRef([])   // pending { text } items
+  const previewBusyRef = useRef(false) // true while fetch+playback is in progress
 
   function pickFile(f) {
     if (!f) return
@@ -239,8 +241,7 @@ export default function App() {
     })
   }
 
-  async function playPreview(text) {
-    if (!text.trim()) return
+  async function _runPreview(text) {
     setPlayingWord(text)
     try {
       const res = await fetch(`${API}/preview`, {
@@ -251,19 +252,38 @@ export default function App() {
       if (!res.ok) throw new Error('Preview generation failed')
       const blob = await res.blob()
       const url = URL.createObjectURL(blob)
-      if (audioRef.current) {
-        audioRef.current.pause()
-        URL.revokeObjectURL(audioRef.current.src)
-      }
-      const audio = new Audio(url)
-      audioRef.current = audio
-      audio.onended = () => setPlayingWord(null)
-      audio.onerror = () => setPlayingWord(null)
-      audio.play()
+      await new Promise((resolve) => {
+        if (audioRef.current) {
+          audioRef.current.pause()
+          URL.revokeObjectURL(audioRef.current.src)
+        }
+        const audio = new Audio(url)
+        audioRef.current = audio
+        audio.onended = resolve
+        audio.onerror = resolve
+        audio.play()
+      })
     } catch (e) {
       setError(e.message)
-      setPlayingWord(null)
     }
+    setPlayingWord(null)
+    const next = previewQueueRef.current.shift()
+    if (next) {
+      _runPreview(next.text)
+    } else {
+      previewBusyRef.current = false
+    }
+  }
+
+  function playPreview(text) {
+    if (!text.trim()) return
+    if (previewBusyRef.current) {
+      // Replace any pending item — only keep the latest request
+      previewQueueRef.current = [{ text }]
+      return
+    }
+    previewBusyRef.current = true
+    _runPreview(text)
   }
 
   async function handleApprove(skipAll = false) {
@@ -298,6 +318,8 @@ export default function App() {
   function reset() {
     clearInterval(pollRef.current)
     if (audioRef.current) { audioRef.current.pause(); audioRef.current = null }
+    previewQueueRef.current = []
+    previewBusyRef.current = false
     setFile(null)
     setJobId(null)
     setJobStatus(null)
