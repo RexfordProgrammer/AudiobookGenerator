@@ -1,0 +1,741 @@
+{
+  "approved": {
+    "Alberto": "[Alberto](/\u00e6l\u02c8b\u025brto\u028a/)",
+    "Amelia": "[Amelia](/\u0259\u02c8mi\u026ali\u0259/)",
+    "Anamull": "[Anamull](/\u00e6n\u0259m\u028cl/)",
+    "Anger": "Anger",
+    "Another": "[Another](/\u0259\u02c8n\u028c\u00f0\u0259r/)",
+    "Baby": "Baby",
+    "Baby/Shipwright/Maker": "[Baby/Shipwright/Maker](/\u02c8be\u026abi \u02c8\u0283\u026apra\u026at \u02c8me\u026ak\u0259r/)",
+    "Bell": "[Bell](/b\u025bl/)",
+    "Big": "Big",
+    "Bill": "Bill",
+    "Billy": "Billy",
+    "Billys": "Billys",
+    "Biology": "Biology",
+    "Blah": "[Blah](/bl\u0251/)",
+    "Blue": "blue",
+    "Briefly": "Briefly",
+    "Burger": "Burger",
+    "Burroway": "[Burroway](/b\u028c\u0279o\u028awe\u026a/)",
+    "Castle": "[Castle](/\u02c8k\u00e6s\u0259l/)",
+    "Chameleon": "Chameleon",
+    "ChiChi": "[ChiChi](/\u02c8\u02a7i\u026a\u02a7i\u026a/)",
+    "Chicago": "Chicago",
+    "Chiffres": "[Chiffres](/\u02c8\u0283\u026af\u0259rz/)",
+    "Children": "Children",
+    "Chosen": "Chosen",
+    "Cohen": "Cohen",
+    "Compromise": "[Compromise](/\u02c8k\u0251mpr\u0259\u02ccma\u026az/)",
+    "Constellations": "Constellations",
+    "Cordelia": "kordeeleeyaz",
+    "Cubs": "Cubs",
+    "D-Caf": "deecaf",
+    "D-Caf's": "deecafs",
+    "Disney": "Disney",
+    "Ditto": "Ditto",
+    "Dodger": "[Dodger](/d\u0251d\u0292\u025a/)",
+    "Duck": "duck",
+    "Dude": "Dude",
+    "Earth": "Earth",
+    "Edward": "[Edward](/\u025bdw\u0259\u0279d/)",
+    "Egypt": "Egypt",
+    "Essence": "Essence",
+    "Face": "face",
+    "Five": "Five's",
+    "Flexible": "Flexible",
+    "Flyer": "Flyer",
+    "Foot": "Foot",
+    "Ford": "Ford",
+    "Freak": "Freak",
+    "Freaks": "[Freaks](/fri\u026aks/)",
+    "French": "French",
+    "Frisbees": "Frisbees",
+    "Funny": "Funny",
+    "Glowing": "Glowing",
+    "Gonzalez": "gonzahlez",
+    "Grand": "Grand",
+    "Greek": "Greek",
+    "Gulliver": "[Gulliver](/\u02c8\u0261\u028cl\u026av\u0259r/)",
+    "Hoyle's": "hoils",
+    "Hwang": "wahng",
+    "I'm": "I'm",
+    "Into": "Into",
+    "Italian": "Italian",
+    "Jane": "[Jane](/d\u0292e\u026an/)",
+    "Joan": "Joan",
+    "Jobs": "jobsis",
+    "Jobs's": "jobsis",
+    "Jupiter": "Jupiter",
+    "King": "King",
+    "Kubrick": "[Kubrick](/\u02c8kuubr\u026ak/)",
+    "Lately": "Lately",
+    "Later": "Later",
+    "Leonardo": "[Leonardo](/li\u0259n\u0251rdo\u028a/)",
+    "Locker": "Locker",
+    "Look": "Look",
+    "Loser": "Chosen",
+    "Louis": "Louis",
+    "Maker": "Maker",
+    "Mars": "Mars",
+    "Mayflower": "[Mayflower](/me\u026afla\u028a\u025a/)",
+    "McDonald's": "McDonald's",
+    "Meanie": "[Meanie](/mini/)",
+    "Meanie-ville": "[Meanieville](/\u02c8mi\u02d0ni\u02d0v\u026al/)",
+    "Meanies": "[Meanies](/miniz/)",
+    "Meanies'armor": "[Meanies' armor](/\u02c8mi\u026ani\u026az \u02c8\u0251rm\u0259r/)",
+    "Mediterranean": "mediterayneean",
+    "Mexican": "Mexican",
+    "Miro": "[Miro](/\u02c8m\u026aro\u028a/)",
+    "Mo'Steel": "moesteel",
+    "Monorail": "Monorail",
+    "Months": "Months",
+    "Moon": "Moon",
+    "Moons": "Moons",
+    "Mop-Top": "[Mop-Top](/m\u0251pt\u0251p/)",
+    "Moron": "Moron",
+    "Mother": "mother",
+    "Mother's": "mother",
+    "Murphy": "Murphy",
+    "Mystic": "Mystic",
+    "Nike": "Nike",
+    "Noyze": "[Noyze](/n\u0254\u026az/)",
+    "Ocean": "ohshen",
+    "Olga": "[Olga](/\u02c8o\u028al\u0261\u0259/)",
+    "Pacific": "Pacific",
+    "Pepsi": "Pepsi",
+    "Peter's": "Peter's",
+    "Planets": "Planets",
+    "Poo-Bah": "Poo-Bah",
+    "Project": "Project",
+    "Publix": "Publix",
+    "Rebuild": "Rebuild",
+    "Remnants": "Remnants",
+    "Renaissance": "Renaissance",
+    "Revolving": "Revolving",
+    "Rider": "Rider",
+    "Riders": "Riders",
+    "Roger": "[Roger](/\u0279\u0251d\u0292\u025a/)",
+    "Rollerblades": "Rollerblades",
+    "Rome": "Rome",
+    "Saturn": "Saturn",
+    "Seuss": "[Seuss](/su\u028as/)",
+    "Shipwright": "Shipwright",
+    "Shipwrights": "Shipwrights",
+    "Shipwrights'tc": "Shipwrights'tc",
+    "Smarten": "Smarten",
+    "Spanish": "Spanish",
+    "Squids": "Squids",
+    "Star": "Star",
+    "Starbucks": "Starbucks",
+    "Swift": "Swift",
+    "Taco": "[Taco](/\u02c8t\u0251ko\u028a/)",
+    "Tamara": "tuhmahraaz",
+    "Tate": "tate",
+    "The": "the",
+    "Three": "Three",
+    "Travels": "Travels",
+    "Trek": "Trek",
+    "Venus": "Venus",
+    "Victorian": "Victorian",
+    "Vinci": "[Vinci](/v\u026ant\u0283i/)",
+    "Violet": "Violet",
+    "Wakers": "Wakers",
+    "Weir": "weer",
+    "World": "world",
+    "Worlds": "Worlds",
+    "Yago": "yahgo",
+    "Yago's": "yahgos",
+    "Yeah": "yeh"
+  },
+  "words_spacy": [
+    [
+      "Jobs",
+      210
+    ],
+    [
+      "Billy",
+      133
+    ],
+    [
+      "Kubrick",
+      66
+    ],
+    [
+      "Edward",
+      61
+    ],
+    [
+      "Meanie",
+      60
+    ],
+    [
+      "Violet",
+      47
+    ],
+    [
+      "Tate",
+      43
+    ],
+    [
+      "Tamara",
+      37
+    ],
+    [
+      "Earth",
+      37
+    ],
+    [
+      "Anamull",
+      36
+    ],
+    [
+      "Yago",
+      32
+    ],
+    [
+      "Meanies",
+      26
+    ],
+    [
+      "Mo'Steel",
+      19
+    ],
+    [
+      "Blue",
+      17
+    ],
+    [
+      "Olga",
+      15
+    ],
+    [
+      "Big",
+      14
+    ],
+    [
+      "Compromise",
+      14
+    ],
+    [
+      "Cohen",
+      12
+    ],
+    [
+      "Mother",
+      12
+    ],
+    [
+      "Burroway",
+      10
+    ],
+    [
+      "Noyze",
+      9
+    ],
+    [
+      "Baby",
+      9
+    ],
+    [
+      "Amelia",
+      9
+    ],
+    [
+      "Dodger",
+      8
+    ],
+    [
+      "Remnants",
+      8
+    ],
+    [
+      "Roger",
+      7
+    ],
+    [
+      "Mayflower",
+      7
+    ],
+    [
+      "The",
+      7
+    ],
+    [
+      "Gonzalez",
+      6
+    ],
+    [
+      "Children",
+      5
+    ],
+    [
+      "Castle",
+      5
+    ],
+    [
+      "Riders",
+      4
+    ],
+    [
+      "Maker",
+      4
+    ],
+    [
+      "Baby/Shipwright/Maker",
+      3
+    ],
+    [
+      "Gulliver",
+      3
+    ],
+    [
+      "Duck",
+      3
+    ],
+    [
+      "Shipwright",
+      3
+    ],
+    [
+      "Weir",
+      3
+    ],
+    [
+      "Rider",
+      2
+    ],
+    [
+      "Three",
+      2
+    ],
+    [
+      "Greek",
+      2
+    ],
+    [
+      "Chameleon",
+      2
+    ],
+    [
+      "Freaks",
+      2
+    ],
+    [
+      "Rome",
+      2
+    ],
+    [
+      "Shipwrights",
+      2
+    ],
+    [
+      "Taco",
+      2
+    ],
+    [
+      "Bell",
+      2
+    ],
+    [
+      "Anger",
+      2
+    ],
+    [
+      "Chicago",
+      2
+    ],
+    [
+      "Squids",
+      1
+    ],
+    [
+      "Months",
+      1
+    ],
+    [
+      "Later",
+      1
+    ],
+    [
+      "Worlds",
+      1
+    ],
+    [
+      "Swift",
+      1
+    ],
+    [
+      "Travels",
+      1
+    ],
+    [
+      "Moon",
+      1
+    ],
+    [
+      "Mars",
+      1
+    ],
+    [
+      "Venus",
+      1
+    ],
+    [
+      "Saturn",
+      1
+    ],
+    [
+      "Jupiter",
+      1
+    ],
+    [
+      "Yeah",
+      1
+    ],
+    [
+      "Pepsi",
+      1
+    ],
+    [
+      "Jane",
+      1
+    ],
+    [
+      "Mediterranean",
+      1
+    ],
+    [
+      "Leonardo",
+      1
+    ],
+    [
+      "Vinci",
+      1
+    ],
+    [
+      "Chiffres",
+      1
+    ],
+    [
+      "Constellations",
+      1
+    ],
+    [
+      "Spanish",
+      1
+    ],
+    [
+      "Joan",
+      1
+    ],
+    [
+      "Miro",
+      1
+    ],
+    [
+      "Mop-Top",
+      1
+    ],
+    [
+      "Smarten",
+      1
+    ],
+    [
+      "Look",
+      1
+    ],
+    [
+      "Rebuild",
+      1
+    ],
+    [
+      "Seuss",
+      1
+    ],
+    [
+      "Rollerblades",
+      1
+    ],
+    [
+      "Moron",
+      1
+    ],
+    [
+      "Cordelia",
+      1
+    ],
+    [
+      "Ditto",
+      1
+    ],
+    [
+      "Foot",
+      1
+    ],
+    [
+      "Locker",
+      1
+    ],
+    [
+      "Pacific",
+      1
+    ],
+    [
+      "Ocean",
+      1
+    ],
+    [
+      "Ford",
+      1
+    ],
+    [
+      "Frisbees",
+      1
+    ],
+    [
+      "Flexible",
+      1
+    ],
+    [
+      "Flyer",
+      1
+    ],
+    [
+      "Lately",
+      1
+    ],
+    [
+      "Louis",
+      1
+    ],
+    [
+      "Essence",
+      1
+    ],
+    [
+      "Hwang",
+      1
+    ],
+    [
+      "Blah",
+      1
+    ],
+    [
+      "Another",
+      1
+    ],
+    [
+      "Grand",
+      1
+    ],
+    [
+      "Mystic",
+      1
+    ],
+    [
+      "Poo-Bah",
+      1
+    ],
+    [
+      "I'm",
+      1
+    ],
+    [
+      "Yago's",
+      1
+    ],
+    [
+      "Wakers",
+      1
+    ],
+    [
+      "D-Caf",
+      1
+    ],
+    [
+      "D-Caf's",
+      1
+    ],
+    [
+      "Egypt",
+      1
+    ],
+    [
+      "Italian",
+      1
+    ],
+    [
+      "Renaissance",
+      1
+    ],
+    [
+      "Peter's",
+      1
+    ],
+    [
+      "Meanies'armor",
+      1
+    ],
+    [
+      "Billys",
+      1
+    ],
+    [
+      "Shipwrights'tc",
+      1
+    ],
+    [
+      "Bill",
+      1
+    ],
+    [
+      "Into",
+      1
+    ],
+    [
+      "McDonald's",
+      1
+    ],
+    [
+      "Burger",
+      1
+    ],
+    [
+      "King",
+      1
+    ],
+    [
+      "Disney",
+      1
+    ],
+    [
+      "World",
+      1
+    ],
+    [
+      "Mexican",
+      1
+    ],
+    [
+      "ChiChi",
+      1
+    ],
+    [
+      "Starbucks",
+      1
+    ],
+    [
+      "Publix",
+      1
+    ],
+    [
+      "Meanie-ville",
+      1
+    ],
+    [
+      "Star",
+      1
+    ],
+    [
+      "Trek",
+      1
+    ],
+    [
+      "Jobs's",
+      1
+    ],
+    [
+      "French",
+      1
+    ],
+    [
+      "Chosen",
+      1
+    ],
+    [
+      "Mother's",
+      1
+    ],
+    [
+      "Loser",
+      1
+    ],
+    [
+      "Freak",
+      1
+    ],
+    [
+      "Alberto",
+      1
+    ],
+    [
+      "Nike",
+      1
+    ],
+    [
+      "Glowing",
+      1
+    ],
+    [
+      "Moons",
+      1
+    ],
+    [
+      "Monorail",
+      1
+    ],
+    [
+      "Hoyle's",
+      1
+    ],
+    [
+      "Dude",
+      1
+    ],
+    [
+      "Face",
+      1
+    ],
+    [
+      "Murphy",
+      1
+    ],
+    [
+      "Briefly",
+      1
+    ],
+    [
+      "Five",
+      1
+    ],
+    [
+      "Revolving",
+      1
+    ],
+    [
+      "Planets",
+      1
+    ],
+    [
+      "Biology",
+      1
+    ],
+    [
+      "Cubs",
+      1
+    ],
+    [
+      "Project",
+      1
+    ],
+    [
+      "Funny",
+      1
+    ],
+    [
+      "Victorian",
+      1
+    ]
+  ]
+}

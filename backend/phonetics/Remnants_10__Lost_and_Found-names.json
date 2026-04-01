@@ -1,0 +1,765 @@
+{
+  "approved": {
+    "Amelia": "[Amelia](/\u0259\u02c8mi\u026ali\u0259/)",
+    "Amelia's": "[Amelia](/\u0259\u02c8mi\u026ali\u0259/)",
+    "America": "America",
+    "American": "American",
+    "Ana-mull": "[Ana-mull](/\u02c8\u00e6n\u0259m\u028cl/)",
+    "Anamull": "[Anamull](/\u00e6n\u0259m\u028cl/)",
+    "Ancient": "Ancient",
+    "Angelique": "[Angelique](/\u0251n\u0292\u0259li\u026ak/)",
+    "Beanstalk": "Beanstalk",
+    "Betrayal": "Betrayal",
+    "Billy": "Billy",
+    "Billy's": "Billy",
+    "Billy/Mother": "Billy/Mother",
+    "Billyville": "[Billyville](/\u02c8b\u026ali\u02ccv\u026al/)",
+    "Blaine": "Blaine",
+    "Blue": "blue",
+    "Boy": "Boy",
+    "Bozo": "Bozo",
+    "Bright": "Bright",
+    "Brown": "Brown",
+    "Burroway": "[Burroway](/b\u028c\u0279o\u028awe\u026a/)",
+    "Burroway's": "[Burroway](/b\u028c\u0279o\u028awe\u026a/)",
+    "Charlie": "[Charlie](/\u02c8\u02a7\u0251\u0279li/)",
+    "Charlie's": "[Charlie](/\u02c8\u02a7\u0251\u0279li/)",
+    "Choate": "[Choate](/\u02a7o\u028at/)",
+    "Christopher": "Christopher",
+    "Civil": "Civil",
+    "Cohen": "Cohen",
+    "Columbus": "Columbus",
+    "Cordelia": "kordeeleeyaz",
+    "Correcti": "[Correcti](/k\u0259r\u025bkti/)",
+    "D-Caf": "deecaf",
+    "D-Caf's": "deecafs",
+    "DCaf": "deecaf",
+    "Daniel": "Daniel",
+    "Dark": "[Dark](/d\u0251\u0279k/)",
+    "David": "[David](/\u02c8de\u026av\u026ad/)",
+    "Dodger": "[Dodger](/d\u0251d\u0292\u025a/)",
+    "Dodger's": "[Dodger](/d\u0251d\u0292\u025a/)",
+    "Duck": "duck",
+    "Duncan": "Duncan",
+    "Duncan's": "Duncan",
+    "Earth": "Earth",
+    "Earth's": "Earth",
+    "Echo": "Echo",
+    "Edward": "[Edward](/\u025bdw\u0259\u0279d/)",
+    "Edward's": "[Edward](/\u025bdw\u0259\u0279d/)",
+    "Eiffel": "Eiffel",
+    "Enemy": "Enemy",
+    "Eriksson": "Eriksson",
+    "Face": "face",
+    "Face's": "face",
+    "Formidable": "Formidable",
+    "France": "[France](/\u02c8f\u0279\u00e6ns/)",
+    "Galilei": "[Galilei](/\u0261\u00e6l\u026ale\u026ai/)",
+    "Galileo": "[Galileo](/\u0261\u00e6l\u026ale\u026ao\u028a/)",
+    "Gonzalez": "gonzahlez",
+    "Grandma's": "Grandma's",
+    "Harry": "Harry",
+    "He'd": "He'd",
+    "Heinlein": "Heinlein",
+    "Hiroshima": "[Hiroshima](/h\u026ar\u0259\u02c8\u0283i\u026am\u0259/)",
+    "Houdini": "[Houdini](/hudini/)",
+    "Hoyle": "hoil",
+    "I'll": "I'll",
+    "India": "India",
+    "Intellect": "Intellect",
+    "Jack": "[Jack](/\u02a4\u00e6k/)",
+    "Japanese": "Japanese",
+    "Jason": "[Jason](/\u02a4e\u026as\u0259n/)",
+    "Jobs": "jobsis",
+    "Jobs's": "jobsis",
+    "Juliet": "Juliet",
+    "Jupiter": "Jupiter",
+    "Kubrick": "[Kubrick](/\u02c8kuubr\u026ak/)",
+    "Kubrick's": "[Kubrick](/\u02c8kuubr\u026ak/)",
+    "Land": "Land",
+    "Langlow": "Langlow",
+    "Language": "Language",
+    "Las": "Las",
+    "Leakey": "Leakey",
+    "Leif": "[Leif](/li\u026af/)",
+    "Lobster": "Lobster",
+    "Louis": "Louis",
+    "Mark": "Mark",
+    "Mars": "Mars",
+    "Martian": "[Martian](/m\u0251\u0279\u0283\u0259n/)",
+    "Martians": "[Martians](/m\u0251\u0279\u0283\u0259nz/)",
+    "Mayflower": "[Mayflower](/me\u026afla\u028a\u025a/)",
+    "Meanie": "[Meanie](/mini/)",
+    "Meanies": "[Meanies](/miniz/)",
+    "Meanies'note": "[Meanies'note](/\u02c8mi\u026anizno\u028at/)",
+    "Mediterranean": "mediterayneean",
+    "Mo'Steel": "moesteel",
+    "Mo'Steel's": "moesteels",
+    "Mother": "mother",
+    "Mother's": "mother",
+    "Nada": "Nada",
+    "Nagasaki": "[Nagasaki](/n\u0251\u0261\u0259s\u0251k\u026a/)",
+    "Noyze": "[Noyze](/n\u0254\u026az/)",
+    "Noyze's": "[Noyze](/n\u0254\u026az/)",
+    "Olga": "[Olga](/\u02c8o\u028al\u0261\u0259/)",
+    "Olga's": "[Olga](/\u02c8o\u028al\u0261\u0259/)",
+    "Olympics": "Olympics",
+    "Path": "Path",
+    "Place": "Place",
+    "Planet": "Planet",
+    "Pompeii": "Pompeii",
+    "Porcupine": "Porcupine",
+    "Quorum": "[Quorum](/kw\u0254r\u0259m/)",
+    "Remnants": "Remnants",
+    "Rider": "Rider",
+    "Riders": "Riders",
+    "Riders'home": "[Riders'home](/\u02c8ra\u026ad\u0259rzho\u028am/)",
+    "Rock": "Rock",
+    "Roger": "[Roger](/\u0279\u0251d\u0292\u025a/)",
+    "S'up": "[S'up](/s\u028cp/)",
+    "Shadow": "Shadow",
+    "Shakespeare": "[Shakespeare](/\u02c8\u0283e\u026aksp\u026ar/)",
+    "She'd": "She'd",
+    "Shipwrights": "Shipwrights",
+    "Sign": "Sign",
+    "States": "States",
+    "Steven": "steevun",
+    "Strange": "[Strange](/st\u0279e\u026and\u0292/)",
+    "Stranger": "Stranger",
+    "Tamara": "tuhmahraaz",
+    "Tamara's": "tuhmahraaz",
+    "Tate": "tate",
+    "Tate's": "tate",
+    "The": "the",
+    "Todd": "[Todd](/t\u0251d/)",
+    "Tokyo": "tohkyoh",
+    "Touch": "touch",
+    "Tour": "Tour",
+    "Tower": "tower",
+    "Troika": "[Troika](/tr\u0254\u026ak\u0259/)",
+    "True": "True",
+    "Union": "Union",
+    "United": "United",
+    "Vegas": "Vegas",
+    "Vesuvius": "[Vesuvius](/v\u0259suv\u026a\u0259s/)",
+    "Violet": "Violet",
+    "Violet's": "Violet",
+    "War": "war",
+    "We'll": "[We'll](/wi\u026al/)",
+    "Yago": "yahgo",
+    "Yago's": "yahgos",
+    "Yin": "[Yin](/j\u026an/)",
+    "Zone": "Zone",
+    "Zones": "Zones"
+  },
+  "words_stanza": [
+    [
+      "Yago",
+      148
+    ],
+    [
+      "Mo'Steel",
+      102
+    ],
+    [
+      "Violet",
+      96
+    ],
+    [
+      "Duncan",
+      76
+    ],
+    [
+      "Billy",
+      71
+    ],
+    [
+      "Earth",
+      70
+    ],
+    [
+      "Tate",
+      65
+    ],
+    [
+      "Jobs",
+      49
+    ],
+    [
+      "Anamull",
+      44
+    ],
+    [
+      "D-Caf",
+      44
+    ],
+    [
+      "Olga",
+      42
+    ],
+    [
+      "Noyze",
+      41
+    ],
+    [
+      "Roger",
+      40
+    ],
+    [
+      "Dodger",
+      37
+    ],
+    [
+      "Troika",
+      20
+    ],
+    [
+      "Face",
+      18
+    ],
+    [
+      "Burroway",
+      18
+    ],
+    [
+      "Amelia",
+      16
+    ],
+    [
+      "Tamara",
+      16
+    ],
+    [
+      "Edward",
+      16
+    ],
+    [
+      "Charlie",
+      15
+    ],
+    [
+      "Duncan's",
+      15
+    ],
+    [
+      "Yago's",
+      14
+    ],
+    [
+      "Zone",
+      11
+    ],
+    [
+      "Meanies",
+      10
+    ],
+    [
+      "Choate",
+      10
+    ],
+    [
+      "Jobs's",
+      10
+    ],
+    [
+      "Rock",
+      10
+    ],
+    [
+      "Meanie",
+      9
+    ],
+    [
+      "Billy's",
+      9
+    ],
+    [
+      "Shipwrights",
+      8
+    ],
+    [
+      "Mo'Steel's",
+      7
+    ],
+    [
+      "Violet's",
+      6
+    ],
+    [
+      "Shadow",
+      6
+    ],
+    [
+      "Mayflower",
+      6
+    ],
+    [
+      "Langlow",
+      5
+    ],
+    [
+      "Tamara's",
+      5
+    ],
+    [
+      "Cordelia",
+      5
+    ],
+    [
+      "Touch",
+      5
+    ],
+    [
+      "Kubrick",
+      4
+    ],
+    [
+      "Mother's",
+      4
+    ],
+    [
+      "Cohen",
+      4
+    ],
+    [
+      "I'll",
+      4
+    ],
+    [
+      "Dark",
+      4
+    ],
+    [
+      "Bright",
+      4
+    ],
+    [
+      "Mother",
+      4
+    ],
+    [
+      "Formidable",
+      4
+    ],
+    [
+      "Intellect",
+      4
+    ],
+    [
+      "Riders",
+      3
+    ],
+    [
+      "Noyze's",
+      3
+    ],
+    [
+      "Dodger's",
+      3
+    ],
+    [
+      "Amelia's",
+      3
+    ],
+    [
+      "He'd",
+      3
+    ],
+    [
+      "Olga's",
+      3
+    ],
+    [
+      "Tate's",
+      3
+    ],
+    [
+      "America",
+      3
+    ],
+    [
+      "Tower",
+      3
+    ],
+    [
+      "Tokyo",
+      3
+    ],
+    [
+      "Jack",
+      3
+    ],
+    [
+      "Duck",
+      2
+    ],
+    [
+      "Rider",
+      2
+    ],
+    [
+      "Billy/Mother",
+      2
+    ],
+    [
+      "Hoyle",
+      2
+    ],
+    [
+      "Charlie's",
+      2
+    ],
+    [
+      "Mars",
+      2
+    ],
+    [
+      "Jupiter",
+      2
+    ],
+    [
+      "The",
+      2
+    ],
+    [
+      "She'd",
+      2
+    ],
+    [
+      "Enemy",
+      2
+    ],
+    [
+      "Remnants",
+      2
+    ],
+    [
+      "DCaf",
+      2
+    ],
+    [
+      "Burroway's",
+      2
+    ],
+    [
+      "Place",
+      2
+    ],
+    [
+      "United",
+      2
+    ],
+    [
+      "States",
+      2
+    ],
+    [
+      "Japanese",
+      2
+    ],
+    [
+      "Eiffel",
+      2
+    ],
+    [
+      "Vegas",
+      2
+    ],
+    [
+      "Blue",
+      1
+    ],
+    [
+      "Billyville",
+      1
+    ],
+    [
+      "Mediterranean",
+      1
+    ],
+    [
+      "Meanies'note",
+      1
+    ],
+    [
+      "Kubrick's",
+      1
+    ],
+    [
+      "Edward's",
+      1
+    ],
+    [
+      "Angelique",
+      1
+    ],
+    [
+      "Riders'home",
+      1
+    ],
+    [
+      "Mark",
+      1
+    ],
+    [
+      "D-Caf's",
+      1
+    ],
+    [
+      "Yin",
+      1
+    ],
+    [
+      "S'up",
+      1
+    ],
+    [
+      "Daniel",
+      1
+    ],
+    [
+      "Todd",
+      1
+    ],
+    [
+      "Jason",
+      1
+    ],
+    [
+      "Earth's",
+      1
+    ],
+    [
+      "Stranger",
+      1
+    ],
+    [
+      "Strange",
+      1
+    ],
+    [
+      "Land",
+      1
+    ],
+    [
+      "Heinlein",
+      1
+    ],
+    [
+      "Martians",
+      1
+    ],
+    [
+      "Martian",
+      1
+    ],
+    [
+      "Ancient",
+      1
+    ],
+    [
+      "Face's",
+      1
+    ],
+    [
+      "Planet",
+      1
+    ],
+    [
+      "Ana-mull",
+      1
+    ],
+    [
+      "Zones",
+      1
+    ],
+    [
+      "Bozo",
+      1
+    ],
+    [
+      "Porcupine",
+      1
+    ],
+    [
+      "Betrayal",
+      1
+    ],
+    [
+      "Tour",
+      1
+    ],
+    [
+      "France",
+      1
+    ],
+    [
+      "Olympics",
+      1
+    ],
+    [
+      "Union",
+      1
+    ],
+    [
+      "Civil",
+      1
+    ],
+    [
+      "War",
+      1
+    ],
+    [
+      "Grandma's",
+      1
+    ],
+    [
+      "Pompeii",
+      1
+    ],
+    [
+      "Vesuvius",
+      1
+    ],
+    [
+      "Correcti",
+      1
+    ],
+    [
+      "Hiroshima",
+      1
+    ],
+    [
+      "Nagasaki",
+      1
+    ],
+    [
+      "Beanstalk",
+      1
+    ],
+    [
+      "True",
+      1
+    ],
+    [
+      "Path",
+      1
+    ],
+    [
+      "Nada",
+      1
+    ],
+    [
+      "India",
+      1
+    ],
+    [
+      "Lobster",
+      1
+    ],
+    [
+      "Boy",
+      1
+    ],
+    [
+      "American",
+      1
+    ],
+    [
+      "Sign",
+      1
+    ],
+    [
+      "Language",
+      1
+    ],
+    [
+      "Shakespeare",
+      1
+    ],
+    [
+      "Juliet",
+      1
+    ],
+    [
+      "Las",
+      1
+    ],
+    [
+      "Harry",
+      1
+    ],
+    [
+      "Houdini",
+      1
+    ],
+    [
+      "David",
+      1
+    ],
+    [
+      "Blaine",
+      1
+    ],
+    [
+      "Christopher",
+      1
+    ],
+    [
+      "Columbus",
+      1
+    ],
+    [
+      "Leif",
+      1
+    ],
+    [
+      "Eriksson",
+      1
+    ],
+    [
+      "Steven",
+      1
+    ],
+    [
+      "Louis",
+      1
+    ],
+    [
+      "Leakey",
+      1
+    ],
+    [
+      "Galileo",
+      1
+    ],
+    [
+      "Galilei",
+      1
+    ],
+    [
+      "We'll",
+      1
+    ],
+    [
+      "Baby/Shipwright",
+      1
+    ],
+    [
+      "Quorum",
+      1
+    ],
+    [
+      "Brown",
+      1
+    ],
+    [
+      "Gonzalez",
+      1
+    ],
+    [
+      "Echo",
+      1
+    ]
+  ]
+}

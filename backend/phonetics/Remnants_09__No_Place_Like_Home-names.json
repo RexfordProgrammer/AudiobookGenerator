@@ -1,0 +1,786 @@
+{
+  "approved": {
+    "Agility": "Agility",
+    "Alan": "Alan",
+    "Alberto": "Alberto",
+    "Amelia": "[Amelia](/\u0259\u02c8mi\u026ali\u0259/)",
+    "Anamull": "[Anamull](/\u00e6n\u0259m\u028cl/)",
+    "Angelique": "[Angelique](/\u0251n\u0292\u0259li\u026ak/)",
+    "Angelique's": "[Angelique](/\u0251n\u0292\u0259li\u026ak/)",
+    "Annoyed": "Annoyed",
+    "Argentina": "Argentina",
+    "Baby": "Baby",
+    "Bell": "[Bell](/b\u025bl/)",
+    "Biceps": "Biceps",
+    "Biceps's": "Biceps's",
+    "Big": "Big",
+    "Bill": "Bill",
+    "Billy": "Billy",
+    "Billy--\"Violet": "Billy Violet",
+    "Billy/Mother": "Billy/Mother",
+    "Billyl": "Billy",
+    "Billyville": "[Billyville](/\u02c8b\u026ali\u02ccv\u026al/)",
+    "Birth": "Birth",
+    "Blimps": "Blimps",
+    "Blue": "blue",
+    "Born": "Born",
+    "Boulevard": "[Boulevard](/b\u028al\u0259v\u0251\u0279d/)",
+    "Boy": "Boy",
+    "Buff": "Buff",
+    "Burger": "Burger",
+    "Burroway": "[Burroway](/b\u028c\u0279o\u028awe\u026a/)",
+    "California": "kalifornya",
+    "Carrington": "[Carrington](/k\u00e6r\u026a\u014bt\u0259n/)",
+    "Catlike": "Catlike",
+    "Charles": "Charles",
+    "Charlie": "[Charlie](/\u02c8\u02a7\u0251\u0279li/)",
+    "Chechnya": "chechneeuh",
+    "Children": "Children",
+    "Cleveland": "Cleveland",
+    "Coffee": "Coffee",
+    "Cohen": "Cohen",
+    "Cohen's": "Cohen",
+    "Compromise": "[Compromise](/\u02c8k\u0251mpr\u0259\u02ccma\u026az/)",
+    "Corridors": "Corridors",
+    "D-Caf": "deecaf",
+    "Dance": "Dance",
+    "Dark": "[Dark](/d\u0251\u0279k/)",
+    "Darth": "Darth",
+    "Des": "des",
+    "Dividing": "Dividing",
+    "Dodger": "[Dodger](/d\u0251d\u0292\u025a/)",
+    "Dodger's": "[Dodger](/d\u0251d\u0292\u025a/)",
+    "Duck": "duck",
+    "Duncan": "Duncan",
+    "Dusk": "Dusk",
+    "Earth": "Earth",
+    "Edward": "[Edward](/\u025bdw\u0259\u0279d/)",
+    "Election": "Election",
+    "Errol": "Errol",
+    "Everything's": "Everythings",
+    "Face": "face",
+    "Five": "Five's",
+    "Frisbee": "Frisbee",
+    "Fuzzy": "Fuzzy",
+    "Good": "good",
+    "Gretel": "Gretel",
+    "Halfway": "Halfway",
+    "Hansel": "Hansel",
+    "Hollywood": "Hollywood",
+    "Humans": "Humans",
+    "Hwang": "wahng",
+    "Hysteria": "Hysteria",
+    "Indianapolis": "Indianapolis",
+    "Isolated": "Isolated",
+    "Italian": "Italian",
+    "Jobs": "jobsis",
+    "Jutting": "[Jutting](/\u02a4\u028ct\u026a\u014b/)",
+    "King": "King",
+    "Knolls": "Knolls",
+    "Knolls's": "Knolls's",
+    "Kubrick": "[Kubrick](/\u02c8kuubr\u026ak/)",
+    "Langlow": "Langlow",
+    "Let's": "Let's",
+    "Loser": "Chosen",
+    "Martian": "[Martian](/m\u0251\u0279\u0283\u0259n/)",
+    "Mayflower": "[Mayflower](/me\u026afla\u028a\u025a/)",
+    "McDonald's": "McDonald's",
+    "Meanie": "[Meanie](/mini/)",
+    "Meanies": "[Meanies](/miniz/)",
+    "Mendoza": "[Mendoza](/m\u025bn\u02c8do\u028az\u0259/)",
+    "Miami": "myamee",
+    "Mmmmm": "mmmm",
+    "Mo'Steel": "moesteel",
+    "Moines": "Moines",
+    "Mother": "mother",
+    "Mother/Billy": "Mother slash Billy",
+    "Neil": "Neil",
+    "News": "[News](/nuz/)",
+    "Noah": "nohuz",
+    "Node": "Node",
+    "Noyze": "[Noyze](/n\u0254\u026az/)",
+    "Ohio": "Ohio",
+    "Olga": "[Olga](/\u02c8o\u028al\u0261\u0259/)",
+    "Peet": "pete",
+    "Peet's": "Peet's",
+    "Ph.D": "[Ph.D](/pi\u026at\u0283di\u026a/)",
+    "Places": "Places",
+    "Prevalent": "Prevalent",
+    "Probably": "Probably",
+    "Pure": "Pure",
+    "Put": "Put",
+    "Quorum": "[Quorum](/kw\u0254r\u0259m/)",
+    "Razor-Sharp": "Razor-Sharp",
+    "Remnants": "Remnants",
+    "Resting": "Resting",
+    "Rider": "Rider",
+    "Riders": "Riders",
+    "Roger": "[Roger](/\u0279\u0251d\u0292\u025a/)",
+    "Rosetti": "[Rosetti](/\u0279o\u028a\u02c8s\u025bti/)",
+    "Russians": "Russians",
+    "Sacred": "[Sacred](/se\u026ak\u0279\u026ad/)",
+    "Scout": "Scout",
+    "Security": "Security",
+    "Sentient": "Sentient",
+    "Seventy": "Seventy",
+    "Shipwright": "Shipwright",
+    "Shipwrights": "Shipwrights",
+    "Slight": "Slight",
+    "Social": "Social",
+    "Somewhere": "Somewhere",
+    "Southern": "Southern",
+    "Speak": "Speak",
+    "Spinning": "Spinning",
+    "Springfield": "Springfield",
+    "Squids": "Squids",
+    "Tabasco": "Tabasco",
+    "Taco": "[Taco](/\u02c8t\u0251ko\u028a/)",
+    "Tamara": "tuhmahraaz",
+    "Tate": "tate",
+    "The": "the",
+    "Three": "Three",
+    "Tit": "Tit",
+    "Truths": "Truths",
+    "Twelve": "Twelve",
+    "Two": "Two",
+    "Vader": "Vader",
+    "Victorian": "Victorian",
+    "Violet": "Violet",
+    "Virtues": "Virtues",
+    "Wheels": "wheels",
+    "Wheels's": "Wheels's",
+    "Wit": "Wit",
+    "Without": "Without",
+    "Worms": "Worms",
+    "X-Men": "X-Men",
+    "Yago": "yahgo",
+    "Yago's": "yahgos",
+    "Zone": "Zone"
+  },
+  "words_spacy": [
+    [
+      "Billy",
+      144
+    ],
+    [
+      "Jobs",
+      137
+    ],
+    [
+      "Olga",
+      97
+    ],
+    [
+      "Charlie",
+      77
+    ],
+    [
+      "Violet",
+      72
+    ],
+    [
+      "Kubrick",
+      66
+    ],
+    [
+      "Cohen",
+      66
+    ],
+    [
+      "Noyze",
+      63
+    ],
+    [
+      "Roger",
+      53
+    ],
+    [
+      "Tate",
+      49
+    ],
+    [
+      "Dodger",
+      45
+    ],
+    [
+      "Meanies",
+      44
+    ],
+    [
+      "Tamara",
+      38
+    ],
+    [
+      "Earth",
+      37
+    ],
+    [
+      "Edward",
+      35
+    ],
+    [
+      "Yago",
+      20
+    ],
+    [
+      "Meanie",
+      19
+    ],
+    [
+      "Amelia",
+      18
+    ],
+    [
+      "Anamull",
+      18
+    ],
+    [
+      "Riders",
+      16
+    ],
+    [
+      "Burroway",
+      16
+    ],
+    [
+      "Sacred",
+      15
+    ],
+    [
+      "Truths",
+      15
+    ],
+    [
+      "Seventy",
+      14
+    ],
+    [
+      "Mo'Steel",
+      14
+    ],
+    [
+      "Remnants",
+      13
+    ],
+    [
+      "Jutting",
+      13
+    ],
+    [
+      "Quorum",
+      12
+    ],
+    [
+      "Knolls",
+      12
+    ],
+    [
+      "Children",
+      11
+    ],
+    [
+      "Rider",
+      10
+    ],
+    [
+      "Catlike",
+      9
+    ],
+    [
+      "Agility",
+      9
+    ],
+    [
+      "Razor-Sharp",
+      9
+    ],
+    [
+      "Wit",
+      8
+    ],
+    [
+      "Face",
+      7
+    ],
+    [
+      "Dodger's",
+      6
+    ],
+    [
+      "Billyville",
+      6
+    ],
+    [
+      "Shipwright",
+      6
+    ],
+    [
+      "Shipwrights",
+      5
+    ],
+    [
+      "Mayflower",
+      5
+    ],
+    [
+      "Baby",
+      5
+    ],
+    [
+      "Angelique",
+      5
+    ],
+    [
+      "Spinning",
+      4
+    ],
+    [
+      "Mother",
+      4
+    ],
+    [
+      "Peet",
+      4
+    ],
+    [
+      "Alan",
+      4
+    ],
+    [
+      "Dividing",
+      3
+    ],
+    [
+      "The",
+      3
+    ],
+    [
+      "Buff",
+      3
+    ],
+    [
+      "Carrington",
+      3
+    ],
+    [
+      "Zone",
+      3
+    ],
+    [
+      "Twelve",
+      3
+    ],
+    [
+      "Prevalent",
+      3
+    ],
+    [
+      "Virtues",
+      3
+    ],
+    [
+      "Sentient",
+      2
+    ],
+    [
+      "Taco",
+      2
+    ],
+    [
+      "Bell",
+      2
+    ],
+    [
+      "Blue",
+      2
+    ],
+    [
+      "Wheels's",
+      2
+    ],
+    [
+      "Wheels",
+      2
+    ],
+    [
+      "Big",
+      2
+    ],
+    [
+      "Southern",
+      2
+    ],
+    [
+      "Biceps",
+      2
+    ],
+    [
+      "Bill",
+      2
+    ],
+    [
+      "Langlow",
+      2
+    ],
+    [
+      "Dark",
+      2
+    ],
+    [
+      "Two",
+      2
+    ],
+    [
+      "Resting",
+      2
+    ],
+    [
+      "Places",
+      2
+    ],
+    [
+      "Cohen's",
+      2
+    ],
+    [
+      "Yago's",
+      2
+    ],
+    [
+      "D-Caf",
+      2
+    ],
+    [
+      "Pure",
+      2
+    ],
+    [
+      "Three",
+      1
+    ],
+    [
+      "Isolated",
+      1
+    ],
+    [
+      "Corridors",
+      1
+    ],
+    [
+      "Dance",
+      1
+    ],
+    [
+      "Birth",
+      1
+    ],
+    [
+      "Tit",
+      1
+    ],
+    [
+      "Noah",
+      1
+    ],
+    [
+      "Rosetti",
+      1
+    ],
+    [
+      "Errol",
+      1
+    ],
+    [
+      "Hwang",
+      1
+    ],
+    [
+      "Billyl",
+      1
+    ],
+    [
+      "Frisbee",
+      1
+    ],
+    [
+      "Election",
+      1
+    ],
+    [
+      "Humans",
+      1
+    ],
+    [
+      "Compromise",
+      1
+    ],
+    [
+      "Somewhere",
+      1
+    ],
+    [
+      "Peet's",
+      1
+    ],
+    [
+      "Coffee",
+      1
+    ],
+    [
+      "Duck",
+      1
+    ],
+    [
+      "Fuzzy",
+      1
+    ],
+    [
+      "Put",
+      1
+    ],
+    [
+      "Italian",
+      1
+    ],
+    [
+      "Dusk",
+      1
+    ],
+    [
+      "California",
+      1
+    ],
+    [
+      "Annoyed",
+      1
+    ],
+    [
+      "Hansel",
+      1
+    ],
+    [
+      "Gretel",
+      1
+    ],
+    [
+      "Chechnya",
+      1
+    ],
+    [
+      "Probably",
+      1
+    ],
+    [
+      "Let's",
+      1
+    ],
+    [
+      "Springfield",
+      1
+    ],
+    [
+      "Indianapolis",
+      1
+    ],
+    [
+      "Des",
+      1
+    ],
+    [
+      "Moines",
+      1
+    ],
+    [
+      "Biceps's",
+      1
+    ],
+    [
+      "Good",
+      1
+    ],
+    [
+      "McDonald's",
+      1
+    ],
+    [
+      "Burger",
+      1
+    ],
+    [
+      "King",
+      1
+    ],
+    [
+      "Darth",
+      1
+    ],
+    [
+      "Vader",
+      1
+    ],
+    [
+      "Boulevard",
+      1
+    ],
+    [
+      "Angelique's",
+      1
+    ],
+    [
+      "Charles",
+      1
+    ],
+    [
+      "Ph.D",
+      1
+    ],
+    [
+      "Tabasco",
+      1
+    ],
+    [
+      "News",
+      1
+    ],
+    [
+      "Miami",
+      1
+    ],
+    [
+      "Squids",
+      1
+    ],
+    [
+      "Neil",
+      1
+    ],
+    [
+      "Hollywood",
+      1
+    ],
+    [
+      "Russians",
+      1
+    ],
+    [
+      "Martian",
+      1
+    ],
+    [
+      "Speak",
+      1
+    ],
+    [
+      "Five",
+      1
+    ],
+    [
+      "Mmmmm",
+      1
+    ],
+    [
+      "Knolls's",
+      1
+    ],
+    [
+      "Born",
+      1
+    ],
+    [
+      "Mendoza",
+      1
+    ],
+    [
+      "Argentina",
+      1
+    ],
+    [
+      "Cleveland",
+      1
+    ],
+    [
+      "Ohio",
+      1
+    ],
+    [
+      "Social",
+      1
+    ],
+    [
+      "Security",
+      1
+    ],
+    [
+      "Node",
+      1
+    ],
+    [
+      "Mother/Billy",
+      1
+    ],
+    [
+      "X-Men",
+      1
+    ],
+    [
+      "Billy/Mother",
+      1
+    ],
+    [
+      "Blimps",
+      1
+    ],
+    [
+      "Billy--\"Violet",
+      1
+    ],
+    [
+      "Everything's",
+      1
+    ],
+    [
+      "Alberto",
+      1
+    ],
+    [
+      "Hysteria",
+      1
+    ],
+    [
+      "Without",
+      1
+    ],
+    [
+      "Slight",
+      1
+    ],
+    [
+      "Victorian",
+      1
+    ],
+    [
+      "Loser",
+      1
+    ],
+    [
+      "Boy",
+      1
+    ],
+    [
+      "Scout",
+      1
+    ],
+    [
+      "Halfway",
+      1
+    ],
+    [
+      "Duncan",
+      1
+    ],
+    [
+      "Worms",
+      1
+    ]
+  ]
+}

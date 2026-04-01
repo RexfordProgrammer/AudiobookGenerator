@@ -1,0 +1,841 @@
+{
+  "approved": {
+    "Aaaahhhh": "[Aaaahhhh](/\u0251\u0251\u0251\u0251/)",
+    "African-American": "africanamerican",
+    "Albano": "[Albano](/\u00e6lb\u0251no\u028a/)",
+    "Alice": "Alice",
+    "America": "America",
+    "American": "American",
+    "Anamull": "[Anamull](/\u00e6n\u0259m\u028cl/)",
+    "Anyway": "Anyway",
+    "Applegate": "applegate",
+    "Art": "Art",
+    "Aunt": "[Aunt](/\u00e6nt/)",
+    "Austen": "awsten",
+    "AvivNet": "[AvivNet](/\u0251\u02c8vi\u026avn\u025bt/)",
+    "Babel": "[Babel](/bab\u0259l/)",
+    "Bad": "Bad",
+    "Barkat": "[Barkat](/b\u0251\u0279k\u0251t/)",
+    "Berlin": "Berlin",
+    "Bible": "Bible",
+    "Billy": "Billy",
+    "Blake": "blake",
+    "Blake's": "Blake's",
+    "Blue": "blue",
+    "Bosch": "Bosch",
+    "Broadway": "Broadway",
+    "Brueghel": "[Brueghel](/b\u0279u\u026a\u0261\u0259l/)",
+    "Bugs": "Bugs",
+    "Bunny": "Bunny",
+    "Burroway": "[Burroway](/b\u028c\u0279o\u028awe\u026a/)",
+    "BusinessWeek": "BusinessWeek",
+    "Candle": "Candle",
+    "Cartoons": "Slam",
+    "Catholic": "Catholic",
+    "Chameleon": "Chameleon",
+    "Chiapas": "Chiapas",
+    "Corps": "core",
+    "Cover": "Cover",
+    "Cruz": "Cruz",
+    "Daniel": "Daniel",
+    "Dante": "[Dante](/d\u0251\u0251nte\u026a/)",
+    "Deer": "Deer",
+    "Delhi": "delhi",
+    "Design": "Design",
+    "Disney": "Disney",
+    "Dodger": "[Dodger](/d\u0251d\u0292\u025a/)",
+    "Dora": "Dora",
+    "Dora's": "Dora's",
+    "Duck": "duck",
+    "Dutch": "Dutch",
+    "Earth": "Earth",
+    "Edward": "[Edward](/\u025bdw\u0259\u0279d/)",
+    "Eeyore": "[Eeyore](/i\u026a\u0254\u0279/)",
+    "Elder": "elder",
+    "Errol": "Errol",
+    "Face": "face",
+    "Freud": "Freud",
+    "Girl": "Girl",
+    "Gonzalez": "gonzahlez",
+    "Happy": "Happy",
+    "Hieronymus": "[Hieronymus](/ha\u026a\u0259\u0279\u0251n\u026am\u0259s/)",
+    "Homo": "Homo",
+    "House": "House",
+    "Hoyle": "hoil",
+    "Hunk": "Hunk",
+    "Hwang": "wahng",
+    "Inc": "Inc",
+    "Jane": "[Jane](/d\u0292e\u026an/)",
+    "Jobs": "jobsis",
+    "Jonathan": "jonathan",
+    "Journal": "Journal",
+    "Judgment": "Judgment",
+    "Jump": "Jump",
+    "Katherine": "katherine",
+    "Killer": "Killer",
+    "Last": "Last",
+    "Lefkowitz-Blake": "[Lefkowitz-Blake](/l\u025bfk\u0259w\u026atsble\u026ak/)",
+    "Leonessa": "[Leonessa](/li\u026ao\u028an\u025bs\u0251/)",
+    "London": "London",
+    "Louder": "Louder",
+    "Maker": "Maker",
+    "Man": "an",
+    "Marine": "Marine",
+    "Mayflower": "[Mayflower](/me\u026afla\u028a\u025a/)",
+    "Meanie": "[Meanie](/mini/)",
+    "Meanie's": "[Meanie's](/mi\u026ani\u026az/)",
+    "Meanies": "[Meanies](/miniz/)",
+    "Mexico": "Mexico",
+    "Microsoft": "Microsoft",
+    "Miss": "miss",
+    "Mo'Steel": "moesteel",
+    "Mom": "Mom",
+    "Monet": "[Monet](/mo\u028ane\u026a/)",
+    "Mother": "mother",
+    "Muscle": "Muscle",
+    "Nah": "Nah",
+    "Nana": "nana",
+    "Native": "Native",
+    "Neptune": "Neptune",
+    "New": "new",
+    "Northwestern": "Northwestern",
+    "Nostradamus": "Nostradamus",
+    "O'Keeffe": "[O'Keeffe](/o\u028aki\u026af/)",
+    "Olga": "[Olga](/\u02c8o\u028al\u0261\u0259/)",
+    "Oswald": "Oswald",
+    "People's": "People's",
+    "Pet": "Pet",
+    "Phantom": "Phantom",
+    "Pieter": "peter",
+    "Powerpuff": "Powerpuff",
+    "Proffer": "Proffer",
+    "Project": "Project",
+    "Recommendations": "Recommendations",
+    "Remnants": "Remnants",
+    "Rider": "Rider",
+    "Riders": "Riders",
+    "Roger": "[Roger](/\u0279\u0251d\u0292\u025a/)",
+    "Rowling": "Rowling",
+    "Sacramento": "Sacramento",
+    "Sacred": "[Sacred](/se\u026ak\u0279\u026ad/)",
+    "Santa": "Studios",
+    "Satan": "Satan",
+    "Scholastic": "Scholastic",
+    "Sebastian": "sebastyan",
+    "Shh": "Shh",
+    "Shipwrights": "Shipwrights",
+    "Shy": "shy",
+    "Sims": "Sims",
+    "Slam": "Slam",
+    "Sol": "Sol",
+    "Spider-Man": "spiderman",
+    "SpongeCom": "[SpongeCom](/sp\u028cnd\u0292k\u0251m/)",
+    "State": "State",
+    "Steel": "Steel",
+    "Strap": "Strap",
+    "Streams": "Streams",
+    "Street": "Street",
+    "Studios": "Studios",
+    "Stupid": "Stupid",
+    "Sweetie": "Sweetie",
+    "Sydney": "Sydney",
+    "Take": "Take",
+    "Tamara": "tuhmahraaz",
+    "Tate": "tate",
+    "Teen": "[Teen](/ti:\u026an/)",
+    "The": "the",
+    "Tolkien": "Tyrannosaurus",
+    "Toronto": "Toronto",
+    "Tower": "tower",
+    "Triceratops": "Triceratops",
+    "Twitch": "Twitch",
+    "Tyrannosaurus": "Tyrannosaurus",
+    "Underwater": "Underwater",
+    "Universal": "Universal",
+    "University": "University",
+    "Ursula": "[Ursula](/\u025c\u0279s\u0259l\u0259/)",
+    "Victorian": "Victorian",
+    "Violet": "Violet",
+    "Vulcan": "Vulcan",
+    "Wall": "Wall",
+    "War": "war",
+    "Weir": "weer",
+    "White": "White",
+    "Wonderland": "Wonderland",
+    "World": "world",
+    "Wylson": "[Wylson](/w\u026als\u0259n/)",
+    "Ya-ahh": "[Ya-ahh](/j\u0251\u0251/)",
+    "Yago": "yahgo",
+    "York": "York"
+  },
+  "words_spacy": [
+    [
+      "Jobs",
+      143
+    ],
+    [
+      "Wylson",
+      105
+    ],
+    [
+      "Edward",
+      70
+    ],
+    [
+      "Tamara",
+      67
+    ],
+    [
+      "Violet",
+      48
+    ],
+    [
+      "Billy",
+      47
+    ],
+    [
+      "Rider",
+      42
+    ],
+    [
+      "Riders",
+      40
+    ],
+    [
+      "Olga",
+      38
+    ],
+    [
+      "Meanie",
+      38
+    ],
+    [
+      "Anamull",
+      29
+    ],
+    [
+      "Burroway",
+      29
+    ],
+    [
+      "Blue",
+      25
+    ],
+    [
+      "Tate",
+      19
+    ],
+    [
+      "Mo'Steel",
+      18
+    ],
+    [
+      "Blake",
+      16
+    ],
+    [
+      "Shy",
+      15
+    ],
+    [
+      "The",
+      14
+    ],
+    [
+      "Earth",
+      12
+    ],
+    [
+      "Hwang",
+      12
+    ],
+    [
+      "Weir",
+      11
+    ],
+    [
+      "Roger",
+      11
+    ],
+    [
+      "Yago",
+      10
+    ],
+    [
+      "Sacred",
+      10
+    ],
+    [
+      "Dodger",
+      9
+    ],
+    [
+      "Bosch",
+      9
+    ],
+    [
+      "Streams",
+      9
+    ],
+    [
+      "Tower",
+      8
+    ],
+    [
+      "Babel",
+      8
+    ],
+    [
+      "Meanies",
+      8
+    ],
+    [
+      "Miss",
+      7
+    ],
+    [
+      "Hoyle",
+      7
+    ],
+    [
+      "Marine",
+      7
+    ],
+    [
+      "Lefkowitz-Blake",
+      6
+    ],
+    [
+      "Brueghel",
+      5
+    ],
+    [
+      "Duck",
+      5
+    ],
+    [
+      "Mother",
+      5
+    ],
+    [
+      "Nana",
+      5
+    ],
+    [
+      "Applegate",
+      4
+    ],
+    [
+      "Eeyore",
+      4
+    ],
+    [
+      "Mayflower",
+      4
+    ],
+    [
+      "Face",
+      4
+    ],
+    [
+      "Sebastian",
+      4
+    ],
+    [
+      "Chameleon",
+      4
+    ],
+    [
+      "New",
+      3
+    ],
+    [
+      "Scholastic",
+      3
+    ],
+    [
+      "Inc",
+      3
+    ],
+    [
+      "Twitch",
+      3
+    ],
+    [
+      "World",
+      3
+    ],
+    [
+      "Catholic",
+      3
+    ],
+    [
+      "Man",
+      3
+    ],
+    [
+      "Shipwrights",
+      3
+    ],
+    [
+      "York",
+      2
+    ],
+    [
+      "Katherine",
+      2
+    ],
+    [
+      "Cover",
+      2
+    ],
+    [
+      "Gonzalez",
+      2
+    ],
+    [
+      "Homo",
+      2
+    ],
+    [
+      "Sol",
+      2
+    ],
+    [
+      "America",
+      2
+    ],
+    [
+      "Daniel",
+      2
+    ],
+    [
+      "Errol",
+      2
+    ],
+    [
+      "Remnants",
+      2
+    ],
+    [
+      "Microsoft",
+      2
+    ],
+    [
+      "House",
+      2
+    ],
+    [
+      "Disney",
+      2
+    ],
+    [
+      "Aunt",
+      2
+    ],
+    [
+      "Deer",
+      2
+    ],
+    [
+      "Satan",
+      2
+    ],
+    [
+      "Toronto",
+      1
+    ],
+    [
+      "London",
+      1
+    ],
+    [
+      "Sydney",
+      1
+    ],
+    [
+      "Delhi",
+      1
+    ],
+    [
+      "Broadway",
+      1
+    ],
+    [
+      "Art",
+      1
+    ],
+    [
+      "Jonathan",
+      1
+    ],
+    [
+      "Barkat",
+      1
+    ],
+    [
+      "Design",
+      1
+    ],
+    [
+      "Ursula",
+      1
+    ],
+    [
+      "Albano",
+      1
+    ],
+    [
+      "Pieter",
+      1
+    ],
+    [
+      "Elder",
+      1
+    ],
+    [
+      "Nostradamus",
+      1
+    ],
+    [
+      "Dutch",
+      1
+    ],
+    [
+      "Project",
+      1
+    ],
+    [
+      "Neptune",
+      1
+    ],
+    [
+      "Phantom",
+      1
+    ],
+    [
+      "Bugs",
+      1
+    ],
+    [
+      "Bunny",
+      1
+    ],
+    [
+      "Bible",
+      1
+    ],
+    [
+      "Teen",
+      1
+    ],
+    [
+      "People's",
+      1
+    ],
+    [
+      "Hunk",
+      1
+    ],
+    [
+      "Candle",
+      1
+    ],
+    [
+      "Leonessa",
+      1
+    ],
+    [
+      "Pet",
+      1
+    ],
+    [
+      "Proffer",
+      1
+    ],
+    [
+      "Muscle",
+      1
+    ],
+    [
+      "Slam",
+      1
+    ],
+    [
+      "Cartoons",
+      1
+    ],
+    [
+      "Alice",
+      1
+    ],
+    [
+      "Wonderland",
+      1
+    ],
+    [
+      "Wall",
+      1
+    ],
+    [
+      "Street",
+      1
+    ],
+    [
+      "Journal",
+      1
+    ],
+    [
+      "BusinessWeek",
+      1
+    ],
+    [
+      "Happy",
+      1
+    ],
+    [
+      "AvivNet",
+      1
+    ],
+    [
+      "SpongeCom",
+      1
+    ],
+    [
+      "State",
+      1
+    ],
+    [
+      "Sacramento",
+      1
+    ],
+    [
+      "Shh",
+      1
+    ],
+    [
+      "White",
+      1
+    ],
+    [
+      "Powerpuff",
+      1
+    ],
+    [
+      "Girl",
+      1
+    ],
+    [
+      "Ya-ahh",
+      1
+    ],
+    [
+      "Hieronymus",
+      1
+    ],
+    [
+      "Last",
+      1
+    ],
+    [
+      "Judgment",
+      1
+    ],
+    [
+      "Corps",
+      1
+    ],
+    [
+      "Maker",
+      1
+    ],
+    [
+      "Sweetie",
+      1
+    ],
+    [
+      "Victorian",
+      1
+    ],
+    [
+      "Native",
+      1
+    ],
+    [
+      "American",
+      1
+    ],
+    [
+      "Monet",
+      1
+    ],
+    [
+      "O'Keeffe",
+      1
+    ],
+    [
+      "Bad",
+      1
+    ],
+    [
+      "Take",
+      1
+    ],
+    [
+      "Spider-Man",
+      1
+    ],
+    [
+      "Jump",
+      1
+    ],
+    [
+      "Sims",
+      1
+    ],
+    [
+      "Universal",
+      1
+    ],
+    [
+      "Studios",
+      1
+    ],
+    [
+      "Santa",
+      1
+    ],
+    [
+      "Cruz",
+      1
+    ],
+    [
+      "Northwestern",
+      1
+    ],
+    [
+      "University",
+      1
+    ],
+    [
+      "Chiapas",
+      1
+    ],
+    [
+      "Mexico",
+      1
+    ],
+    [
+      "Berlin",
+      1
+    ],
+    [
+      "War",
+      1
+    ],
+    [
+      "Strap",
+      1
+    ],
+    [
+      "Blake's",
+      1
+    ],
+    [
+      "Oswald",
+      1
+    ],
+    [
+      "Dora's",
+      1
+    ],
+    [
+      "Dora",
+      1
+    ],
+    [
+      "Steel",
+      1
+    ],
+    [
+      "Meanie's",
+      1
+    ],
+    [
+      "Louder",
+      1
+    ],
+    [
+      "Killer",
+      1
+    ],
+    [
+      "Freud",
+      1
+    ],
+    [
+      "Recommendations",
+      1
+    ],
+    [
+      "Stupid",
+      1
+    ],
+    [
+      "African-American",
+      1
+    ],
+    [
+      "Triceratops",
+      1
+    ],
+    [
+      "Tyrannosaurus",
+      1
+    ],
+    [
+      "Tolkien",
+      1
+    ],
+    [
+      "Rowling",
+      1
+    ],
+    [
+      "Aaaahhhh",
+      1
+    ],
+    [
+      "Mom",
+      1
+    ],
+    [
+      "Nah",
+      1
+    ],
+    [
+      "Vulcan",
+      1
+    ],
+    [
+      "Jane",
+      1
+    ],
+    [
+      "Austen",
+      1
+    ],
+    [
+      "Dante",
+      1
+    ],
+    [
+      "Anyway",
+      1
+    ],
+    [
+      "Underwater",
+      1
+    ]
+  ]
+}

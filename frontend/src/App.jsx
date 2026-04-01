@@ -30,12 +30,19 @@ export default function App() {
   const [fileType, setFileType] = useState('txt')
   const [perChapter, setPerChapter] = useState(true)
 
+  // Scan method
+  const [scanMethod, setScanMethod] = useState('regex')
+  const [scanUnknown, setScanUnknown] = useState(false)
+
   // Phonetics review state
   const [words, setWords] = useState([])
   const [playingWord, setPlayingWord] = useState(null)
+  const [phoneticSources, setPhoneticSources] = useState({})      // word -> "lexicon"|"llm"
+  const [phoneticAlternatives, setPhoneticAlternatives] = useState({})  // word -> {voice: phonetic}
 
   // Output info
-  const [outputType, setOutputType] = useState('mp3')
+  const [outputType, setOutputType] = useState('zip')
+  const [outputIsChapters, setOutputIsChapters] = useState(false)
 
   const pollRef = useRef(null)
   const inputRef = useRef(null)
@@ -89,12 +96,17 @@ export default function App() {
           clearInterval(pollRef.current)
           const allWords = data.words ?? []
           const phoneticsMap = data.phonetics ?? {}
+          const sourcesMap = data.phonetic_sources ?? {}
+          const altMap = data.phonetic_alternatives ?? {}
+          setPhoneticSources(sourcesMap)
+          setPhoneticAlternatives(altMap)
           setWords(allWords.map(({ word, count }) => ({ original: word, phonetic: phoneticsMap[word] ?? '', count })))
         }
 
         if (data.status === 'done') {
           clearInterval(pollRef.current)
-          setOutputType(data.output_type ?? 'mp3')
+          setOutputType(data.output_type ?? 'zip')
+          setOutputIsChapters(!!data.per_chapter)
         }
 
         if (data.status === 'error') {
@@ -169,7 +181,7 @@ export default function App() {
       const res = await fetch(`${API}/scan/${jobId}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chapters: chapsToSend, per_chapter: usePerChapter }),
+        body: JSON.stringify({ chapters: chapsToSend, per_chapter: usePerChapter, scan_method: scanMethod, scan_unknown: scanUnknown }),
       })
       if (!res.ok) {
         const data = await res.json()
@@ -216,6 +228,15 @@ export default function App() {
 
   function removeWord(idx) {
     setWords(prev => prev.filter((_, i) => i !== idx))
+  }
+
+  function addWord(word) {
+    const w = word.trim()
+    if (!w) return
+    setWords(prev => {
+      if (prev.some(x => x.original.toLowerCase() === w.toLowerCase())) return prev
+      return [...prev, { original: w, phonetic: '', count: 1 }]
+    })
   }
 
   async function playPreview(text) {
@@ -290,7 +311,12 @@ export default function App() {
     setPerChapter(true)
     setWords([])
     setPlayingWord(null)
-    setOutputType('mp3')
+    setPhoneticSources({})
+    setPhoneticAlternatives({})
+    setScanMethod('regex')
+    setScanUnknown(false)
+    setOutputType('zip')
+    setOutputIsChapters(false)
   }
 
   const busy = ['uploading', 'queued', 'parsing', 'scanning', 'converting'].includes(jobStatus)
@@ -408,11 +434,15 @@ export default function App() {
             editedText={editedText}
             fileType={fileType}
             perChapter={perChapter}
+            scanMethod={scanMethod}
+            scanUnknown={scanUnknown}
             voice={voice}
             engine={engine}
             onChaptersChange={setChapters}
             onTextChange={setEditedText}
             onPerChapterChange={setPerChapter}
+            onScanMethodChange={setScanMethod}
+            onScanUnknownChange={setScanUnknown}
             onDeleteChapter={deleteChapter}
             onStripUnusual={applyStripUnusual}
             onStripQuotes={applyStripQuotes}
@@ -427,11 +457,17 @@ export default function App() {
           <ReviewPanel
             words={words}
             playingWord={playingWord}
+            phoneticSources={phoneticSources}
+            phoneticAlternatives={phoneticAlternatives}
             onUpdatePhonetic={updatePhonetic}
             onRemoveWord={removeWord}
+            onAddWord={addWord}
             onPlay={playPreview}
             onApprove={() => handleApprove(false)}
             onSkip={() => handleApprove(true)}
+            apiBase={API}
+            voice={voice}
+            engine={engine}
           />
         )}
 
@@ -440,7 +476,7 @@ export default function App() {
           <div>
             <p style={s.success}>Your audiobook is ready!</p>
             <button style={s.btn} onClick={handleDownload}>
-              {outputType === 'zip' ? 'Download Chapters (ZIP)' : 'Download MP3'}
+              {outputIsChapters ? 'Download Chapters (ZIP)' : 'Download Audiobook (ZIP)'}
             </button>
             <button style={{ ...s.btn, ...s.btnGray }} onClick={reset}>Convert another</button>
           </div>
@@ -461,8 +497,8 @@ export default function App() {
 // ── Text Preview Panel ────────────────────────────────────────────────────────
 
 function TextPreviewPanel({
-  chapters, editedText, fileType, perChapter, voice, engine,
-  onChaptersChange, onTextChange, onPerChapterChange,
+  chapters, editedText, fileType, perChapter, scanMethod, scanUnknown, voice, engine,
+  onChaptersChange, onTextChange, onPerChapterChange, onScanMethodChange, onScanUnknownChange,
   onDeleteChapter, onStripUnusual, onStripQuotes,
   onScan, onConvert, apiBase,
 }) {
@@ -582,7 +618,7 @@ function TextPreviewPanel({
               disabled={!canUsePerChapter}
               onChange={e => onPerChapterChange(e.target.checked)}
             />
-            Output one MP3 per chapter (download as ZIP)
+            Split into one MP3 per chapter
           </label>
           {!canUsePerChapter && inSync && chapters.length <= 1 && (
             <span style={{ fontSize: 12, color: '#94a3b8' }}>— requires multiple chapters</span>
@@ -607,8 +643,48 @@ function TextPreviewPanel({
         )}
       </div>
 
+      {/* ── Scan method selector ── */}
+      <div style={{ marginTop: 16, padding: '10px 14px', background: '#f8fafc', borderRadius: 8, border: '1px solid #e2e8f0' }}>
+        <span style={{ fontSize: 13, fontWeight: 500, color: '#475569', marginRight: 12 }}>Name scan method:</span>
+        {[
+          { value: 'regex',  label: 'Fast (regex)',   desc: 'Detects mid-sentence capitalised words not in the English dictionary. Quick but may miss some names or include false positives.' },
+          { value: 'spacy',  label: 'NLP (spaCy)',    desc: 'Uses a neural NER model to detect people, places, organisations, events, and more. Slower on first run while the model loads (~12 MB).' },
+          { value: 'stanza', label: 'NLP (Stanza)',   desc: 'Stanford NLP biLSTM-CRF model. Stronger than spaCy at unusual names in fiction. Downloads ~200 MB on first run.' },
+        ].map(({ value, label, desc }) => (
+          <label key={value} style={{ display: 'inline-flex', alignItems: 'flex-start', gap: 6, marginRight: 20, cursor: 'pointer', fontSize: 13, color: '#334155' }}>
+            <input
+              type="radio"
+              name="scanMethod"
+              value={value}
+              checked={scanMethod === value}
+              onChange={() => onScanMethodChange(value)}
+              style={{ marginTop: 2 }}
+            />
+            <span>
+              <strong>{label}</strong>
+              <span style={{ display: 'block', fontSize: 11, color: '#94a3b8', maxWidth: 260 }}>{desc}</span>
+            </span>
+          </label>
+        ))}
+        <label style={{ display: 'inline-flex', alignItems: 'flex-start', gap: 6, cursor: 'pointer', fontSize: 13, color: '#334155', marginTop: 8 }}>
+          <input
+            type="checkbox"
+            checked={scanUnknown}
+            onChange={e => onScanUnknownChange(e.target.checked)}
+            style={{ marginTop: 2 }}
+          />
+          <span>
+            <strong>Also scan for unknown words</strong>
+            <span style={{ display: 'block', fontSize: 11, color: '#94a3b8', maxWidth: 360 }}>
+              Flags non-dictionary words regardless of capitalisation — made-up terms, sci-fi jargon, technical neologisms, etc.
+              Hyphens are split first so "bio-mechanical" isn't flagged. May add false positives.
+            </span>
+          </span>
+        </label>
+      </div>
+
       {/* ── Action buttons ── */}
-      <div style={{ marginTop: 20, display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
+      <div style={{ marginTop: 14, display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
         <button style={s.btn} onClick={onScan}>
           Scan for names →
         </button>
@@ -622,8 +698,20 @@ function TextPreviewPanel({
 
 // ── Review panel ─────────────────────────────────────────────────────────────
 
-function ReviewPanel({ words, playingWord, onUpdatePhonetic, onRemoveWord, onPlay, onApprove, onSkip }) {
+const VOICE_LABELS = {
+  _global: 'All voices',
+  af_heart: 'Heart (F)', af_bella: 'Bella (F)', af_nova: 'Nova (F)',
+  am_fenrir: 'Fenrir (M)', am_michael: 'Michael (M)', am_echo: 'Echo (M)',
+  bm_george: 'George (M·UK)',
+  tara: 'Tara (F)', leah: 'Leah (F)', jess: 'Jess (F)', mia: 'Mia (F)',
+  zoe: 'Zoe (F)', dan: 'Dan (M)', leo: 'Leo (M)', zac: 'Zac (M)',
+}
+
+function ReviewPanel({ words, playingWord, phoneticSources, phoneticAlternatives = {}, onUpdatePhonetic, onRemoveWord, onAddWord, onPlay, onApprove, onSkip, apiBase, voice, engine }) {
+  const [showLexicon, setShowLexicon] = useState(false)
+  const [addWordInput, setAddWordInput] = useState('')
   const substitutionCount = words.filter(w => w.phonetic.trim()).length
+  const lexiconCount = words.filter(w => phoneticSources[w.original] === 'lexicon').length
 
   return (
     <div style={{ textAlign: 'left' }}>
@@ -635,6 +723,7 @@ function ReviewPanel({ words, playingWord, onUpdatePhonetic, onRemoveWord, onPla
         <>
           <p style={s.statusTxt}>
             Found <strong>{words.length}</strong> unfamiliar word{words.length !== 1 ? 's' : ''}.{' '}
+            {lexiconCount > 0 && <span style={{ color: '#059669' }}>{lexiconCount} from saved lexicon. </span>}
             {substitutionCount > 0
               ? <>{substitutionCount} ha{substitutionCount !== 1 ? 've' : 's'} suggested phonetics.</>
               : 'Add phonetic spellings below.'}
@@ -642,6 +731,7 @@ function ReviewPanel({ words, playingWord, onUpdatePhonetic, onRemoveWord, onPla
           <p style={s.hint2}>
             Click <strong>▶</strong> to hear how Kokoro pronounces the phonetic spelling. Edit
             the field if it sounds wrong. Words with an empty phonetic field keep their original spelling.
+            <span style={{ color: '#059669', marginLeft: 6 }}>Saved</span> = from your lexicon.
           </p>
 
           <div style={s.table}>
@@ -654,21 +744,42 @@ function ReviewPanel({ words, playingWord, onUpdatePhonetic, onRemoveWord, onPla
 
             {words.map((w, i) => {
               const isPlaying = playingWord === (w.phonetic.trim() || w.original)
+              const fromLexicon = phoneticSources[w.original] === 'lexicon'
+              const alts = !w.phonetic.trim() ? (phoneticAlternatives[w.original] ?? {}) : {}
+              const altEntries = Object.entries(alts)
               return (
                 <div key={w.original + i} style={{ ...s.row, background: i % 2 === 0 ? '#f8fafc' : '#fff' }}>
                   <div style={s.cOrig}>
                     <span style={{ fontWeight: 600 }}>{w.original}</span>
+                    {fromLexicon && (
+                      <span style={s.savedBadge} title="Loaded from your saved lexicon">saved</span>
+                    )}
                   </div>
                   <div style={s.cCount}>
                     <span style={s.countBadge}>{w.count ?? '—'}</span>
                   </div>
                   <div style={s.cPhon}>
                     <input
-                      style={s.input}
+                      style={{ ...s.input, borderColor: fromLexicon ? '#86efac' : '#e2e8f0' }}
                       value={w.phonetic}
                       placeholder="e.g. her-MY-oh-nee"
                       onChange={(e) => onUpdatePhonetic(i, e.target.value)}
                     />
+                    {altEntries.length > 0 && (
+                      <div style={{ marginTop: 4, display: 'flex', flexWrap: 'wrap', gap: 4 }}>
+                        <span style={{ fontSize: 10, color: '#94a3b8', lineHeight: '22px' }}>Other voices:</span>
+                        {altEntries.map(([v, p]) => (
+                          <button
+                            key={v}
+                            title={`Use pronunciation from ${VOICE_LABELS[v] ?? v}`}
+                            style={{ fontSize: 10, padding: '2px 7px', borderRadius: 4, border: '1px solid #cbd5e1', background: '#f1f5f9', color: '#334155', cursor: 'pointer' }}
+                            onClick={() => onUpdatePhonetic(i, p)}
+                          >
+                            {VOICE_LABELS[v] ?? v}: <em>{p}</em>
+                          </button>
+                        ))}
+                      </div>
+                    )}
                   </div>
                   <div style={{ ...s.cAct, display: 'flex', gap: 6, justifyContent: 'flex-end' }}>
                     <button
@@ -693,7 +804,25 @@ function ReviewPanel({ words, playingWord, onUpdatePhonetic, onRemoveWord, onPla
         </>
       )}
 
-      <div style={{ marginTop: 20, display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
+      {/* ── Add word manually ── */}
+      <div style={{ marginTop: 14, display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
+        <span style={{ fontSize: 13, color: '#475569', fontWeight: 500, flexShrink: 0 }}>Add word:</span>
+        <input
+          style={{ ...s.input, width: 160, fontSize: 13 }}
+          placeholder="e.g. Schneider"
+          value={addWordInput}
+          onChange={e => setAddWordInput(e.target.value)}
+          onKeyDown={e => { if (e.key === 'Enter') { onAddWord(addWordInput); setAddWordInput('') } }}
+        />
+        <button
+          style={{ ...s.iconBtn, background: '#f0fdf4', color: '#15803d', fontSize: 13, padding: '5px 12px' }}
+          onClick={() => { onAddWord(addWordInput); setAddWordInput('') }}
+        >
+          + Add
+        </button>
+      </div>
+
+      <div style={{ marginTop: 14, display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
         <button style={s.btn} onClick={onApprove}>
           {substitutionCount > 0
             ? `Apply ${substitutionCount} substitution${substitutionCount !== 1 ? 's' : ''} & Convert`
@@ -704,6 +833,264 @@ function ReviewPanel({ words, playingWord, onUpdatePhonetic, onRemoveWord, onPla
             Skip — use original text
           </button>
         )}
+        <button
+          style={{ ...s.btn, ...s.btnGray }}
+          onClick={() => setShowLexicon(v => !v)}
+        >
+          {showLexicon ? 'Hide Lexicon' : 'Manage Saved Lexicon'}
+        </button>
+      </div>
+
+      {showLexicon && (
+        <LexiconPanel apiBase={apiBase} voice={voice} engine={engine} playingWord={playingWord} onPlay={onPlay} />
+      )}
+    </div>
+  )
+}
+
+// ── Lexicon panel ─────────────────────────────────────────────────────────────
+
+const ALL_VOICES = [
+  { value: '_global', label: 'All voices' },
+  { value: 'af_heart', label: 'Heart (F)' }, { value: 'af_bella', label: 'Bella (F)' },
+  { value: 'af_nova', label: 'Nova (F)' }, { value: 'am_fenrir', label: 'Fenrir (M)' },
+  { value: 'am_michael', label: 'Michael (M)' }, { value: 'am_echo', label: 'Echo (M)' },
+  { value: 'bm_george', label: 'George (M·UK)' },
+  { value: 'tara', label: 'Tara (F)' }, { value: 'leah', label: 'Leah (F)' },
+  { value: 'jess', label: 'Jess (F)' }, { value: 'mia', label: 'Mia (F)' },
+  { value: 'zoe', label: 'Zoe (F)' }, { value: 'dan', label: 'Dan (M)' },
+  { value: 'leo', label: 'Leo (M)' }, { value: 'zac', label: 'Zac (M)' },
+]
+
+function LexiconPanel({ apiBase, voice, engine, playingWord, onPlay }) {
+  // entries: {word: {voice: phonetic}} — new per-voice format
+  const [entries, setEntries] = useState(null)
+  const [filter, setFilter] = useState('')
+  const [voiceFilter, setVoiceFilter] = useState(voice)   // show current job's voice by default
+  const [newWord, setNewWord] = useState('')
+  const [newPhonetic, setNewPhonetic] = useState('')
+  const [newVoice, setNewVoice] = useState(voice)
+  const [saving, setSaving] = useState(false)
+  // editing key: "word::voice" -> draft
+  const [editingPhonetics, setEditingPhonetics] = useState({})
+
+  async function load() {
+    try {
+      const res = await fetch(`${apiBase}/lexicon`)
+      const data = await res.json()
+      setEntries(data)
+      const drafts = {}
+      for (const [word, voiceMap] of Object.entries(data)) {
+        for (const [v, phonetic] of Object.entries(voiceMap)) {
+          drafts[`${word}::${v}`] = phonetic
+        }
+      }
+      setEditingPhonetics(drafts)
+    } catch {
+      setEntries({})
+    }
+  }
+
+  useEffect(() => { load() }, [])
+
+  async function handleSaveEntry(word, v) {
+    const key = `${word}::${v}`
+    const phonetic = (editingPhonetics[key] ?? '').trim()
+    if (!phonetic) return
+    setSaving(true)
+    try {
+      await fetch(`${apiBase}/lexicon`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ word, phonetic, voice: v }),
+      })
+      setEntries(prev => ({ ...prev, [word]: { ...(prev[word] ?? {}), [v]: phonetic } }))
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  async function handleDeleteVoiceEntry(word, v) {
+    try {
+      await fetch(`${apiBase}/lexicon/${encodeURIComponent(word)}?voice=${encodeURIComponent(v)}`, { method: 'DELETE' })
+      setEntries(prev => {
+        const newVoiceMap = { ...(prev[word] ?? {}) }
+        delete newVoiceMap[v]
+        if (Object.keys(newVoiceMap).length === 0) {
+          const next = { ...prev }
+          delete next[word]
+          return next
+        }
+        return { ...prev, [word]: newVoiceMap }
+      })
+      setEditingPhonetics(prev => {
+        const next = { ...prev }
+        delete next[`${word}::${v}`]
+        return next
+      })
+    } catch { /* ignore */ }
+  }
+
+  async function handleAdd() {
+    const w = newWord.trim()
+    const p = newPhonetic.trim()
+    const v = newVoice || '_global'
+    if (!w || !p) return
+    setSaving(true)
+    try {
+      await fetch(`${apiBase}/lexicon`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ word: w, phonetic: p, voice: v }),
+      })
+      setEntries(prev => ({ ...prev, [w]: { ...(prev[w] ?? {}), [v]: p } }))
+      setEditingPhonetics(prev => ({ ...prev, [`${w}::${v}`]: p }))
+      setNewWord('')
+      setNewPhonetic('')
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  // Flatten entries into rows based on voice filter
+  const rows = []   // {word, v, phonetic}
+  if (entries) {
+    for (const [word, voiceMap] of Object.entries(entries)) {
+      if (filter && !word.toLowerCase().includes(filter.toLowerCase())) continue
+      for (const [v, phonetic] of Object.entries(voiceMap)) {
+        if (voiceFilter !== '__all' && v !== voiceFilter) continue
+        rows.push({ word, v, phonetic })
+      }
+    }
+  }
+  rows.sort((a, b) => a.word.localeCompare(b.word) || a.v.localeCompare(b.v))
+
+  const totalWords = entries ? Object.keys(entries).length : 0
+
+  return (
+    <div style={s.lexiconPanel}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10, gap: 8, flexWrap: 'wrap' }}>
+        <strong style={{ fontSize: 14, color: '#334155' }}>
+          Saved Lexicon {entries ? `(${totalWords} word${totalWords !== 1 ? 's' : ''})` : ''}
+        </strong>
+        <div style={{ display: 'flex', gap: 6, alignItems: 'center', flexWrap: 'wrap' }}>
+          <select
+            style={{ fontSize: 12, padding: '4px 8px', borderRadius: 6, border: '1px solid #e2e8f0', color: '#334155' }}
+            value={voiceFilter}
+            onChange={e => setVoiceFilter(e.target.value)}
+          >
+            <option value="__all">All voices</option>
+            {ALL_VOICES.map(({ value, label }) => (
+              <option key={value} value={value}>{label}</option>
+            ))}
+          </select>
+          <input
+            style={{ ...s.input, width: 150, fontSize: 13 }}
+            placeholder="Filter words…"
+            value={filter}
+            onChange={e => setFilter(e.target.value)}
+          />
+        </div>
+      </div>
+
+      {entries === null ? (
+        <p style={{ color: '#94a3b8', fontSize: 13 }}>Loading…</p>
+      ) : rows.length === 0 ? (
+        <p style={{ color: '#94a3b8', fontSize: 13 }}>
+          {filter || voiceFilter !== '__all' ? 'No matches for current filter.' : 'Lexicon is empty. Entries are saved automatically when you approve substitutions.'}
+        </p>
+      ) : (
+        <div style={{ ...s.table, maxHeight: 340, overflowY: 'auto', marginBottom: 12 }}>
+          <div style={{ ...s.rowLex, ...s.header }}>
+            <div>Word</div>
+            <div style={{ fontSize: 11 }}>Voice</div>
+            <div>Phonetic spelling</div>
+            <div style={{ textAlign: 'right' }}>Actions</div>
+          </div>
+          {rows.map(({ word, v, phonetic }) => {
+            const key = `${word}::${v}`
+            const draft = editingPhonetics[key] ?? phonetic
+            const changed = draft !== phonetic
+            const isPlaying = playingWord === (draft.trim() || word)
+            return (
+              <div key={key} style={{ ...s.rowLex, background: '#fff', borderBottom: '1px solid #f1f5f9' }}>
+                <div style={{ fontWeight: 600, fontSize: 13 }}>{word}</div>
+                <div style={{ fontSize: 11, color: '#64748b' }}>
+                  {VOICE_LABELS[v] ?? v}
+                </div>
+                <div>
+                  <input
+                    style={{ ...s.input, fontSize: 13, borderColor: changed ? '#f59e0b' : '#e2e8f0' }}
+                    value={draft}
+                    onChange={e => setEditingPhonetics(prev => ({ ...prev, [key]: e.target.value }))}
+                    onBlur={() => { if (changed) handleSaveEntry(word, v) }}
+                    onKeyDown={e => { if (e.key === 'Enter') handleSaveEntry(word, v) }}
+                  />
+                </div>
+                <div style={{ display: 'flex', gap: 5, justifyContent: 'flex-end' }}>
+                  <button
+                    title="Preview phonetic"
+                    style={{ ...s.iconBtn, background: isPlaying ? '#e0e7ff' : '#f1f5f9', color: '#4f46e5', fontSize: 12 }}
+                    onClick={() => onPlay(draft.trim() || word)}
+                  >
+                    {isPlaying ? '⏹' : '▶'}
+                  </button>
+                  {changed && (
+                    <button
+                      title="Save changes"
+                      style={{ ...s.iconBtn, background: '#fef9c3', color: '#92400e', fontSize: 12 }}
+                      onClick={() => handleSaveEntry(word, v)}
+                    >
+                      Save
+                    </button>
+                  )}
+                  <button
+                    title="Delete this voice entry"
+                    style={{ ...s.iconBtn, background: '#fef2f2', color: '#dc2626', fontSize: 12 }}
+                    onClick={() => handleDeleteVoiceEntry(word, v)}
+                  >
+                    ✕
+                  </button>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      )}
+
+      {/* Add new entry */}
+      <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap', borderTop: '1px solid #e2e8f0', paddingTop: 10 }}>
+        <span style={{ fontSize: 13, color: '#475569', fontWeight: 500, flexShrink: 0 }}>Add entry:</span>
+        <input
+          style={{ ...s.input, width: 120, fontSize: 13 }}
+          placeholder="Word"
+          value={newWord}
+          onChange={e => setNewWord(e.target.value)}
+          onKeyDown={e => { if (e.key === 'Enter') handleAdd() }}
+        />
+        <input
+          style={{ ...s.input, flex: 1, minWidth: 120, fontSize: 13 }}
+          placeholder="Phonetic spelling"
+          value={newPhonetic}
+          onChange={e => setNewPhonetic(e.target.value)}
+          onKeyDown={e => { if (e.key === 'Enter') handleAdd() }}
+        />
+        <select
+          style={{ fontSize: 12, padding: '7px 8px', borderRadius: 6, border: '1px solid #e2e8f0', color: '#334155' }}
+          value={newVoice}
+          onChange={e => setNewVoice(e.target.value)}
+        >
+          {ALL_VOICES.map(({ value, label }) => (
+            <option key={value} value={value}>{label}</option>
+          ))}
+        </select>
+        <button
+          style={{ ...s.iconBtn, background: '#6366f1', color: '#fff', fontSize: 13, padding: '6px 14px' }}
+          onClick={handleAdd}
+          disabled={saving || !newWord.trim() || !newPhonetic.trim()}
+        >
+          Add
+        </button>
       </div>
     </div>
   )
@@ -807,5 +1194,17 @@ const s = {
   iconBtn: {
     padding: '6px 10px', border: 'none', borderRadius: 6,
     cursor: 'pointer', fontSize: 13, fontWeight: 600,
+  },
+  savedBadge: {
+    marginLeft: 6, padding: '1px 6px', background: '#dcfce7', color: '#15803d',
+    borderRadius: 99, fontSize: 11, fontWeight: 600, verticalAlign: 'middle',
+  },
+  lexiconPanel: {
+    marginTop: 24, padding: 16, background: '#f8fafc',
+    border: '1px solid #e2e8f0', borderRadius: 10,
+  },
+  rowLex: {
+    display: 'grid', gridTemplateColumns: '160px 90px 1fr 120px',
+    alignItems: 'center', padding: '7px 10px', gap: 8,
   },
 }

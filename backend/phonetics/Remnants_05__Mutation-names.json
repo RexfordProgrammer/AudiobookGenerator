@@ -1,0 +1,936 @@
+{
+  "approved": {
+    "Alberto": "[Alberto](/\u00e6l\u02c8b\u025brto\u028a/)",
+    "Aliens": "Aliens",
+    "American": "American",
+    "Anamull": "[Anamull](/\u00e6n\u0259m\u028cl/)",
+    "Aquarium": "Aquarium",
+    "Austen": "awsten",
+    "Babel": "[Babel](/bab\u0259l/)",
+    "Babies": "Babies",
+    "Bay": "Bay",
+    "Beach": "Beach",
+    "Big": "Big",
+    "Bill": "Bill",
+    "Bill's": "Bill's",
+    "Billionaire": "Billionaire",
+    "Billy": "Billy",
+    "Blake": "blake",
+    "Blue": "blue",
+    "Bony": "Bony",
+    "Boy": "Boy",
+    "Britannica": "Britannica",
+    "British": "[British](/\u02c8br\u026at\u026a\u0283/)",
+    "Broken": "[Broken](/b\u0279o\u028ak\u0259n/)",
+    "Brueghel": "[Brueghel](/b\u0279u\u026a\u0261\u0259l/)",
+    "Buddha": "Buddha",
+    "Burroway": "[Burroway](/b\u028c\u0279o\u028awe\u026a/)",
+    "Cambodia": "Cambodia",
+    "Cannonballs": "Cannonballs",
+    "Carinae": "[Carinae](/k\u0259\u0279a\u026ane:/)",
+    "Cartoon": "Cartoon",
+    "Cartoons": "Slam",
+    "Chameleon": "Chameleon",
+    "Chechen": "Chechen",
+    "Chechnya": "chechneeuh",
+    "Civil": "Civil",
+    "Coke": "Coke",
+    "Connect": "Connect",
+    "Constitution": "Constitution",
+    "Cordelia": "kordeeleeyaz",
+    "Cowboys": "Cowboys",
+    "Cyrillic": "Cyrillic",
+    "D-Caf": "deecaf",
+    "DCaf": "deecaf",
+    "Dallas": "Dallas",
+    "Dante": "[Dante](/d\u0251\u0251nte\u026a/)",
+    "Debris": "Debris",
+    "Deneb": "Deneb",
+    "Dhur": "Dhur",
+    "DiSalvo": "[DiSalvo](/d\u026as\u0251lvo\u028a/)",
+    "Ditto": "Ditto",
+    "Dodger": "[Dodger](/d\u0251d\u0292\u025a/)",
+    "Duck": "duck",
+    "Dutch": "Dutch",
+    "Earth": "Earth",
+    "Eastern": "Eastern",
+    "Edward": "[Edward](/\u025bdw\u0259\u0279d/)",
+    "Errol": "Errol",
+    "Europe": "Europe",
+    "Eyeless": "Eyeless",
+    "Face": "face",
+    "Famished": "Famished",
+    "Fay": "Fay",
+    "Felt": "Felt",
+    "Francisco": "fransiskoh",
+    "Freak": "Freak",
+    "Frederico": "Frederico",
+    "Frontier": "Frontier",
+    "Funny": "Funny",
+    "Gaunt": "gaunt",
+    "Godzilla": "Godzilla",
+    "Great": "Great",
+    "Greenies": "[Greenies](/\u0261ri\u02d0ni\u02d0z/)",
+    "Guinness": "Guinness",
+    "Hill": "Hill",
+    "Hollywood": "Hollywood",
+    "Hopper": "Hopper",
+    "Hopper's": "Hopper's",
+    "House": "House",
+    "Hoyle": "hoil",
+    "Hwang": "wahng",
+    "IFace": "IFace",
+    "Imagine": "Imagine",
+    "Ironsides": "Ironsides",
+    "Ivan": "Ivan",
+    "Jane": "[Jane](/d\u0292e\u026an/)",
+    "Janes": "Janes",
+    "Jessica": "[Jessica](/d\u0292\u025bs\u026ak\u0259/)",
+    "Jobs": "jobsis",
+    "Kansas": "Kansas",
+    "Kick": "Kick",
+    "King": "King",
+    "Kong": "Kong",
+    "Kubrick": "[Kubrick](/\u02c8kuubr\u026ak/)",
+    "Lefkowitz-Blake": "[Lefkowitz-Blake](/l\u025bfk\u0259w\u026atsble\u026ak/)",
+    "Liberty": "Liberty",
+    "Looney": "Looney",
+    "MaMy": "MaMy",
+    "Mac": "Mac",
+    "Macy": "Macy",
+    "Maker": "Maker",
+    "Makers": "Makers",
+    "Mayflower": "[Mayflower](/me\u026afla\u028a\u025a/)",
+    "McDonald": "McDonald",
+    "McDonald's": "McDonald's",
+    "Meanie": "[Meanie](/mini/)",
+    "Meanies": "[Meanies](/miniz/)",
+    "Miami": "myamee",
+    "Millennia": "Millennia",
+    "Minnie": "[Minnie](/m\u026ani/)",
+    "Miss": "miss",
+    "Mo'Steel": "moesteel",
+    "Mo'Steel's": "moesteels",
+    "Mom": "Mom",
+    "Mommy": "Mommy",
+    "Monterey": "montuhray",
+    "Mother": "mother",
+    "Mouse": "Mouse",
+    "Navy": "Navy",
+    "New": "new",
+    "Nikes": "McDonald",
+    "Old": "Old",
+    "Olga": "[Olga](/\u02c8o\u028al\u0261\u0259/)",
+    "Oliver": "Oliver",
+    "Papa": "Papa",
+    "Parade": "Parade",
+    "Pazzo": "[Pazzo](/\u02c8p\u0251tso\u028a/)",
+    "Pepsi": "Pepsi",
+    "Picasso": "Picasso",
+    "Pishpai": "Pishpai",
+    "Polaris": "Polaris",
+    "Popsicle": "Popsicle",
+    "Remnants": "Remnants",
+    "Remnants'shuttle": "Remnants' shuttle",
+    "Rider": "Rider",
+    "Riders": "Riders",
+    "Roger": "[Roger](/\u0279\u0251d\u0292\u025a/)",
+    "Romeo": "Romeo",
+    "Russian": "Russian",
+    "Rusty": "Rusty",
+    "Sails": "Sails",
+    "San": "San",
+    "Scout": "Scout",
+    "Screwdrivers": "Screwdrivers",
+    "Sebastian": "sebastyan",
+    "Sheetrock": "Sheetrock",
+    "Shipwright": "Shipwright",
+    "Shy": "shy",
+    "Sirius": "Sirius",
+    "Sisyphus": "Sisyphus",
+    "Software": "Software",
+    "Somehow": "Somehow",
+    "South": "[South](/sa\u028a\u03b8/)",
+    "Sphinx": "Sphinx",
+    "Squid": "Squid",
+    "Squids": "Squids",
+    "Statue": "Statue",
+    "Stone": "Stone",
+    "Sunfish": "Sunfish",
+    "Tamara": "tuhmahraaz",
+    "Tan": "tan",
+    "Tate": "tate",
+    "Texas": "[Texas](/\u02c8t\u025bks\u0259s/)",
+    "ThanksgivingDay": "ThanksgivingDay",
+    "The": "the",
+    "Thinker": "Thinker",
+    "Times": "Times",
+    "Tinkertoys": "Tinkertoys",
+    "Titan": "Titan",
+    "Tower": "tower",
+    "Tunes": "Tunes",
+    "Tuscany": "Tuscany",
+    "Vega": "Vega",
+    "Vermeers": "Vermeers",
+    "Violet": "Violet",
+    "Wakers": "Wakers",
+    "War": "war",
+    "Weir": "weer",
+    "Weir's": "weer",
+    "White": "White",
+    "World": "world",
+    "Wormholes": "Wormholes",
+    "Wray": "Wray",
+    "Wylson": "[Wylson](/w\u026als\u0259n/)",
+    "Ya-ahh": "[Ya-ahh](/j\u0251\u0251/)",
+    "Yago": "yahgo",
+    "Yahoooo": "Yahoooo",
+    "Yosemite": "Yosemite"
+  },
+  "words_spacy": [
+    [
+      "Jobs",
+      175
+    ],
+    [
+      "Kubrick",
+      133
+    ],
+    [
+      "Billy",
+      100
+    ],
+    [
+      "Edward",
+      76
+    ],
+    [
+      "Alberto",
+      76
+    ],
+    [
+      "Violet",
+      44
+    ],
+    [
+      "Mo'Steel",
+      37
+    ],
+    [
+      "Tate",
+      27
+    ],
+    [
+      "Anamull",
+      24
+    ],
+    [
+      "Earth",
+      19
+    ],
+    [
+      "Olga",
+      19
+    ],
+    [
+      "Rider",
+      19
+    ],
+    [
+      "Wylson",
+      15
+    ],
+    [
+      "Squids",
+      15
+    ],
+    [
+      "British",
+      15
+    ],
+    [
+      "Roger",
+      14
+    ],
+    [
+      "Dodger",
+      14
+    ],
+    [
+      "Yago",
+      13
+    ],
+    [
+      "Blue",
+      11
+    ],
+    [
+      "Tamara",
+      8
+    ],
+    [
+      "Burroway",
+      8
+    ],
+    [
+      "Riders",
+      8
+    ],
+    [
+      "Meanies",
+      7
+    ],
+    [
+      "Mother",
+      7
+    ],
+    [
+      "American",
+      6
+    ],
+    [
+      "Remnants",
+      5
+    ],
+    [
+      "Meanie",
+      4
+    ],
+    [
+      "D-Caf",
+      4
+    ],
+    [
+      "Big",
+      4
+    ],
+    [
+      "Pazzo",
+      4
+    ],
+    [
+      "Texas",
+      4
+    ],
+    [
+      "Weir",
+      3
+    ],
+    [
+      "Blake",
+      3
+    ],
+    [
+      "Jane",
+      3
+    ],
+    [
+      "Shy",
+      3
+    ],
+    [
+      "Hwang",
+      3
+    ],
+    [
+      "Jessica",
+      3
+    ],
+    [
+      "Russian",
+      3
+    ],
+    [
+      "Coke",
+      3
+    ],
+    [
+      "Ivan",
+      3
+    ],
+    [
+      "McDonald's",
+      3
+    ],
+    [
+      "Shipwright",
+      3
+    ],
+    [
+      "Frederico",
+      2
+    ],
+    [
+      "Statue",
+      2
+    ],
+    [
+      "Liberty",
+      2
+    ],
+    [
+      "Boy",
+      2
+    ],
+    [
+      "Squid",
+      2
+    ],
+    [
+      "The",
+      2
+    ],
+    [
+      "New",
+      2
+    ],
+    [
+      "World",
+      2
+    ],
+    [
+      "Miss",
+      2
+    ],
+    [
+      "South",
+      2
+    ],
+    [
+      "Civil",
+      2
+    ],
+    [
+      "War",
+      2
+    ],
+    [
+      "Cannonballs",
+      2
+    ],
+    [
+      "King",
+      2
+    ],
+    [
+      "Kong",
+      2
+    ],
+    [
+      "Great",
+      2
+    ],
+    [
+      "Hollywood",
+      2
+    ],
+    [
+      "Freak",
+      2
+    ],
+    [
+      "IFace",
+      2
+    ],
+    [
+      "Vermeers",
+      2
+    ],
+    [
+      "Bill",
+      2
+    ],
+    [
+      "Dante",
+      1
+    ],
+    [
+      "Sisyphus",
+      1
+    ],
+    [
+      "Felt",
+      1
+    ],
+    [
+      "Lefkowitz-Blake",
+      1
+    ],
+    [
+      "Constitution",
+      1
+    ],
+    [
+      "Mayflower",
+      1
+    ],
+    [
+      "Remnants'shuttle",
+      1
+    ],
+    [
+      "Imagine",
+      1
+    ],
+    [
+      "Sails",
+      1
+    ],
+    [
+      "Cordelia",
+      1
+    ],
+    [
+      "Janes",
+      1
+    ],
+    [
+      "Austen",
+      1
+    ],
+    [
+      "Broken",
+      1
+    ],
+    [
+      "Oliver",
+      1
+    ],
+    [
+      "Stone",
+      1
+    ],
+    [
+      "Screwdrivers",
+      1
+    ],
+    [
+      "San",
+      1
+    ],
+    [
+      "Francisco",
+      1
+    ],
+    [
+      "Bay",
+      1
+    ],
+    [
+      "Sunfish",
+      1
+    ],
+    [
+      "Scout",
+      1
+    ],
+    [
+      "DCaf",
+      1
+    ],
+    [
+      "Britannica",
+      1
+    ],
+    [
+      "Chechnya",
+      1
+    ],
+    [
+      "Chechen",
+      1
+    ],
+    [
+      "DiSalvo",
+      1
+    ],
+    [
+      "Kansas",
+      1
+    ],
+    [
+      "Guinness",
+      1
+    ],
+    [
+      "Monterey",
+      1
+    ],
+    [
+      "Aquarium",
+      1
+    ],
+    [
+      "Thinker",
+      1
+    ],
+    [
+      "Tower",
+      1
+    ],
+    [
+      "Babel",
+      1
+    ],
+    [
+      "Cambodia",
+      1
+    ],
+    [
+      "Aliens",
+      1
+    ],
+    [
+      "Picasso",
+      1
+    ],
+    [
+      "Sphinx",
+      1
+    ],
+    [
+      "Greenies",
+      1
+    ],
+    [
+      "Chameleon",
+      1
+    ],
+    [
+      "Pepsi",
+      1
+    ],
+    [
+      "White",
+      1
+    ],
+    [
+      "House",
+      1
+    ],
+    [
+      "Bill's",
+      1
+    ],
+    [
+      "Ditto",
+      1
+    ],
+    [
+      "Papa",
+      1
+    ],
+    [
+      "Debris",
+      1
+    ],
+    [
+      "Hoyle",
+      1
+    ],
+    [
+      "Mommy",
+      1
+    ],
+    [
+      "Tuscany",
+      1
+    ],
+    [
+      "Frontier",
+      1
+    ],
+    [
+      "Funny",
+      1
+    ],
+    [
+      "Macy",
+      1
+    ],
+    [
+      "ThanksgivingDay",
+      1
+    ],
+    [
+      "Parade",
+      1
+    ],
+    [
+      "Fay",
+      1
+    ],
+    [
+      "Wray",
+      1
+    ],
+    [
+      "Somehow",
+      1
+    ],
+    [
+      "Yahoooo",
+      1
+    ],
+    [
+      "Godzilla",
+      1
+    ],
+    [
+      "Cartoons",
+      1
+    ],
+    [
+      "Romeo",
+      1
+    ],
+    [
+      "Buddha",
+      1
+    ],
+    [
+      "Tinkertoys",
+      1
+    ],
+    [
+      "Vega",
+      1
+    ],
+    [
+      "Deneb",
+      1
+    ],
+    [
+      "Sirius",
+      1
+    ],
+    [
+      "Polaris",
+      1
+    ],
+    [
+      "Pishpai",
+      1
+    ],
+    [
+      "Dhur",
+      1
+    ],
+    [
+      "Carinae",
+      1
+    ],
+    [
+      "Old",
+      1
+    ],
+    [
+      "Ironsides",
+      1
+    ],
+    [
+      "Kick",
+      1
+    ],
+    [
+      "Connect",
+      1
+    ],
+    [
+      "Millennia",
+      1
+    ],
+    [
+      "Sheetrock",
+      1
+    ],
+    [
+      "Rusty",
+      1
+    ],
+    [
+      "MaMy",
+      1
+    ],
+    [
+      "Cyrillic",
+      1
+    ],
+    [
+      "Minnie",
+      1
+    ],
+    [
+      "Mouse",
+      1
+    ],
+    [
+      "Famished",
+      1
+    ],
+    [
+      "Miami",
+      1
+    ],
+    [
+      "Beach",
+      1
+    ],
+    [
+      "McDonald",
+      1
+    ],
+    [
+      "Nikes",
+      1
+    ],
+    [
+      "Eyeless",
+      1
+    ],
+    [
+      "Babies",
+      1
+    ],
+    [
+      "Mac",
+      1
+    ],
+    [
+      "Eastern",
+      1
+    ],
+    [
+      "Europe",
+      1
+    ],
+    [
+      "Ya-ahh",
+      1
+    ],
+    [
+      "Cartoon",
+      1
+    ],
+    [
+      "Wakers",
+      1
+    ],
+    [
+      "Popsicle",
+      1
+    ],
+    [
+      "Yosemite",
+      1
+    ],
+    [
+      "Weir's",
+      1
+    ],
+    [
+      "Dutch",
+      1
+    ],
+    [
+      "Brueghel",
+      1
+    ],
+    [
+      "Face",
+      1
+    ],
+    [
+      "Times",
+      1
+    ],
+    [
+      "Billionaire",
+      1
+    ],
+    [
+      "Software",
+      1
+    ],
+    [
+      "Titan",
+      1
+    ],
+    [
+      "Hill",
+      1
+    ],
+    [
+      "Mo'Steel's",
+      1
+    ],
+    [
+      "Duck",
+      1
+    ],
+    [
+      "Tan",
+      1
+    ],
+    [
+      "Sebastian",
+      1
+    ],
+    [
+      "Mom",
+      1
+    ],
+    [
+      "Dallas",
+      1
+    ],
+    [
+      "Cowboys",
+      1
+    ],
+    [
+      "Navy",
+      1
+    ],
+    [
+      "Errol",
+      1
+    ],
+    [
+      "Hopper's",
+      1
+    ],
+    [
+      "Hopper",
+      1
+    ],
+    [
+      "Gaunt",
+      1
+    ],
+    [
+      "Bony",
+      1
+    ],
+    [
+      "Wormholes",
+      1
+    ],
+    [
+      "Maker",
+      1
+    ],
+    [
+      "Makers",
+      1
+    ],
+    [
+      "Looney",
+      1
+    ],
+    [
+      "Tunes",
+      1
+    ]
+  ]
+}

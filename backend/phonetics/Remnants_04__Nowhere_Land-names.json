@@ -1,0 +1,806 @@
+{
+  "approved": {
+    "Aaahhh": "[Aaahhh](/\u02c8\u0251\u0251\u0251/)",
+    "Acolyte": "Acolyte",
+    "African": "[African](/\u02c8\u00e6fr\u026ak\u0259n/)",
+    "African-American": "africanamerican",
+    "Ahoy": "Ahoy",
+    "Alive": "[Alive](/\u0259\u02c8la\u026av/)",
+    "America": "America",
+    "American": "American",
+    "Anamull": "[Anamull](/\u00e6n\u0259m\u028cl/)",
+    "Ancestors": "Ancestors",
+    "Aveda": "[Aveda](/\u0259ve\u026ad\u0259/)",
+    "Babel": "[Babel](/bab\u0259l/)",
+    "Bag": "Bag",
+    "Ball": "Ball",
+    "Balloon": "Balloon",
+    "Beulah": "[Beulah](/bjuwl\u0259/)",
+    "Big": "Big",
+    "Billy": "Billy",
+    "Blake": "blake",
+    "Blimp": "Blimp",
+    "Blimps": "Blimps",
+    "Blue": "blue",
+    "Bonilivak": "[Bonilivak](/bo\u028an\u026al\u026av\u00e6k/)",
+    "Bosch": "Bosch",
+    "Bouncing": "Bouncing",
+    "Burroway": "[Burroway](/b\u028c\u0279o\u028awe\u026a/)",
+    "Captain": "Captain",
+    "Caucasian": "kawkayzhun",
+    "Chameleon": "Chameleon",
+    "Chechnyan": "Chechnyan",
+    "Chicago": "Chicago",
+    "Chirismontak": "[Chirismontak](/kr\u026asm\u0252nt\u00e6k/)",
+    "Civil": "Civil",
+    "Clan": "Clan",
+    "Climb": "Climb",
+    "Connie": "Connie",
+    "Cordelia": "kordeeleeyaz",
+    "Council": "[Council](/ka\u028ans\u0259l/)",
+    "Curly": "Curly",
+    "D-Caf": "deecaf",
+    "D-Caf's": "deecafs",
+    "DCaf": "deecaf",
+    "Dad": "Dad",
+    "Dallas": "Dallas",
+    "Dave": "[Dave](/de\u026av/)",
+    "David": "[David](/\u02c8de\u026av\u026ad/)",
+    "Degas": "[Degas](/de\u026a\u0261\u0251\u0251/)",
+    "Demscatilintak": "[Demscatilintak](/d\u025bmsk\u00e6t\u026al\u026ant\u00e6k/)",
+    "Dismal": "Dismal",
+    "Dodger": "[Dodger](/d\u0251d\u0292\u025a/)",
+    "Drop": "Drop",
+    "Duck": "duck",
+    "Earth": "Earth",
+    "Earthly": "Earthly",
+    "Edward": "[Edward](/\u025bdw\u0259\u0279d/)",
+    "Eye": "Eye",
+    "Face": "face",
+    "Florida": "Florida",
+    "Four": "Four",
+    "God": "God",
+    "Goliath": "Goliath",
+    "Gonzalez": "gonzahlez",
+    "Guild": "[Guild](/\u0261\u026ald/)",
+    "Hadad-Chirismon": "[Hadad-Chirismon](/\u02c8h\u00e6d\u00e6d k\u026ar\u026as\u02c8m\u0251n/)",
+    "Hadad-Sincoman": "[Hadad-Sincoman](/h\u00e6d\u00e6d s\u026anko\u028am\u00e6n/)",
+    "HadadDemscaltilint": "[HadadDemscaltilint](/h\u00e6d\u00e6d d\u025bmsk\u00e6lt\u026al\u026ant/)",
+    "Having": "Having",
+    "Headfirst": "Headfirst",
+    "Hieronymus": "[Hieronymus](/ha\u026a\u0259\u0279\u0251n\u026am\u0259s/)",
+    "House": "House",
+    "Hoyle": "hoil",
+    "Huerta": "wairtuh",
+    "Hurricane": "Hurricane",
+    "Hwang": "wahng",
+    "Inappropriate": "Inappropriate",
+    "Ironsides": "Ironsides",
+    "Jane": "[Jane](/d\u0292e\u026an/)",
+    "Jobs": "jobsis",
+    "John": "john",
+    "Jones": "Jones",
+    "Kick": "Kick",
+    "Land": "Land",
+    "Lasso": "Lasso",
+    "Lefkowitz-Blake": "[Lefkowitz-Blake](/l\u025bfk\u0259w\u026atsble\u026ak/)",
+    "Lollipop": "Lollipop",
+    "Macy": "Macy",
+    "Magazine": "[Magazine](/\u02ccm\u00e6\u0261\u0259\u02c8zi\u026an/)",
+    "Man": "an",
+    "Marine": "Marine",
+    "Mark": "Mark",
+    "Mayflower": "[Mayflower](/me\u026afla\u028a\u025a/)",
+    "Meanie": "[Meanie](/mini/)",
+    "Meanies": "[Meanies](/miniz/)",
+    "Michelangelo": "[Michelangelo](/ma\u026ak\u0259l\u02c8\u00e6nd\u0292\u0259lo\u028a/)",
+    "Miss": "miss",
+    "Mo'Steel": "moesteel",
+    "Mom": "Mom",
+    "Monterey": "montuhray",
+    "Mother": "mother",
+    "Munchkin": "Munchkin",
+    "Navy": "Navy",
+    "New": "new",
+    "O'Brian": "O'Brian",
+    "Old": "Old",
+    "Olga": "[Olga](/\u02c8o\u028al\u0261\u0259/)",
+    "Patrick": "Patrick",
+    "Paul": "Paul",
+    "Ph.D": "[Ph.D](/pi\u026at\u0283di\u026a/)",
+    "Picasso": "Picasso",
+    "Pipe": "Pipe",
+    "Project": "Project",
+    "Rebirth": "Rebirth",
+    "Remnants": "Remnants",
+    "Rider": "Rider",
+    "Riders": "Riders",
+    "Rodin": "Rodin",
+    "Roger": "[Roger](/\u0279\u0251d\u0292\u025a/)",
+    "Ropes": "Ropes",
+    "Sacred": "[Sacred](/se\u026ak\u0279\u026ad/)",
+    "Sails": "Sails",
+    "Sanctified": "Sanctified",
+    "Sebastian": "sebastyan",
+    "Sexiest": "Sexiest",
+    "Shy": "shy",
+    "Sincomantak": "[Sincomantak](/s\u026anko\u028am\u00e6nt\u00e6k/)",
+    "Slower": "Slower",
+    "Spacey": "[Spacey](/spe\u026asi/)",
+    "Sphinx": "Sphinx",
+    "Squid": "Squid",
+    "Squids": "Squids",
+    "Streams": "Streams",
+    "Stupid": "Stupid",
+    "Surrender": "Surrender",
+    "Swamp": "Swamp",
+    "Swiss": "[Swiss](/sw\u026as/)",
+    "Taller": "Taller",
+    "Tamara": "tuhmahraaz",
+    "Tate": "tate",
+    "Tee": "Tee",
+    "Teen": "[Teen](/ti:\u026an/)",
+    "Texan": "Texan",
+    "The": "the",
+    "Thinker": "Thinker",
+    "Times": "Times",
+    "Tonya": "[Tonya](/\u02c8t\u0251nj\u0259/)",
+    "Tower": "tower",
+    "Unhuman": "Unhuman",
+    "Unhumans": "Unhumans",
+    "Violet": "Violet",
+    "War": "war",
+    "Weir": "weer",
+    "Weir's": "weer",
+    "Weird": "Weird",
+    "White": "White",
+    "World": "world",
+    "Wylson": "[Wylson](/w\u026als\u0259n/)",
+    "Yaaaaaah": "yeah",
+    "Yago": "yahgo",
+    "York": "York",
+    "You": "You"
+  },
+  "words_spacy": [
+    [
+      "Jobs",
+      198
+    ],
+    [
+      "Wylson",
+      91
+    ],
+    [
+      "Billy",
+      80
+    ],
+    [
+      "Violet",
+      51
+    ],
+    [
+      "Tate",
+      41
+    ],
+    [
+      "Riders",
+      39
+    ],
+    [
+      "Tamara",
+      36
+    ],
+    [
+      "Edward",
+      33
+    ],
+    [
+      "Burroway",
+      30
+    ],
+    [
+      "Rider",
+      28
+    ],
+    [
+      "Olga",
+      27
+    ],
+    [
+      "Mo'Steel",
+      26
+    ],
+    [
+      "Weir",
+      23
+    ],
+    [
+      "Anamull",
+      23
+    ],
+    [
+      "Meanies",
+      18
+    ],
+    [
+      "Blake",
+      14
+    ],
+    [
+      "Shy",
+      14
+    ],
+    [
+      "Hwang",
+      13
+    ],
+    [
+      "Yago",
+      12
+    ],
+    [
+      "Mother",
+      11
+    ],
+    [
+      "Blue",
+      10
+    ],
+    [
+      "Roger",
+      10
+    ],
+    [
+      "Dodger",
+      9
+    ],
+    [
+      "Duck",
+      8
+    ],
+    [
+      "Squids",
+      8
+    ],
+    [
+      "Mayflower",
+      7
+    ],
+    [
+      "Unhuman",
+      7
+    ],
+    [
+      "David",
+      7
+    ],
+    [
+      "Earth",
+      6
+    ],
+    [
+      "Meanie",
+      6
+    ],
+    [
+      "Miss",
+      6
+    ],
+    [
+      "Clan",
+      6
+    ],
+    [
+      "Blimp",
+      6
+    ],
+    [
+      "Gonzalez",
+      5
+    ],
+    [
+      "Lefkowitz-Blake",
+      5
+    ],
+    [
+      "Sacred",
+      5
+    ],
+    [
+      "Streams",
+      5
+    ],
+    [
+      "The",
+      5
+    ],
+    [
+      "Demscatilintak",
+      5
+    ],
+    [
+      "Mark",
+      5
+    ],
+    [
+      "Beulah",
+      5
+    ],
+    [
+      "Four",
+      4
+    ],
+    [
+      "Chirismontak",
+      4
+    ],
+    [
+      "Blimps",
+      4
+    ],
+    [
+      "Marine",
+      4
+    ],
+    [
+      "Weir's",
+      3
+    ],
+    [
+      "Chameleon",
+      3
+    ],
+    [
+      "Council",
+      3
+    ],
+    [
+      "Monterey",
+      3
+    ],
+    [
+      "Dad",
+      3
+    ],
+    [
+      "Munchkin",
+      3
+    ],
+    [
+      "Ahoy",
+      3
+    ],
+    [
+      "Tower",
+      2
+    ],
+    [
+      "Babel",
+      2
+    ],
+    [
+      "Sebastian",
+      2
+    ],
+    [
+      "White",
+      2
+    ],
+    [
+      "House",
+      2
+    ],
+    [
+      "Eye",
+      2
+    ],
+    [
+      "Jane",
+      2
+    ],
+    [
+      "Remnants",
+      2
+    ],
+    [
+      "Sails",
+      2
+    ],
+    [
+      "Big",
+      2
+    ],
+    [
+      "Balloon",
+      2
+    ],
+    [
+      "Dallas",
+      2
+    ],
+    [
+      "Lollipop",
+      2
+    ],
+    [
+      "Guild",
+      2
+    ],
+    [
+      "Curly",
+      2
+    ],
+    [
+      "Dave",
+      2
+    ],
+    [
+      "Michelangelo",
+      2
+    ],
+    [
+      "Chicago",
+      2
+    ],
+    [
+      "War",
+      2
+    ],
+    [
+      "Squid",
+      2
+    ],
+    [
+      "Spacey",
+      2
+    ],
+    [
+      "Swiss",
+      1
+    ],
+    [
+      "Chechnyan",
+      1
+    ],
+    [
+      "Texan",
+      1
+    ],
+    [
+      "Hieronymus",
+      1
+    ],
+    [
+      "Bosch",
+      1
+    ],
+    [
+      "Dismal",
+      1
+    ],
+    [
+      "Swamp",
+      1
+    ],
+    [
+      "Weird",
+      1
+    ],
+    [
+      "Aaahhh",
+      1
+    ],
+    [
+      "D-Caf's",
+      1
+    ],
+    [
+      "African",
+      1
+    ],
+    [
+      "American",
+      1
+    ],
+    [
+      "America",
+      1
+    ],
+    [
+      "Tee",
+      1
+    ],
+    [
+      "Sexiest",
+      1
+    ],
+    [
+      "Teen",
+      1
+    ],
+    [
+      "Alive",
+      1
+    ],
+    [
+      "New",
+      1
+    ],
+    [
+      "York",
+      1
+    ],
+    [
+      "Times",
+      1
+    ],
+    [
+      "Magazine",
+      1
+    ],
+    [
+      "Hoyle",
+      1
+    ],
+    [
+      "Hadad-Chirismon",
+      1
+    ],
+    [
+      "Acolyte",
+      1
+    ],
+    [
+      "Rebirth",
+      1
+    ],
+    [
+      "Sanctified",
+      1
+    ],
+    [
+      "Ancestors",
+      1
+    ],
+    [
+      "Bonilivak",
+      1
+    ],
+    [
+      "Sincomantak",
+      1
+    ],
+    [
+      "Hadad-Sincoman",
+      1
+    ],
+    [
+      "HadadDemscaltilint",
+      1
+    ],
+    [
+      "Unhumans",
+      1
+    ],
+    [
+      "God",
+      1
+    ],
+    [
+      "DCaf",
+      1
+    ],
+    [
+      "Inappropriate",
+      1
+    ],
+    [
+      "Lasso",
+      1
+    ],
+    [
+      "Caucasian",
+      1
+    ],
+    [
+      "Having",
+      1
+    ],
+    [
+      "Ph.D",
+      1
+    ],
+    [
+      "D-Caf",
+      1
+    ],
+    [
+      "African-American",
+      1
+    ],
+    [
+      "Mom",
+      1
+    ],
+    [
+      "Headfirst",
+      1
+    ],
+    [
+      "Climb",
+      1
+    ],
+    [
+      "Connie",
+      1
+    ],
+    [
+      "Huerta",
+      1
+    ],
+    [
+      "Project",
+      1
+    ],
+    [
+      "Bouncing",
+      1
+    ],
+    [
+      "Bag",
+      1
+    ],
+    [
+      "Aveda",
+      1
+    ],
+    [
+      "Drop",
+      1
+    ],
+    [
+      "Yaaaaaah",
+      1
+    ],
+    [
+      "Slower",
+      1
+    ],
+    [
+      "Land",
+      1
+    ],
+    [
+      "Earthly",
+      1
+    ],
+    [
+      "Macy",
+      1
+    ],
+    [
+      "Goliath",
+      1
+    ],
+    [
+      "Florida",
+      1
+    ],
+    [
+      "Hurricane",
+      1
+    ],
+    [
+      "Tonya",
+      1
+    ],
+    [
+      "Face",
+      1
+    ],
+    [
+      "Thinker",
+      1
+    ],
+    [
+      "Rodin",
+      1
+    ],
+    [
+      "Degas",
+      1
+    ],
+    [
+      "Captain",
+      1
+    ],
+    [
+      "Patrick",
+      1
+    ],
+    [
+      "O'Brian",
+      1
+    ],
+    [
+      "Stupid",
+      1
+    ],
+    [
+      "Old",
+      1
+    ],
+    [
+      "Ironsides",
+      1
+    ],
+    [
+      "Navy",
+      1
+    ],
+    [
+      "Picasso",
+      1
+    ],
+    [
+      "Sphinx",
+      1
+    ],
+    [
+      "Taller",
+      1
+    ],
+    [
+      "John",
+      1
+    ],
+    [
+      "Paul",
+      1
+    ],
+    [
+      "Jones",
+      1
+    ],
+    [
+      "You",
+      1
+    ],
+    [
+      "Civil",
+      1
+    ],
+    [
+      "Kick",
+      1
+    ],
+    [
+      "World",
+      1
+    ],
+    [
+      "Ball",
+      1
+    ],
+    [
+      "Ropes",
+      1
+    ],
+    [
+      "Surrender",
+      1
+    ],
+    [
+      "Cordelia",
+      1
+    ],
+    [
+      "Pipe",
+      1
+    ],
+    [
+      "Man",
+      1
+    ]
+  ]
+}

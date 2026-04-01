@@ -9,31 +9,38 @@ from config import load_config
 # ── Prompt ──────────────────────────────────────────────────────────────────
 
 _PROMPT = """\
-You are a TTS pronunciation specialist. Your task is to provide phonetic respellings for the following list of proper nouns so that a text-to-speech engine reads them correctly.
+You are a TTS pronunciation specialist for the Kokoro TTS engine (American English). Your task is to provide phonetic respellings for proper nouns so the engine reads them correctly.
 
-Rules for Respelling:
-    Build the respelling from real, common English words or syllables that a TTS engine already knows how to pronounce.
-    Prefer splicing together recognisable English words or word-parts over inventing arbitrary letter combinations.
-    The output must be all lowercase with no punctuation, hyphens, or spaces — one continuous string.
-    Spell out all the words.
+You may use one of two formats per word:
 
-Approach:
-    First ask: what sequence of English sounds matches this word?
-    Then ask: what existing English words or word-fragments produce those sounds?
-    Combine those fragments into a single lowercase string.
+FORMAT A — Kokoro inline IPA (preferred for foreign/unusual names where you know the pronunciation):
+    [DisplayName](/phonemes/)
+    The display name is what appears in text. The phonemes are IPA symbols between the slashes.
+    Stress marks: ˈ (primary, U+02C8) and ˌ (secondary, U+02CC) are supported — place before the stressed syllable.
+    Supported IPA symbols: A I O W Y b d f h i j k l m n p s t u v w z æ ð ŋ ɑ ɔ ə ɛ ɜ ɡ ɪ ɹ ɾ ʃ ʊ ʌ ʒ ʤ ʧ θ ᵊ ᵻ ʔ
+    NEVER use: the length mark ː (U+02D0), a regular colon :, or any letter not in the list above.
+    For long vowels, repeat the vowel symbol instead (e.g. ɑɑ not ɑː, iɪ not iː).
+    Examples:
+        "Kovacs"      -> "[Kovatch](/ˈkoʊvætʃ/)"
+        "Loemanako"   -> "[Loemanako](/ləˈmɑɑnəkoʊ/)"
+        "Roespinoedji"-> "[Roespinoedji](/roʊɛspɪnoʊɛdʒi/)"
+        "Nagini"      -> "[Nagini](/nɑdʒiɪni/)"
 
-Example Substitutions:
-    "Hermione" -> "hermyownee"   (her + my + own + ee)
-    "Daenerys" -> "dayneris"     (day + ner + is)
-    "Tyrion"   -> "teereon"      (teer + eon)
-    "Caitlin"  -> "katelyn"      (kate + lyn)
-    "Pneumonia"-> "newmoania"    (new + moan + ia)
-    "Niamh"    -> "neev"         (sounds like the word "neeve")
+FORMAT B — Simple English respelling (use when IPA is uncertain):
+    A continuous lowercase string of English syllables — no spaces, hyphens, or punctuation.
+    Examples:
+        "Hermione"  -> "hermyownee"
+        "Daenerys"  -> "dayneris"
+        "Niamh"     -> "neev"
+
+Rules:
+    - Prefer FORMAT A for clearly foreign or non-English names where you are confident in the IPA.
+    - Use FORMAT B when you are unsure of the exact phonemes.
+    - You MUST include every word from the list — no omissions.
 
 Words: {words}
 
-Respond with ONLY a valid JSON object: {{"Word": "respelling", ...}}
-You MUST include every word from the list — no omissions. Even if a word seems straightforward, provide your best phonetic respelling so the TTS engine has explicit guidance."""
+Respond with ONLY a valid JSON object: {{"Word": "respelling", ...}}"""
 
 
 # ── HTTP helper (stdlib only) ────────────────────────────────────────────────
