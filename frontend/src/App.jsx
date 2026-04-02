@@ -39,6 +39,7 @@ export default function App() {
   const [playingWord, setPlayingWord] = useState(null)
   const [phoneticSources, setPhoneticSources] = useState({})      // word -> "lexicon"|"llm"
   const [phoneticAlternatives, setPhoneticAlternatives] = useState({})  // word -> {voice: phonetic}
+  const [draftSavedAt, setDraftSavedAt] = useState(null)          // Date of last draft save
 
   // Output info
   const [outputType, setOutputType] = useState('zip')
@@ -278,8 +279,9 @@ export default function App() {
   function playPreview(text) {
     if (!text.trim()) return
     if (previewBusyRef.current) {
-      // Replace any pending item — only keep the latest request
-      previewQueueRef.current = [{ text }]
+      if (previewQueueRef.current.length < 10) {
+        previewQueueRef.current.push({ text })
+      }
       return
     }
     previewBusyRef.current = true
@@ -335,11 +337,34 @@ export default function App() {
     setPlayingWord(null)
     setPhoneticSources({})
     setPhoneticAlternatives({})
+    setDraftSavedAt(null)
     setScanMethod('regex')
     setScanUnknown(false)
     setOutputType('zip')
     setOutputIsChapters(false)
   }
+
+  async function saveDraft() {
+    if (!jobId || jobStatus !== 'awaiting_review') return
+    const phonetics = {}
+    for (const { original, phonetic } of words) {
+      if (phonetic.trim()) phonetics[original] = phonetic.trim()
+    }
+    try {
+      await fetch(`${API}/save-draft/${jobId}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ phonetics }),
+      })
+      setDraftSavedAt(new Date())
+    } catch { /* ignore */ }
+  }
+
+  useEffect(() => {
+    if (jobStatus !== 'awaiting_review' || !jobId) return
+    const id = setInterval(saveDraft, 2 * 60 * 1000)
+    return () => clearInterval(id)
+  }, [jobStatus, jobId, words])
 
   const busy = ['uploading', 'queued', 'parsing', 'scanning', 'converting'].includes(jobStatus)
 
@@ -487,6 +512,8 @@ export default function App() {
             onPlay={playPreview}
             onApprove={() => handleApprove(false)}
             onSkip={() => handleApprove(true)}
+            onSaveDraft={saveDraft}
+            draftSavedAt={draftSavedAt}
             apiBase={API}
             voice={voice}
             engine={engine}
@@ -729,10 +756,62 @@ const VOICE_LABELS = {
   zoe: 'Zoe (F)', dan: 'Dan (M)', leo: 'Leo (M)', zac: 'Zac (M)',
 }
 
-function ReviewPanel({ words, playingWord, phoneticSources, phoneticAlternatives = {}, onUpdatePhonetic, onRemoveWord, onAddWord, onPlay, onApprove, onSkip, apiBase, voice, engine }) {
+const IPA_GROUPS = [
+  { label: 'vowels',     chars: ['æ','ɑ','ɔ','ə','ɛ','ɜ','ɪ','ʊ','ʌ','ᵊ','ᵻ'] },
+  { label: 'consonants', chars: ['ð','ŋ','ɡ','ɹ','ɾ','ʃ','ʒ','ʤ','ʧ','θ','ʔ'] },
+]
+
+function CharPalette({ onInsert, style = {} }) {
+  return (
+    <div style={{ padding: '5px 8px', background: '#fff', border: '1px solid #cbd5e1', borderRadius: 8, boxShadow: '0 4px 12px rgba(0,0,0,0.12)', display: 'inline-flex', flexDirection: 'column', gap: 4, ...style }}>
+      <span style={{ fontSize: 10, color: '#94a3b8', fontWeight: 600, letterSpacing: '0.05em', lineHeight: 1 }}>IPA</span>
+      {IPA_GROUPS.map(({ label, chars }) => (
+        <div key={label} style={{ display: 'flex', gap: 3 }}>
+          {chars.map(ch => (
+            <button
+              key={ch}
+              onMouseDown={e => { e.preventDefault(); onInsert(ch) }}
+              title={label + ': ' + ch}
+              style={{ width: 24, height: 24, padding: 0, border: '1px solid #cbd5e1', borderRadius: 4, background: '#f8fafc', cursor: 'pointer', fontFamily: 'Georgia, serif', fontSize: 13, color: '#1e293b', lineHeight: 1, flexShrink: 0 }}
+            >
+              {ch}
+            </button>
+          ))}
+        </div>
+      ))}
+    </div>
+  )
+}
+
+function ReviewPanel({ words, playingWord, phoneticSources, phoneticAlternatives = {}, onUpdatePhonetic, onRemoveWord, onAddWord, onPlay, onApprove, onSkip, onSaveDraft, draftSavedAt, apiBase, voice, engine }) {
   const [showLexicon, setShowLexicon] = useState(false)
   const [addWordInput, setAddWordInput] = useState('')
   const [autoPreview, setAutoPreview] = useState(false)
+  const activeInputRef = useRef(null)
+  const [palettePos, setPalettePos] = useState(null) // null = hidden
+
+  function insertChar(char) {
+    if (!activeInputRef.current) return
+    const { el, idx } = activeInputRef.current
+    const start = el.selectionStart ?? el.value.length
+    const end   = el.selectionEnd   ?? el.value.length
+    const newVal = el.value.slice(0, start) + char + el.value.slice(end)
+    onUpdatePhonetic(idx, newVal)
+    requestAnimationFrame(() => {
+      el.focus()
+      el.setSelectionRange(start + char.length, start + char.length)
+    })
+  }
+
+  function handlePhoneticFocus(e, idx) {
+    activeInputRef.current = { el: e.target, idx }
+    const rect = e.target.getBoundingClientRect()
+    setPalettePos({ top: rect.bottom + 4, left: rect.left })
+  }
+
+  function handlePhoneticBlur() {
+    setPalettePos(null)
+  }
   const substitutionCount = words.filter(w => w.phonetic.trim()).length
   const lexiconCount = words.filter(w => phoneticSources[w.original] === 'lexicon').length
 
@@ -801,7 +880,8 @@ function ReviewPanel({ words, playingWord, phoneticSources, phoneticAlternatives
                       value={w.phonetic}
                       placeholder="e.g. her-MY-oh-nee"
                       onChange={(e) => onUpdatePhonetic(i, e.target.value)}
-                      onBlur={() => { if (autoPreview) onPlay(w.phonetic.trim() || w.original) }}
+                      onFocus={(e) => handlePhoneticFocus(e, i)}
+                      onBlur={() => { handlePhoneticBlur(); if (autoPreview) onPlay(w.phonetic.trim() || w.original) }}
                     />
                     {altEntries.length > 0 && (
                       <div style={{ marginTop: 4, display: 'flex', flexWrap: 'wrap', gap: 4 }}>
@@ -871,7 +951,7 @@ function ReviewPanel({ words, playingWord, phoneticSources, phoneticAlternatives
         </button>
       </div>
 
-      <div style={{ marginTop: 14, display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
+      <div style={{ marginTop: 14, display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap', alignItems: 'center' }}>
         <button style={s.btn} onClick={onApprove}>
           {substitutionCount > 0
             ? `Apply ${substitutionCount} substitution${substitutionCount !== 1 ? 's' : ''} & Convert`
@@ -881,6 +961,14 @@ function ReviewPanel({ words, playingWord, phoneticSources, phoneticAlternatives
           <button style={{ ...s.btn, ...s.btnGray }} onClick={onSkip}>
             Skip — use original text
           </button>
+        )}
+        <button style={{ ...s.btn, ...s.btnGray }} onClick={onSaveDraft}>
+          Save
+        </button>
+        {draftSavedAt && (
+          <span style={{ fontSize: 12, color: '#94a3b8' }}>
+            Saved {draftSavedAt.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+          </span>
         )}
         <button
           style={{ ...s.btn, ...s.btnGray }}
@@ -892,6 +980,13 @@ function ReviewPanel({ words, playingWord, phoneticSources, phoneticAlternatives
 
       {showLexicon && (
         <LexiconPanel apiBase={apiBase} voice={voice} engine={engine} playingWord={playingWord} onPlay={onPlay} />
+      )}
+
+      {palettePos && (
+        <CharPalette
+          onInsert={insertChar}
+          style={{ position: 'fixed', top: palettePos.top, left: palettePos.left, zIndex: 1000 }}
+        />
       )}
     </div>
   )
