@@ -25,7 +25,8 @@
       "Bash(npm install:*)",
       "Bash(echo $SHELL)",
       "Read(//c/Users/Rexford/**)",
-      "Bash(git filter-repo:*)"
+      "Bash(git filter-repo:*)",
+      "Bash(python3:*)"
     ]
   }
 }

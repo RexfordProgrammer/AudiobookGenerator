@@ -16,13 +16,13 @@ You may use one of two formats per word:
 FORMAT A — Kokoro inline IPA (preferred for foreign/unusual names where you know the pronunciation):
     [DisplayName](/phonemes/)
     The display name is what appears in text. The phonemes are IPA symbols between the slashes.
-    Stress marks: ˈ (primary, U+02C8) and ˌ (secondary, U+02CC) are supported — place before the stressed syllable.
+    Do NOT include stress marks (ˈ ˌ) — they are not supported.
     Supported IPA symbols: A I O W Y b d f h i j k l m n p s t u v w z æ ð ŋ ɑ ɔ ə ɛ ɜ ɡ ɪ ɹ ɾ ʃ ʊ ʌ ʒ ʤ ʧ θ ᵊ ᵻ ʔ
     NEVER use: the length mark ː (U+02D0), a regular colon :, or any letter not in the list above.
     For long vowels, repeat the vowel symbol instead (e.g. ɑɑ not ɑː, iɪ not iː).
     Examples:
-        "Kovacs"      -> "[Kovatch](/ˈkoʊvætʃ/)"
-        "Loemanako"   -> "[Loemanako](/ləˈmɑɑnəkoʊ/)"
+        "Kovacs"      -> "[Kovatch](/koʊvætʃ/)"
+        "Loemanako"   -> "[Loemanako](/ləmɑɑnəkoʊ/)"
         "Roespinoedji"-> "[Roespinoedji](/roʊɛspɪnoʊɛdʒi/)"
         "Nagini"      -> "[Nagini](/nɑdʒiɪni/)"
 
@@ -107,16 +107,20 @@ class GeminiProvider(LLMProvider):
         data = await asyncio.to_thread(_http_post,
             url,
             {"Content-Type": "application/json"},
-            {"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"temperature": 0.2}},
+            {"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"temperature": 0.2, "thinkingConfig": {"thinkingBudget": 0}}},
         )
         return _parse_json(data["candidates"][0]["content"]["parts"][0]["text"])
+
+
+_STRIP_CHARS = '\u02c8\u02cc'  # IPA stress marks ˈ ˌ — not used by Kokoro
 
 
 def _parse_json(text: str) -> dict[str, str]:
     match = re.search(r'\{.*\}', text, re.DOTALL)
     if match:
         try:
-            return json.loads(match.group())
+            raw = json.loads(match.group())
+            return {k: v.translate(str.maketrans('', '', _STRIP_CHARS)) for k, v in raw.items()}
         except json.JSONDecodeError as e:
             print(f"[llm] JSON parse error: {e}\nRaw response: {text!r}", flush=True)
             return {}
@@ -146,15 +150,33 @@ def get_provider() -> LLMProvider:
     )
 
 
-async def get_phonetics_batched(words: list[str], batch_size: int = 50) -> dict[str, str]:
-    """Call the LLM in batches and aggregate results."""
+async def get_phonetics_batched(
+    words: list[str],
+    batch_size: int = 50,
+    on_batch=None,
+    timeout: float = 45,
+) -> dict[str, str]:
+    """Call the LLM in batches and aggregate results.
+
+    on_batch(batch_num, total_batches, batch_words) is called before each request.
+    Each batch is cancelled after *timeout* seconds to prevent hanging.
+    """
     provider = get_provider()
     results: dict[str, str] = {}
+    total_batches = max(1, -(-len(words) // batch_size))  # ceil div
     for i in range(0, len(words), batch_size):
         batch = words[i : i + batch_size]
+        batch_num = i // batch_size + 1
+        if on_batch:
+            on_batch(batch_num, total_batches, batch)
         try:
-            batch_result = await provider.get_phonetics(batch)
+            batch_result = await asyncio.wait_for(
+                provider.get_phonetics(batch), timeout=timeout
+            )
             results.update(batch_result)
+            print(f"[llm] Batch {batch_num}/{total_batches} → {len(batch_result)} mappings", flush=True)
+        except asyncio.TimeoutError:
+            print(f"[llm] Batch {batch_num}/{total_batches} timed out after {timeout}s — skipping", flush=True)
         except Exception as e:
-            print(f"[llm] Batch {i // batch_size} failed: {e}", flush=True)
+            print(f"[llm] Batch {batch_num}/{total_batches} failed: {e}", flush=True)
     return results

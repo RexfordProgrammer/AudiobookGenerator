@@ -167,7 +167,11 @@ def _scan_from_job(job_id: str) -> None:
 
         if words_needing_llm:
             try:
-                llm_phonetics = asyncio.run(get_phonetics_batched(words_needing_llm))
+                def _on_llm_batch(batch_num: int, total_batches: int, batch: list) -> None:
+                    log(job_id, f"LLM phonetics: batch {batch_num}/{total_batches} ({len(batch)} words)…")
+                    job["progress"] = 40 + int((batch_num - 1) / total_batches * 55)
+
+                llm_phonetics = asyncio.run(get_phonetics_batched(words_needing_llm, on_batch=_on_llm_batch))
                 if llm_phonetics:
                     # Immediately persist new results to master lexicon so future books benefit
                     merge_into_lexicon(llm_phonetics, voice)
@@ -425,6 +429,18 @@ async def start_convert(job_id: str, body: UpdateChaptersBody):
     job["per_chapter"] = body.per_chapter
 
     threading.Thread(target=_convert, args=(job_id,), daemon=True).start()
+    return {"ok": True}
+
+
+@app.post("/save-draft/{job_id}")
+async def save_draft(job_id: str, body: dict):
+    """Persist current phonetics edits to the job without starting conversion."""
+    if job_id not in jobs:
+        raise HTTPException(404, "Job not found.")
+    job = jobs[job_id]
+    if job["status"] != "awaiting_review":
+        raise HTTPException(400, f"Job is not awaiting review (status: {job['status']}).")
+    job["phonetics"] = body.get("phonetics", {})
     return {"ok": True}
 
 

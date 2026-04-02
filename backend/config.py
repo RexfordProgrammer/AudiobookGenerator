@@ -13,6 +13,6 @@ _DEFAULTS: dict = {
 
 def load_config() -> dict:
     if _CONFIG_FILE.exists():
-        with open(_CONFIG_FILE) as f:
+        with open(_CONFIG_FILE, encoding="utf-8") as f:
             return {**_DEFAULTS, **json.load(f)}
     return _DEFAULTS.copy()
