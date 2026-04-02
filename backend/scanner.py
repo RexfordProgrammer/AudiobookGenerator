@@ -231,8 +231,8 @@ def apply_phonetics(text: str, phonetics: dict[str, str]) -> str:
 
 def save_job_phonetics(job_id: str, words: list[str], phonetics: dict[str, str]) -> None:
     """Write per-session tally file: all detected words + LLM phonetic suggestions."""
-    with open(PHONETICS_DIR / f"{job_id}.json", "w") as f:
-        json.dump({"words": words, "phonetics": phonetics}, f, indent=2)
+    with open(PHONETICS_DIR / f"{job_id}.json", "w", encoding="utf-8") as f:
+        json.dump({"words": words, "phonetics": phonetics}, f, indent=2, ensure_ascii=False)
 
 
 def load_scan_cache(filename: str, scan_method: str = "regex") -> list[tuple[str, int]] | None:
@@ -244,7 +244,7 @@ def load_scan_cache(filename: str, scan_method: str = "regex") -> list[tuple[str
     cache_key = "words" if scan_method == "regex" else f"words_{scan_method}"
     names_file = _names_file(filename)
     if names_file.exists():
-        with open(names_file) as f:
+        with open(names_file, encoding="utf-8") as f:
             data = json.load(f)
         words = data.get(cache_key, [])
         return [(w, c) for w, c in words] if words else None
@@ -252,7 +252,7 @@ def load_scan_cache(filename: str, scan_method: str = "regex") -> list[tuple[str
     # Legacy fallback — monolithic scan_cache.json (regex only)
     if scan_method != "regex" or not SCAN_CACHE_FILE.exists():
         return None
-    with open(SCAN_CACHE_FILE) as f:
+    with open(SCAN_CACHE_FILE, encoding="utf-8") as f:
         cache = json.load(f)
     entry = cache.get(filename)
     if entry is None:
@@ -277,11 +277,11 @@ def save_scan_cache(
     names_file = _names_file(filename)
     data: dict = {}
     if names_file.exists():
-        with open(names_file) as f:
+        with open(names_file, encoding="utf-8") as f:
             data = json.load(f)
     data[cache_key] = [[w, c] for w, c in words_with_counts]
-    with open(names_file, "w") as f:
-        json.dump(data, f, indent=2, sort_keys=True)
+    with open(names_file, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, sort_keys=True, ensure_ascii=False)
 
 
 def save_book_approved(filename: str, phonetics: dict[str, str]) -> None:
@@ -295,13 +295,13 @@ def save_book_approved(filename: str, phonetics: dict[str, str]) -> None:
     names_file = _names_file(filename)
     data: dict = {}
     if names_file.exists():
-        with open(names_file) as f:
+        with open(names_file, encoding="utf-8") as f:
             data = json.load(f)
     approved = data.get("approved", {})
     approved.update(phonetics)
     data["approved"] = approved
-    with open(names_file, "w") as f:
-        json.dump(data, f, indent=2, sort_keys=True)
+    with open(names_file, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, sort_keys=True, ensure_ascii=False)
 
 
 def load_lexicon() -> dict[str, dict[str, str]]:
@@ -309,7 +309,7 @@ def load_lexicon() -> dict[str, dict[str, str]]:
     Migrates old flat-format {word: str} entries to {"_global": phonetic} on first read."""
     if not LEXICON_FILE.exists():
         return {}
-    with open(LEXICON_FILE) as f:
+    with open(LEXICON_FILE, encoding="utf-8") as f:
         data = json.load(f)
     needs_write = any(isinstance(v, str) for v in data.values())
     if needs_write:
@@ -319,8 +319,8 @@ def load_lexicon() -> dict[str, dict[str, str]]:
 
 
 def write_lexicon(lexicon: dict[str, dict[str, str]]) -> None:
-    with open(LEXICON_FILE, "w") as f:
-        json.dump(lexicon, f, indent=2, sort_keys=True)
+    with open(LEXICON_FILE, "w", encoding="utf-8") as f:
+        json.dump(lexicon, f, indent=2, sort_keys=True, ensure_ascii=False)
 
 
 def merge_into_lexicon(phonetics: dict[str, str], voice: str = "_global") -> None:
